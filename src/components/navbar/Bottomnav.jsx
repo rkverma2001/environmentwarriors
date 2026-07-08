@@ -1,19 +1,26 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 import { HiMenu, HiX } from "react-icons/hi";
-import { FaHeart } from "react-icons/fa";
+import { FaHeart, FaChevronDown } from "react-icons/fa";
 import { IoLanguage } from "react-icons/io5";
 
 const Bottomnav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState(false);
 
   return (
     <nav className="bg-white shadow-sm relative z-50">
+
       <div className="max-w-[1400px] mx-auto px-3 sm:px-5 lg:px-8">
+
         <div className="h-[72px] md:h-[80px] flex items-center justify-between">
 
-          {/* Logo Section */}
-          <div className="flex items-center gap-2 sm:gap-3">
-
+          {/* Logo */}
+          <Link
+            to="/"
+            className="flex items-center gap-2 sm:gap-3"
+          >
             <img
               src="/logo.png"
               alt="Environment Warriors"
@@ -29,56 +36,152 @@ const Bottomnav = () => {
                 The Guardians of the Green
               </p>
             </div>
-
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-6 xl:gap-8 text-[15px] font-medium">
 
-            <li className="hover:text-[#0F5132] transition cursor-pointer">
+            <Link
+              to="/"
+              className="hover:text-[#0F5132] transition"
+            >
               Home
+            </Link>
+
+            {/* Sanctuaries Dropdown */}
+            <li className="relative group list-none">
+
+              <div className="flex items-center gap-2 cursor-pointer hover:text-[#0F5132] transition">
+                Sanctuaries
+                <FaChevronDown className="text-xs" />
+              </div>
+
+              <div
+                className="
+                  absolute
+                  left-0
+                  top-full
+                  mt-4
+                  w-72
+                  bg-white
+                  rounded-xl
+                  shadow-xl
+                  border
+                  opacity-0
+                  invisible
+                  group-hover:opacity-100
+                  group-hover:visible
+                  transition-all
+                  duration-300
+                  z-50
+                "
+              >
+
+                <Link
+                  to="/sanctuaries/dudhwa"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  Dudhwa National Park
+                </Link>
+
+                <Link
+                  to="/sanctuaries/kishanpur"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  Kishanpur Wildlife Sanctuary
+                </Link>
+
+                <Link
+                  to="/sanctuaries/katarniaghat"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  Katarniaghat Wildlife Sanctuary
+                </Link>
+
+                <Link
+                  to="/sanctuaries/pilibhit"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  Pilibhit Tiger Reserve
+                </Link>
+
+              </div>
+
             </li>
 
-            <li className="hover:text-[#0F5132] transition cursor-pointer">
-              Sanctuaries
-            </li>
-
-            <li className="hover:text-[#0F5132] transition cursor-pointer">
+            <Link
+              to="/events"
+              className="hover:text-[#0F5132] transition"
+            >
               News & Events
-            </li>
+            </Link>
 
-            <li className="hover:text-[#0F5132] transition cursor-pointer">
+            <Link
+              to="/about"
+              className="hover:text-[#0F5132] transition"
+            >
               About Us
-            </li>
+            </Link>
 
-            <li className="hover:text-[#0F5132] transition cursor-pointer">
+            <Link
+              to="/volunteer"
+              className="hover:text-[#0F5132] transition"
+            >
               Volunteer
-            </li>
+            </Link>
 
-            <li className="hover:text-[#0F5132] transition cursor-pointer">
+            <Link
+              to="/contact"
+              className="hover:text-[#0F5132] transition"
+            >
               Contact
-            </li>
+            </Link>
 
           </ul>
 
           {/* Desktop Buttons */}
           <div className="hidden lg:flex items-center gap-3">
 
-            {/* Language Button */}
-            <button className="border border-gray-300 px-3 py-2 rounded-md text-sm hover:border-[#0F5132] transition flex items-center gap-2">
-              <IoLanguage className="w-4 h-4 text-[#0F5132]" />
+            <button
+              className="
+                border
+                border-gray-300
+                px-3
+                py-2
+                rounded-md
+                text-sm
+                flex
+                items-center
+                gap-2
+                hover:border-[#0F5132]
+              "
+            >
+              <IoLanguage className="text-[#0F5132]" />
               हिन्दी
             </button>
 
-            {/* Donate Button */}
-            <button className="bg-[#0F5132] hover:bg-[#0c4028] text-white px-4 py-2.5 rounded-md flex items-center gap-2 text-sm transition">
+            <button
+              className="
+                bg-[#0F5132]
+                hover:bg-[#0c4028]
+                text-white
+                px-4
+                py-2.5
+                rounded-md
+                flex
+                items-center
+                gap-2
+                text-sm
+                transition
+              "
+            >
               <FaHeart size={12} />
-              <span>Donate Now</span>
+              Donate Now
             </button>
 
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Toggle */}
           <button
             className="lg:hidden text-[#0F5132]"
             onClick={() => setMobileMenu(!mobileMenu)}
@@ -91,6 +194,7 @@ const Bottomnav = () => {
           </button>
 
         </div>
+
       </div>
 
       {/* Mobile Menu */}
@@ -99,32 +203,122 @@ const Bottomnav = () => {
 
           <div className="px-5 py-5 flex flex-col gap-4">
 
-            <a href="#" className="font-medium text-[#0F5132]">
+            <Link
+              to="/"
+              onClick={() => setMobileMenu(false)}
+              className="font-medium text-[#0F5132]"
+            >
               Home
-            </a>
+            </Link>
 
-            <a href="#">Sanctuaries</a>
+            {/* Mobile Dropdown */}
+            <div>
 
-            <a href="#">News & Events</a>
+              <button
+                onClick={() =>
+                  setMobileDropdown(!mobileDropdown)
+                }
+                className="
+                  flex
+                  items-center
+                  justify-between
+                  w-full
+                  font-medium
+                "
+              >
+                Sanctuaries
 
-            <a href="#">About Us</a>
+                <FaChevronDown
+                  className={`transition ${
+                    mobileDropdown
+                      ? "rotate-180"
+                      : ""
+                  }`}
+                />
+              </button>
 
-            <a href="#">Volunteer</a>
+              {mobileDropdown && (
+                <div className="ml-4 mt-3 flex flex-col gap-3">
 
-            <a href="#">Contact</a>
+                  <Link
+                    to="/sanctuaries/dudhwa"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    Dudhwa National Park
+                  </Link>
+
+                  <Link
+                    to="/sanctuaries/kishanpur"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    Kishanpur Wildlife Sanctuary
+                  </Link>
+
+                  <Link
+                    to="/sanctuaries/katarniaghat"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    Katarniaghat Wildlife Sanctuary
+                  </Link>
+
+                  <Link
+                    to="/sanctuaries/pilibhit"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    Pilibhit Tiger Reserve
+                  </Link>
+
+                </div>
+              )}
+
+            </div>
+
+            <Link
+              to="/events"
+              onClick={() => setMobileMenu(false)}
+            >
+              News & Events
+            </Link>
+
+            <Link
+              to="/about"
+              onClick={() => setMobileMenu(false)}
+            >
+              About Us
+            </Link>
+
+            <Link
+              to="/volunteer"
+              onClick={() => setMobileMenu(false)}
+            >
+              Volunteer
+            </Link>
+
+            <Link
+              to="/contact"
+              onClick={() => setMobileMenu(false)}
+            >
+              Contact
+            </Link>
 
             <div className="border-t pt-4 flex flex-col gap-3">
 
-              {/* Language Button */}
-              <button className="w-full h-11 border border-gray-300 rounded-md flex items-center justify-center gap-2 text-sm font-medium cursor-pointer">
-                <IoLanguage className="w-4 h-4 text-[#0F5132]" />
-                <span>हिन्दी</span>
+              <button className="w-full h-11 border border-gray-300 rounded-md flex items-center justify-center gap-2 text-sm font-medium">
+                <IoLanguage className="text-[#0F5132]" />
+                हिन्दी
               </button>
 
-              {/* Donate Button */}
-              <button className="w-full h-11 bg-[#0F5132] text-white rounded-md flex items-center justify-center gap-2 text-sm font-medium cursor-pointer">
-                <FaHeart className="w-4 h-4" />
-                <span>Donate Now</span>
+              <button className="w-full h-11 bg-[#0F5132] text-white rounded-md flex items-center justify-center gap-2 text-sm font-medium">
+                <FaHeart />
+                Donate Now
               </button>
 
             </div>
@@ -133,6 +327,7 @@ const Bottomnav = () => {
 
         </div>
       )}
+
     </nav>
   );
 };

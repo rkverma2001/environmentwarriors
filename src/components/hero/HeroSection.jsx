@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 import {
   FaTree,
@@ -72,62 +73,64 @@ const HeroSection = () => {
         </p>
 
         {/* Features */}
-        <div className="flex flex-wrap gap-4 lg:gap-6 mt-8">
+        <div className="hidden sm:flex flex-wrap gap-4 lg:gap-6 mt-8">
 
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full border border-[#4CAF50] flex items-center justify-center">
-              <FaTree className="text-white text-lg" />
-            </div>
+  <div className="flex items-center gap-3">
+    <div className="w-12 h-12 rounded-full border border-[#4CAF50] flex items-center justify-center">
+      <FaTree className="text-white text-lg" />
+    </div>
 
-            <div>
-              <h3 className="text-white font-semibold text-sm lg:text-base">
-                Protect Forests
-              </h3>
-              <p className="text-white/70 text-xs">
-                Preserve our green heritage
-              </p>
-            </div>
-          </div>
+    <div>
+      <h3 className="text-white font-semibold text-sm lg:text-base">
+        Protect Forests
+      </h3>
+      <p className="text-white/70 text-xs">
+        Preserve our green heritage
+      </p>
+    </div>
+  </div>
 
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full border border-[#4CAF50] flex items-center justify-center">
-              <FaPaw className="text-white text-lg" />
-            </div>
+  <div className="flex items-center gap-3">
+    <div className="w-12 h-12 rounded-full border border-[#4CAF50] flex items-center justify-center">
+      <FaPaw className="text-white text-lg" />
+    </div>
 
-            <div>
-              <h3 className="text-white font-semibold text-sm lg:text-base">
-                Save Wildlife
-              </h3>
-              <p className="text-white/70 text-xs">
-                Every species matters
-              </p>
-            </div>
-          </div>
+    <div>
+      <h3 className="text-white font-semibold text-sm lg:text-base">
+        Save Wildlife
+      </h3>
+      <p className="text-white/70 text-xs">
+        Every species matters
+      </p>
+    </div>
+  </div>
 
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full border border-[#4CAF50] flex items-center justify-center">
-              <FaUsers className="text-white text-lg" />
-            </div>
+  <div className="flex items-center gap-3">
+    <div className="w-12 h-12 rounded-full border border-[#4CAF50] flex items-center justify-center">
+      <FaUsers className="text-white text-lg" />
+    </div>
 
-            <div>
-              <h3 className="text-white font-semibold text-sm lg:text-base">
-                Spread Awareness
-              </h3>
-              <p className="text-white/70 text-xs">
-                Inspiring the next generation
-              </p>
-            </div>
-          </div>
+    <div>
+      <h3 className="text-white font-semibold text-sm lg:text-base">
+        Spread Awareness
+      </h3>
+      <p className="text-white/70 text-xs">
+        Inspiring the next generation
+      </p>
+    </div>
+  </div>
 
-        </div>
+</div>
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-3 mt-8">
 
-          <button className="bg-[#F5C542] hover:bg-[#e4b437] transition-all duration-300 px-6 py-3 rounded-md text-sm font-semibold flex items-center gap-2">
-            EXPLORE SANCTUARIES
-            <FaArrowRight />
-          </button>
+          <Link to="/sanctuaries">
+  <button className="bg-[#F5C542] hover:bg-[#e4b437] transition-all duration-300 px-6 py-3 rounded-md text-sm font-semibold flex items-center gap-2">
+    EXPLORE SANCTUARIES
+    <FaArrowRight />
+  </button>
+</Link>
 
           <button className="border border-white hover:bg-white hover:text-black transition-all duration-300 text-white px-6 py-3 rounded-md text-sm font-semibold">
             BECOME A VOLUNTEER
