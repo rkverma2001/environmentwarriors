@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 
+import { useT } from "../../i18n/useT";
+
 const SanctuariesHero = () => {
+  const t = useT().sanctuariesPage.hero;
+
   return (
     <section
       className="relative h-[300px] sm:h-[350px] md:h-[420px] lg:h-[500px] overflow-hidden"
@@ -24,20 +28,19 @@ const SanctuariesHero = () => {
 
             {/* Badge */}
             <span className="inline-block bg-white/10 backdrop-blur-md border border-white/20 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-medium mb-5">
-              🌿 Wildlife Conservation
+              {t.badge}
             </span>
 
             {/* Heading */}
             <h1 className="text-white font-bold leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-              Explore Our
+              {t.heading1}
               <br />
-              Sanctuaries
+              {t.heading2}
             </h1>
 
             {/* Subtitle */}
             <p className="text-white/90 mt-5 text-base sm:text-lg max-w-[550px] leading-relaxed">
-              Discover India's rich wildlife heritage and explore
-              protected forests, rare species, and breathtaking ecosystems.
+              {t.description}
             </p>
 
             {/* Breadcrumb */}
@@ -47,13 +50,13 @@ const SanctuariesHero = () => {
                 to="/"
                 className="hover:text-white transition"
               >
-                Home
+                {t.home}
               </Link>
 
               <span>/</span>
 
               <span className="text-[#F5C542]">
-                Sanctuaries
+                {t.sanctuaries}
               </span>
 
             </div>
@@ -62,11 +65,11 @@ const SanctuariesHero = () => {
             <div className="flex flex-wrap gap-4 mt-8">
 
               <button className="bg-[#F5C542] hover:bg-[#e3b83d] text-black px-6 py-3 rounded-xl font-semibold transition-all">
-                Explore Sanctuaries
+                {t.exploreSanctuaries}
               </button>
 
               <button className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-xl font-semibold transition-all">
-                Learn More
+                {t.learnMore}
               </button>
 
             </div>

@@ -4,7 +4,11 @@ import {
   FaMountain,
 } from "react-icons/fa";
 
+import { useT } from "../../i18n/useT";
+
 const SanctuariesOverview = () => {
+  const t = useT().sanctuariesPage.overview;
+
   return (
     <section className="py-14 lg:py-20 bg-white">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,20 +48,15 @@ const SanctuariesOverview = () => {
           <div>
 
             <span className="inline-block bg-[#0F5132]/10 text-[#0F5132] px-4 py-2 rounded-full text-sm font-medium">
-              OUR SANCTUARIES
+              {t.eyebrow}
             </span>
 
             <h2 className="mt-5 text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F5132]">
-              Preserving Wildlife &
-              Natural Ecosystems
+              {t.heading}
             </h2>
 
             <p className="mt-5 text-gray-600 leading-relaxed">
-              Our sanctuaries are home to diverse wildlife,
-              endangered species, dense forests, wetlands,
-              rivers and rich biodiversity. Through conservation
-              efforts, we protect these natural treasures for
-              future generations.
+              {t.description}
             </p>
 
             {/* Stats */}
@@ -74,7 +73,7 @@ const SanctuariesOverview = () => {
                 </h3>
 
                 <p className="text-gray-600 text-sm mt-1">
-                  Protected Areas
+                  {t.protectedAreas}
                 </p>
 
               </div>
@@ -90,7 +89,7 @@ const SanctuariesOverview = () => {
                 </h3>
 
                 <p className="text-gray-600 text-sm mt-1">
-                  Wildlife Species
+                  {t.wildlifeSpecies}
                 </p>
 
               </div>
@@ -106,7 +105,7 @@ const SanctuariesOverview = () => {
                 </h3>
 
                 <p className="text-gray-600 text-sm mt-1">
-                  Sq Km Protected
+                  {t.sqKmProtected}
                 </p>
 
               </div>

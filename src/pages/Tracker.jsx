@@ -1,71 +1,37 @@
 import { useEffect, useState } from "react";
 import { FaPaw, FaCalendarAlt, FaMapMarkerAlt, FaUser, FaRedo } from "react-icons/fa";
 
-const SPECIES_LIST = [
-  { id: "tiger", name: "Bengal Tiger", sanctuaries: ["Dudhwa", "Kishanpur", "Katarniaghat", "Pilibhit"] },
-  { id: "rhino", name: "One-Horned Rhino", sanctuaries: ["Dudhwa"] },
-  { id: "barasingha", name: "Swamp Deer (Barasingha)", sanctuaries: ["Dudhwa", "Kishanpur"] },
-  { id: "elephant", name: "Asian Elephant", sanctuaries: ["Dudhwa", "Kishanpur", "Katarniaghat", "Pilibhit"] },
-  { id: "leopard", name: "Leopard", sanctuaries: ["Dudhwa", "Kishanpur", "Katarniaghat", "Pilibhit"] },
-  { id: "slothbear", name: "Sloth Bear", sanctuaries: ["Dudhwa"] },
-  { id: "fishingcat", name: "Fishing Cat", sanctuaries: ["Dudhwa", "Pilibhit"] },
-  { id: "gharial", name: "Gharial", sanctuaries: ["Katarniaghat", "Kishanpur"] },
-  { id: "dolphin", name: "Gangetic River Dolphin", sanctuaries: ["Katarniaghat"] },
-  { id: "mugger", name: "Marsh Mugger Crocodile", sanctuaries: ["Katarniaghat"] },
-  { id: "hogdeer", name: "Hog Deer", sanctuaries: ["Dudhwa", "Kishanpur", "Pilibhit"] },
-  { id: "chital", name: "Chital (Spotted Deer)", sanctuaries: ["Dudhwa", "Kishanpur"] },
-  { id: "otter", name: "Otter", sanctuaries: ["Kishanpur"] },
-  { id: "florican", name: "Bengal Florican", sanctuaries: ["Dudhwa", "Kishanpur"] },
-  { id: "saruscrane", name: "Sarus Crane", sanctuaries: ["Dudhwa", "Kishanpur"] },
-  { id: "paintedstork", name: "Painted Stork", sanctuaries: ["Kishanpur"] },
-];
-
-const SANCTUARY_NAMES = [
-  "Dudhwa National Park",
-  "Kishanpur Wildlife Sanctuary",
-  "Katarniaghat Wildlife Sanctuary",
-  "Pilibhit Tiger Reserve",
-];
+import { useT } from "../i18n/useT";
 
 const STORAGE_KEY = "ew-species-tracker-v1";
-
-const SEED_SIGHTINGS = [
-  {
-    species: "Bengal Tiger",
-    sanctuary: "Dudhwa National Park",
-    name: "Ramesh K.",
-    date: "2026-06-14",
-    notes: "Crossing Sathiana grassland at dawn.",
-  },
-  {
-    species: "Gharial",
-    sanctuary: "Katarniaghat Wildlife Sanctuary",
-    name: "Anjali T.",
-    date: "2026-06-10",
-    notes: "Basking on a sandbank along the Girwa.",
-  },
-  {
-    species: "Swamp Deer (Barasingha)",
-    sanctuary: "Kishanpur Wildlife Sanctuary",
-    name: "Priya S.",
-    date: "2026-06-02",
-    notes: "Herd of 200+ at Jhadi Tal.",
-  },
-];
-
-function loadSightings() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw);
-  } catch {
-    // ignore corrupt storage
-  }
-  return SEED_SIGHTINGS;
-}
 
 const emptyForm = { species: "", sanctuary: "", name: "", date: "", notes: "" };
 
 const Tracker = () => {
+  const t = useT();
+  const tt = t.tracker;
+  const nav = t.nav;
+
+  const sanctuaryNames = Object.values(nav.sanctuaryNames);
+
+  const seedSightings = tt.seedSightings.map((s) => ({
+    species: tt.speciesList.find((sp) => sp.id === s.speciesId).name,
+    sanctuary: nav.sanctuaryNames[s.sanctuarySlug],
+    name: s.name,
+    date: s.date,
+    notes: s.notes,
+  }));
+
+  function loadSightings() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch {
+      // ignore corrupt storage
+    }
+    return seedSightings;
+  }
+
   const [sightings, setSightings] = useState(loadSightings);
   const [form, setForm] = useState(emptyForm);
 
@@ -83,7 +49,7 @@ const Tracker = () => {
   };
 
   const resetDemo = () => {
-    setSightings(SEED_SIGHTINGS);
+    setSightings(seedSightings);
   };
 
   const tally = sightings.reduce((acc, s) => {
@@ -104,16 +70,15 @@ const Tracker = () => {
       >
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm">
-            Citizen Science
+            {tt.hero.badge}
           </span>
 
           <h1 className="text-white text-4xl md:text-5xl font-bold mt-6">
-            Species Spotting Tracker
+            {tt.hero.heading}
           </h1>
 
           <p className="text-white/90 mt-4 max-w-xl text-lg">
-            A shared, growing log of wildlife sightings across our four
-            sanctuaries — logged by visitors like you.
+            {tt.hero.description}
           </p>
         </div>
       </section>
@@ -127,7 +92,7 @@ const Tracker = () => {
             <div className="space-y-6">
               <div className="bg-white rounded-3xl shadow-lg p-8 border">
                 <h2 className="text-2xl font-bold text-[#0F5132] mb-5">
-                  Log a Sighting
+                  {tt.form.heading}
                 </h2>
 
                 <form onSubmit={submit} className="space-y-4">
@@ -137,8 +102,8 @@ const Tracker = () => {
                     required
                     className="w-full border rounded-xl px-4 py-3"
                   >
-                    <option value="">Select Species</option>
-                    {SPECIES_LIST.map((s) => (
+                    <option value="">{tt.form.selectSpecies}</option>
+                    {tt.speciesList.map((s) => (
                       <option key={s.id} value={s.name}>
                         {s.name}
                       </option>
@@ -151,8 +116,8 @@ const Tracker = () => {
                     required
                     className="w-full border rounded-xl px-4 py-3"
                   >
-                    <option value="">Select Sanctuary</option>
-                    {SANCTUARY_NAMES.map((name) => (
+                    <option value="">{tt.form.selectSanctuary}</option>
+                    {sanctuaryNames.map((name) => (
                       <option key={name} value={name}>
                         {name}
                       </option>
@@ -161,7 +126,7 @@ const Tracker = () => {
 
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder={tt.form.yourName}
                     value={form.name}
                     onChange={(e) => update("name", e.target.value)}
                     required
@@ -178,7 +143,7 @@ const Tracker = () => {
 
                   <textarea
                     rows={3}
-                    placeholder="Notes (optional)"
+                    placeholder={tt.form.notes}
                     value={form.notes}
                     onChange={(e) => update("notes", e.target.value)}
                     className="w-full border rounded-xl px-4 py-3"
@@ -188,18 +153,18 @@ const Tracker = () => {
                     type="submit"
                     className="w-full bg-[#0F5132] text-white py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
                   >
-                    Log Sighting
+                    {tt.form.submit}
                   </button>
                 </form>
               </div>
 
               <div className="bg-[#f8faf8] rounded-3xl p-8 border">
                 <h3 className="font-bold text-[#0F5132] mb-4">
-                  Most-Logged Species
+                  {tt.tally.heading}
                 </h3>
 
                 {topSpecies.length === 0 ? (
-                  <p className="text-gray-500 text-sm">No sightings yet.</p>
+                  <p className="text-gray-500 text-sm">{tt.tally.empty}</p>
                 ) : (
                   <ul className="space-y-2">
                     {topSpecies.map(([species, count]) => (
@@ -220,7 +185,7 @@ const Tracker = () => {
                   onClick={resetDemo}
                   className="mt-6 flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-[#0F5132]"
                 >
-                  <FaRedo /> Reset Demo Data
+                  <FaRedo /> {tt.tally.resetDemo}
                 </button>
               </div>
             </div>
@@ -228,7 +193,7 @@ const Tracker = () => {
             {/* Right: feed */}
             <div>
               <h2 className="text-2xl font-bold text-[#0F5132] mb-5">
-                Recent Sightings
+                {tt.feed.heading}
               </h2>
 
               <div className="space-y-4">

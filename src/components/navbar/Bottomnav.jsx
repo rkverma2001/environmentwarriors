@@ -1,14 +1,20 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { HiMenu, HiX } from "react-icons/hi";
 import { FaHeart, FaChevronDown } from "react-icons/fa";
 import { IoLanguage } from "react-icons/io5";
 
+import { useT } from "../../i18n/useT";
+import { useLanguage } from "../../context/useLanguage";
+
 const Bottomnav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(false);
   const [mobileExploreDropdown, setMobileExploreDropdown] = useState(false);
+
+  const t = useT().nav;
+  const { toggleLanguage } = useLanguage();
 
   return (
     <nav className="bg-white shadow-sm relative z-50">
@@ -30,11 +36,11 @@ const Bottomnav = () => {
 
             <div>
               <h1 className="text-[#0F5132] font-bold uppercase text-[13px] sm:text-[15px] lg:text-[20px] leading-tight">
-                Environment Warriors
+                {t.brandName}
               </h1>
 
               <p className="text-[#2F5233] text-[10px] sm:text-[11px] lg:text-[13px]">
-                The Guardians of the Green
+                {t.brandTagline}
               </p>
             </div>
           </Link>
@@ -46,14 +52,14 @@ const Bottomnav = () => {
               to="/"
               className="hover:text-[#0F5132] transition"
             >
-              Home
+              {t.home}
             </Link>
 
             {/* Sanctuaries Dropdown */}
             <li className="relative group list-none">
 
               <div className="flex items-center gap-2 cursor-pointer hover:text-[#0F5132] transition">
-                Sanctuaries
+                {t.sanctuaries}
                 <FaChevronDown className="text-xs" />
               </div>
 
@@ -82,28 +88,28 @@ const Bottomnav = () => {
                   to="/sanctuaries/dudhwa"
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
-                  Dudhwa National Park
+                  {t.sanctuaryNames.dudhwa}
                 </Link>
 
                 <Link
                   to="/sanctuaries/kishanpur"
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
-                  Kishanpur Wildlife Sanctuary
+                  {t.sanctuaryNames.kishanpur}
                 </Link>
 
                 <Link
                   to="/sanctuaries/katarniaghat"
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
-                  Katarniaghat Wildlife Sanctuary
+                  {t.sanctuaryNames.katarniaghat}
                 </Link>
 
                 <Link
                   to="/sanctuaries/pilibhit"
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
-                  Pilibhit Tiger Reserve
+                  {t.sanctuaryNames.pilibhit}
                 </Link>
 
               </div>
@@ -114,14 +120,14 @@ const Bottomnav = () => {
               to="/events"
               className="hover:text-[#0F5132] transition"
             >
-              News & Events
+              {t.newsEvents}
             </Link>
 
             {/* Explore Dropdown */}
             <li className="relative group list-none">
 
               <div className="flex items-center gap-2 cursor-pointer hover:text-[#0F5132] transition">
-                Explore
+                {t.explore}
                 <FaChevronDown className="text-xs" />
               </div>
 
@@ -150,28 +156,28 @@ const Bottomnav = () => {
                   to="/stories"
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
-                  Stories
+                  {t.stories}
                 </Link>
 
                 <Link
                   to="/quiz"
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
-                  Quiz
+                  {t.quiz}
                 </Link>
 
                 <Link
                   to="/games"
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
-                  Games
+                  {t.games}
                 </Link>
 
                 <Link
                   to="/tracker"
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
-                  Tracker
+                  {t.tracker}
                 </Link>
 
               </div>
@@ -182,21 +188,21 @@ const Bottomnav = () => {
               to="/about"
               className="hover:text-[#0F5132] transition"
             >
-              About Us
+              {t.aboutUs}
             </Link>
 
             <Link
               to="/volunteer"
               className="hover:text-[#0F5132] transition"
             >
-              Volunteer
+              {t.volunteer}
             </Link>
 
             <Link
               to="/contact"
               className="hover:text-[#0F5132] transition"
             >
-              Contact
+              {t.contact}
             </Link>
 
           </ul>
@@ -205,6 +211,7 @@ const Bottomnav = () => {
           <div className="hidden lg:flex items-center gap-3">
 
             <button
+              onClick={toggleLanguage}
               className="
                 border
                 border-gray-300
@@ -219,7 +226,7 @@ const Bottomnav = () => {
               "
             >
               <IoLanguage className="text-[#0F5132]" />
-              हिन्दी
+              {t.language}
             </button>
 
             <button
@@ -238,7 +245,7 @@ const Bottomnav = () => {
               "
             >
               <FaHeart size={12} />
-              Donate Now
+              {t.donateNow}
             </button>
 
           </div>
@@ -270,7 +277,7 @@ const Bottomnav = () => {
               onClick={() => setMobileMenu(false)}
               className="font-medium text-[#0F5132]"
             >
-              Home
+              {t.home}
             </Link>
 
             {/* Mobile Dropdown */}
@@ -288,7 +295,7 @@ const Bottomnav = () => {
                   font-medium
                 "
               >
-                Sanctuaries
+                {t.sanctuaries}
 
                 <FaChevronDown
                   className={`transition ${
@@ -308,7 +315,7 @@ const Bottomnav = () => {
                       setMobileMenu(false)
                     }
                   >
-                    Dudhwa National Park
+                    {t.sanctuaryNames.dudhwa}
                   </Link>
 
                   <Link
@@ -317,7 +324,7 @@ const Bottomnav = () => {
                       setMobileMenu(false)
                     }
                   >
-                    Kishanpur Wildlife Sanctuary
+                    {t.sanctuaryNames.kishanpur}
                   </Link>
 
                   <Link
@@ -326,7 +333,7 @@ const Bottomnav = () => {
                       setMobileMenu(false)
                     }
                   >
-                    Katarniaghat Wildlife Sanctuary
+                    {t.sanctuaryNames.katarniaghat}
                   </Link>
 
                   <Link
@@ -335,7 +342,7 @@ const Bottomnav = () => {
                       setMobileMenu(false)
                     }
                   >
-                    Pilibhit Tiger Reserve
+                    {t.sanctuaryNames.pilibhit}
                   </Link>
 
                 </div>
@@ -347,7 +354,7 @@ const Bottomnav = () => {
               to="/events"
               onClick={() => setMobileMenu(false)}
             >
-              News & Events
+              {t.newsEvents}
             </Link>
 
             {/* Mobile Explore Dropdown */}
@@ -365,7 +372,7 @@ const Bottomnav = () => {
                   font-medium
                 "
               >
-                Explore
+                {t.explore}
 
                 <FaChevronDown
                   className={`transition ${
@@ -385,7 +392,7 @@ const Bottomnav = () => {
                       setMobileMenu(false)
                     }
                   >
-                    Stories
+                    {t.stories}
                   </Link>
 
                   <Link
@@ -394,7 +401,7 @@ const Bottomnav = () => {
                       setMobileMenu(false)
                     }
                   >
-                    Quiz
+                    {t.quiz}
                   </Link>
 
                   <Link
@@ -403,7 +410,7 @@ const Bottomnav = () => {
                       setMobileMenu(false)
                     }
                   >
-                    Games
+                    {t.games}
                   </Link>
 
                   <Link
@@ -412,7 +419,7 @@ const Bottomnav = () => {
                       setMobileMenu(false)
                     }
                   >
-                    Tracker
+                    {t.tracker}
                   </Link>
 
                 </div>
@@ -424,33 +431,36 @@ const Bottomnav = () => {
               to="/about"
               onClick={() => setMobileMenu(false)}
             >
-              About Us
+              {t.aboutUs}
             </Link>
 
             <Link
               to="/volunteer"
               onClick={() => setMobileMenu(false)}
             >
-              Volunteer
+              {t.volunteer}
             </Link>
 
             <Link
               to="/contact"
               onClick={() => setMobileMenu(false)}
             >
-              Contact
+              {t.contact}
             </Link>
 
             <div className="border-t pt-4 flex flex-col gap-3">
 
-              <button className="w-full h-11 border border-gray-300 rounded-md flex items-center justify-center gap-2 text-sm font-medium">
+              <button
+                onClick={toggleLanguage}
+                className="w-full h-11 border border-gray-300 rounded-md flex items-center justify-center gap-2 text-sm font-medium"
+              >
                 <IoLanguage className="text-[#0F5132]" />
-                हिन्दी
+                {t.language}
               </button>
 
               <button className="w-full h-11 bg-[#0F5132] text-white rounded-md flex items-center justify-center gap-2 text-sm font-medium">
                 <FaHeart />
-                Donate Now
+                {t.donateNow}
               </button>
 
             </div>

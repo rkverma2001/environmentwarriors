@@ -1,38 +1,24 @@
 import { Link } from "react-router-dom";
 import { FaArrowRight, FaLeaf } from "react-icons/fa";
 
-const sanctuaries = [
-  {
-    slug: "dudhwa",
-    image: "/dudhwanationalpark.png",
-    title: "Dudhwa National Park",
-    description:
-      "Home to Royal Bengal Tigers, One-horned Rhinoceros and diverse wildlife.",
-  },
-  {
-    slug: "kishanpur",
-    image: "/kishanpur.png",
-    title: "Kishanpur Wildlife",
-    description:
-      "A paradise for bird watchers and home to swamp deer and crocodiles.",
-  },
-  {
-    slug: "katarniaghat",
-    image: "/katarniaghat.png",
-    title: "Katarniaghat Wildlife",
-    description:
-      "Famous for Gharials, Swamp Deer and rich biodiversity.",
-  },
-  {
-    slug: "pilibhit",
-    image: "/pilibhit.png",
-    title: "Pilibhit Tiger Reserve",
-    description:
-      "A vital tiger habitat with lush forests and wide grasslands.",
-  },
-];
+import { useT } from "../../i18n/useT";
+
+const SLUGS = ["dudhwa", "kishanpur", "katarniaghat", "pilibhit"];
+const IMAGES = {
+  dudhwa: "/dudhwanationalpark.png",
+  kishanpur: "/kishanpur.png",
+  katarniaghat: "/katarniaghat.png",
+  pilibhit: "/pilibhit.png",
+};
 
 const SanctuarySection = () => {
+  const t = useT().home.sanctuarySection;
+  const sanctuaries = SLUGS.map((slug) => ({
+    slug,
+    image: IMAGES[slug],
+    ...t.cards[slug],
+  }));
+
   return (
     <section className="py-12 lg:py-16">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,7 +33,7 @@ const SanctuarySection = () => {
             <div className="flex items-center gap-2">
 
               <h2 className="text-[#0F5132] text-xl md:text-2xl lg:text-3xl font-bold tracking-wide">
-                Explore Our Sanctuaries
+                {t.heading}
               </h2>
 
               <FaLeaf className="text-[#4CAF50] text-sm md:text-base" />
@@ -59,7 +45,7 @@ const SanctuarySection = () => {
           </div>
 
           <p className="text-gray-500 text-xs md:text-sm text-center">
-            Discover the rich biodiversity of Uttar Pradesh
+            {t.subheading}
           </p>
 
         </div>
@@ -125,7 +111,7 @@ const SanctuarySection = () => {
                     transition-all
                   "
                 >
-                  Explore More
+                  {t.exploreMore}
                   <FaArrowRight />
                 </div>
 

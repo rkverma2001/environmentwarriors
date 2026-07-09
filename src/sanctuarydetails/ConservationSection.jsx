@@ -1,12 +1,8 @@
+import { useT } from "../i18n/useT";
+
 const ConservationSection = () => {
-  const items = [
-    "Rhino Reintroduction",
-    "Tiger Monitoring",
-    "Swamp Deer Conservation",
-    "Anti-Poaching Patrols",
-    "Wetland Protection",
-    "Forest Restoration",
-  ];
+  const t = useT().sanctuaryDetail;
+  const items = t.conservationItems;
 
   return (
     <section className="py-20">
@@ -14,7 +10,7 @@ const ConservationSection = () => {
       <div className="max-w-[1400px] mx-auto px-4">
 
         <h2 className="text-center text-4xl font-bold text-[#0F5132] mb-12">
-          Conservation Highlights
+          {t.conservationHighlights}
         </h2>
 
         <div className="grid md:grid-cols-3 gap-5">

@@ -4,34 +4,14 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-const campaigns = [
-  {
-    image: "/campaign1.png",
-    title: "Plantation Drive 2026",
-    date: "25 May 2026",
-    location: "Dudhwa National Park",
-    description:
-      "Join us in planting thousands of trees and restoring green cover.",
-  },
-  {
-    image: "/campaign2.png",
-    title: "Save Wildlife Initiative",
-    date: "15 June 2026",
-    location: "Kishanpur Sanctuary",
-    description:
-      "Help protect endangered wildlife species and their habitats.",
-  },
-  {
-    image: "/campaign3.png",
-    title: "Clean River Mission",
-    date: "30 June 2026",
-    location: "Sharda River Basin",
-    description:
-      "Participate in cleaning and preserving river ecosystems.",
-  },
-];
+import { useT } from "../../i18n/useT";
+
+const images = ["/campaign1.png", "/campaign2.png", "/campaign3.png"];
 
 const CampaignsSection = () => {
+  const t = useT().home.campaigns;
+  const campaigns = t.items.map((c, i) => ({ ...c, image: images[i] }));
+
   return (
     <section className="py-16 lg:py-20">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,16 +20,15 @@ const CampaignsSection = () => {
         <div className="text-center mb-12">
 
           <span className="inline-block bg-[#0F5132]/10 text-[#0F5132] px-4 py-2 rounded-full text-sm font-medium">
-            CURRENT CAMPAIGNS
+            {t.eyebrow}
           </span>
 
           <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F5132]">
-            Join Us in Protecting Nature
+            {t.heading}
           </h2>
 
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Be a part of our ongoing environmental initiatives and
-            make a lasting impact on nature and wildlife.
+            {t.description}
           </p>
 
         </div>
@@ -124,7 +103,7 @@ const CampaignsSection = () => {
                     transition-all
                   "
                 >
-                  Join Campaign
+                  {t.joinCampaign}
                   <FaArrowRight />
                 </button>
 

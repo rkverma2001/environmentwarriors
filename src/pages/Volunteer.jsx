@@ -7,28 +7,14 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-const opportunities = [
-  {
-    icon: <FaTree />,
-    title: "Tree Plantation",
-    description:
-      "Participate in afforestation and habitat restoration programs.",
-  },
-  {
-    icon: <FaPaw />,
-    title: "Wildlife Conservation",
-    description:
-      "Support wildlife monitoring and conservation awareness campaigns.",
-  },
-  {
-    icon: <FaUsers />,
-    title: "Community Awareness",
-    description:
-      "Educate communities and schools about environmental protection.",
-  },
-];
+import { useT } from "../i18n/useT";
+
+const whyIcons = [<FaLeaf className="text-[#0F5132] text-4xl" />, <FaUsers className="text-[#0F5132] text-4xl" />, <FaTree className="text-[#0F5132] text-4xl" />];
+const opportunityIcons = [<FaTree />, <FaPaw />, <FaUsers />];
 
 const Volunteer = () => {
+  const t = useT().volunteer;
+
   return (
     <div>
 
@@ -45,16 +31,15 @@ const Volunteer = () => {
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
 
             <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm">
-              Join Our Mission
+              {t.hero.badge}
             </span>
 
             <h1 className="text-white text-5xl md:text-6xl font-bold mt-6">
-              Become A Volunteer
+              {t.hero.heading}
             </h1>
 
             <p className="text-white/90 mt-5 max-w-2xl text-lg">
-              Join Environment Warriors and help protect wildlife,
-              restore forests and build a sustainable future.
+              {t.hero.description}
             </p>
 
           </div>
@@ -67,47 +52,25 @@ const Volunteer = () => {
 
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-[#0F5132]">
-              Why Volunteer With Us?
+              {t.why.heading}
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            <div className="bg-[#f8faf8] p-8 rounded-3xl">
-              <FaLeaf className="text-[#0F5132] text-4xl" />
+            {t.why.items.map((item, index) => (
+              <div key={item.title} className="bg-[#f8faf8] p-8 rounded-3xl">
+                {whyIcons[index]}
 
-              <h3 className="mt-5 text-xl font-bold">
-                Protect Nature
-              </h3>
+                <h3 className="mt-5 text-xl font-bold">
+                  {item.title}
+                </h3>
 
-              <p className="mt-3 text-gray-600">
-                Contribute directly to wildlife and forest conservation.
-              </p>
-            </div>
-
-            <div className="bg-[#f8faf8] p-8 rounded-3xl">
-              <FaUsers className="text-[#0F5132] text-4xl" />
-
-              <h3 className="mt-5 text-xl font-bold">
-                Make Impact
-              </h3>
-
-              <p className="mt-3 text-gray-600">
-                Create positive environmental change in communities.
-              </p>
-            </div>
-
-            <div className="bg-[#f8faf8] p-8 rounded-3xl">
-              <FaTree className="text-[#0F5132] text-4xl" />
-
-              <h3 className="mt-5 text-xl font-bold">
-                Gain Experience
-              </h3>
-
-              <p className="mt-3 text-gray-600">
-                Learn leadership, teamwork and conservation skills.
-              </p>
-            </div>
+                <p className="mt-3 text-gray-600">
+                  {item.description}
+                </p>
+              </div>
+            ))}
 
           </div>
 
@@ -120,19 +83,19 @@ const Volunteer = () => {
 
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-[#0F5132]">
-              Volunteer Opportunities
+              {t.opportunities.heading}
             </h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            {opportunities.map((item, index) => (
+            {t.opportunities.items.map((item, index) => (
               <div
-                key={index}
+                key={item.title}
                 className="bg-white rounded-3xl p-8 shadow-sm"
               >
                 <div className="text-[#0F5132] text-4xl">
-                  {item.icon}
+                  {opportunityIcons[index]}
                 </div>
 
                 <h3 className="text-xl font-bold mt-5">
@@ -155,20 +118,14 @@ const Volunteer = () => {
         <div className="max-w-[1000px] mx-auto px-4">
 
           <h2 className="text-center text-4xl font-bold text-[#0F5132] mb-12">
-            Benefits of Volunteering
+            {t.benefits.heading}
           </h2>
 
           <div className="space-y-5">
 
-            {[
-              "Certificate of Participation",
-              "Networking Opportunities",
-              "Hands-on Environmental Experience",
-              "Leadership Development",
-              "Community Recognition",
-            ].map((item, index) => (
+            {t.benefits.items.map((item) => (
               <div
-                key={index}
+                key={item}
                 className="flex items-center gap-4"
               >
                 <FaCheckCircle className="text-[#0F5132]" />
@@ -189,67 +146,66 @@ const Volunteer = () => {
           <div className="bg-white rounded-3xl shadow-lg p-8">
 
             <h2 className="text-3xl font-bold text-[#0F5132] text-center">
-              Volunteer Registration
+              {t.form.heading}
             </h2>
 
             <form className="mt-8 space-y-5">
 
               <input
                 type="text"
-                placeholder="Full Name"
+                placeholder={t.form.fullName}
                 className="w-full border rounded-xl px-4 py-3"
               />
 
               <input
                 type="email"
-                placeholder="Email Address"
+                placeholder={t.form.email}
                 className="w-full border rounded-xl px-4 py-3"
               />
 
               <input
                 type="tel"
-                placeholder="Phone Number"
+                placeholder={t.form.phone}
                 className="w-full border rounded-xl px-4 py-3"
               />
 
               <input
                 type="text"
-                placeholder="Aadhar Number (12 digits)"
+                placeholder={t.form.aadhar}
                 maxLength={12}
                 pattern="[0-9]{12}"
                 inputMode="numeric"
-                title="Enter your 12-digit Aadhar number"
+                title={t.form.aadharTitle}
                 className="w-full border rounded-xl px-4 py-3"
               />
 
               <textarea
                 rows="3"
-                placeholder="Address"
+                placeholder={t.form.address}
                 className="w-full border rounded-xl px-4 py-3"
               ></textarea>
 
               <input
                 type="text"
-                placeholder="Social Media Handle (e.g. @yourhandle or profile link)"
+                placeholder={t.form.social}
                 className="w-full border rounded-xl px-4 py-3"
               />
 
               <select className="w-full border rounded-xl px-4 py-3">
-                <option>Select Interest</option>
-                <option>Tree Plantation</option>
-                <option>Wildlife Conservation</option>
-                <option>Community Awareness</option>
+                <option>{t.form.selectInterest}</option>
+                <option>{t.form.interestTree}</option>
+                <option>{t.form.interestWildlife}</option>
+                <option>{t.form.interestCommunity}</option>
               </select>
 
               <textarea
                 rows="5"
-                placeholder="Why do you want to volunteer?"
+                placeholder={t.form.why}
                 className="w-full border rounded-xl px-4 py-3"
               ></textarea>
 
               <p className="text-xs text-gray-500">
-                Your Aadhar number is used only to verify identity for
-                on-ground volunteering and is never shared publicly.
+                {t.form.privacyNote}
               </p>
 
               <button
@@ -263,7 +219,7 @@ const Volunteer = () => {
                   font-semibold
                 "
               >
-                Submit Application
+                {t.form.submit}
               </button>
 
             </form>
@@ -285,11 +241,11 @@ const Volunteer = () => {
         <div className="relative z-10 text-center px-4">
 
           <h2 className="text-white text-5xl font-bold">
-            Together We Can Make A Difference
+            {t.cta.heading}
           </h2>
 
           <p className="text-white/90 mt-5">
-            Join thousands of volunteers working for nature.
+            {t.cta.description}
           </p>
 
           <button
@@ -305,7 +261,7 @@ const Volunteer = () => {
               gap-2
             "
           >
-            Become A Volunteer
+            {t.cta.becomeVolunteer}
             <FaArrowRight />
           </button>
 

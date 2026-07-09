@@ -5,7 +5,11 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
+import { useT } from "../../i18n/useT";
+
 const MissionSection = () => {
+  const t = useT().home.mission;
+
   return (
     <section className="py-14 lg:py-20 bg-white">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -51,7 +55,7 @@ const MissionSection = () => {
               </h4>
 
               <p className="text-sm text-gray-600">
-                Trees Protected
+                {t.treesProtected}
               </p>
             </div>
 
@@ -74,7 +78,7 @@ const MissionSection = () => {
                 text-sm
               "
             >
-              OUR MISSION
+              {t.eyebrow}
             </span>
 
             {/* Heading */}
@@ -89,7 +93,7 @@ const MissionSection = () => {
                 leading-tight
               "
             >
-              Protecting Nature for Future Generations
+              {t.heading}
             </h2>
 
             {/* Description */}
@@ -102,10 +106,7 @@ const MissionSection = () => {
                 lg:text-lg
               "
             >
-              Environment Warriors is dedicated to preserving forests,
-              protecting wildlife, restoring ecosystems, and inspiring
-              communities to build a greener, healthier, and more
-              sustainable future.
+              {t.description}
             </p>
 
             {/* Mission Points */}
@@ -120,11 +121,11 @@ const MissionSection = () => {
 
                 <div>
                   <h4 className="font-semibold text-[#0F5132] text-lg">
-                    Forest Conservation
+                    {t.forestConservation}
                   </h4>
 
                   <p className="text-gray-600 text-sm mt-1">
-                    Preserving forests and biodiversity for future generations.
+                    {t.forestConservationDesc}
                   </p>
                 </div>
 
@@ -139,11 +140,11 @@ const MissionSection = () => {
 
                 <div>
                   <h4 className="font-semibold text-[#0F5132] text-lg">
-                    Wildlife Protection
+                    {t.wildlifeProtection}
                   </h4>
 
                   <p className="text-gray-600 text-sm mt-1">
-                    Protecting endangered species and preserving natural habitats.
+                    {t.wildlifeProtectionDesc}
                   </p>
                 </div>
 
@@ -158,11 +159,11 @@ const MissionSection = () => {
 
                 <div>
                   <h4 className="font-semibold text-[#0F5132] text-lg">
-                    Community Awareness
+                    {t.communityAwareness}
                   </h4>
 
                   <p className="text-gray-600 text-sm mt-1">
-                    Inspiring communities to actively participate in environmental protection.
+                    {t.communityAwarenessDesc}
                   </p>
                 </div>
 
@@ -190,7 +191,7 @@ const MissionSection = () => {
                 hover:gap-3
               "
             >
-              Learn More
+              {t.learnMore}
               <FaArrowRight />
             </button>
 

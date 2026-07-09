@@ -1,30 +1,24 @@
 import { useState } from "react";
 import { FaCamera, FaCheckCircle, FaUserCircle, FaMapMarkerAlt } from "react-icons/fa";
 
-import sanctuariesData from "../data/sanctuariesData";
-
-const sanctuaryNames = Object.values(sanctuariesData).map((s) => s.name);
-
-const initialStories = [
-  {
-    name: "Ramesh K.",
-    location: "Dudhwa National Park",
-    species: "Bengal Tiger",
-    story:
-      "Spotted a tigress with two cubs crossing the Sathiana grassland at dawn — a quiet reminder of why this forest is worth protecting.",
-  },
-  {
-    name: "Priya S.",
-    location: "Kishanpur Wildlife Sanctuary",
-    species: "Swamp Deer (Barasingha)",
-    story:
-      "Watched a herd of over 200 barasingha grazing at Jhadi Tal during golden hour. Unforgettable.",
-  },
-];
+import { useT } from "../i18n/useT";
 
 const emptyForm = { name: "", location: "", species: "", story: "" };
 
 const Stories = () => {
+  const t = useT();
+  const nav = t.nav;
+  const tt = t.stories;
+
+  const sanctuaryNames = Object.values(nav.sanctuaryNames);
+
+  const initialStories = tt.seedStories.map((s) => ({
+    name: s.name,
+    location: nav.sanctuaryNames[s.locationSlug],
+    species: s.species,
+    story: s.story,
+  }));
+
   const [stories, setStories] = useState(initialStories);
   const [form, setForm] = useState(emptyForm);
   const [submitted, setSubmitted] = useState(false);
@@ -49,16 +43,15 @@ const Stories = () => {
       >
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm">
-            Community Voices
+            {tt.hero.badge}
           </span>
 
           <h1 className="text-white text-4xl md:text-5xl font-bold mt-6">
-            Share Your Wildlife Story
+            {tt.hero.heading}
           </h1>
 
           <p className="text-white/90 mt-4 max-w-xl text-lg">
-            Had a memorable wildlife sighting or conservation moment in one
-            of our sanctuaries? Tell us about it.
+            {tt.hero.description}
           </p>
         </div>
       </section>
@@ -71,20 +64,19 @@ const Stories = () => {
             {/* Submission Form */}
             <div className="bg-white rounded-3xl shadow-lg p-8 h-fit border">
               <h2 className="text-2xl font-bold text-[#0F5132] mb-5">
-                Submit Your Story
+                {tt.form.heading}
               </h2>
 
               {submitted && (
                 <p className="text-[#0F5132] font-semibold flex items-center gap-2 mb-4">
-                  <FaCheckCircle /> Thanks for sharing! Your story was added
-                  below (demo only).
+                  <FaCheckCircle /> {tt.form.thanks}
                 </p>
               )}
 
               <form onSubmit={submit} className="space-y-4">
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder={tt.form.name}
                   value={form.name}
                   onChange={(e) => update("name", e.target.value)}
                   required
@@ -96,18 +88,18 @@ const Stories = () => {
                   onChange={(e) => update("location", e.target.value)}
                   className="w-full border rounded-xl px-4 py-3"
                 >
-                  <option value="">Where did this happen?</option>
+                  <option value="">{tt.form.whereHappened}</option>
                   {sanctuaryNames.map((name) => (
                     <option key={name} value={name}>
                       {name}
                     </option>
                   ))}
-                  <option>Elsewhere</option>
+                  <option>{tt.form.elsewhere}</option>
                 </select>
 
                 <input
                   type="text"
-                  placeholder="Species Sighted (optional)"
+                  placeholder={tt.form.species}
                   value={form.species}
                   onChange={(e) => update("species", e.target.value)}
                   className="w-full border rounded-xl px-4 py-3"
@@ -115,7 +107,7 @@ const Stories = () => {
 
                 <textarea
                   rows={5}
-                  placeholder="Tell us your story..."
+                  placeholder={tt.form.storyPlaceholder}
                   value={form.story}
                   onChange={(e) => update("story", e.target.value)}
                   required
@@ -124,14 +116,14 @@ const Stories = () => {
 
                 <div className="border border-dashed rounded-xl p-6 text-center text-gray-400 text-sm">
                   <FaCamera className="mx-auto text-lg mb-2" />
-                  Photo upload (demo placeholder)
+                  {tt.form.photoPlaceholder}
                 </div>
 
                 <button
                   type="submit"
                   className="w-full bg-[#0F5132] text-white py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
                 >
-                  Submit Story
+                  {tt.form.submit}
                 </button>
               </form>
             </div>
@@ -153,7 +145,7 @@ const Stories = () => {
 
                       <p className="text-gray-500 text-xs flex items-center gap-1">
                         <FaMapMarkerAlt />
-                        {s.location || "Elsewhere"}
+                        {s.location || tt.form.elsewhere}
                         {s.species ? ` · ${s.species}` : ""}
                       </p>
                     </div>

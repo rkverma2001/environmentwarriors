@@ -1,25 +1,13 @@
 import { FaArrowRight } from "react-icons/fa";
 
-const galleryImages = [
-  {
-    image: "/gallery1.png",
-    title: "Majestic Deer",
-  },
-  {
-    image: "/gallery2.png",
-    title: "Colorful Bird",
-  },
-  {
-    image: "/gallery3.png",
-    title: "River Ecosystem",
-  },
-  {
-    image: "/gallery4.png",
-    title: "Nature Sunset",
-  },
-];
+import { useT } from "../../i18n/useT";
+
+const images = ["/gallery1.png", "/gallery2.png", "/gallery3.png", "/gallery4.png"];
 
 const WildlifeGallery = () => {
+  const t = useT().home.gallery;
+  const galleryImages = t.items.map((item, i) => ({ ...item, image: images[i] }));
+
   return (
     <section className="py-16 lg:py-20 bg-white">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -28,16 +16,15 @@ const WildlifeGallery = () => {
         <div className="text-center mb-12">
 
           <span className="inline-block bg-[#0F5132]/10 text-[#0F5132] px-4 py-2 rounded-full text-sm font-medium">
-            WILDLIFE GALLERY
+            {t.eyebrow}
           </span>
 
           <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F5132]">
-            Explore Nature's Beauty
+            {t.heading}
           </h2>
 
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Discover breathtaking wildlife, forests, rivers,
-            and landscapes through our conservation journey.
+            {t.description}
           </p>
 
         </div>
@@ -105,7 +92,7 @@ const WildlifeGallery = () => {
                     font-medium
                   "
                 >
-                  View Gallery
+                  {t.viewGallery}
                   <FaArrowRight />
                 </button>
               </div>

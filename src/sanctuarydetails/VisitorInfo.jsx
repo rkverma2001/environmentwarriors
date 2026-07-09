@@ -5,27 +5,31 @@ import {
   FaCalendarAlt,
 } from "react-icons/fa";
 
+import { useT } from "../i18n/useT";
+
 const VisitorInfo = ({ data }) => {
+  const t = useT().sanctuaryDetail;
+
   const info = [
     {
       icon: FaMapMarkerAlt,
-      title: "Location",
+      title: t.locationLabel,
       value: data.location.split(",")[0],
     },
     {
       icon: FaCalendarAlt,
-      title: "Best Time",
+      title: t.bestTimeLabel,
       value: data.bestTime,
     },
     {
       icon: FaClock,
-      title: "Safari",
-      value: "Morning & Evening",
+      title: t.safariLabel,
+      value: t.morningEvening,
     },
     {
       icon: FaTicketAlt,
-      title: "Entry",
-      value: "As per Govt Rules",
+      title: t.entryLabel,
+      value: t.govtRules,
     },
   ];
 
@@ -35,7 +39,7 @@ const VisitorInfo = ({ data }) => {
       <div className="max-w-[1400px] mx-auto px-4">
 
         <h2 className="text-center text-4xl font-bold text-[#0F5132] mb-12">
-          Visitor Information
+          {t.visitorInformation}
         </h2>
 
         <div className="grid md:grid-cols-4 gap-6">

@@ -2,7 +2,11 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 
+import { useT } from "../../i18n/useT";
+
 const Topnav = () => {
+  const t = useT().topnav;
+
   return (
     <div className="bg-[#004d2a] text-white">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -30,7 +34,7 @@ const Topnav = () => {
             sm:text-left
           "
           >
-            🌿 Protect Nature. Protect Wildlife. Protect Future.
+            {t.tagline}
           </div>
 
           {/* Right Content */}

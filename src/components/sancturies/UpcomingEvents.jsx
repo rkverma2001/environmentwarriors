@@ -4,28 +4,14 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-const events = [
-  {
-    image: "/event1.png",
-    title: "Plantation Drive 2026",
-    date: "25 May 2026",
-    location: "Dudhwa National Park",
-  },
-  {
-    image: "/event2.png",
-    title: "Wildlife Awareness Walk",
-    date: "15 June 2026",
-    location: "Pilibhit Tiger Reserve",
-  },
-  {
-    image: "/event3.png",
-    title: "River Cleanup Mission",
-    date: "30 June 2026",
-    location: "Sharda River Basin",
-  },
-];
+import { useT } from "../../i18n/useT";
+
+const images = ["/event1.png", "/event2.png", "/event3.png"];
 
 const UpcomingEvents = () => {
+  const t = useT().home.events;
+  const events = t.items.map((e, i) => ({ ...e, image: images[i] }));
+
   return (
     <section className="py-16 lg:py-20">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,16 +20,15 @@ const UpcomingEvents = () => {
         <div className="text-center mb-12">
 
           <span className="inline-block bg-[#0F5132]/10 text-[#0F5132] px-4 py-2 rounded-full text-sm font-medium">
-            UPCOMING EVENTS
+            {t.eyebrow}
           </span>
 
           <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F5132]">
-            Join Our Conservation Activities
+            {t.heading}
           </h2>
 
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Participate in our upcoming events and become a part of
-            the movement to protect nature and wildlife.
+            {t.description}
           </p>
 
         </div>
@@ -63,31 +48,29 @@ const UpcomingEvents = () => {
             <div className="max-w-[600px] px-8 lg:px-16 text-white">
 
               <span className="bg-[#F5C542] text-black px-4 py-2 rounded-full text-sm font-semibold">
-                FEATURED EVENT
+                {t.featuredEvent}
               </span>
 
               <h3 className="mt-5 text-3xl md:text-5xl font-bold">
-                Join Our Plantation Drive
+                {t.featuredTitle}
               </h3>
 
               <div className="flex flex-wrap gap-6 mt-6">
 
                 <div className="flex items-center gap-2">
                   <FaCalendarAlt />
-                  <span>25 May 2026</span>
+                  <span>{t.featuredDate}</span>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <FaMapMarkerAlt />
-                  <span>Dudhwa National Park</span>
+                  <span>{t.featuredLocation}</span>
                 </div>
 
               </div>
 
               <p className="mt-5 text-white/90 leading-relaxed">
-                Help us plant thousands of trees and contribute
-                towards restoring forest ecosystems and combating
-                climate change.
+                {t.featuredDescription}
               </p>
 
               <button
@@ -106,7 +89,7 @@ const UpcomingEvents = () => {
                   transition
                 "
               >
-                Register Now
+                {t.registerNow}
                 <FaArrowRight />
               </button>
 
@@ -164,7 +147,7 @@ const UpcomingEvents = () => {
                     gap-2
                   "
                 >
-                  View Details
+                  {t.viewDetails}
                   <FaArrowRight />
                 </button>
 

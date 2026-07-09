@@ -1,20 +1,7 @@
 import { useState } from "react";
 import { FaArrowRight, FaTrophy, FaRedo } from "react-icons/fa";
 
-const FOOD_CHAINS = [
-  {
-    name: "Grassland Chain",
-    items: ["Terai Grassland Vegetation", "Chital (Spotted Deer)", "Bengal Tiger"],
-  },
-  {
-    name: "Wetland Chain",
-    items: ["Aquatic Plants", "Fish", "Gharial"],
-  },
-  {
-    name: "Forest-Edge Chain",
-    items: ["Forest Shrubs & Grasses", "Swamp Deer (Barasingha)", "Leopard"],
-  },
-];
+import { useT } from "../i18n/useT";
 
 function shuffle(arr) {
   const a = [...arr];
@@ -26,6 +13,9 @@ function shuffle(arr) {
 }
 
 const FoodChain = () => {
+  const t = useT().games.foodChain;
+  const FOOD_CHAINS = t.chains;
+
   const [chainIndex, setChainIndex] = useState(0);
   const [pool, setPool] = useState(() => shuffle(FOOD_CHAINS[0].items));
   const [built, setBuilt] = useState([]);
@@ -74,17 +64,16 @@ const FoodChain = () => {
       <div className="max-w-[600px] mx-auto text-center py-8">
         <FaTrophy className="mx-auto text-5xl text-[#F5C542]" />
         <h3 className="text-2xl font-bold text-[#0F5132] mt-6">
-          All food chains complete!
+          {t.allDoneTitle}
         </h3>
         <p className="text-gray-600 mt-3">
-          Producer → Consumer → Predator, across grassland, wetland and
-          forest-edge habitats.
+          {t.allDoneDesc}
         </p>
         <button
           onClick={reset}
           className="mt-8 inline-flex items-center gap-2 bg-[#0F5132] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
         >
-          <FaRedo /> Play Again
+          <FaRedo /> {t.playAgain}
         </button>
       </div>
     );
@@ -94,7 +83,7 @@ const FoodChain = () => {
     <div className="max-w-[700px] mx-auto text-center">
       <div className="flex items-center justify-between mb-6">
         <span className="text-sm font-semibold text-gray-500">
-          Chain {chainIndex + 1} of {FOOD_CHAINS.length}
+          {t.chain} {chainIndex + 1} {t.of} {FOOD_CHAINS.length}
         </span>
         <span className="text-sm font-semibold text-[#0F5132]">
           {chain.name}
@@ -102,14 +91,14 @@ const FoodChain = () => {
       </div>
 
       <p className="text-gray-600 mb-6">
-        Click the items in order: Producer → Consumer → Predator
+        {t.instructions}
       </p>
 
       {/* Built chain */}
       <div className="flex flex-wrap items-center justify-center gap-3 mb-8 min-h-[48px]">
         {built.length === 0 && (
           <span className="text-gray-400 text-sm">
-            Nothing built yet — start below.
+            {t.nothingBuilt}
           </span>
         )}
         {built.map((item, index) => (
