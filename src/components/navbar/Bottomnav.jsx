@@ -8,6 +8,7 @@ import { IoLanguage } from "react-icons/io5";
 const Bottomnav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(false);
+  const [mobileExploreDropdown, setMobileExploreDropdown] = useState(false);
 
   return (
     <nav className="bg-white shadow-sm relative z-50">
@@ -116,33 +117,66 @@ const Bottomnav = () => {
               News & Events
             </Link>
 
-            <Link
-              to="/stories"
-              className="hover:text-[#0F5132] transition"
-            >
-              Stories
-            </Link>
+            {/* Explore Dropdown */}
+            <li className="relative group list-none">
 
-            <Link
-              to="/quiz"
-              className="hover:text-[#0F5132] transition"
-            >
-              Quiz
-            </Link>
+              <div className="flex items-center gap-2 cursor-pointer hover:text-[#0F5132] transition">
+                Explore
+                <FaChevronDown className="text-xs" />
+              </div>
 
-            <Link
-              to="/games"
-              className="hover:text-[#0F5132] transition"
-            >
-              Games
-            </Link>
+              <div
+                className="
+                  absolute
+                  left-0
+                  top-full
+                  mt-4
+                  w-56
+                  bg-white
+                  rounded-xl
+                  shadow-xl
+                  border
+                  opacity-0
+                  invisible
+                  group-hover:opacity-100
+                  group-hover:visible
+                  transition-all
+                  duration-300
+                  z-50
+                "
+              >
 
-            <Link
-              to="/tracker"
-              className="hover:text-[#0F5132] transition"
-            >
-              Tracker
-            </Link>
+                <Link
+                  to="/stories"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  Stories
+                </Link>
+
+                <Link
+                  to="/quiz"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  Quiz
+                </Link>
+
+                <Link
+                  to="/games"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  Games
+                </Link>
+
+                <Link
+                  to="/tracker"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  Tracker
+                </Link>
+
+              </div>
+
+            </li>
 
             <Link
               to="/about"
@@ -316,33 +350,75 @@ const Bottomnav = () => {
               News & Events
             </Link>
 
-            <Link
-              to="/stories"
-              onClick={() => setMobileMenu(false)}
-            >
-              Stories
-            </Link>
+            {/* Mobile Explore Dropdown */}
+            <div>
 
-            <Link
-              to="/quiz"
-              onClick={() => setMobileMenu(false)}
-            >
-              Quiz
-            </Link>
+              <button
+                onClick={() =>
+                  setMobileExploreDropdown(!mobileExploreDropdown)
+                }
+                className="
+                  flex
+                  items-center
+                  justify-between
+                  w-full
+                  font-medium
+                "
+              >
+                Explore
 
-            <Link
-              to="/games"
-              onClick={() => setMobileMenu(false)}
-            >
-              Games
-            </Link>
+                <FaChevronDown
+                  className={`transition ${
+                    mobileExploreDropdown
+                      ? "rotate-180"
+                      : ""
+                  }`}
+                />
+              </button>
 
-            <Link
-              to="/tracker"
-              onClick={() => setMobileMenu(false)}
-            >
-              Tracker
-            </Link>
+              {mobileExploreDropdown && (
+                <div className="ml-4 mt-3 flex flex-col gap-3">
+
+                  <Link
+                    to="/stories"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    Stories
+                  </Link>
+
+                  <Link
+                    to="/quiz"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    Quiz
+                  </Link>
+
+                  <Link
+                    to="/games"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    Games
+                  </Link>
+
+                  <Link
+                    to="/tracker"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    Tracker
+                  </Link>
+
+                </div>
+              )}
+
+            </div>
 
             <Link
               to="/about"
