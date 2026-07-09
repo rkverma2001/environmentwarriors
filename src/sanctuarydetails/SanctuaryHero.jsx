@@ -18,8 +18,8 @@ const SanctuaryHero = ({ data }) => {
             {data.name}
           </h1>
 
-          <p className="text-white text-xl mt-4">
-            {data.subtitle}
+          <p className="text-white text-xl mt-4 max-w-2xl">
+            {data.uniqueness}
           </p>
 
         </div>

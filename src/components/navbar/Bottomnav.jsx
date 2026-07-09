@@ -117,6 +117,34 @@ const Bottomnav = () => {
             </Link>
 
             <Link
+              to="/stories"
+              className="hover:text-[#0F5132] transition"
+            >
+              Stories
+            </Link>
+
+            <Link
+              to="/quiz"
+              className="hover:text-[#0F5132] transition"
+            >
+              Quiz
+            </Link>
+
+            <Link
+              to="/games"
+              className="hover:text-[#0F5132] transition"
+            >
+              Games
+            </Link>
+
+            <Link
+              to="/tracker"
+              className="hover:text-[#0F5132] transition"
+            >
+              Tracker
+            </Link>
+
+            <Link
               to="/about"
               className="hover:text-[#0F5132] transition"
             >
@@ -286,6 +314,34 @@ const Bottomnav = () => {
               onClick={() => setMobileMenu(false)}
             >
               News & Events
+            </Link>
+
+            <Link
+              to="/stories"
+              onClick={() => setMobileMenu(false)}
+            >
+              Stories
+            </Link>
+
+            <Link
+              to="/quiz"
+              onClick={() => setMobileMenu(false)}
+            >
+              Quiz
+            </Link>
+
+            <Link
+              to="/games"
+              onClick={() => setMobileMenu(false)}
+            >
+              Games
+            </Link>
+
+            <Link
+              to="/tracker"
+              onClick={() => setMobileMenu(false)}
+            >
+              Tracker
             </Link>
 
             <Link

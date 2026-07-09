@@ -22,6 +22,13 @@ const SanctuaryAbout = ({ data }) => {
             <p className="mt-6 text-gray-600 leading-relaxed">
               {data.description}
             </p>
+
+            <div className="mt-6 space-y-3 text-gray-600 leading-relaxed">
+              <p><strong className="text-[#0F5132]">Location:</strong> {data.location}</p>
+              <p><strong className="text-[#0F5132]">Established:</strong> {data.established}</p>
+              <p><strong className="text-[#0F5132]">Area:</strong> {data.area}</p>
+              <p><strong className="text-[#0F5132]">Ecosystem:</strong> {data.ecosystem}</p>
+            </div>
           </div>
 
         </div>
