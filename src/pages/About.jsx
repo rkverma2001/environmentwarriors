@@ -6,6 +6,9 @@ import {
   FaPaw,
   FaHandsHelping,
   FaArrowRight,
+  FaInfoCircle,
+  FaUser,
+  FaSchool,
 } from "react-icons/fa";
 
 const About = () => {
@@ -107,6 +110,17 @@ const About = () => {
                 we work towards creating a greener and healthier world.
               </p>
 
+              <div className="mt-6 flex gap-3 bg-[#0F5132]/5 rounded-xl p-4 text-sm text-gray-600 leading-relaxed">
+                <FaInfoCircle className="text-[#0F5132] flex-shrink-0 mt-0.5" />
+                <p>
+                  <strong className="text-[#0F5132]">Placeholder notice:</strong>{" "}
+                  we couldn't find a public founding history for this specific
+                  organization to cite here. Share the real year founded,
+                  founding story and milestones and we'll replace this with
+                  your actual history.
+                </p>
+              </div>
+
               <button className="mt-8 bg-[#0F5132] text-white px-6 py-3 rounded-xl flex items-center gap-2 hover:bg-[#0a3d26] transition">
                 Learn More
                 <FaArrowRight />
@@ -185,6 +199,67 @@ const About = () => {
               </div>
             ))}
 
+          </div>
+        </div>
+      </section>
+
+      {/* Our Team */}
+      <section className="py-16 lg:py-24 bg-[#f8faf8]">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-[#0F5132]">
+              Our Team
+            </h2>
+
+            <p className="text-gray-600 mt-4">
+              The people behind Environment Warriors.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[1, 2, 3, 4].map((n) => (
+              <div
+                key={n}
+                className="bg-white rounded-3xl p-8 text-center shadow-sm border border-dashed border-gray-300"
+              >
+                <div className="w-24 h-24 rounded-full bg-[#f8faf8] mx-auto flex items-center justify-center text-gray-400">
+                  <FaUser className="text-3xl" />
+                </div>
+
+                <h4 className="font-bold text-gray-500 mt-5">
+                  Team Member {n}
+                </h4>
+
+                <p className="text-gray-400 text-sm mt-1">
+                  Name & role — add here
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Adopted Smart School */}
+      <section className="py-16 bg-white">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#0F5132]/5 rounded-3xl p-8 md:p-10 flex flex-col md:flex-row gap-6 items-center">
+            <div className="w-16 h-16 rounded-full bg-[#0F5132] text-white flex items-center justify-center text-2xl flex-shrink-0">
+              <FaSchool />
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-[#0F5132]">
+                Our Adopted Smart School
+              </h3>
+
+              <p className="mt-3 text-gray-600 leading-relaxed">
+                Environment Warriors has adopted a local smart school as
+                part of our community education work. Details on the
+                school — its name, location, and what our support covers —
+                are coming soon.
+              </p>
+            </div>
           </div>
         </div>
       </section>

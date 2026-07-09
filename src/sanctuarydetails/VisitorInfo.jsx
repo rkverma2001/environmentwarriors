@@ -5,17 +5,17 @@ import {
   FaCalendarAlt,
 } from "react-icons/fa";
 
-const VisitorInfo = () => {
+const VisitorInfo = ({ data }) => {
   const info = [
     {
       icon: FaMapMarkerAlt,
       title: "Location",
-      value: "Lakhimpur Kheri, UP",
+      value: data.location.split(",")[0],
     },
     {
       icon: FaCalendarAlt,
       title: "Best Time",
-      value: "Nov - Jun",
+      value: data.bestTime,
     },
     {
       icon: FaClock,

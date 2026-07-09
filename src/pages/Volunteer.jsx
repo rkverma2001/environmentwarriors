@@ -212,6 +212,28 @@ const Volunteer = () => {
                 className="w-full border rounded-xl px-4 py-3"
               />
 
+              <input
+                type="text"
+                placeholder="Aadhar Number (12 digits)"
+                maxLength={12}
+                pattern="[0-9]{12}"
+                inputMode="numeric"
+                title="Enter your 12-digit Aadhar number"
+                className="w-full border rounded-xl px-4 py-3"
+              />
+
+              <textarea
+                rows="3"
+                placeholder="Address"
+                className="w-full border rounded-xl px-4 py-3"
+              ></textarea>
+
+              <input
+                type="text"
+                placeholder="Social Media Handle (e.g. @yourhandle or profile link)"
+                className="w-full border rounded-xl px-4 py-3"
+              />
+
               <select className="w-full border rounded-xl px-4 py-3">
                 <option>Select Interest</option>
                 <option>Tree Plantation</option>
@@ -224,6 +246,11 @@ const Volunteer = () => {
                 placeholder="Why do you want to volunteer?"
                 className="w-full border rounded-xl px-4 py-3"
               ></textarea>
+
+              <p className="text-xs text-gray-500">
+                Your Aadhar number is used only to verify identity for
+                on-ground volunteering and is never shared publicly.
+              </p>
 
               <button
                 type="submit"

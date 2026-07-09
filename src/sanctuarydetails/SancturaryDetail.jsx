@@ -4,6 +4,7 @@ import sanctuariesData from "../data/sanctuariesData";
 
 import SanctuaryHero from "./SanctuaryHero";
 import SanctuaryAbout from "./SanctuaryAbout";
+import FloraFaunaSection from "./FloraFaunaSection";
 import WildlifeSection from "./WildlifeSection";
 import GallerySection from "./GallerySection";
 import SanctuaryStats from "./SanctuaryStats";
@@ -31,10 +32,15 @@ const SanctuaryDetail = () => {
 
       <SanctuaryAbout data={sanctuary} />
       <SanctuaryStats data={sanctuary} />
+      <FloraFaunaSection data={sanctuary} />
 
-      <WildlifeSection wildlife={sanctuary.wildlife} />
-  <GallerySection gallery={sanctuary.gallery} />
-  <VisitorInfo />
+      {sanctuary.wildlife.length > 0 && (
+        <WildlifeSection wildlife={sanctuary.wildlife} />
+      )}
+      {sanctuary.gallery.length > 0 && (
+        <GallerySection gallery={sanctuary.gallery} />
+      )}
+  <VisitorInfo data={sanctuary} />
   <SafariZones ranges={sanctuary.ranges} />
   <ConservationSection />
   <CTASection />

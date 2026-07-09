@@ -5,29 +5,13 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 
+const STAT_ICONS = [FaMapMarkedAlt, FaTree, FaPaw, FaShieldAlt];
+
 const SanctuaryStats = ({ data }) => {
-  const stats = [
-    {
-      icon: FaMapMarkedAlt,
-      value: data.area,
-      label: "Area",
-    },
-    {
-      icon: FaTree,
-      value: "10",
-      label: "Forest Ranges",
-    },
-    {
-      icon: FaPaw,
-      value: "100+",
-      label: "Species",
-    },
-    {
-      icon: FaShieldAlt,
-      value: data.established,
-      label: "Established",
-    },
-  ];
+  const stats = data.stats.map((stat, index) => ({
+    ...stat,
+    icon: STAT_ICONS[index % STAT_ICONS.length],
+  }));
 
   return (
     <section className="py-12 bg-[#f8faf8]">
