@@ -1,65 +1,12 @@
 import { useState } from "react";
 import { FaTrophy, FaRedo } from "react-icons/fa";
 
-const QUIZ_QUESTIONS = [
-  {
-    q: "Which two species famously coexist only in Dudhwa National Park, nowhere else in Uttar Pradesh?",
-    options: [
-      "Tiger & Leopard",
-      "Tiger & One-Horned Rhino",
-      "Elephant & Gharial",
-      "Rhino & Gharial",
-    ],
-    answer: 1,
-  },
-  {
-    q: "Kishanpur Wildlife Sanctuary is often nicknamed what, for its dense tiger population?",
-    options: [
-      "Bird Paradise",
-      "Tiger Territory",
-      "The Green Corridor",
-      "Deer Valley",
-    ],
-    answer: 1,
-  },
-  {
-    q: "Which sanctuary is one of the few places in India where the Gangetic river dolphin and the gharial share the same river?",
-    options: [
-      "Pilibhit Tiger Reserve",
-      "Dudhwa National Park",
-      "Katarniaghat Wildlife Sanctuary",
-      "Kishanpur Wildlife Sanctuary",
-    ],
-    answer: 2,
-  },
-  {
-    q: "Pilibhit Tiger Reserve is part of which cross-border wildlife corridor?",
-    options: [
-      "Western Ghats Corridor",
-      "Terai Arc Landscape",
-      "Sundarbans Corridor",
-      "Deccan Plateau Corridor",
-    ],
-    answer: 1,
-  },
-  {
-    q: "The swamp deer (barasingha) — Uttar Pradesh's state animal — gathers in its largest herds at which wetland?",
-    options: [
-      "Jhadi Tal in Kishanpur",
-      "Girwa river in Katarniaghat",
-      "Sharda river in Pilibhit",
-      "Neora river in Dudhwa",
-    ],
-    answer: 0,
-  },
-  {
-    q: "In what year was Katarniaghat Wildlife Sanctuary established?",
-    options: ["1958", "1972", "1976", "2014"],
-    answer: 2,
-  },
-];
+import { useT } from "../i18n/useT";
 
 const Quiz = () => {
+  const t = useT().quiz;
+  const QUIZ_QUESTIONS = t.questions;
+
   const [step, setStep] = useState(0);
   const [selected, setSelected] = useState(null);
   const [score, setScore] = useState(0);
@@ -98,15 +45,15 @@ const Quiz = () => {
       >
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm">
-            Test Your Knowledge
+            {t.hero.badge}
           </span>
 
           <h1 className="text-white text-4xl md:text-5xl font-bold mt-6">
-            Eco-Trivia
+            {t.hero.heading}
           </h1>
 
           <p className="text-white/90 mt-4 max-w-xl text-lg">
-            How well do you know the Terai's tigers, rhinos and wetlands?
+            {t.hero.description}
           </p>
         </div>
       </section>
@@ -120,11 +67,11 @@ const Quiz = () => {
               <>
                 <div className="flex items-center justify-between mb-6">
                   <span className="text-sm font-semibold text-gray-500">
-                    Question {step + 1} of {QUIZ_QUESTIONS.length}
+                    {t.questionOf} {step + 1} {t.of} {QUIZ_QUESTIONS.length}
                   </span>
 
                   <span className="text-sm font-semibold text-[#0F5132]">
-                    Score: {score}
+                    {t.score} {score}
                   </span>
                 </div>
 
@@ -170,8 +117,8 @@ const Quiz = () => {
                     className="mt-8 w-full bg-[#0F5132] text-white py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
                   >
                     {step + 1 < QUIZ_QUESTIONS.length
-                      ? "Next Question"
-                      : "See Results"}
+                      ? t.nextQuestion
+                      : t.seeResults}
                   </button>
                 )}
               </>
@@ -180,20 +127,20 @@ const Quiz = () => {
                 <FaTrophy className="mx-auto text-5xl text-[#F5C542]" />
 
                 <h2 className="text-2xl font-bold text-[#0F5132] mt-6">
-                  You scored {score} / {QUIZ_QUESTIONS.length}
+                  {t.youScored} {score} / {QUIZ_QUESTIONS.length}
                 </h2>
 
                 <p className="text-gray-600 mt-3">
                   {score === QUIZ_QUESTIONS.length
-                    ? "Perfect score — a true Environment Warrior!"
-                    : "Keep exploring our sanctuaries to learn more."}
+                    ? t.perfectScore
+                    : t.keepExploring}
                 </p>
 
                 <button
                   onClick={restart}
                   className="mt-8 inline-flex items-center gap-2 bg-[#0F5132] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
                 >
-                  <FaRedo /> Play Again
+                  <FaRedo /> {t.playAgain}
                 </button>
               </div>
             )}

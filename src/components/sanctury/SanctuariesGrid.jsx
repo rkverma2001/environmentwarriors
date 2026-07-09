@@ -3,38 +3,23 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-const sanctuaries = [
-  {
-    image: "/dudhwa.jpg",
-    title: "Dudhwa National Park",
-    location: "Uttar Pradesh",
-    area: "880 sq km",
-    species: "Tiger, Rhino, Elephant, Deer",
-  },
-  {
-    image: "/kishanpur.jpg",
-    title: "Kishanpur Wildlife Sanctuary",
-    location: "Uttar Pradesh",
-    area: "200 sq km",
-    species: "Deer, Nilgai, Wild Boar",
-  },
-  {
-    image: "/katarniaghat.jpg",
-    title: "Katarniaghat Wildlife Sanctuary",
-    location: "Uttar Pradesh",
-    area: "400 sq km",
-    species: "Tiger, Leopard, Elephant",
-  },
-  {
-    image: "/pilibhit.jpg",
-    title: "Pilibhit Tiger Reserve",
-    location: "Uttar Pradesh",
-    area: "726 sq km",
-    species: "Tiger, Leopard, Elephant",
-  },
-];
+import { useT } from "../../i18n/useT";
+
+const SLUGS = ["dudhwa", "kishanpur", "katarniaghat", "pilibhit"];
+const IMAGES = {
+  dudhwa: "/dudhwanationalpark.png",
+  kishanpur: "/kishanpur.png",
+  katarniaghat: "/katarniaghat.png",
+  pilibhit: "/pilibhit.png",
+};
 
 const SanctuariesGrid = () => {
+  const t = useT().sanctuariesPage.grid;
+  const sanctuaries = SLUGS.map((slug) => ({
+    image: IMAGES[slug],
+    ...t.cards[slug],
+  }));
+
   return (
     <section className="py-14 lg:py-20 bg-[#f8faf8]">
 
@@ -44,16 +29,15 @@ const SanctuariesGrid = () => {
         <div className="text-center mb-12">
 
           <span className="inline-block bg-[#0F5132]/10 text-[#0F5132] px-4 py-2 rounded-full text-sm font-medium">
-            OUR SANCTUARIES
+            {t.eyebrow}
           </span>
 
           <h2 className="mt-4 text-3xl md:text-4xl font-bold text-[#0F5132]">
-            Explore Protected Wildlife Areas
+            {t.heading}
           </h2>
 
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Discover our protected sanctuaries that preserve
-            wildlife, forests, rivers and biodiversity.
+            {t.description}
           </p>
 
         </div>
@@ -108,14 +92,14 @@ const SanctuariesGrid = () => {
 
                   <p>
                     <span className="font-semibold">
-                      Area:
+                      {t.areaLabel}
                     </span>{" "}
                     {item.area}
                   </p>
 
                   <p>
                     <span className="font-semibold">
-                      Key Species:
+                      {t.speciesLabel}
                     </span>{" "}
                     {item.species}
                   </p>
@@ -138,7 +122,7 @@ const SanctuariesGrid = () => {
                     transition-all
                   "
                 >
-                  Explore More
+                  {t.exploreMore}
                   <FaArrowRight />
                 </button>
 

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FaTrophy, FaRedo } from "react-icons/fa";
 
+import { useT } from "../i18n/useT";
+
 const IMAGE = "/dudhwatiger.png";
 const SIZE = 3;
 const BLANK = SIZE * SIZE - 1;
@@ -33,6 +35,7 @@ function shuffledBoard() {
 }
 
 const WildlifePuzzle = () => {
+  const t = useT().games.puzzle;
   const [board, setBoard] = useState(shuffledBoard);
   const [moves, setMoves] = useState(0);
 
@@ -68,21 +71,21 @@ const WildlifePuzzle = () => {
     <div className="max-w-[520px] mx-auto text-center">
       <div className="flex items-center justify-between mb-4">
         <span className="text-sm font-semibold text-gray-500">
-          Moves: {moves}
+          {t.moves} {moves}
         </span>
 
         <button
           onClick={reset}
           className="flex items-center gap-2 text-sm font-semibold text-[#0F5132] hover:underline"
         >
-          <FaRedo /> Reshuffle
+          <FaRedo /> {t.reshuffle}
         </button>
       </div>
 
       {solved && (
         <div className="mb-4 bg-[#F5C542]/20 border border-[#F5C542] text-[#0F5132] rounded-xl py-3 px-4 flex items-center justify-center gap-2 font-semibold">
           <FaTrophy className="text-[#F5C542]" />
-          Solved in {moves} moves!
+          {t.solvedIn} {moves} {t.movesSuffix}
         </div>
       )}
 
@@ -120,7 +123,7 @@ const WildlifePuzzle = () => {
       </div>
 
       <p className="text-gray-500 text-sm mt-4">
-        Click a tile next to the empty space to slide it into place.
+        {t.instructions}
       </p>
     </div>
   );

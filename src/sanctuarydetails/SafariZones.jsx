@@ -1,15 +1,19 @@
+import { useT } from "../i18n/useT";
+
 const SafariZones = ({ ranges = [] }) => {
+  const t = useT().sanctuaryDetail;
+
   return (
     <section className="py-20 bg-[#f8faf8]">
       <div className="max-w-[1400px] mx-auto px-4">
 
         <h2 className="text-center text-4xl font-bold text-[#0F5132] mb-12">
-          Safari Zones
+          {t.safariZones}
         </h2>
 
         {ranges.length === 0 ? (
           <p className="text-center text-gray-500">
-            No safari zones available.
+            {t.noSafariZones}
           </p>
         ) : (
           <div className="grid md:grid-cols-3 gap-6">

@@ -5,41 +5,16 @@ import WildlifePuzzle from "../games/WildlifePuzzle";
 import FoodChain from "../games/FoodChain";
 import HabitatMatch from "../games/HabitatMatch";
 import SpeciesMatch from "../games/SpeciesMatch";
+import { useT } from "../i18n/useT";
 
-const GAMES = [
-  {
-    id: "puzzle",
-    icon: FaPuzzlePiece,
-    title: "Wildlife Puzzle",
-    description: "Slide the tiles to restore the tiger photo.",
-    component: WildlifePuzzle,
-  },
-  {
-    id: "foodchain",
-    icon: FaLink,
-    title: "Food Chain",
-    description: "Build 3 real Terai food chains in order.",
-    component: FoodChain,
-  },
-  {
-    id: "habitat",
-    icon: FaMapMarkedAlt,
-    title: "Habitat Match",
-    description: "Match species to their core habitat.",
-    component: HabitatMatch,
-  },
-  {
-    id: "memory",
-    icon: FaClone,
-    title: "Species Match",
-    description: "Classic memory match with real sanctuary photos.",
-    component: SpeciesMatch,
-  },
-];
+const ICONS = { puzzle: FaPuzzlePiece, foodchain: FaLink, habitat: FaMapMarkedAlt, memory: FaClone };
+const COMPONENTS = { puzzle: WildlifePuzzle, foodchain: FoodChain, habitat: HabitatMatch, memory: SpeciesMatch };
 
 const Games = () => {
+  const t = useT().games;
   const [active, setActive] = useState("puzzle");
 
+  const GAMES = t.hub.map((g) => ({ ...g, icon: ICONS[g.id], component: COMPONENTS[g.id] }));
   const ActiveGame = GAMES.find((g) => g.id === active).component;
 
   return (
@@ -51,15 +26,15 @@ const Games = () => {
       >
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm">
-            Play & Learn
+            {t.hero.badge}
           </span>
 
           <h1 className="text-white text-4xl md:text-5xl font-bold mt-6">
-            Wildlife Games
+            {t.hero.heading}
           </h1>
 
           <p className="text-white/90 mt-4 max-w-xl text-lg">
-            Four mini-games built from real sanctuary and species facts.
+            {t.hero.description}
           </p>
         </div>
       </section>

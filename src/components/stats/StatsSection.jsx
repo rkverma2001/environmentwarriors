@@ -6,40 +6,13 @@ import {
   FaTree,
 } from "react-icons/fa";
 
-const stats = [
-  {
-    icon: FaRecycle,
-    value: "3.5M+",
-    title: "Tonnes",
-    description: "Plastic Waste Generated in India Every Year",
-  },
-  {
-    icon: FaTint,
-    value: "80%",
-    title: "Surface Water",
-    description: "in India is Polluted",
-  },
-  {
-    icon: FaUsers,
-    value: "24 Lakh+",
-    title: "Premature Deaths",
-    description: "Due to Pollution Every Year",
-  },
-  {
-    icon: FaTemperatureHigh,
-    value: "1.63°C",
-    title: "Global Temperature",
-    description: "Increase Above Pre-industrial Levels",
-  },
-  {
-    icon: FaTree,
-    value: "3,656",
-    title: "sq km Dense Forest Lost",
-    description: "in Last 2 Years in India",
-  },
-];
+import { useT } from "../../i18n/useT";
+
+const icons = [FaRecycle, FaTint, FaUsers, FaTemperatureHigh, FaTree];
 
 const StatsSection = () => {
+  const stats = useT().home.stats.map((s, i) => ({ ...s, icon: icons[i] }));
+
   return (
     <section className=" py-10">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">

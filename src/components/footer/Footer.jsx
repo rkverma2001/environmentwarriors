@@ -9,7 +9,13 @@ import {
 
 import { FaXTwitter } from "react-icons/fa6";
 
+import { useT } from "../../i18n/useT";
+
 const Footer = () => {
+  const t = useT();
+  const nav = t.nav;
+  const f = t.footer;
+
   return (
     <footer className="bg-[#0B2E1F] text-white rounded-t-4xl">
 
@@ -31,20 +37,18 @@ const Footer = () => {
 
               <div>
                 <h3 className="font-bold text-xl">
-                  Environment Warriors
+                  {nav.brandName}
                 </h3>
 
                 <p className="text-sm text-white/70">
-                  The Guardians of the Green
+                  {nav.brandTagline}
                 </p>
               </div>
 
             </div>
 
             <p className="text-white/70 leading-relaxed text-sm">
-              Dedicated to wildlife conservation, forest protection,
-              environmental awareness, and creating a sustainable
-              future for generations to come.
+              {f.brandDescription}
             </p>
 
             {/* Social Icons */}
@@ -86,16 +90,16 @@ const Footer = () => {
           <div>
 
             <h3 className="text-xl font-semibold mb-5">
-              Quick Links
+              {f.quickLinks}
             </h3>
 
             <ul className="space-y-3 text-white/70">
 
-              <li><a href="#" className="hover:text-white">Home</a></li>
-              <li><a href="#" className="hover:text-white">About Us</a></li>
-              <li><a href="#" className="hover:text-white">Campaigns</a></li>
-              <li><a href="#" className="hover:text-white">Events</a></li>
-              <li><a href="#" className="hover:text-white">Contact</a></li>
+              <li><a href="#" className="hover:text-white">{f.home}</a></li>
+              <li><a href="#" className="hover:text-white">{f.aboutUs}</a></li>
+              <li><a href="#" className="hover:text-white">{f.campaigns}</a></li>
+              <li><a href="#" className="hover:text-white">{f.events}</a></li>
+              <li><a href="#" className="hover:text-white">{f.contact}</a></li>
 
             </ul>
 
@@ -105,15 +109,15 @@ const Footer = () => {
           <div>
 
             <h3 className="text-xl font-semibold mb-5">
-              Sanctuaries
+              {f.sanctuaries}
             </h3>
 
             <ul className="space-y-3 text-white/70">
 
-              <li>Dudhwa National Park</li>
-              <li>Kishanpur Sanctuary</li>
-              <li>Katarniaghat Sanctuary</li>
-              <li>Pilibhit Tiger Reserve</li>
+              <li>{nav.sanctuaryNames.dudhwa}</li>
+              <li>{nav.sanctuaryNames.kishanpur}</li>
+              <li>{nav.sanctuaryNames.katarniaghat}</li>
+              <li>{nav.sanctuaryNames.pilibhit}</li>
 
             </ul>
 
@@ -123,7 +127,7 @@ const Footer = () => {
           <div>
 
             <h3 className="text-xl font-semibold mb-5">
-              Contact Us
+              {f.contactUs}
             </h3>
 
             <div className="space-y-4 text-white/70">
@@ -131,7 +135,7 @@ const Footer = () => {
               <div className="flex gap-3">
                 <FaMapMarkerAlt className="mt-1 text-[#4CAF50]" />
                 <p>
-                  Lucknow, Uttar Pradesh, India
+                  {f.address}
                 </p>
               </div>
 
@@ -163,11 +167,11 @@ const Footer = () => {
             <div>
 
               <h3 className="text-xl font-semibold">
-                Subscribe to Our Newsletter
+                {f.newsletterTitle}
               </h3>
 
               <p className="text-white/70 text-sm mt-1">
-                Get updates on campaigns, events and conservation efforts.
+                {f.newsletterDesc}
               </p>
 
             </div>
@@ -176,7 +180,7 @@ const Footer = () => {
 
               <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder={f.emailPlaceholder}
                 className="
                   px-5
                   py-3
@@ -202,7 +206,7 @@ const Footer = () => {
                   transition
                 "
               >
-                Subscribe
+                {f.subscribe}
               </button>
 
             </div>
@@ -221,17 +225,17 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-3">
 
             <p className="text-white/60 text-sm text-center md:text-left">
-              © 2026 Environment Warriors. All Rights Reserved.
+              {f.copyright}
             </p>
 
             <div className="flex gap-6 text-sm text-white/60">
 
               <a href="#" className="hover:text-white">
-                Privacy Policy
+                {f.privacyPolicy}
               </a>
 
               <a href="#" className="hover:text-white">
-                Terms & Conditions
+                {f.terms}
               </a>
 
             </div>

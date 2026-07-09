@@ -12,6 +12,8 @@ import {
 import "swiper/css";
 import "swiper/css/effect-fade";
 
+import { useT } from "../../i18n/useT";
+
 const images = [
   "/hero1.png",
   "/hero2.png",
@@ -20,6 +22,8 @@ const images = [
 ];
 
 const HeroSection = () => {
+  const t = useT().home.hero;
+
   return (
     <section className="relative h-[450px] sm:h-[520px] lg:h-[580px] overflow-hidden">
 
@@ -58,18 +62,17 @@ const HeroSection = () => {
       <div className="max-w-[550px]">
 
         <h1 className="text-white font-bold leading-[0.95] text-4xl sm:text-5xl lg:text-6xl">
-          ENVIRONMENT
+          {t.title1}
           <br />
-          WARRIORS
+          {t.title2}
         </h1>
 
         <h2 className="text-[#F5C542] font-semibold mt-4 text-xl lg:text-2xl">
-          The Guardians of the Green 🌿
+          {t.subtitle}
         </h2>
 
         <p className="text-white/90 mt-4 text-sm sm:text-base leading-relaxed max-w-[500px]">
-          Dedicated to wildlife conservation, forest protection and
-          environmental awareness for a greener and sustainable India.
+          {t.description}
         </p>
 
         {/* Features */}
@@ -82,10 +85,10 @@ const HeroSection = () => {
 
     <div>
       <h3 className="text-white font-semibold text-sm lg:text-base">
-        Protect Forests
+        {t.protectForests}
       </h3>
       <p className="text-white/70 text-xs">
-        Preserve our green heritage
+        {t.protectForestsDesc}
       </p>
     </div>
   </div>
@@ -97,10 +100,10 @@ const HeroSection = () => {
 
     <div>
       <h3 className="text-white font-semibold text-sm lg:text-base">
-        Save Wildlife
+        {t.saveWildlife}
       </h3>
       <p className="text-white/70 text-xs">
-        Every species matters
+        {t.saveWildlifeDesc}
       </p>
     </div>
   </div>
@@ -112,10 +115,10 @@ const HeroSection = () => {
 
     <div>
       <h3 className="text-white font-semibold text-sm lg:text-base">
-        Spread Awareness
+        {t.spreadAwareness}
       </h3>
       <p className="text-white/70 text-xs">
-        Inspiring the next generation
+        {t.spreadAwarenessDesc}
       </p>
     </div>
   </div>
@@ -127,13 +130,13 @@ const HeroSection = () => {
 
           <Link to="/sanctuaries">
   <button className="bg-[#F5C542] hover:bg-[#e4b437] transition-all duration-300 px-6 py-3 rounded-md text-sm font-semibold flex items-center gap-2">
-    EXPLORE SANCTUARIES
+    {t.exploreSanctuaries}
     <FaArrowRight />
   </button>
 </Link>
 
           <button className="border border-white hover:bg-white hover:text-black transition-all duration-300 text-white px-6 py-3 rounded-md text-sm font-semibold">
-            BECOME A VOLUNTEER
+            {t.becomeVolunteer}
           </button>
 
         </div>

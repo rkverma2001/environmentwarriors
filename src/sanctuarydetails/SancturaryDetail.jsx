@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 
 import sanctuariesData from "../data/sanctuariesData";
+import { useLanguage } from "../context/useLanguage";
+import { useT } from "../i18n/useT";
 
 import SanctuaryHero from "./SanctuaryHero";
 import SanctuaryAbout from "./SanctuaryAbout";
@@ -15,35 +17,47 @@ import CTASection from "./CTASection";
 
 const SanctuaryDetail = () => {
   const { slug } = useParams();
+  const { language } = useLanguage();
+  const t = useT().sanctuaryDetail;
 
   const sanctuary = sanctuariesData[slug];
 
   if (!sanctuary) {
     return (
       <div className="text-center py-20">
-        Sanctuary Not Found
+        {t.notFound}
       </div>
     );
   }
 
+  const data = {
+    ...sanctuary,
+    ...sanctuary[language],
+  };
+
+  const wildlife = sanctuary.wildlife.map((w) => ({
+    image: w.image,
+    name: w.name[language],
+  }));
+
   return (
     <>
-      <SanctuaryHero data={sanctuary} />
+      <SanctuaryHero data={data} />
 
-      <SanctuaryAbout data={sanctuary} />
-      <SanctuaryStats data={sanctuary} />
-      <FloraFaunaSection data={sanctuary} />
+      <SanctuaryAbout data={data} />
+      <SanctuaryStats data={data} />
+      <FloraFaunaSection data={data} />
 
-      {sanctuary.wildlife.length > 0 && (
-        <WildlifeSection wildlife={sanctuary.wildlife} />
+      {wildlife.length > 0 && (
+        <WildlifeSection wildlife={wildlife} />
       )}
       {sanctuary.gallery.length > 0 && (
         <GallerySection gallery={sanctuary.gallery} />
       )}
-  <VisitorInfo data={sanctuary} />
+  <VisitorInfo data={data} />
   <SafariZones ranges={sanctuary.ranges} />
   <ConservationSection />
-  <CTASection />
+  <CTASection data={data} />
 
     </>
   );

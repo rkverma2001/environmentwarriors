@@ -1,67 +1,16 @@
 import { useState } from "react";
 import { FaCalendarAlt, FaTag } from "react-icons/fa";
 
-const NEWS_ITEMS = [
-  {
-    region: "India",
-    tag: "Wildlife",
-    title: "Tiger Census Shows Continued Recovery Across Terai Reserves",
-    date: "Jun 2026",
-    blurb:
-      "Forest departments across the Terai Arc report steady tiger numbers, crediting corridor protection between Dudhwa, Pilibhit and Nepal's forests.",
-  },
-  {
-    region: "India",
-    tag: "Policy",
-    title: "New Wetland Conservation Guidelines Announced for Uttar Pradesh",
-    date: "Jun 2026",
-    blurb:
-      "State forest authorities outline stronger protections for tal wetlands that sustain migratory bird populations through the dry season.",
-  },
-  {
-    region: "India",
-    tag: "Community",
-    title: "Village Afforestation Drives Cross 1 Lakh Saplings This Monsoon",
-    date: "May 2026",
-    blurb:
-      "Community-led plantation programs across Lakhimpur Kheri district continue to expand green cover bordering protected forests.",
-  },
-  {
-    region: "World",
-    tag: "Climate",
-    title:
-      "Global Reforestation Pledges Under Review Ahead of Next Climate Summit",
-    date: "Jun 2026",
-    blurb:
-      "International monitors assess progress on nation-level pledges to restore degraded forest land by the end of the decade.",
-  },
-  {
-    region: "World",
-    tag: "Oceans",
-    title: "River Dolphin Populations Get Renewed International Attention",
-    date: "May 2026",
-    blurb:
-      "Conservation groups worldwide highlight freshwater dolphin species, including the Gangetic river dolphin, as indicators of river health.",
-  },
-  {
-    region: "World",
-    tag: "Species",
-    title: "Global Tiger Range Countries Reaffirm Big Cat Recovery Targets",
-    date: "Apr 2026",
-    blurb:
-      "Range countries across Asia recommit to population-recovery goals first set at the St. Petersburg Tiger Summit.",
-  },
-];
-
-const FILTERS = ["All", "India", "World"];
+import { useT } from "../i18n/useT";
 
 const News = () => {
-  const [filter, setFilter] = useState("All");
+  const t = useT().news;
+  const [filter, setFilter] = useState("all");
 
   const items =
-    filter === "All"
-      ? NEWS_ITEMS
-      : NEWS_ITEMS.filter((item) => item.region === filter);
+    filter === "all"
+      ? t.items
+      : t.items.filter((item) => item.regionKey === filter);
 
   return (
     <div>
@@ -72,16 +21,15 @@ const News = () => {
       >
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm">
-            Stay Informed
+            {t.hero.badge}
           </span>
 
           <h1 className="text-white text-4xl md:text-5xl font-bold mt-6">
-            Environmental News — India & World
+            {t.hero.heading}
           </h1>
 
           <p className="text-white/90 mt-4 max-w-xl text-lg">
-            Topical wildlife, forest and climate news from the Terai and
-            beyond.
+            {t.hero.description}
           </p>
         </div>
       </section>
@@ -91,17 +39,17 @@ const News = () => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="flex items-center gap-3 mb-10">
-            {FILTERS.map((f) => (
+            {Object.entries(t.filters).map(([key, label]) => (
               <button
-                key={f}
-                onClick={() => setFilter(f)}
+                key={key}
+                onClick={() => setFilter(key)}
                 className={`px-5 py-2 rounded-full text-sm font-medium transition ${
-                  filter === f
+                  filter === key
                     ? "bg-[#0F5132] text-white"
                     : "bg-[#f8faf8] text-gray-600 hover:bg-gray-100 border"
                 }`}
               >
-                {f}
+                {label}
               </button>
             ))}
           </div>
@@ -119,7 +67,7 @@ const News = () => {
                   </span>
 
                   <span className="text-gray-400 font-normal">
-                    {item.region}
+                    {t.filters[item.regionKey]}
                   </span>
                 </div>
 

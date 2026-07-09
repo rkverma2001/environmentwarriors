@@ -11,39 +11,13 @@ import {
   FaSchool,
 } from "react-icons/fa";
 
+import { useT } from "../i18n/useT";
+
+const valueIcons = [<FaPaw />, <FaTree />, <FaGlobe />, <FaUsers />, <FaHandsHelping />, <FaLeaf />];
+
 const About = () => {
-  const values = [
-    {
-      icon: <FaPaw />,
-      title: "Wildlife Protection",
-      desc: "Protecting endangered species and preserving their natural habitats.",
-    },
-    {
-      icon: <FaTree />,
-      title: "Forest Conservation",
-      desc: "Safeguarding forests and restoring ecosystems for future generations.",
-    },
-    {
-      icon: <FaGlobe />,
-      title: "Sustainability",
-      desc: "Promoting environmentally responsible lifestyles and practices.",
-    },
-    {
-      icon: <FaUsers />,
-      title: "Community Impact",
-      desc: "Empowering communities through awareness and participation.",
-    },
-    {
-      icon: <FaHandsHelping />,
-      title: "Volunteerism",
-      desc: "Encouraging people to become active protectors of nature.",
-    },
-    {
-      icon: <FaLeaf />,
-      title: "Environmental Education",
-      desc: "Spreading awareness to inspire meaningful action.",
-    },
-  ];
+  const t = useT().about;
+  const values = t.values.items.map((v, i) => ({ ...v, icon: valueIcons[i] }));
 
   return (
     <div>
@@ -59,20 +33,19 @@ const About = () => {
         <div className="relative z-10 h-full flex items-center">
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <span className="inline-block bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-full text-sm">
-              About Environment Warriors
+              {t.hero.badge}
             </span>
 
             <h1 className="text-white text-4xl md:text-6xl font-bold mt-6 leading-tight">
-              Protecting Wildlife.
+              {t.hero.heading1}
               <br />
-              Preserving Forests.
+              {t.hero.heading2}
               <br />
-              Building A Sustainable Future.
+              {t.hero.heading3}
             </h1>
 
             <p className="text-white/90 mt-6 max-w-2xl text-lg">
-              Together we are creating awareness, conserving biodiversity,
-              protecting forests and inspiring communities to protect nature.
+              {t.hero.description}
             </p>
           </div>
         </div>
@@ -92,37 +65,31 @@ const About = () => {
 
             <div>
               <span className="text-[#0F5132] font-semibold uppercase tracking-wider">
-                Our Story
+                {t.story.eyebrow}
               </span>
 
               <h2 className="text-4xl font-bold text-[#0F5132] mt-4">
-                Creating Environment Warriors
+                {t.story.heading}
               </h2>
 
               <p className="mt-6 text-gray-600 leading-relaxed">
-                Environment Warriors was founded with a simple mission:
-                empowering people to protect nature and secure the future.
+                {t.story.p1}
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                Through environmental awareness campaigns, wildlife
-                conservation, tree plantation drives and community engagement,
-                we work towards creating a greener and healthier world.
+                {t.story.p2}
               </p>
 
               <div className="mt-6 flex gap-3 bg-[#0F5132]/5 rounded-xl p-4 text-sm text-gray-600 leading-relaxed">
                 <FaInfoCircle className="text-[#0F5132] flex-shrink-0 mt-0.5" />
                 <p>
-                  <strong className="text-[#0F5132]">Placeholder notice:</strong>{" "}
-                  we couldn't find a public founding history for this specific
-                  organization to cite here. Share the real year founded,
-                  founding story and milestones and we'll replace this with
-                  your actual history.
+                  <strong className="text-[#0F5132]">{t.story.placeholderLabel}</strong>{" "}
+                  {t.story.placeholderText}
                 </p>
               </div>
 
               <button className="mt-8 bg-[#0F5132] text-white px-6 py-3 rounded-xl flex items-center gap-2 hover:bg-[#0a3d26] transition">
-                Learn More
+                {t.story.learnMore}
                 <FaArrowRight />
               </button>
             </div>
@@ -137,26 +104,23 @@ const About = () => {
 
             <div className="bg-white rounded-3xl p-8 shadow-sm">
               <h3 className="text-3xl font-bold text-[#0F5132]">
-                Our Vision
+                {t.visionMission.visionTitle}
               </h3>
 
               <p className="mt-5 text-gray-600 leading-relaxed">
-                A world where humans and nature coexist in harmony,
-                ensuring a sustainable future for generations to come.
+                {t.visionMission.visionText}
               </p>
             </div>
 
             <div className="bg-white rounded-3xl p-8 shadow-sm">
               <h3 className="text-3xl font-bold text-[#0F5132]">
-                Our Mission
+                {t.visionMission.missionTitle}
               </h3>
 
               <ul className="mt-5 space-y-3 text-gray-600">
-                <li>✓ Protect Wildlife</li>
-                <li>✓ Preserve Forest Ecosystems</li>
-                <li>✓ Promote Environmental Awareness</li>
-                <li>✓ Support Sustainable Development</li>
-                <li>✓ Empower Communities</li>
+                {t.visionMission.missionItems.map((item) => (
+                  <li key={item}>✓ {item}</li>
+                ))}
               </ul>
             </div>
 
@@ -170,11 +134,11 @@ const About = () => {
 
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-[#0F5132]">
-              Our Core Values
+              {t.values.heading}
             </h2>
 
             <p className="text-gray-600 mt-4">
-              The principles that guide everything we do.
+              {t.values.description}
             </p>
           </div>
 
@@ -209,11 +173,11 @@ const About = () => {
 
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold text-[#0F5132]">
-              Our Team
+              {t.team.heading}
             </h2>
 
             <p className="text-gray-600 mt-4">
-              The people behind Environment Warriors.
+              {t.team.description}
             </p>
           </div>
 
@@ -228,11 +192,11 @@ const About = () => {
                 </div>
 
                 <h4 className="font-bold text-gray-500 mt-5">
-                  Team Member {n}
+                  {t.team.memberPrefix} {n}
                 </h4>
 
                 <p className="text-gray-400 text-sm mt-1">
-                  Name & role — add here
+                  {t.team.placeholder}
                 </p>
               </div>
             ))}
@@ -250,14 +214,11 @@ const About = () => {
 
             <div>
               <h3 className="text-2xl font-bold text-[#0F5132]">
-                Our Adopted Smart School
+                {t.school.heading}
               </h3>
 
               <p className="mt-3 text-gray-600 leading-relaxed">
-                Environment Warriors has adopted a local smart school as
-                part of our community education work. Details on the
-                school — its name, location, and what our support covers —
-                are coming soon.
+                {t.school.description}
               </p>
             </div>
           </div>
@@ -270,32 +231,17 @@ const About = () => {
 
           <div className="text-center mb-14">
             <h2 className="text-4xl font-bold">
-              Our Impact
+              {t.impact.heading}
             </h2>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-
-            <div>
-              <h3 className="text-5xl font-bold">10M+</h3>
-              <p className="mt-2 text-white/80">Trees Protected</p>
-            </div>
-
-            <div>
-              <h3 className="text-5xl font-bold">500K+</h3>
-              <p className="mt-2 text-white/80">Volunteers</p>
-            </div>
-
-            <div>
-              <h3 className="text-5xl font-bold">250+</h3>
-              <p className="mt-2 text-white/80">Species Protected</p>
-            </div>
-
-            <div>
-              <h3 className="text-5xl font-bold">150+</h3>
-              <p className="mt-2 text-white/80">Projects Completed</p>
-            </div>
-
+            {t.impact.stats.map((s) => (
+              <div key={s.label}>
+                <h3 className="text-5xl font-bold">{s.value}</h3>
+                <p className="mt-2 text-white/80">{s.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -311,20 +257,20 @@ const About = () => {
 
         <div className="relative z-10 text-center px-4">
           <h2 className="text-white text-4xl md:text-5xl font-bold">
-            Become An Environment Warrior
+            {t.cta.heading}
           </h2>
 
           <p className="text-white/90 mt-5 max-w-2xl mx-auto">
-            Join us in protecting forests, wildlife and future generations.
+            {t.cta.description}
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <button className="bg-[#F5C542] text-black px-6 py-3 rounded-xl font-semibold">
-              Become Volunteer
+              {t.cta.becomeVolunteer}
             </button>
 
             <button className="border border-white text-white px-6 py-3 rounded-xl font-semibold">
-              Donate Now
+              {t.cta.donateNow}
             </button>
           </div>
         </div>

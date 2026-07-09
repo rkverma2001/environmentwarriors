@@ -5,34 +5,14 @@ import {
   FaLeaf,
 } from "react-icons/fa";
 
-const stats = [
-  {
-    icon: <FaTree />,
-    value: "10M+",
-    title: "Trees Protected",
-    description: "Across forests and green zones",
-  },
-  {
-    icon: <FaUsers />,
-    value: "500K+",
-    title: "Volunteers",
-    description: "Working for environmental change",
-  },
-  {
-    icon: <FaPaw />,
-    value: "250+",
-    title: "Species Protected",
-    description: "Wildlife species under conservation",
-  },
-  {
-    icon: <FaLeaf />,
-    value: "150+",
-    title: "Projects Completed",
-    description: "Successful conservation initiatives",
-  },
-];
+import { useT } from "../../i18n/useT";
+
+const icons = [<FaTree />, <FaUsers />, <FaPaw />, <FaLeaf />];
 
 const ImpactStatistics = () => {
+  const t = useT().home.impact;
+  const stats = t.stats.map((s, i) => ({ ...s, icon: icons[i] }));
+
   return (
     <section className="relative py-16 lg:py-20 overflow-hidden">
 
@@ -54,16 +34,15 @@ const ImpactStatistics = () => {
         <div className="text-center mb-12">
 
           <span className="inline-block bg-white/10 text-white px-4 py-2 rounded-full text-sm font-medium">
-            OUR IMPACT
+            {t.eyebrow}
           </span>
 
           <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            Real Results Creating Real Change
+            {t.heading}
           </h2>
 
           <p className="mt-4 text-white/80 max-w-3xl mx-auto">
-            Together we are protecting wildlife, restoring forests,
-            and creating a sustainable future for generations to come.
+            {t.description}
           </p>
 
         </div>

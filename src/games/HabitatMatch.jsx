@@ -1,13 +1,7 @@
 import { useState } from "react";
 import { FaTrophy, FaRedo, FaCheck } from "react-icons/fa";
 
-const HABITAT_PAIRS = [
-  { id: "tiger", animal: "Bengal Tiger", habitat: "Forest & Tall Grassland" },
-  { id: "gharial", animal: "Gharial", habitat: "River Sandbanks" },
-  { id: "barasingha", animal: "Swamp Deer (Barasingha)", habitat: "Wetland Marshes" },
-  { id: "elephant", animal: "Asian Elephant", habitat: "Dense Sal Forest" },
-  { id: "dolphin", animal: "Gangetic River Dolphin", habitat: "Deep River Channels" },
-];
+import { useT } from "../i18n/useT";
 
 function shuffle(arr) {
   const a = [...arr];
@@ -19,6 +13,8 @@ function shuffle(arr) {
 }
 
 const HabitatMatch = () => {
+  const t = useT().games.habitat;
+  const HABITAT_PAIRS = t.pairs;
   const [habitats] = useState(() => shuffle(HABITAT_PAIRS));
   const [selectedAnimal, setSelectedAnimal] = useState(null);
   const [selectedHabitat, setSelectedHabitat] = useState(null);
@@ -66,13 +62,13 @@ const HabitatMatch = () => {
       <div className="max-w-[600px] mx-auto text-center py-8">
         <FaTrophy className="mx-auto text-5xl text-[#F5C542]" />
         <h3 className="text-2xl font-bold text-[#0F5132] mt-6">
-          All species matched to their habitats!
+          {t.allDoneTitle}
         </h3>
         <button
           onClick={reset}
           className="mt-8 inline-flex items-center gap-2 bg-[#0F5132] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
         >
-          <FaRedo /> Play Again
+          <FaRedo /> {t.playAgain}
         </button>
       </div>
     );
@@ -88,7 +84,7 @@ const HabitatMatch = () => {
   return (
     <div className="max-w-[800px] mx-auto">
       <p className="text-center text-gray-600 mb-8">
-        Click a species, then click its matching habitat.
+        {t.instructions}
       </p>
 
       <div className="grid grid-cols-2 gap-6">

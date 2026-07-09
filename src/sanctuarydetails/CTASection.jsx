@@ -1,4 +1,8 @@
-const CTASection = () => {
+import { useT } from "../i18n/useT";
+
+const CTASection = ({ data }) => {
+  const t = useT().sanctuaryDetail;
+
   return (
     <section
       className="py-24 relative"
@@ -13,11 +17,11 @@ const CTASection = () => {
       <div className="relative z-10 text-center">
 
         <h2 className="text-white text-5xl font-bold">
-          Explore The Wilderness
+          {t.ctaTitle}
         </h2>
 
         <p className="text-white/80 mt-4">
-          Experience nature like never before.
+          {t.ctaSubtitlePrefix} {data?.name} {t.ctaSubtitleSuffix}
         </p>
 
         <button
@@ -30,7 +34,7 @@ const CTASection = () => {
           font-semibold
         "
         >
-          Plan Your Visit
+          {t.planVisit}
         </button>
 
       </div>
