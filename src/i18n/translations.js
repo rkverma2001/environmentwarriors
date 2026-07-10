@@ -9,6 +9,7 @@ export const translations = {
       home: "Home",
       sanctuaries: "Sanctuaries",
       newsEvents: "News & Events",
+      activities: "Activities",
       explore: "Explore",
       stories: "Stories",
       quiz: "Quiz",
@@ -633,6 +634,25 @@ export const translations = {
         },
       ],
     },
+    activities: {
+      hero: {
+        badge: "On The Ground",
+        heading: "Our Activities",
+        description: "Real moments from our conservation and community outreach work.",
+      },
+      inferredNote:
+        "Description inferred from event photos — no caption was provided. Let us know if any detail needs correction.",
+      viewPhotos: "View Photos",
+      hidePhotos: "Hide Photos",
+      events: {
+        "dec-2025-school": {
+          title: "Smart Classroom Inauguration & Student Felicitation",
+          location: "Primary School, Hussain Nagar, Bansuri Nagari, Pilibhit district",
+          description:
+            "Environment Warriors visited a primary school in Pilibhit district to inaugurate a smart classroom and felicitate students and staff, with balloons, gifts and a small ceremony marking the occasion.",
+        },
+      },
+    },
   },
   hi: {
     topnav: {
@@ -644,6 +664,7 @@ export const translations = {
       home: "होम",
       sanctuaries: "अभयारण्य",
       newsEvents: "समाचार व कार्यक्रम",
+      activities: "गतिविधियां",
       explore: "अन्वेषण करें",
       stories: "कहानियाँ",
       quiz: "क्विज़",
@@ -1267,6 +1288,25 @@ export const translations = {
           notes: "झाड़ी ताल में 200+ का झुंड।",
         },
       ],
+    },
+    activities: {
+      hero: {
+        badge: "ज़मीनी स्तर पर",
+        heading: "हमारी गतिविधियां",
+        description: "हमारे संरक्षण और सामुदायिक आउटरीच कार्य के वास्तविक पल।",
+      },
+      inferredNote:
+        "विवरण कार्यक्रम की तस्वीरों से अनुमानित है — कोई कैप्शन उपलब्ध नहीं था। यदि कोई विवरण सही करने की आवश्यकता हो तो हमें बताएं।",
+      viewPhotos: "तस्वीरें देखें",
+      hidePhotos: "तस्वीरें छिपाएं",
+      events: {
+        "dec-2025-school": {
+          title: "स्मार्ट क्लासरूम उद्घाटन व छात्र सम्मान समारोह",
+          location: "प्राथमिक विद्यालय, हुसैन नगर, बांसुरी नगरी, पीलीभीत जिला",
+          description:
+            "एनवायरनमेंट वॉरियर्स ने पीलीभीत जिले के एक प्राथमिक विद्यालय में स्मार्ट क्लासरूम का उद्घाटन किया और छात्रों व स्टाफ को सम्मानित किया, इस अवसर पर गुब्बारों, उपहारों और एक छोटे समारोह के साथ।",
+        },
+      },
     },
   },
 };

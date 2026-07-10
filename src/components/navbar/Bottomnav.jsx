@@ -180,6 +180,13 @@ const Bottomnav = () => {
                   {t.tracker}
                 </Link>
 
+                <Link
+                  to="/activities"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  {t.activities}
+                </Link>
+
               </div>
 
             </li>
@@ -420,6 +427,15 @@ const Bottomnav = () => {
                     }
                   >
                     {t.tracker}
+                  </Link>
+
+                  <Link
+                    to="/activities"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    {t.activities}
                   </Link>
 
                 </div>

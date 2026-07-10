@@ -12,6 +12,7 @@ import News from "./pages/News";
 import Quiz from "./pages/Quiz";
 import Games from "./pages/Games";
 import Tracker from "./pages/Tracker";
+import Activities from "./pages/Activities";
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
   <Route path="/games" element={<Games />} />
   <Route path="/tracker" element={<Tracker />} />
   <Route path="/events" element={<News />} />
+  <Route path="/activities" element={<Activities />} />
   <Route path="/volunteer" element={<Volunteer/>} />
   <Route path="/contact" element={<div>Contact Page</div>} />
 
