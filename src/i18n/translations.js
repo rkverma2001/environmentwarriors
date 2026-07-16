@@ -295,8 +295,7 @@ export const translations = {
       team: {
         heading: "Our Team",
         description: "The people behind Environment Warriors.",
-        memberPrefix: "Team Member",
-        placeholder: "Name & role — add here",
+        members: ["Rameshwar Singh", "Ambika Mishra", "Siddharth Harish", "Nikhil Sharma"],
       },
       school: {
         heading: "Our Adopted Smart School",
@@ -950,8 +949,7 @@ export const translations = {
       team: {
         heading: "हमारी टीम",
         description: "एनवायरनमेंट वॉरियर्स के पीछे के लोग।",
-        memberPrefix: "टीम सदस्य",
-        placeholder: "नाम व भूमिका — यहां जोड़ें",
+        members: ["रामेश्वर सिंह", "अंबिका मिश्रा", "सिद्धार्थ हरीश", "निखिल शर्मा"],
       },
       school: {
         heading: "हमारा गोद लिया स्मार्ट स्कूल",
