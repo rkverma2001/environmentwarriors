@@ -351,6 +351,10 @@ export const translations = {
           "Community Recognition",
         ],
       },
+      gallery: {
+        heading: "Volunteers In Action",
+        description: "Moments from our on-ground community events.",
+      },
       form: {
         heading: "Volunteer Registration",
         fullName: "Full Name",
@@ -1004,6 +1008,10 @@ export const translations = {
           "नेतृत्व विकास",
           "सामुदायिक पहचान",
         ],
+      },
+      gallery: {
+        heading: "स्वयंसेवक कार्यरत",
+        description: "हमारे ज़मीनी सामुदायिक कार्यक्रमों की झलकियां।",
       },
       form: {
         heading: "स्वयंसेवक पंजीकरण",

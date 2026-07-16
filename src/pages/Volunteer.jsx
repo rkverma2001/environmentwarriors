@@ -22,7 +22,7 @@ const Volunteer = () => {
       <section
         className="relative h-[450px] md:h-[550px] bg-cover bg-center"
         style={{
-          backgroundImage: "url('/volunteer-hero.jpg')",
+          backgroundImage: "url('/events/dec-2025/DSC04844.JPG')",
         }}
       >
         <div className="absolute inset-0 bg-black/55"></div>
@@ -108,6 +108,39 @@ const Volunteer = () => {
               </div>
             ))}
 
+          </div>
+
+        </div>
+      </section>
+
+      {/* Gallery */}
+      <section className="py-16 bg-white">
+        <div className="max-w-[1400px] mx-auto px-4">
+
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-[#0F5132]">
+              {t.gallery.heading}
+            </h2>
+
+            <p className="text-gray-600 mt-4">
+              {t.gallery.description}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              "/events/dec-2025/DSC04668.JPG",
+              "/events/dec-2025/DSC04707.JPG",
+              "/events/dec-2025/DSC04908.JPG",
+              "/events/dec-2025/DSC04876.JPG",
+            ].map((img) => (
+              <img
+                key={img}
+                src={img}
+                alt=""
+                className="w-full h-[220px] object-cover rounded-2xl"
+              />
+            ))}
           </div>
 
         </div>
@@ -233,7 +266,7 @@ const Volunteer = () => {
       <section
         className="relative py-24 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/volunteer-cta.jpg')",
+          backgroundImage: "url('/events/dec-2025/DSC04744.JPG')",
         }}
       >
         <div className="absolute inset-0 bg-[#0F5132]/80"></div>

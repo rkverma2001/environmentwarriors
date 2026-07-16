@@ -135,9 +135,11 @@ const HeroSection = () => {
   </button>
 </Link>
 
-          <button className="border border-white hover:bg-white hover:text-black transition-all duration-300 text-white px-6 py-3 rounded-md text-sm font-semibold">
-            {t.becomeVolunteer}
-          </button>
+          <Link to="/volunteer">
+            <button className="border border-white hover:bg-white hover:text-black transition-all duration-300 text-white px-6 py-3 rounded-md text-sm font-semibold">
+              {t.becomeVolunteer}
+            </button>
+          </Link>
 
         </div>
 
