@@ -14,7 +14,7 @@ export const translations = {
       stories: "Stories",
       quiz: "Quiz",
       games: "Games",
-      tracker: "Tracker",
+      tracker: "Species Tracker",
       aboutUs: "About Us",
       volunteer: "Volunteer",
       contact: "Contact",
@@ -295,8 +295,7 @@ export const translations = {
       team: {
         heading: "Our Team",
         description: "The people behind Environment Warriors.",
-        memberPrefix: "Team Member",
-        placeholder: "Name & role — add here",
+        members: ["Rameshwar Singh", "Ambika Mishra", "Siddharth Harish", "Nikhil Sharma"],
       },
       school: {
         heading: "Our Adopted Smart School",
@@ -351,6 +350,10 @@ export const translations = {
           "Leadership Development",
           "Community Recognition",
         ],
+      },
+      gallery: {
+        heading: "Volunteers In Action",
+        description: "Moments from our on-ground community events.",
       },
       form: {
         heading: "Volunteer Registration",
@@ -669,7 +672,7 @@ export const translations = {
       stories: "कहानियाँ",
       quiz: "क्विज़",
       games: "खेल",
-      tracker: "ट्रैकर",
+      tracker: "प्रजाति ट्रैकर",
       aboutUs: "हमारे बारे में",
       volunteer: "स्वयंसेवक",
       contact: "संपर्क करें",
@@ -950,8 +953,7 @@ export const translations = {
       team: {
         heading: "हमारी टीम",
         description: "एनवायरनमेंट वॉरियर्स के पीछे के लोग।",
-        memberPrefix: "टीम सदस्य",
-        placeholder: "नाम व भूमिका — यहां जोड़ें",
+        members: ["रामेश्वर सिंह", "अंबिका मिश्रा", "सिद्धार्थ हरीश", "निखिल शर्मा"],
       },
       school: {
         heading: "हमारा गोद लिया स्मार्ट स्कूल",
@@ -1006,6 +1008,10 @@ export const translations = {
           "नेतृत्व विकास",
           "सामुदायिक पहचान",
         ],
+      },
+      gallery: {
+        heading: "स्वयंसेवक कार्यरत",
+        description: "हमारे ज़मीनी सामुदायिक कार्यक्रमों की झलकियां।",
       },
       form: {
         heading: "स्वयंसेवक पंजीकरण",

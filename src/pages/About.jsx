@@ -182,22 +182,18 @@ const About = () => {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((n) => (
+            {t.team.members.map((name) => (
               <div
-                key={n}
-                className="bg-white rounded-3xl p-8 text-center shadow-sm border border-dashed border-gray-300"
+                key={name}
+                className="bg-[#f8faf8] rounded-3xl p-8 text-center hover:shadow-lg transition"
               >
-                <div className="w-24 h-24 rounded-full bg-[#f8faf8] mx-auto flex items-center justify-center text-gray-400">
+                <div className="w-24 h-24 rounded-full bg-white shadow-sm mx-auto flex items-center justify-center text-[#0F5132]">
                   <FaUser className="text-3xl" />
                 </div>
 
-                <h4 className="font-bold text-gray-500 mt-5">
-                  {t.team.memberPrefix} {n}
+                <h4 className="font-bold text-[#0F5132] mt-5">
+                  {name}
                 </h4>
-
-                <p className="text-gray-400 text-sm mt-1">
-                  {t.team.placeholder}
-                </p>
               </div>
             ))}
           </div>
