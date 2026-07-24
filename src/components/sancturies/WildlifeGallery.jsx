@@ -2,7 +2,12 @@ import { FaArrowRight } from "react-icons/fa";
 
 import { useT } from "../../i18n/useT";
 
-const images = ["/gallery1.png", "/gallery2.png", "/gallery3.png", "/gallery4.png"];
+const images = [
+  "/tigers/tiger-paw-touch.jpg",
+  "/tigers/tiger-waterhole.jpg",
+  "/tigers/tiger-nose-to-nose.jpg",
+  "/tigers/tiger-crossing-road.jpg",
+];
 
 const WildlifeGallery = () => {
   const t = useT().home.gallery;

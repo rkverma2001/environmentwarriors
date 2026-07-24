@@ -20,7 +20,7 @@ const ImpactStatistics = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/ourimpact.png')",
+          backgroundImage: "url('/tigers/tiger-waterhole.jpg')",
         }}
       />
 

@@ -15,10 +15,10 @@ import "swiper/css/effect-fade";
 import { useT } from "../../i18n/useT";
 
 const images = [
-  "/hero1.png",
-  "/hero2.png",
-  "/hero3.png",
-  "/hero4.png",
+  "/tigers/tiger-nose-to-nose.jpg",
+  "/tigers/tiger-crossing-road.jpg",
+  "/tigers/tiger-leaping.jpg",
+  "/tigers/tiger-mother-cub.jpg",
 ];
 
 const HeroSection = () => {

@@ -153,10 +153,10 @@ export const translations = {
         description: "Discover breathtaking wildlife, forests, rivers, and landscapes through our conservation journey.",
         viewGallery: "View Gallery",
         items: [
-          { title: "Majestic Deer" },
-          { title: "Colorful Bird" },
-          { title: "River Ecosystem" },
-          { title: "Nature Sunset" },
+          { title: "Tender Moment" },
+          { title: "Evening Waterhole" },
+          { title: "Terai Tigers" },
+          { title: "On The Prowl" },
         ],
       },
       events: {
@@ -811,10 +811,10 @@ export const translations = {
         description: "हमारी संरक्षण यात्रा के माध्यम से लुभावने वन्यजीवों, वनों, नदियों और परिदृश्यों की खोज करें।",
         viewGallery: "गैलरी देखें",
         items: [
-          { title: "राजसी हिरण" },
-          { title: "रंगीन पक्षी" },
-          { title: "नदी पारिस्थितिकी तंत्र" },
-          { title: "प्राकृतिक सूर्यास्त" },
+          { title: "कोमल पल" },
+          { title: "सांध्य जल स्रोत" },
+          { title: "तराई के बाघ" },
+          { title: "गश्त पर" },
         ],
       },
       events: {
