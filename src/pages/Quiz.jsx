@@ -1,7 +1,9 @@
-import { useState } from "react";
-import { FaTrophy, FaRedo } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaTrophy, FaRedo, FaClock } from "react-icons/fa";
 
 import { useT } from "../i18n/useT";
+
+const TIME_PER_QUESTION = 20;
 
 const Quiz = () => {
   const t = useT().quiz;
@@ -11,8 +13,25 @@ const Quiz = () => {
   const [selected, setSelected] = useState(null);
   const [score, setScore] = useState(0);
   const [done, setDone] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(TIME_PER_QUESTION);
 
   const question = QUIZ_QUESTIONS[step];
+
+  useEffect(() => {
+    if (done || selected !== null || timeLeft <= 0) return undefined;
+
+    const timer = setTimeout(() => {
+      setTimeLeft((time) => {
+        if (time <= 1) {
+          setSelected(-1);
+          return 0;
+        }
+        return time - 1;
+      });
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, [timeLeft, selected, done]);
 
   const choose = (index) => {
     if (selected !== null) return;
@@ -24,6 +43,7 @@ const Quiz = () => {
     if (step + 1 < QUIZ_QUESTIONS.length) {
       setStep((s) => s + 1);
       setSelected(null);
+      setTimeLeft(TIME_PER_QUESTION);
     } else {
       setDone(true);
     }
@@ -34,6 +54,7 @@ const Quiz = () => {
     setSelected(null);
     setScore(0);
     setDone(false);
+    setTimeLeft(TIME_PER_QUESTION);
   };
 
   return (
@@ -65,13 +86,36 @@ const Quiz = () => {
 
             {!done ? (
               <>
-                <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center justify-between mb-4">
                   <span className="text-sm font-semibold text-gray-500">
                     {t.questionOf} {step + 1} {t.of} {QUIZ_QUESTIONS.length}
                   </span>
 
                   <span className="text-sm font-semibold text-[#0F5132]">
                     {t.score} {score}
+                  </span>
+                </div>
+
+                <div className="flex items-center gap-2 mb-6">
+                  <FaClock
+                    className={selected === null && timeLeft <= 5 ? "text-red-500" : "text-[#0F5132]"}
+                  />
+
+                  <div className="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
+                    <div
+                      className={`h-full rounded-full transition-all duration-1000 ease-linear ${
+                        selected === null && timeLeft <= 5 ? "bg-red-500" : "bg-[#0F5132]"
+                      }`}
+                      style={{ width: `${(Math.max(timeLeft, 0) / TIME_PER_QUESTION) * 100}%` }}
+                    />
+                  </div>
+
+                  <span
+                    className={`text-sm font-semibold w-16 text-right ${
+                      selected === null && timeLeft <= 5 ? "text-red-500" : "text-gray-500"
+                    }`}
+                  >
+                    {selected !== null && timeLeft <= 0 ? t.timeUp : `${t.timeLeft}: ${Math.max(timeLeft, 0)}s`}
                   </span>
                 </div>
 
