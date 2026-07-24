@@ -1,4 +1,6 @@
-import { FaInstagram } from "react-icons/fa";
+import { useState } from "react";
+
+import { FaInstagram, FaPhoneAlt, FaTimes } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -6,6 +8,8 @@ import { useT } from "../../i18n/useT";
 
 const Topnav = () => {
   const t = useT().topnav;
+  const h = t.helpline;
+  const [helplineOpen, setHelplineOpen] = useState(false);
 
   return (
     <div className="bg-[#004d2a] text-white">
@@ -69,6 +73,36 @@ const Topnav = () => {
             {/* Divider */}
             <div className="hidden md:block h-4 w-px bg-white/30"></div>
 
+            {/* Helpline Button */}
+            <button
+              onClick={() => setHelplineOpen(true)}
+              className="
+                relative
+                flex
+                items-center
+                gap-1.5
+                bg-red-600
+                hover:bg-red-700
+                text-white
+                text-[11px]
+                sm:text-xs
+                font-bold
+                uppercase
+                tracking-wide
+                px-2.5
+                py-1
+                rounded-full
+                transition
+                animate-pulse
+              "
+            >
+              <FaPhoneAlt className="w-3 h-3" />
+              {h.badge}
+            </button>
+
+            {/* Divider */}
+            <div className="hidden md:block h-4 w-px bg-white/30"></div>
+
             {/* Social Icons */}
             <div className="flex items-center gap-4">
               <a
@@ -88,6 +122,58 @@ const Topnav = () => {
           </div>
         </div>
       </div>
+
+      {/* Helpline Modal */}
+      {helplineOpen && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 px-4"
+          onClick={() => setHelplineOpen(false)}
+        >
+          <div
+            className="bg-white rounded-3xl p-8 max-w-[440px] w-full text-center relative shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setHelplineOpen(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
+              aria-label={h.close}
+            >
+              <FaTimes />
+            </button>
+
+            <div className="w-16 h-16 rounded-full bg-red-100 text-red-600 flex items-center justify-center mx-auto text-2xl animate-pulse">
+              <FaPhoneAlt />
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#0F5132] mt-5">
+              {h.modalTitle}
+            </h3>
+
+            <p className="text-gray-600 mt-3 leading-relaxed text-sm">
+              {h.modalDescription}
+            </p>
+
+            <p className="text-xs text-gray-400 uppercase tracking-wide font-semibold mt-6">
+              {h.numberLabel}
+            </p>
+
+            <p className="text-4xl font-extrabold text-red-600 mt-1 animate-pulse">
+              {h.number}
+            </p>
+
+            <p className="text-xs text-gray-400 mt-2">
+              {h.note}
+            </p>
+
+            <a
+              href={`tel:${h.number.replace(/\s+/g, "")}`}
+              className="mt-6 inline-flex items-center justify-center gap-2 w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-xl font-semibold transition"
+            >
+              <FaPhoneAlt /> {h.callNow}
+            </a>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

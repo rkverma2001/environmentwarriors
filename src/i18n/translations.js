@@ -2,6 +2,17 @@ export const translations = {
   en: {
     topnav: {
       tagline: "🌿 Protect Nature. Protect Wildlife. Protect Future.",
+      helpline: {
+        badge: "Helpline",
+        number: "+91 82870 78724",
+        modalTitle: "Wildlife Emergency Helpline",
+        modalDescription:
+          "Spotted a wild animal near your village, crops, or livestock? Facing a human-animal conflict, an injured animal, or a rescue emergency? Call the helpline immediately.",
+        numberLabel: "Helpline Number",
+        callNow: "Call Now",
+        note: "For human-wildlife conflict and rescue emergencies in the Terai region.",
+        close: "Close",
+      },
     },
     nav: {
       brandName: "Environment Warriors",
@@ -681,6 +692,17 @@ export const translations = {
   hi: {
     topnav: {
       tagline: "🌿 प्रकृति की रक्षा करें। वन्यजीवों की रक्षा करें। भविष्य की रक्षा करें।",
+      helpline: {
+        badge: "हेल्पलाइन",
+        number: "+91 82870 78724",
+        modalTitle: "वन्यजीव आपातकालीन हेल्पलाइन",
+        modalDescription:
+          "क्या आपने अपने गांव, फसलों या पशुधन के पास कोई जंगली जानवर देखा है? मानव-वन्यजीव संघर्ष, घायल जानवर, या बचाव आपातकाल का सामना कर रहे हैं? तुरंत हेल्पलाइन पर कॉल करें।",
+        numberLabel: "हेल्पलाइन नंबर",
+        callNow: "अभी कॉल करें",
+        note: "तराई क्षेत्र में मानव-वन्यजीव संघर्ष और बचाव आपातकाल के लिए।",
+        close: "बंद करें",
+      },
     },
     nav: {
       brandName: "एनवायरनमेंट वॉरियर्स",
