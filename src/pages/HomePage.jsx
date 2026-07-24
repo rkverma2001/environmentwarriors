@@ -5,9 +5,9 @@ import StatsSection from '../components/stats/StatsSection'
 import SanctuarySection from '../components/sancturies/SanctuarySection'
 import MissionSection from '../components/sancturies/MissionSection'
 import ImpactStatistics from '../components/sancturies/ImpactStatistics'
-import CampaignsSection from '../components/sancturies/CampaignsSection'
 import WildlifeGallery from '../components/sancturies/WildlifeGallery'
 import UpcomingEvents from '../components/sancturies/UpcomingEvents'
+import NetZeroInitiative from '../components/sancturies/NetZeroInitiative'
 import Footer from '../components/footer/Footer'
 
 const HomePage = () => {
@@ -18,9 +18,9 @@ const HomePage = () => {
       <SanctuarySection />
       <MissionSection/>
       <ImpactStatistics/>
-      <CampaignsSection/>
       <WildlifeGallery/>
       <UpcomingEvents/>
+      <NetZeroInitiative/>
     </div>
   )
 }

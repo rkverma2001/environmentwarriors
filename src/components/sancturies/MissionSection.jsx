@@ -20,7 +20,7 @@ const MissionSection = () => {
           <div className="relative h-full">
 
             <img
-              src="/ourmission.png"
+              src="/tigers/tiger-paw-touch.jpg"
               alt="Environment Warriors Mission"
               className="
                 w-full

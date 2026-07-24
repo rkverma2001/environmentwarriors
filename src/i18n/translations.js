@@ -2,6 +2,17 @@ export const translations = {
   en: {
     topnav: {
       tagline: "🌿 Protect Nature. Protect Wildlife. Protect Future.",
+      helpline: {
+        badge: "Helpline",
+        number: "+91 82870 78724",
+        modalTitle: "Wildlife Emergency Helpline",
+        modalDescription:
+          "Spotted a wild animal near your village, crops, or livestock? Facing a human-animal conflict, an injured animal, or a rescue emergency? Call the helpline immediately.",
+        numberLabel: "Helpline Number",
+        callNow: "Call Now",
+        note: "For human-wildlife conflict and rescue emergencies in the Terai region.",
+        close: "Close",
+      },
     },
     nav: {
       brandName: "Environment Warriors",
@@ -9,7 +20,8 @@ export const translations = {
       home: "Home",
       sanctuaries: "Sanctuaries",
       newsEvents: "News & Events",
-      activities: "Activities",
+      eventsGallery: "Events & Gallery",
+      news: "News",
       explore: "Explore",
       stories: "Stories",
       quiz: "Quiz",
@@ -25,6 +37,11 @@ export const translations = {
         kishanpur: "Kishanpur Wildlife Sanctuary",
         katarniaghat: "Katarniaghat Wildlife Sanctuary",
         pilibhit: "Pilibhit Tiger Reserve",
+      },
+      donateModal: {
+        title: "Coming Soon",
+        message: "Online donations aren't open yet. We're setting things up — check back soon to support our conservation work.",
+        close: "Close",
       },
     },
     footer: {
@@ -114,38 +131,16 @@ export const translations = {
         description:
           "Together we are protecting wildlife, restoring forests, and creating a sustainable future for generations to come.",
         stats: [
-          { value: "10M+", title: "Trees Protected", description: "Across forests and green zones" },
-          { value: "500K+", title: "Volunteers", description: "Working for environmental change" },
-          { value: "250+", title: "Species Protected", description: "Wildlife species under conservation" },
-          { value: "150+", title: "Projects Completed", description: "Successful conservation initiatives" },
+          { value: "1000+", title: "Trees Protected", description: "Across forests and green zones" },
+          { value: "500+", title: "Volunteers", description: "Working for environmental change" },
+          { value: "2+", title: "Schools Adopted", description: "Bringing digital classrooms to rural students", clickable: true },
+          { value: "20+", title: "Projects Completed", description: "Successful conservation initiatives" },
         ],
-      },
-      campaigns: {
-        eyebrow: "CURRENT CAMPAIGNS",
-        heading: "Join Us in Protecting Nature",
-        description:
-          "Be a part of our ongoing environmental initiatives and make a lasting impact on nature and wildlife.",
-        joinCampaign: "Join Campaign",
-        items: [
-          {
-            title: "Plantation Drive 2026",
-            date: "25 May 2026",
-            location: "Dudhwa National Park",
-            description: "Join us in planting thousands of trees and restoring green cover.",
-          },
-          {
-            title: "Save Wildlife Initiative",
-            date: "15 June 2026",
-            location: "Kishanpur Sanctuary",
-            description: "Help protect endangered wildlife species and their habitats.",
-          },
-          {
-            title: "Clean River Mission",
-            date: "30 June 2026",
-            location: "Sharda River Basin",
-            description: "Participate in cleaning and preserving river ecosystems.",
-          },
-        ],
+        schoolModal: {
+          title: "Schools We've Adopted",
+          description: "A look inside the digital classrooms and campuses we've helped bring to life.",
+          close: "Close",
+        },
       },
       gallery: {
         eyebrow: "WILDLIFE GALLERY",
@@ -153,10 +148,10 @@ export const translations = {
         description: "Discover breathtaking wildlife, forests, rivers, and landscapes through our conservation journey.",
         viewGallery: "View Gallery",
         items: [
-          { title: "Majestic Deer" },
-          { title: "Colorful Bird" },
-          { title: "River Ecosystem" },
-          { title: "Nature Sunset" },
+          { title: "Tender Moment" },
+          { title: "Evening Waterhole" },
+          { title: "Terai Tigers" },
+          { title: "On The Prowl" },
         ],
       },
       events: {
@@ -165,17 +160,50 @@ export const translations = {
         description: "Participate in our upcoming events and become a part of the movement to protect nature and wildlife.",
         featuredEvent: "FEATURED EVENT",
         featuredTitle: "Join Our Plantation Drive",
-        featuredDate: "25 May 2026",
-        featuredLocation: "Dudhwa National Park",
+        featuredLocation: "Terai Region of UP",
         featuredDescription:
           "Help us plant thousands of trees and contribute towards restoring forest ecosystems and combating climate change.",
         registerNow: "Register Now",
         viewDetails: "View Details",
+        comingSoon: "Coming Soon",
+        modalMessage: "This event isn't open for registration yet. Check back soon for updates!",
+        modalClose: "Got It",
         items: [
-          { title: "Plantation Drive 2026", date: "25 May 2026", location: "Dudhwa National Park" },
-          { title: "Wildlife Awareness Walk", date: "15 June 2026", location: "Pilibhit Tiger Reserve" },
-          { title: "River Cleanup Mission", date: "30 June 2026", location: "Sharda River Basin" },
+          { title: "Awareness Programmes", location: "Pilibhit Tiger Reserve" },
+          { title: "River and Water Bodies Cleanup Mission", location: "Sharda River Basin" },
+          { title: "Save Wildlife Initiative", location: "Kishanpur Sanctuary" },
         ],
+      },
+      netZero: {
+        eyebrow: "FEATURED INITIATIVE",
+        heading: "Net Zero Industry Mission",
+        subtitle: "Presented by Dr. Rajeshwar Singh, MLA, Sarojini Nagar, Lucknow",
+        description:
+          "A mission to help Sarojini Nagar's MSMEs cut emissions, energy costs and waste — while staying export-ready under global standards like the EU's Carbon Border Adjustment Mechanism (CBAM) and India's Panchamrit 2070 commitment.",
+        stats: [
+          { value: "30–50%", label: "Energy Cost Savings Possible" },
+          { value: "27,000+", label: "MSMEs ZED Certified Nationally" },
+          { value: "$771M", label: "India's Export Risk from EU CBAM" },
+          { value: "₹100Cr+", label: "Recoverable Annually in Sarojini Nagar" },
+        ],
+        brandAmbassador: "Brand Ambassador: Sanjay Dutt",
+        galleryCaption: "Sanjay Dutt joins Dr. Rajeshwar Singh at the Sarojini Nagar mission rally",
+        learnMore: "Learn More",
+        modalTitle: "Net Zero Industry Mission",
+        modalIntro:
+          "Net Zero is not a cost — it's a profit strategy. Every rupee saved on energy, water and waste is a rupee added to the bottom line, while keeping export markets open.",
+        pathwayHeading: "The 4D Pathway",
+        pathway: [
+          { step: "Detect", description: "Energy audit, water mapping, waste quantification and carbon footprint calculation." },
+          { step: "Design", description: "Choose solutions — rooftop solar, LED & efficiency upgrades, water recycling, waste-to-value systems." },
+          { step: "Deploy", description: "Implement via government schemes (ZED/GIFT), green finance (SIDBI/IREDA) and pay-as-you-save models." },
+          { step: "Deliver", description: "Measure savings, earn carbon credits, get ZED certified and unlock export market access." },
+        ],
+        officeHeading: "My Office Is Open for You",
+        officeText:
+          "Any question on the Net Zero transition — come directly to the Sarojini Nagar Vidhansabha Office.",
+        tagline: "Net Zero = Profitability + Competitiveness + Future-Proof Business",
+        modalClose: "Close",
       },
     },
     sanctuaryDetail: {
@@ -257,6 +285,8 @@ export const translations = {
         heading3: "Building A Sustainable Future.",
         description:
           "Together we are creating awareness, conserving biodiversity, protecting forests and inspiring communities to protect nature.",
+        photoName: "Dr. Rajeshwar Singh",
+        photoTitle: "MLA, Sarojini Nagar, Lucknow",
       },
       story: {
         eyebrow: "Our Story",
@@ -385,6 +415,10 @@ export const translations = {
         heading: "Share Your Wildlife Story",
         description: "Had a memorable wildlife sighting or conservation moment in one of our sanctuaries? Tell us about it.",
       },
+      comingSoon: {
+        heading: "Coming Soon",
+        message: "We're setting up a review process so every story is checked by our team before it goes live. Check back soon to share your wildlife sighting!",
+      },
       form: {
         heading: "Submit Your Story",
         thanks: "Thanks for sharing! Your story was added below (demo only).",
@@ -473,6 +507,8 @@ export const translations = {
       questionOf: "Question",
       of: "of",
       score: "Score:",
+      timeLeft: "Time Left",
+      timeUp: "Time's up!",
       nextQuestion: "Next Question",
       seeResults: "See Results",
       youScored: "You scored",
@@ -509,6 +545,36 @@ export const translations = {
           q: "In what year was Katarniaghat Wildlife Sanctuary established?",
           options: ["1958", "1972", "1976", "2014"],
           answer: 2,
+        },
+        {
+          q: "What is the national animal of India?",
+          options: ["Lion", "Tiger", "Elephant", "Leopard"],
+          answer: 1,
+        },
+        {
+          q: "Which international day is observed on March 3rd every year to raise awareness about wild fauna and flora?",
+          options: ["World Wildlife Day", "World Environment Day", "Earth Day", "World Water Day"],
+          answer: 0,
+        },
+        {
+          q: "What is the primary threat to tiger populations across their range?",
+          options: ["Climate change alone", "Habitat loss and poaching", "Disease", "Overpopulation"],
+          answer: 1,
+        },
+        {
+          q: "India is home to the world's largest wild tiger population. Roughly how many tigers does it have today?",
+          options: ["Around 500", "Around 1,500", "Around 3,000+", "Around 10,000"],
+          answer: 2,
+        },
+        {
+          q: "Apex predators like tigers are considered key indicator species because they help assess what?",
+          options: ["The overall health of a forest ecosystem", "Soil fertility only", "Rainfall patterns", "Tourist footfall"],
+          answer: 0,
+        },
+        {
+          q: "What term describes a network of connected forest patches that lets wildlife migrate safely between habitats?",
+          options: ["Wildlife corridor", "Buffer zone", "Eco-park", "Green belt"],
+          answer: 0,
         },
       ],
     },
@@ -578,6 +644,10 @@ export const translations = {
         badge: "Citizen Science",
         heading: "Species Spotting Tracker",
         description: "A shared, growing log of wildlife sightings across our four sanctuaries — logged by visitors like you.",
+      },
+      comingSoon: {
+        heading: "Coming Soon",
+        message: "We're setting up admin review for sightings so the tracker stays accurate and trustworthy. Check back soon to log your sighting!",
       },
       form: {
         heading: "Log a Sighting",
@@ -660,6 +730,17 @@ export const translations = {
   hi: {
     topnav: {
       tagline: "🌿 प्रकृति की रक्षा करें। वन्यजीवों की रक्षा करें। भविष्य की रक्षा करें।",
+      helpline: {
+        badge: "हेल्पलाइन",
+        number: "+91 82870 78724",
+        modalTitle: "वन्यजीव आपातकालीन हेल्पलाइन",
+        modalDescription:
+          "क्या आपने अपने गांव, फसलों या पशुधन के पास कोई जंगली जानवर देखा है? मानव-वन्यजीव संघर्ष, घायल जानवर, या बचाव आपातकाल का सामना कर रहे हैं? तुरंत हेल्पलाइन पर कॉल करें।",
+        numberLabel: "हेल्पलाइन नंबर",
+        callNow: "अभी कॉल करें",
+        note: "तराई क्षेत्र में मानव-वन्यजीव संघर्ष और बचाव आपातकाल के लिए।",
+        close: "बंद करें",
+      },
     },
     nav: {
       brandName: "एनवायरनमेंट वॉरियर्स",
@@ -667,7 +748,8 @@ export const translations = {
       home: "होम",
       sanctuaries: "अभयारण्य",
       newsEvents: "समाचार व कार्यक्रम",
-      activities: "गतिविधियां",
+      eventsGallery: "कार्यक्रम व गैलरी",
+      news: "समाचार",
       explore: "अन्वेषण करें",
       stories: "कहानियाँ",
       quiz: "क्विज़",
@@ -683,6 +765,11 @@ export const translations = {
         kishanpur: "किशनपुर वन्यजीव अभयारण्य",
         katarniaghat: "कतर्नियाघाट वन्यजीव अभयारण्य",
         pilibhit: "पीलीभीत टाइगर रिज़र्व",
+      },
+      donateModal: {
+        title: "जल्द आ रहा है",
+        message: "ऑनलाइन दान अभी शुरू नहीं हुआ है। हम इसकी तैयारी कर रहे हैं — हमारे संरक्षण कार्य का समर्थन करने के लिए जल्द ही फिर से देखें।",
+        close: "बंद करें",
       },
     },
     footer: {
@@ -772,38 +859,16 @@ export const translations = {
         description:
           "साथ मिलकर हम वन्यजीवों की रक्षा कर रहे हैं, वनों को पुनर्स्थापित कर रहे हैं और आने वाली पीढ़ियों के लिए एक स्थायी भविष्य बना रहे हैं।",
         stats: [
-          { value: "10M+", title: "पेड़ संरक्षित", description: "वनों और हरित क्षेत्रों में" },
-          { value: "500K+", title: "स्वयंसेवक", description: "पर्यावरणीय बदलाव के लिए कार्यरत" },
-          { value: "250+", title: "प्रजातियां संरक्षित", description: "संरक्षण के अंतर्गत वन्यजीव प्रजातियां" },
-          { value: "150+", title: "परियोजनाएं पूर्ण", description: "सफल संरक्षण पहलें" },
+          { value: "1000+", title: "पेड़ संरक्षित", description: "वनों और हरित क्षेत्रों में" },
+          { value: "500+", title: "स्वयंसेवक", description: "पर्यावरणीय बदलाव के लिए कार्यरत" },
+          { value: "2+", title: "गोद लिए गए स्कूल", description: "ग्रामीण छात्रों तक डिजिटल कक्षाएं पहुंचाना", clickable: true },
+          { value: "20+", title: "परियोजनाएं पूर्ण", description: "सफल संरक्षण पहलें" },
         ],
-      },
-      campaigns: {
-        eyebrow: "वर्तमान अभियान",
-        heading: "प्रकृति की रक्षा में हमारे साथ जुड़ें",
-        description:
-          "हमारी चल रही पर्यावरणीय पहलों का हिस्सा बनें और प्रकृति व वन्यजीवों पर स्थायी प्रभाव डालें।",
-        joinCampaign: "अभियान में शामिल हों",
-        items: [
-          {
-            title: "वृक्षारोपण अभियान 2026",
-            date: "25 मई 2026",
-            location: "दुधवा राष्ट्रीय उद्यान",
-            description: "हजारों पेड़ लगाने और हरित आवरण बहाल करने में हमारे साथ जुड़ें।",
-          },
-          {
-            title: "वन्यजीव बचाओ पहल",
-            date: "15 जून 2026",
-            location: "किशनपुर अभयारण्य",
-            description: "लुप्तप्राय वन्यजीव प्रजातियों और उनके आवासों की रक्षा में मदद करें।",
-          },
-          {
-            title: "स्वच्छ नदी मिशन",
-            date: "30 जून 2026",
-            location: "शारदा नदी बेसिन",
-            description: "नदी पारिस्थितिकी तंत्र की सफाई और संरक्षण में भाग लें।",
-          },
-        ],
+        schoolModal: {
+          title: "हमारे द्वारा गोद लिए गए स्कूल",
+          description: "उन डिजिटल कक्षाओं और परिसरों की एक झलक जिन्हें बनाने में हमने मदद की है।",
+          close: "बंद करें",
+        },
       },
       gallery: {
         eyebrow: "वन्यजीव गैलरी",
@@ -811,10 +876,10 @@ export const translations = {
         description: "हमारी संरक्षण यात्रा के माध्यम से लुभावने वन्यजीवों, वनों, नदियों और परिदृश्यों की खोज करें।",
         viewGallery: "गैलरी देखें",
         items: [
-          { title: "राजसी हिरण" },
-          { title: "रंगीन पक्षी" },
-          { title: "नदी पारिस्थितिकी तंत्र" },
-          { title: "प्राकृतिक सूर्यास्त" },
+          { title: "कोमल पल" },
+          { title: "सांध्य जल स्रोत" },
+          { title: "तराई के बाघ" },
+          { title: "गश्त पर" },
         ],
       },
       events: {
@@ -823,17 +888,50 @@ export const translations = {
         description: "हमारे आगामी कार्यक्रमों में भाग लें और प्रकृति व वन्यजीवों की रक्षा के आंदोलन का हिस्सा बनें।",
         featuredEvent: "विशेष कार्यक्रम",
         featuredTitle: "हमारे वृक्षारोपण अभियान में शामिल हों",
-        featuredDate: "25 मई 2026",
-        featuredLocation: "दुधवा राष्ट्रीय उद्यान",
+        featuredLocation: "उत्तर प्रदेश का तराई क्षेत्र",
         featuredDescription:
           "हजारों पेड़ लगाने और वन पारिस्थितिकी तंत्र को पुनर्स्थापित करने तथा जलवायु परिवर्तन से लड़ने में हमारी मदद करें।",
         registerNow: "अभी पंजीकरण करें",
         viewDetails: "विवरण देखें",
+        comingSoon: "जल्द आ रहा है",
+        modalMessage: "यह कार्यक्रम अभी पंजीकरण के लिए खुला नहीं है। अपडेट के लिए जल्द ही वापस देखें!",
+        modalClose: "समझ गया",
         items: [
-          { title: "वृक्षारोपण अभियान 2026", date: "25 मई 2026", location: "दुधवा राष्ट्रीय उद्यान" },
-          { title: "वन्यजीव जागरूकता वॉक", date: "15 जून 2026", location: "पीलीभीत टाइगर रिज़र्व" },
-          { title: "नदी सफाई मिशन", date: "30 जून 2026", location: "शारदा नदी बेसिन" },
+          { title: "जागरूकता कार्यक्रम", location: "पीलीभीत टाइगर रिज़र्व" },
+          { title: "नदी व जल निकाय सफाई मिशन", location: "शारदा नदी बेसिन" },
+          { title: "वन्यजीव बचाओ पहल", location: "किशनपुर अभयारण्य" },
         ],
+      },
+      netZero: {
+        eyebrow: "विशेष पहल",
+        heading: "नेट ज़ीरो इंडस्ट्री मिशन",
+        subtitle: "डॉ. राजेश्वर सिंह, विधायक, सरोजिनी नगर, लखनऊ द्वारा प्रस्तुत",
+        description:
+          "सरोजिनी नगर के एमएसएमई को उत्सर्जन, ऊर्जा लागत और अपव्यय कम करने में मदद करने का एक मिशन — साथ ही यूरोपीय संघ के कार्बन बॉर्डर एडजस्टमेंट मैकेनिज़्म (CBAM) और भारत की पंचामृत 2070 प्रतिबद्धता जैसे वैश्विक मानकों के लिए निर्यात-तैयार बने रहना।",
+        stats: [
+          { value: "30–50%", label: "संभावित ऊर्जा लागत बचत" },
+          { value: "27,000+", label: "राष्ट्रीय स्तर पर ZED प्रमाणित एमएसएमई" },
+          { value: "$771M", label: "EU CBAM से भारत का निर्यात जोखिम" },
+          { value: "₹100Cr+", label: "सरोजिनी नगर में वार्षिक वसूली योग्य राशि" },
+        ],
+        brandAmbassador: "ब्रांड एंबेसडर: संजय दत्त",
+        galleryCaption: "संजय दत्त, सरोजिनी नगर मिशन रैली में डॉ. राजेश्वर सिंह के साथ",
+        learnMore: "और जानें",
+        modalTitle: "नेट ज़ीरो इंडस्ट्री मिशन",
+        modalIntro:
+          "नेट ज़ीरो कोई लागत नहीं है — यह एक लाभ रणनीति है। ऊर्जा, पानी और अपव्यय पर बचाया गया हर रुपया मुनाफे में जुड़ता है, साथ ही निर्यात बाज़ार भी खुले रहते हैं।",
+        pathwayHeading: "4D मार्ग",
+        pathway: [
+          { step: "पहचानें", description: "ऊर्जा ऑडिट, जल मानचित्रण, अपव्यय मापन और कार्बन फुटप्रिंट गणना।" },
+          { step: "डिज़ाइन करें", description: "समाधान चुनें — रूफटॉप सोलर, LED व दक्षता उन्नयन, जल पुनर्चक्रण, अपव्यय-से-मूल्य प्रणालियां।" },
+          { step: "लागू करें", description: "सरकारी योजनाओं (ZED/GIFT), हरित वित्त (SIDBI/IREDA) और पे-एज़-यू-सेव मॉडल के माध्यम से क्रियान्वयन।" },
+          { step: "परिणाम दें", description: "बचत मापें, कार्बन क्रेडिट अर्जित करें, ZED प्रमाणन प्राप्त करें और निर्यात बाज़ार तक पहुंच पाएं।" },
+        ],
+        officeHeading: "मेरा कार्यालय आपके लिए खुला है",
+        officeText:
+          "नेट ज़ीरो परिवर्तन पर कोई भी प्रश्न हो — सीधे सरोजिनी नगर विधानसभा कार्यालय आएं।",
+        tagline: "नेट ज़ीरो = लाभप्रदता + प्रतिस्पर्धात्मकता + भविष्य-सुरक्षित व्यवसाय",
+        modalClose: "बंद करें",
       },
     },
     sanctuaryDetail: {
@@ -915,6 +1013,8 @@ export const translations = {
         heading3: "एक स्थायी भविष्य का निर्माण।",
         description:
           "साथ मिलकर हम जागरूकता फैला रहे हैं, जैव विविधता का संरक्षण कर रहे हैं, वनों की रक्षा कर रहे हैं और समुदायों को प्रकृति की रक्षा हेतु प्रेरित कर रहे हैं।",
+        photoName: "डॉ. राजेश्वर सिंह",
+        photoTitle: "विधायक, सरोजिनी नगर, लखनऊ",
       },
       story: {
         eyebrow: "हमारी कहानी",
@@ -1043,6 +1143,10 @@ export const translations = {
         heading: "अपनी वन्यजीव कहानी साझा करें",
         description: "क्या हमारे किसी अभयारण्य में आपका कोई यादगार वन्यजीव अनुभव या संरक्षण क्षण रहा है? हमें बताएं।",
       },
+      comingSoon: {
+        heading: "जल्द आ रहा है",
+        message: "हम एक समीक्षा प्रक्रिया स्थापित कर रहे हैं ताकि हर कहानी लाइव होने से पहले हमारी टीम द्वारा जांची जाए। अपनी वन्यजीव कहानी साझा करने के लिए जल्द ही वापस देखें!",
+      },
       form: {
         heading: "अपनी कहानी जमा करें",
         thanks: "साझा करने के लिए धन्यवाद! आपकी कहानी नीचे जोड़ दी गई है (केवल डेमो)।",
@@ -1131,6 +1235,8 @@ export const translations = {
       questionOf: "प्रश्न",
       of: "में से",
       score: "स्कोर:",
+      timeLeft: "शेष समय",
+      timeUp: "समय समाप्त!",
       nextQuestion: "अगला प्रश्न",
       seeResults: "परिणाम देखें",
       youScored: "आपका स्कोर",
@@ -1167,6 +1273,36 @@ export const translations = {
           q: "कतर्नियाघाट वन्यजीव अभयारण्य की स्थापना किस वर्ष हुई थी?",
           options: ["1958", "1972", "1976", "2014"],
           answer: 2,
+        },
+        {
+          q: "भारत का राष्ट्रीय पशु कौन सा है?",
+          options: ["सिंह", "बाघ", "हाथी", "तेंदुआ"],
+          answer: 1,
+        },
+        {
+          q: "वन्य जीवों और वनस्पतियों के प्रति जागरूकता बढ़ाने के लिए हर साल 3 मार्च को कौन सा अंतर्राष्ट्रीय दिवस मनाया जाता है?",
+          options: ["विश्व वन्यजीव दिवस", "विश्व पर्यावरण दिवस", "पृथ्वी दिवस", "विश्व जल दिवस"],
+          answer: 0,
+        },
+        {
+          q: "बाघों की आबादी के लिए सबसे बड़ा खतरा क्या है?",
+          options: ["केवल जलवायु परिवर्तन", "आवास का नुकसान और अवैध शिकार", "बीमारी", "अधिक जनसंख्या"],
+          answer: 1,
+        },
+        {
+          q: "भारत में विश्व की सबसे बड़ी जंगली बाघ आबादी है। आज इसके पास लगभग कितने बाघ हैं?",
+          options: ["लगभग 500", "लगभग 1,500", "लगभग 3,000+", "लगभग 10,000"],
+          answer: 2,
+        },
+        {
+          q: "बाघ जैसे शीर्ष शिकारियों को प्रमुख संकेतक प्रजाति माना जाता है क्योंकि वे किसका आकलन करने में मदद करते हैं?",
+          options: ["जंगल के पारिस्थितिकी तंत्र का समग्र स्वास्थ्य", "केवल मिट्टी की उर्वरता", "वर्षा का पैटर्न", "पर्यटकों की संख्या"],
+          answer: 0,
+        },
+        {
+          q: "जुड़े हुए वन क्षेत्रों के उस नेटवर्क को क्या कहा जाता है जो वन्यजीवों को आवासों के बीच सुरक्षित रूप से प्रवास करने देता है?",
+          options: ["वन्यजीव गलियारा", "बफर ज़ोन", "इको-पार्क", "ग्रीन बेल्ट"],
+          answer: 0,
         },
       ],
     },
@@ -1236,6 +1372,10 @@ export const translations = {
         badge: "नागरिक विज्ञान",
         heading: "प्रजाति देखे जाने का ट्रैकर",
         description: "हमारे चार अभयारण्यों में वन्यजीव देखे जाने का एक साझा, बढ़ता हुआ लॉग — आप जैसे आगंतुकों द्वारा दर्ज।",
+      },
+      comingSoon: {
+        heading: "जल्द आ रहा है",
+        message: "हम सिघ्टिंग के लिए एडमिन समीक्षा स्थापित कर रहे हैं ताकि ट्रैकर सटीक और भरोसेमंद बना रहे। अपनी सिघ्टिंग दर्ज करने के लिए जल्द ही वापस देखें!",
       },
       form: {
         heading: "एक सिघ्टिंग दर्ज करें",
