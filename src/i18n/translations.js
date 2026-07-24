@@ -186,6 +186,8 @@ export const translations = {
           { value: "$771M", label: "India's Export Risk from EU CBAM" },
           { value: "₹100Cr+", label: "Recoverable Annually in Sarojini Nagar" },
         ],
+        brandAmbassador: "Brand Ambassador: Sanjay Dutt",
+        galleryCaption: "Sanjay Dutt joins Dr. Rajeshwar Singh at the Sarojini Nagar mission rally",
         learnMore: "Learn More",
         modalTitle: "Net Zero Industry Mission",
         modalIntro:
@@ -899,6 +901,37 @@ export const translations = {
           { title: "नदी व जल निकाय सफाई मिशन", location: "शारदा नदी बेसिन" },
           { title: "वन्यजीव बचाओ पहल", location: "किशनपुर अभयारण्य" },
         ],
+      },
+      netZero: {
+        eyebrow: "विशेष पहल",
+        heading: "नेट ज़ीरो इंडस्ट्री मिशन",
+        subtitle: "डॉ. राजेश्वर सिंह, विधायक, सरोजिनी नगर, लखनऊ द्वारा प्रस्तुत",
+        description:
+          "सरोजिनी नगर के एमएसएमई को उत्सर्जन, ऊर्जा लागत और अपव्यय कम करने में मदद करने का एक मिशन — साथ ही यूरोपीय संघ के कार्बन बॉर्डर एडजस्टमेंट मैकेनिज़्म (CBAM) और भारत की पंचामृत 2070 प्रतिबद्धता जैसे वैश्विक मानकों के लिए निर्यात-तैयार बने रहना।",
+        stats: [
+          { value: "30–50%", label: "संभावित ऊर्जा लागत बचत" },
+          { value: "27,000+", label: "राष्ट्रीय स्तर पर ZED प्रमाणित एमएसएमई" },
+          { value: "$771M", label: "EU CBAM से भारत का निर्यात जोखिम" },
+          { value: "₹100Cr+", label: "सरोजिनी नगर में वार्षिक वसूली योग्य राशि" },
+        ],
+        brandAmbassador: "ब्रांड एंबेसडर: संजय दत्त",
+        galleryCaption: "संजय दत्त, सरोजिनी नगर मिशन रैली में डॉ. राजेश्वर सिंह के साथ",
+        learnMore: "और जानें",
+        modalTitle: "नेट ज़ीरो इंडस्ट्री मिशन",
+        modalIntro:
+          "नेट ज़ीरो कोई लागत नहीं है — यह एक लाभ रणनीति है। ऊर्जा, पानी और अपव्यय पर बचाया गया हर रुपया मुनाफे में जुड़ता है, साथ ही निर्यात बाज़ार भी खुले रहते हैं।",
+        pathwayHeading: "4D मार्ग",
+        pathway: [
+          { step: "पहचानें", description: "ऊर्जा ऑडिट, जल मानचित्रण, अपव्यय मापन और कार्बन फुटप्रिंट गणना।" },
+          { step: "डिज़ाइन करें", description: "समाधान चुनें — रूफटॉप सोलर, LED व दक्षता उन्नयन, जल पुनर्चक्रण, अपव्यय-से-मूल्य प्रणालियां।" },
+          { step: "लागू करें", description: "सरकारी योजनाओं (ZED/GIFT), हरित वित्त (SIDBI/IREDA) और पे-एज़-यू-सेव मॉडल के माध्यम से क्रियान्वयन।" },
+          { step: "परिणाम दें", description: "बचत मापें, कार्बन क्रेडिट अर्जित करें, ZED प्रमाणन प्राप्त करें और निर्यात बाज़ार तक पहुंच पाएं।" },
+        ],
+        officeHeading: "मेरा कार्यालय आपके लिए खुला है",
+        officeText:
+          "नेट ज़ीरो परिवर्तन पर कोई भी प्रश्न हो — सीधे सरोजिनी नगर विधानसभा कार्यालय आएं।",
+        tagline: "नेट ज़ीरो = लाभप्रदता + प्रतिस्पर्धात्मकता + भविष्य-सुरक्षित व्यवसाय",
+        modalClose: "बंद करें",
       },
     },
     sanctuaryDetail: {
