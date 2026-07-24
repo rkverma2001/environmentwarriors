@@ -56,6 +56,13 @@ const Bottomnav = () => {
               {t.home}
             </Link>
 
+            <Link
+              to="/about"
+              className="hover:text-[#0F5132] transition"
+            >
+              {t.aboutUs}
+            </Link>
+
             {/* Sanctuaries Dropdown */}
             <li className="relative group list-none">
 
@@ -226,13 +233,6 @@ const Bottomnav = () => {
             </li>
 
             <Link
-              to="/about"
-              className="hover:text-[#0F5132] transition"
-            >
-              {t.aboutUs}
-            </Link>
-
-            <Link
               to="/volunteer"
               className="hover:text-[#0F5132] transition"
             >
@@ -319,6 +319,13 @@ const Bottomnav = () => {
               className="font-medium text-[#0F5132]"
             >
               {t.home}
+            </Link>
+
+            <Link
+              to="/about"
+              onClick={() => setMobileMenu(false)}
+            >
+              {t.aboutUs}
             </Link>
 
             {/* Mobile Dropdown */}
@@ -512,13 +519,6 @@ const Bottomnav = () => {
               )}
 
             </div>
-
-            <Link
-              to="/about"
-              onClick={() => setMobileMenu(false)}
-            >
-              {t.aboutUs}
-            </Link>
 
             <Link
               to="/volunteer"
