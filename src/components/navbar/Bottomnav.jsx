@@ -194,13 +194,6 @@ const Bottomnav = () => {
               >
 
                 <Link
-                  to="/stories"
-                  className="block px-5 py-3 hover:bg-gray-50"
-                >
-                  {t.stories}
-                </Link>
-
-                <Link
                   to="/quiz"
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
@@ -212,6 +205,13 @@ const Bottomnav = () => {
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
                   {t.games}
+                </Link>
+
+                <Link
+                  to="/stories"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  {t.stories}
                 </Link>
 
                 <Link
@@ -473,15 +473,6 @@ const Bottomnav = () => {
                 <div className="ml-4 mt-3 flex flex-col gap-3">
 
                   <Link
-                    to="/stories"
-                    onClick={() =>
-                      setMobileMenu(false)
-                    }
-                  >
-                    {t.stories}
-                  </Link>
-
-                  <Link
                     to="/quiz"
                     onClick={() =>
                       setMobileMenu(false)
@@ -497,6 +488,15 @@ const Bottomnav = () => {
                     }
                   >
                     {t.games}
+                  </Link>
+
+                  <Link
+                    to="/stories"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    {t.stories}
                   </Link>
 
                   <Link

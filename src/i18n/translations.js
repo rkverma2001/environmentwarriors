@@ -366,6 +366,10 @@ export const translations = {
         heading: "Share Your Wildlife Story",
         description: "Had a memorable wildlife sighting or conservation moment in one of our sanctuaries? Tell us about it.",
       },
+      comingSoon: {
+        heading: "Coming Soon",
+        message: "We're setting up a review process so every story is checked by our team before it goes live. Check back soon to share your wildlife sighting!",
+      },
       form: {
         heading: "Submit Your Story",
         thanks: "Thanks for sharing! Your story was added below (demo only).",
@@ -559,6 +563,10 @@ export const translations = {
         badge: "Citizen Science",
         heading: "Species Spotting Tracker",
         description: "A shared, growing log of wildlife sightings across our four sanctuaries — logged by visitors like you.",
+      },
+      comingSoon: {
+        heading: "Coming Soon",
+        message: "We're setting up admin review for sightings so the tracker stays accurate and trustworthy. Check back soon to log your sighting!",
       },
       form: {
         heading: "Log a Sighting",
@@ -1005,6 +1013,10 @@ export const translations = {
         heading: "अपनी वन्यजीव कहानी साझा करें",
         description: "क्या हमारे किसी अभयारण्य में आपका कोई यादगार वन्यजीव अनुभव या संरक्षण क्षण रहा है? हमें बताएं।",
       },
+      comingSoon: {
+        heading: "जल्द आ रहा है",
+        message: "हम एक समीक्षा प्रक्रिया स्थापित कर रहे हैं ताकि हर कहानी लाइव होने से पहले हमारी टीम द्वारा जांची जाए। अपनी वन्यजीव कहानी साझा करने के लिए जल्द ही वापस देखें!",
+      },
       form: {
         heading: "अपनी कहानी जमा करें",
         thanks: "साझा करने के लिए धन्यवाद! आपकी कहानी नीचे जोड़ दी गई है (केवल डेमो)।",
@@ -1198,6 +1210,10 @@ export const translations = {
         badge: "नागरिक विज्ञान",
         heading: "प्रजाति देखे जाने का ट्रैकर",
         description: "हमारे चार अभयारण्यों में वन्यजीव देखे जाने का एक साझा, बढ़ता हुआ लॉग — आप जैसे आगंतुकों द्वारा दर्ज।",
+      },
+      comingSoon: {
+        heading: "जल्द आ रहा है",
+        message: "हम सिघ्टिंग के लिए एडमिन समीक्षा स्थापित कर रहे हैं ताकि ट्रैकर सटीक और भरोसेमंद बना रहे। अपनी सिघ्टिंग दर्ज करने के लिए जल्द ही वापस देखें!",
       },
       form: {
         heading: "एक सिघ्टिंग दर्ज करें",
