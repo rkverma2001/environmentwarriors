@@ -114,11 +114,16 @@ export const translations = {
         description:
           "Together we are protecting wildlife, restoring forests, and creating a sustainable future for generations to come.",
         stats: [
-          { value: "10M+", title: "Trees Protected", description: "Across forests and green zones" },
-          { value: "500K+", title: "Volunteers", description: "Working for environmental change" },
-          { value: "250+", title: "Species Protected", description: "Wildlife species under conservation" },
-          { value: "150+", title: "Projects Completed", description: "Successful conservation initiatives" },
+          { value: "1000+", title: "Trees Protected", description: "Across forests and green zones" },
+          { value: "500+", title: "Volunteers", description: "Working for environmental change" },
+          { value: "2+", title: "Schools Adopted", description: "Bringing digital classrooms to rural students", clickable: true },
+          { value: "20+", title: "Projects Completed", description: "Successful conservation initiatives" },
         ],
+        schoolModal: {
+          title: "Schools We've Adopted",
+          description: "A look inside the digital classrooms and campuses we've helped bring to life.",
+          close: "Close",
+        },
       },
       gallery: {
         eyebrow: "WILDLIFE GALLERY",
@@ -747,11 +752,16 @@ export const translations = {
         description:
           "साथ मिलकर हम वन्यजीवों की रक्षा कर रहे हैं, वनों को पुनर्स्थापित कर रहे हैं और आने वाली पीढ़ियों के लिए एक स्थायी भविष्य बना रहे हैं।",
         stats: [
-          { value: "10M+", title: "पेड़ संरक्षित", description: "वनों और हरित क्षेत्रों में" },
-          { value: "500K+", title: "स्वयंसेवक", description: "पर्यावरणीय बदलाव के लिए कार्यरत" },
-          { value: "250+", title: "प्रजातियां संरक्षित", description: "संरक्षण के अंतर्गत वन्यजीव प्रजातियां" },
-          { value: "150+", title: "परियोजनाएं पूर्ण", description: "सफल संरक्षण पहलें" },
+          { value: "1000+", title: "पेड़ संरक्षित", description: "वनों और हरित क्षेत्रों में" },
+          { value: "500+", title: "स्वयंसेवक", description: "पर्यावरणीय बदलाव के लिए कार्यरत" },
+          { value: "2+", title: "गोद लिए गए स्कूल", description: "ग्रामीण छात्रों तक डिजिटल कक्षाएं पहुंचाना", clickable: true },
+          { value: "20+", title: "परियोजनाएं पूर्ण", description: "सफल संरक्षण पहलें" },
         ],
+        schoolModal: {
+          title: "हमारे द्वारा गोद लिए गए स्कूल",
+          description: "उन डिजिटल कक्षाओं और परिसरों की एक झलक जिन्हें बनाने में हमने मदद की है।",
+          close: "बंद करें",
+        },
       },
       gallery: {
         eyebrow: "वन्यजीव गैलरी",
