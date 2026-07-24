@@ -256,8 +256,11 @@ export const translations = {
       overview: {
         eyebrow: "OUR SANCTUARIES",
         heading: "Preserving Wildlife & Natural Ecosystems",
-        description:
-          "Our sanctuaries are home to diverse wildlife, endangered species, dense forests, wetlands, rivers and rich biodiversity. Through conservation efforts, we protect these natural treasures for future generations.",
+        description: [
+          "With its 16,620 square kilometres of forest, Uttar Pradesh is home to a variety of breathtakingly gorgeous forest sceneries, wildlife, vegetation, and fauna. Uttar Pradesh has several ecotourism spots, but the most prominent are the tiger reserves, wildlife sanctuaries, and wetlands.",
+          "The Uttar Pradesh Forest Department, through its dedication to conservation and sustainable management, has been instrumental in preserving this invaluable natural heritage. All wildlife organizations, conservationists, and influencers who have played a vital role in conserving Uttar Pradesh's wildlife, especially tigers, deserve recognition for their efforts. By promoting ecotourism aggressively, the Forest Department and Department of Tourism have given the tourism industry another metric.",
+          "Approximately 6.98% of Uttar Pradesh's total land area is made up of forests. The ecological and economic framework of the state is significantly supported by this forest cover. The state government is making sustained efforts toward the establishment of green belts, development of ecotourism, and success of plantations to increase the forests and tree cover in the state. Through the efforts of the Department of Forest, new projects were started for strengthening ecotourism in the state, resulting in promoting ecotourism. Visitors avail themselves of improved tourism facilities such as accommodation, field infrastructure such as watch towers and view sheds, cycle tracks, walk paths, nature trails, etc.",
+        ],
         protectedAreas: "Protected Areas",
         wildlifeSpecies: "Wildlife Species",
         sqKmProtected: "Sq Km Protected",
@@ -291,11 +294,10 @@ export const translations = {
       story: {
         eyebrow: "Our Story",
         heading: "Creating Environment Warriors",
-        p1: "Environment Warriors was founded with a simple mission: empowering people to protect nature and secure the future.",
-        p2: "Through environmental awareness campaigns, wildlife conservation, tree plantation drives and community engagement, we work towards creating a greener and healthier world.",
-        placeholderLabel: "Placeholder notice:",
-        placeholderText:
-          "we couldn't find a public founding history for this specific organization to cite here. Share the real year founded, founding story and milestones and we'll replace this with your actual history.",
+        p1: "Creating Environment Warriors is an inspiring initiative born from the belief that each individual has the power to make a difference in the fight for wildlife conservation. Our mission is to support and collaborate with forest departments, working together to ensure a greener, more sustainable future for generations to come.",
+        p2Before: "This endeavor is strengthened by the incredible efforts of ",
+        p2Highlight: "Shree Pitambara Baglamukhi Sidh Peeth Uttarakhand Trust",
+        p2After: ", Ambalika Welfare Foundation, Lucknow, and Ambrish Sharma Wildlife Welfare Trust, New Delhi and few others like minded friends & well wishers, all united in their commitment to preserve nature's wonders. Together, we are dedicated to safeguarding tigers, wildlife, and ecosystems, creating lasting positive change in the fight for conservation.",
         learnMore: "Learn More",
       },
       visionMission: {
@@ -984,8 +986,11 @@ export const translations = {
       overview: {
         eyebrow: "हमारे अभयारण्य",
         heading: "वन्यजीवों और प्राकृतिक पारिस्थितिकी तंत्रों का संरक्षण",
-        description:
-          "हमारे अभयारण्य विविध वन्यजीवों, लुप्तप्राय प्रजातियों, घने जंगलों, आर्द्रभूमियों, नदियों और समृद्ध जैव विविधता का घर हैं। संरक्षण प्रयासों के माध्यम से, हम आने वाली पीढ़ियों के लिए इन प्राकृतिक खजानों की रक्षा करते हैं।",
+        description: [
+          "16,620 वर्ग किलोमीटर वन क्षेत्र के साथ, उत्तर प्रदेश विभिन्न प्रकार के बेहद खूबसूरत वन दृश्यों, वन्यजीवों, वनस्पति और जीव-जंतुओं का घर है। उत्तर प्रदेश में कई इकोटूरिज्म स्थल हैं, लेकिन सबसे प्रमुख टाइगर रिज़र्व, वन्यजीव अभयारण्य और आर्द्रभूमियां हैं।",
+          "उत्तर प्रदेश वन विभाग ने संरक्षण और सतत प्रबंधन के प्रति अपने समर्पण के माध्यम से इस अमूल्य प्राकृतिक विरासत को संरक्षित करने में महत्वपूर्ण भूमिका निभाई है। सभी वन्यजीव संगठन, संरक्षणवादी और प्रभावशाली व्यक्ति जिन्होंने उत्तर प्रदेश के वन्यजीवों, विशेष रूप से बाघों के संरक्षण में महत्वपूर्ण भूमिका निभाई है, वे अपने प्रयासों के लिए सराहना के पात्र हैं। इकोटूरिज्म को आक्रामक रूप से बढ़ावा देकर, वन विभाग और पर्यटन विभाग ने पर्यटन उद्योग को एक और आयाम दिया है।",
+          "उत्तर प्रदेश के कुल भूमि क्षेत्र का लगभग 6.98% वनों से आच्छादित है। राज्य का पारिस्थितिक और आर्थिक ढांचा इस वन आवरण से महत्वपूर्ण रूप से समर्थित है। राज्य सरकार ग्रीन बेल्ट की स्थापना, इकोटूरिज्म के विकास और वृक्षारोपण की सफलता की दिशा में निरंतर प्रयास कर रही है ताकि राज्य में वनों और वृक्षों के आवरण को बढ़ाया जा सके। वन विभाग के प्रयासों से, राज्य में इकोटूरिज्म को मजबूत करने के लिए नई परियोजनाएं शुरू की गईं, जिसके परिणामस्वरूप इकोटूरिज्म को बढ़ावा मिला। पर्यटक बेहतर पर्यटन सुविधाओं जैसे आवास, वॉच टावर और व्यू शेड जैसे फील्ड इंफ्रास्ट्रक्चर, साइकिल ट्रैक, वॉक पाथ, नेचर ट्रेल आदि का लाभ उठाते हैं।",
+        ],
         protectedAreas: "संरक्षित क्षेत्र",
         wildlifeSpecies: "वन्यजीव प्रजातियां",
         sqKmProtected: "वर्ग किमी संरक्षित",
@@ -1019,11 +1024,10 @@ export const translations = {
       story: {
         eyebrow: "हमारी कहानी",
         heading: "एनवायरनमेंट वॉरियर्स का निर्माण",
-        p1: "एनवायरनमेंट वॉरियर्स की स्थापना एक सरल मिशन के साथ की गई थी: लोगों को प्रकृति की रक्षा करने और भविष्य को सुरक्षित करने हेतु सशक्त बनाना।",
-        p2: "पर्यावरण जागरूकता अभियानों, वन्यजीव संरक्षण, वृक्षारोपण अभियानों और सामुदायिक सहभागिता के माध्यम से, हम एक हरित और स्वस्थ विश्व बनाने की दिशा में कार्य करते हैं।",
-        placeholderLabel: "प्लेसहोल्डर सूचना:",
-        placeholderText:
-          "हमें इस विशिष्ट संगठन के लिए यहां उद्धृत करने हेतु कोई सार्वजनिक स्थापना इतिहास नहीं मिला। वास्तविक स्थापना वर्ष, स्थापना की कहानी और मील के पत्थर साझा करें और हम इसे आपके वास्तविक इतिहास से बदल देंगे।",
+        p1: "एनवायरनमेंट वॉरियर्स का निर्माण एक प्रेरणादायक पहल है, जो इस विश्वास से जन्मी है कि हर व्यक्ति में वन्यजीव संरक्षण की लड़ाई में बदलाव लाने की शक्ति है। हमारा मिशन वन विभागों का समर्थन और सहयोग करना है, ताकि आने वाली पीढ़ियों के लिए एक हरित, अधिक स्थायी भविष्य सुनिश्चित किया जा सके।",
+        p2Before: "यह प्रयास ",
+        p2Highlight: "श्री पीताम्बरा बगलामुखी सिद्ध पीठ उत्तराखंड ट्रस्ट",
+        p2After: ", अंबालिका वेलफेयर फाउंडेशन, लखनऊ, और अंब्रीश शर्मा वाइल्डलाइफ वेलफेयर ट्रस्ट, नई दिल्ली तथा अन्य समान विचारधारा वाले मित्रों और शुभचिंतकों के अविश्वसनीय प्रयासों से सशक्त हुआ है, जो सभी प्रकृति के आश्चर्यों को संरक्षित करने की प्रतिबद्धता में एकजुट हैं। साथ मिलकर, हम बाघों, वन्यजीवों और पारिस्थितिकी तंत्रों की रक्षा के लिए समर्पित हैं, और संरक्षण की लड़ाई में स्थायी सकारात्मक बदलाव ला रहे हैं।",
         learnMore: "और जानें",
       },
       visionMission: {

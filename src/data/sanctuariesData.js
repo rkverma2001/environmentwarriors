@@ -32,7 +32,7 @@ const sanctuariesData = {
       uniqueness:
         "The only wildlife habitat in Uttar Pradesh where the Bengal tiger and the Indian one-horned rhinoceros coexist — rhinos were reintroduced here after local extinction, and Dudhwa is also where India's swamp-deer recovery program began.",
       description:
-        "Named after the river Dudhwa, the park is famous for One-Horned Rhinoceros, Bengal Tigers, Swamp Deer and rich Sal forests.",
+        "Named after the river Dudhwa, which runs along the reserve's southern border, DNP is famous for its small population of re-introduced One-horned Rhinoceros, restricted to a fenced enclosure in Suheli floodplains. The 10 ranges of Dudhwa are: Eco-tourism range Dudhwa, Dudhwa range, Belraya range, Sathiyana range, Kishanpur, Mailani, Gauri Phanta, Bankati, South Sonaripur & North Sonaripur. Moreover, protected under Schedule 1 of WPA 1972, Swamp Deer or Barasingha is one of the flagship species of Dudhwa National Park. Spreading across a territory of 811 sq km, seeing the nature sweethearts with bogs, fields, and thick woods, the region is truly meant for immense checks of Hog Deer and Tiger species. The park has probably the best woodlands of 'Sal' tree in the world, among other vegetation; and is a virtual untouched paradise for nature lovers, wildlife enthusiasts, and bird watchers. Also, DNP is home to some major carnivores like Leopard, Tiger, Fishing Cat, Jungle Cat, Leopard Cat, Sloth Bear & Large Indian Civet. Some major herbivores inhabiting DNP include Elephant, Chital, Sambar, Hog Deer, Barking Deer, Nilgai & Wild Pig.",
       flora: [
         "Sal (Shorea robusta) — dominant canopy tree",
         "Sissoo (Dalbergia sissoo) and Semal (Bombax malabaricum)",
@@ -66,7 +66,7 @@ const sanctuariesData = {
       uniqueness:
         "उत्तर प्रदेश का एकमात्र वन्यजीव आवास जहां बंगाल टाइगर और भारतीय एक सींग वाला गैंडा एक साथ रहते हैं — यहां स्थानीय विलुप्ति के बाद गैंडों को फिर से बसाया गया, और दुधवा वह स्थान भी है जहां भारत का बारहसिंगा पुनर्प्राप्ति कार्यक्रम शुरू हुआ।",
       description:
-        "दुधवा नदी के नाम पर रखा गया यह पार्क एक सींग वाले गैंडे, बंगाल टाइगर, दलदली हिरण और समृद्ध साल वनों के लिए प्रसिद्ध है।",
+        "दुधवा नदी के नाम पर रखा गया, जो रिज़र्व की दक्षिणी सीमा पर बहती है, DNP अपने पुनर्स्थापित एक सींग वाले गैंडे की छोटी आबादी के लिए प्रसिद्ध है, जो सुहेली बाढ़ के मैदानों में एक बाड़ेदार क्षेत्र तक सीमित है। दुधवा की 10 रेंज हैं: इको-टूरिज्म रेंज दुधवा, दुधवा रेंज, बेलरैया रेंज, सथियाना रेंज, किशनपुर, मैलानी, गौरी फांटा, बनकटी, दक्षिण सोनारीपुर और उत्तर सोनारीपुर। इसके अलावा, वन्यजीव संरक्षण अधिनियम (WPA) 1972 की अनुसूची 1 के तहत संरक्षित, दलदली हिरण या बारहसिंगा दुधवा राष्ट्रीय उद्यान की प्रमुख प्रजातियों में से एक है। 811 वर्ग किमी के क्षेत्र में फैला यह क्षेत्र, दलदल, खेतों और घने जंगलों के साथ, वास्तव में हॉग डियर और बाघ प्रजातियों की भारी संख्या के लिए बना है। इस पार्क में शायद दुनिया के सबसे बेहतरीन 'साल' वृक्षों के वन हैं, अन्य वनस्पतियों के साथ; और यह प्रकृति प्रेमियों, वन्यजीव उत्साहियों और पक्षी प्रेक्षकों के लिए एक वास्तविक अछूता स्वर्ग है। इसके अलावा, DNP तेंदुआ, बाघ, मत्स्य बिलाव, जंगली बिल्ली, तेंदुआ बिल्ली, सुस्त भालू और बड़े भारतीय सिवेट जैसे प्रमुख मांसाहारी जीवों का घर है। DNP में रहने वाले प्रमुख शाकाहारी जीवों में हाथी, चीतल, सांभर, हॉग डियर, काकड़, नीलगाय और जंगली सूअर शामिल हैं।",
       flora: [
         "साल (शोरिया रोबस्टा) — प्रमुख वृक्ष प्रजाति",
         "सिसू (डालबर्जिया सिस्सू) और सेमल (बॉम्बैक्स मालाबारिकम)",
@@ -107,7 +107,8 @@ const sanctuariesData = {
         "Dense riparian and moist-deciduous forest along the Sharda river, dotted with wetlands (\"tals\") — quieter and less-visited than the main Dudhwa range.",
       uniqueness:
         "Known as \"Tiger Territory\" — home to the reserve's largest barasingha herds, gathering many hundreds strong at Jhadi Tal, its premier wetland.",
-      description: "Kishanpur Sanctuary is famous for wetlands, migratory birds and swamp deer.",
+      description:
+        "Lying along the bank of the Sharda River, Kishanpur WLS's wetlands sustain a wide variety of life, including uncommon bird species, making it a significant location for bird migration worldwide. The sanctuary has four ranges: Bhira, Kishanpur, Mailani, and Pawayari. More than 350 species of birds are found in Kishanpur WLS, including the highly endangered Bengal Florican. Jhadi Taal is an important site for resident and migratory bird species. In Kishanpur's lush wetlands, one may easily spot majestic herds of swamp deer and crocodiles basking. Jhadi Taal may have the biggest concentration of swamp deer in any one location. It is home to Tigers, Panthers, Pythons, Yapping Deer, Gharials, Wild Hogs, and Marsh Deer. Tiger, Chital, Hog Deer, Wild Boars, Otters, and many more animals can be seen here. It is home to various imperiled species, including Gharial, Tiger, Rhino, Gangetic Dolphin, Bog Deer, Hispid Rabbit, Bengal Florican, the White-backed and Long-billed Vultures. The red-crested pochard, mallard, dabchick, grebe, common pochard, pintail, shoveler, river tern, the white-eyed pochard, spoonbill, egret, snakebird, heron, black-necked stork, and numerous other avian species frequent the taal.",
       flora: [
         "Sal, Teak and Jamun-dominated riparian forest",
         "Terai grassland around Jhadi Tal",
@@ -139,7 +140,8 @@ const sanctuariesData = {
         "शारदा नदी के किनारे घना तटीय और नम-पर्णपाती वन, जिसमें आर्द्रभूमि (\"ताल\") बिखरी हुई हैं — मुख्य दुधवा क्षेत्र की तुलना में शांत और कम आबाद।",
       uniqueness:
         "\"टाइगर टेरिटरी\" के नाम से प्रसिद्ध — रिज़र्व के सबसे बड़े बारहसिंगा झुंडों का घर, जो इसकी प्रमुख आर्द्रभूमि झाड़ी ताल में सैकड़ों की संख्या में एकत्र होते हैं।",
-      description: "किशनपुर अभयारण्य आर्द्रभूमि, प्रवासी पक्षियों और दलदली हिरणों के लिए प्रसिद्ध है।",
+      description:
+        "शारदा नदी के किनारे स्थित, किशनपुर वन्यजीव अभयारण्य की आर्द्रभूमियां विविध प्रकार के जीवन को सहारा देती हैं, जिनमें दुर्लभ पक्षी प्रजातियां भी शामिल हैं, जिससे यह विश्व स्तर पर पक्षी प्रवासन के लिए एक महत्वपूर्ण स्थान बन जाता है। अभयारण्य की चार रेंज हैं: भीरा, किशनपुर, मैलानी और पवायरी। किशनपुर वन्यजीव अभयारण्य में 350 से अधिक पक्षी प्रजातियां पाई जाती हैं, जिनमें अत्यंत लुप्तप्राय बंगाल फ्लोरिकन भी शामिल है। झाड़ी ताल स्थानीय और प्रवासी पक्षी प्रजातियों के लिए एक महत्वपूर्ण स्थल है। किशनपुर की हरी-भरी आर्द्रभूमियों में, कोई भी आसानी से दलदली हिरणों के भव्य झुंड और धूप सेंकते मगरमच्छों को देख सकता है। झाड़ी ताल में किसी भी एक स्थान पर दलदली हिरणों की सबसे बड़ी सघनता हो सकती है। यह बाघ, तेंदुआ, अजगर, यैपिंग डियर, घड़ियाल, जंगली सूअर और मार्श डियर का घर है। यहां बाघ, चीतल, हॉग डियर, जंगली सूअर, ऊदबिलाव और कई अन्य जानवर देखे जा सकते हैं। यह विभिन्न संकटग्रस्त प्रजातियों का घर है, जिनमें घड़ियाल, बाघ, गैंडा, गंगा डॉल्फिन, बॉग डियर, हिस्पिड खरगोश, बंगाल फ्लोरिकन, व्हाइट-बैक्ड और लॉन्ग-बिल्ड गिद्ध शामिल हैं। रेड-क्रेस्टेड पोचार्ड, मैलार्ड, डबचिक, ग्रीब, कॉमन पोचार्ड, पिनटेल, शॉवलर, रिवर टर्न, व्हाइट-आइड पोचार्ड, स्पूनबिल, इग्रेट, स्नेकबर्ड, बगुला, ब्लैक-नेक्ड स्टॉर्क और कई अन्य पक्षी प्रजातियां इस ताल पर अक्सर आती हैं।",
       flora: [
         "साल, सागौन और जामुन प्रधान तटीय वन",
         "झाड़ी ताल के आसपास तराई घास का मैदान",
@@ -179,7 +181,8 @@ const sanctuariesData = {
         "Riverine Terai forest along the Girwa (a spring-fed channel of the Ghaghara), with sandbanks, river islands and floodplain grassland.",
       uniqueness:
         "One of the very few stretches in India where the Gangetic river dolphin, the gharial and the marsh mugger crocodile all share the same river.",
-      description: "Katarniaghat is known for dolphins, gharials and river ecosystems.",
+      description:
+        "The sanctuary also forms an important corridor of connectivity between the Dudhwa Tiger Reserve in India and the Bardia National Park in Nepal. The sanctuary has six ranges: Katarniaghat, Nishangadha, Murtiha, Dharmapur, Kakraha, and Motipur. Katarniaghat also has the unique distinction of being the last of the places where a breeding population of the critically endangered vultures also live. The Girwa River, with its sandbanks, provides a perfect home to critically endangered Gharials. The Ghaghara River flowing through the sanctuary supports rare turtles, freshwater fish, and other aquatic life, including the endangered Gangetic Dolphins. Endemic to the Katarniaghat Wildlife Sanctuary, the blind burrowing frog is a rare and distinctive amphibian found exclusively in this region. It's also home to endangered species such as Gharial, Swamp Deer, Hispid Hare, Bengal Florican, and the White-backed and Long-billed Vultures.",
       flora: [
         "Sal and mixed riverine forest",
         "Khair and Sissoo along the riverbanks",
@@ -211,7 +214,8 @@ const sanctuariesData = {
         "गिरवा (घाघरा की एक झरने से पोषित शाखा) के किनारे तटीय तराई वन, जिसमें रेत के किनारे, नदी द्वीप और बाढ़-मैदान घास के मैदान हैं।",
       uniqueness:
         "भारत के बहुत कम स्थानों में से एक जहां गंगा डॉल्फिन, घड़ियाल और मार्श मगर मगरमच्छ एक ही नदी साझा करते हैं।",
-      description: "कतर्नियाघाट डॉल्फिन, घड़ियालों और नदी पारिस्थितिकी तंत्र के लिए जाना जाता है।",
+      description:
+        "यह अभयारण्य भारत में दुधवा टाइगर रिज़र्व और नेपाल में बर्दिया राष्ट्रीय उद्यान के बीच संपर्क का एक महत्वपूर्ण गलियारा भी बनाता है। अभयारण्य की छह रेंज हैं: कतर्नियाघाट, निशानगाढ़ा, मुर्तिहा, धर्मापुर, कक्रहा और मोतीपुर। कतर्नियाघाट को यह अनूठा गौरव भी प्राप्त है कि यह उन अंतिम स्थानों में से एक है जहां गंभीर रूप से लुप्तप्राय गिद्धों की प्रजनन आबादी भी रहती है। गिरवा नदी, अपने रेतीले किनारों के साथ, गंभीर रूप से लुप्तप्राय घड़ियालों के लिए एक आदर्श आवास प्रदान करती है। अभयारण्य से होकर बहने वाली घाघरा नदी दुर्लभ कछुओं, मीठे पानी की मछलियों और अन्य जलीय जीवन को सहारा देती है, जिसमें लुप्तप्राय गंगा डॉल्फिन भी शामिल हैं। कतर्नियाघाट वन्यजीव अभयारण्य में स्थानिक, अंधा बिल खोदने वाला मेंढक एक दुर्लभ और विशिष्ट उभयचर है जो विशेष रूप से इसी क्षेत्र में पाया जाता है। यह घड़ियाल, दलदली हिरण, हिस्पिड खरगोश, बंगाल फ्लोरिकन, और व्हाइट-बैक्ड व लॉन्ग-बिल्ड गिद्धों जैसी लुप्तप्राय प्रजातियों का भी घर है।",
       flora: [
         "साल और मिश्रित तटीय वन",
         "नदी किनारों पर खैर और सिसू",
@@ -251,7 +255,8 @@ const sanctuariesData = {
         "Terai moist forest and tall elephant grass, with sugarcane-fringed corridors linking Dudhwa's forests to Nepal's Terai.",
       uniqueness:
         "Part of the Terai Arc Landscape wildlife corridor — one of India's most closely watched tiger-recovery stories, with tiger density among the highest of any Indian reserve.",
-      description: "Pilibhit Tiger Reserve is one of India's best tiger habitats.",
+      description:
+        "PTR is India's 45th Tiger Reserve venture. The Pilibhit Tiger Reserve (PTR) in Uttar Pradesh has five forest ranges: Barahi, Haripur, Deoria, Mala, and Mahof. Chuka Forests are located along the banks of the Sharda River in Pilibhit district. The Sharda Sagar Dam, built on the Sharda River, creates the Sharda Sagar Reservoir, which, together with the surrounding forest, forms a stunning landscape. The Sal forests, renowned for their rich biodiversity, provide a habitat for numerous bird and animal species. These forests offer a perfect opportunity to reconnect with nature. Chuka Beach is situated between Sharda Dam and Canal. It is a beautiful tourist destination with one bamboo hut, one treehouse, and four Thara huts. The Lagga Bagga Wildlife Corridor acts as a linking corridor from Pilibhit Tiger Reserve with Nepal's Shuklaphanta National Park. It ensures wildlife mobility between sanctuaries and serves as a vital buffer zone and migration corridor, promoting habitat connectivity. It is home to an environment for more than 127 creatures, 326 bird species, and 2,100 flowering plants. The Chuka Translation Zones, with nature understanding centers, bungalows, and edges of a vast water body, are unique and extremely popular with visitors.",
       flora: [
         "Sal forest",
         "Tall elephant grassland",
@@ -283,7 +288,8 @@ const sanctuariesData = {
         "तराई नम वन और ऊंची हाथी घास, गन्ने से घिरे गलियारे जो दुधवा के वनों को नेपाल की तराई से जोड़ते हैं।",
       uniqueness:
         "तराई आर्क लैंडस्केप वन्यजीव गलियारे का हिस्सा — भारत की सबसे नज़दीकी से देखी जाने वाली बाघ-पुनर्प्राप्ति कहानियों में से एक, जहां बाघों का घनत्व किसी भी भारतीय रिज़र्व में सर्वाधिक है।",
-      description: "पीलीभीत टाइगर रिज़र्व भारत के सर्वश्रेष्ठ बाघ आवासों में से एक है।",
+      description:
+        "PTR भारत का 45वां टाइगर रिज़र्व है। उत्तर प्रदेश में पीलीभीत टाइगर रिज़र्व (PTR) की पांच वन रेंज हैं: बराही, हरिपुर, देवरिया, माला और महोफ। चूका वन पीलीभीत जिले में शारदा नदी के किनारे स्थित हैं। शारदा नदी पर बना शारदा सागर बांध शारदा सागर जलाशय का निर्माण करता है, जो आसपास के वन के साथ मिलकर एक मनोरम परिदृश्य बनाता है। समृद्ध जैव विविधता के लिए प्रसिद्ध साल वन, कई पक्षी और पशु प्रजातियों के लिए आवास प्रदान करते हैं। ये वन प्रकृति से फिर से जुड़ने का एक आदर्श अवसर प्रदान करते हैं। चूका बीच शारदा बांध और नहर के बीच स्थित है। यह एक बांस की झोपड़ी, एक ट्रीहाउस और चार थारा झोपड़ियों वाला एक खूबसूरत पर्यटन स्थल है। लग्गा बग्गा वन्यजीव गलियारा पीलीभीत टाइगर रिज़र्व को नेपाल के शुक्लाफांटा राष्ट्रीय उद्यान से जोड़ने वाले गलियारे के रूप में कार्य करता है। यह अभयारण्यों के बीच वन्यजीवों की आवाजाही सुनिश्चित करता है और एक महत्वपूर्ण बफर ज़ोन तथा प्रवास गलियारे के रूप में कार्य करते हुए आवास संपर्क को बढ़ावा देता है। यह 127 से अधिक प्राणियों, 326 पक्षी प्रजातियों और 2,100 फूल वाले पौधों के लिए एक वातावरण का घर है। प्रकृति समझ केंद्रों, बंगलों और एक विशाल जल निकाय के किनारों वाले चूका ट्रांसलेशन ज़ोन अद्वितीय हैं और आगंतुकों के बीच अत्यंत लोकप्रिय हैं।",
       flora: [
         "साल वन",
         "ऊंची हाथी घास का मैदान",

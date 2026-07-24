@@ -5,8 +5,6 @@ import {
   FaGlobe,
   FaPaw,
   FaHandsHelping,
-  FaArrowRight,
-  FaInfoCircle,
   FaUser,
   FaSchool,
 } from "react-icons/fa";
@@ -93,21 +91,10 @@ const About = () => {
               </p>
 
               <p className="mt-4 text-gray-600 leading-relaxed">
-                {t.story.p2}
+                {t.story.p2Before}
+                <strong className="bg-[#F5C542]/40 text-[#0F5132] font-semibold px-1 rounded">{t.story.p2Highlight}</strong>
+                {t.story.p2After}
               </p>
-
-              <div className="mt-6 flex gap-3 bg-[#0F5132]/5 rounded-xl p-4 text-sm text-gray-600 leading-relaxed">
-                <FaInfoCircle className="text-[#0F5132] flex-shrink-0 mt-0.5" />
-                <p>
-                  <strong className="text-[#0F5132]">{t.story.placeholderLabel}</strong>{" "}
-                  {t.story.placeholderText}
-                </p>
-              </div>
-
-              <button className="mt-8 bg-[#0F5132] text-white px-6 py-3 rounded-xl flex items-center gap-2 hover:bg-[#0a3d26] transition">
-                {t.story.learnMore}
-                <FaArrowRight />
-              </button>
             </div>
           </div>
         </div>
