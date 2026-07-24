@@ -13,6 +13,13 @@ const eventsData = [
       "/events/dec-2025/DSC04908.JPG",
     ],
   },
+  {
+    id: "jan-2025-curtain-raiser",
+    date: "2025-01-12",
+    images: [
+      "/events/jan-2025-curtain-raiser/curtain-raiser-1.jpg",
+    ],
+  },
 ];
 
 export default eventsData;

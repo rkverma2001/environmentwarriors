@@ -141,12 +141,12 @@ const Footer = () => {
 
               <div className="flex gap-3">
                 <FaPhoneAlt className="text-[#4CAF50]" />
-                <p>+91 12345 67890</p>
+                <a href="tel:+918287078724" className="hover:text-white">+91 82870 78724</a>
               </div>
 
               <div className="flex gap-3">
                 <FaEnvelope className="text-[#4CAF50]" />
-                <p>info@environmentwarriors.org</p>
+                <a href="mailto:info@environmentwarriors.org" className="hover:text-white">info@environmentwarriors.org</a>
               </div>
 
             </div>

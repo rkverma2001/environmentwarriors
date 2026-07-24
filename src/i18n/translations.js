@@ -158,11 +158,13 @@ export const translations = {
         eyebrow: "UPCOMING EVENTS",
         heading: "Join Our Conservation Activities",
         description: "Participate in our upcoming events and become a part of the movement to protect nature and wildlife.",
-        featuredEvent: "FEATURED EVENT",
-        featuredTitle: "Join Our Plantation Drive",
-        featuredLocation: "Terai Region of UP",
+        featuredEvent: "LAUNCH EVENT",
+        featuredTitle: "Wildlife Conservation Event & Website Launch",
+        featuredDate: "26 July 2026",
+        featuredLocation: "Forest Office, Katarniaghat Wildlife Division",
         featuredDescription:
-          "Help us plant thousands of trees and contribute towards restoring forest ecosystems and combating climate change.",
+          "Join us as we felicitate forest department workers for their dedicated service and officially launch the Environment Warriors website, hosted by Dr. Rajeshwar Singh, MLA, Sarojini Nagar.",
+        featuredHost: "Hosted by Dr. Rajeshwar Singh, MLA, Sarojini Nagar",
         registerNow: "Register Now",
         viewDetails: "View Details",
         comingSoon: "Coming Soon",
@@ -411,6 +413,31 @@ export const translations = {
         becomeVolunteer: "Become A Volunteer",
       },
     },
+    contact: {
+      hero: {
+        badge: "Get In Touch",
+        heading: "Contact Us",
+        description: "Have a question, want to report a human-wildlife conflict, or wish to collaborate with us? We'd love to hear from you.",
+      },
+      info: {
+        heading: "Reach Out To Us",
+        addressLabel: "Visit Us",
+        address: "Lucknow, Uttar Pradesh, India",
+        phoneLabel: "Call Us",
+        phone: "+91 82870 78724",
+        phoneNote: "Wildlife emergency & general enquiries",
+        emailLabel: "Email Us",
+        email: "info@environmentwarriors.org",
+      },
+      form: {
+        heading: "Send Us A Message",
+        fullName: "Full Name",
+        email: "Email Address",
+        subject: "Subject",
+        message: "Your Message",
+        submit: "Send Message",
+      },
+    },
     stories: {
       hero: {
         badge: "Community Voices",
@@ -456,6 +483,20 @@ export const translations = {
       },
       filters: { all: "All", india: "India", world: "World" },
       items: [
+        {
+          regionKey: "india",
+          tag: "Wildlife",
+          title: "NTCA's 2026 STRIDES Report Assesses Tiger Reserves Nationwide",
+          date: "Jul 2026",
+          blurb: "The 29th National Tiger Conservation Authority meeting in Coimbatore released the STRIDES 2026 report, assessing ecology, infrastructure and conservation management across India's tiger reserves, including the Terai reserves.",
+        },
+        {
+          regionKey: "india",
+          tag: "Policy",
+          title: "Supreme Court Clears Kukrail Night Safari Project in Lucknow",
+          date: "Jul 2026",
+          blurb: "The Supreme Court approved Uttar Pradesh's ₹1,510-crore Kukrail Night Safari and Zoological Park, set to be India's first night safari, subject to conditions laid down by the Central Empowered Committee and Central Zoo Authority.",
+        },
         {
           regionKey: "india",
           tag: "Wildlife",
@@ -726,6 +767,12 @@ export const translations = {
           description:
             "Environment Warriors visited a primary school in Pilibhit district to inaugurate a smart classroom and felicitate students and staff, with balloons, gifts and a small ceremony marking the occasion.",
         },
+        "jan-2025-curtain-raiser": {
+          title: "Curtain Raiser Event to Conserve and Protect Wildlife & Ecosystem of the Terai",
+          location: "Uttar Pradesh",
+          description:
+            "Environment Warriors held its curtain raiser event to conserve and protect the wildlife and ecosystem of the Terai, uniting officials and guests for a greener, healthier future, and unveiling the \"Wildlife @ Terai\" 2025 calendar.",
+        },
       },
     },
   },
@@ -888,11 +935,13 @@ export const translations = {
         eyebrow: "आगामी कार्यक्रम",
         heading: "हमारी संरक्षण गतिविधियों में शामिल हों",
         description: "हमारे आगामी कार्यक्रमों में भाग लें और प्रकृति व वन्यजीवों की रक्षा के आंदोलन का हिस्सा बनें।",
-        featuredEvent: "विशेष कार्यक्रम",
-        featuredTitle: "हमारे वृक्षारोपण अभियान में शामिल हों",
-        featuredLocation: "उत्तर प्रदेश का तराई क्षेत्र",
+        featuredEvent: "लॉन्च कार्यक्रम",
+        featuredTitle: "वन्यजीव संरक्षण कार्यक्रम व वेबसाइट शुभारंभ",
+        featuredDate: "26 जुलाई 2026",
+        featuredLocation: "फारेस्ट ऑफिस, कतर्नियाघाट वन्यजीव प्रभाग",
         featuredDescription:
-          "हजारों पेड़ लगाने और वन पारिस्थितिकी तंत्र को पुनर्स्थापित करने तथा जलवायु परिवर्तन से लड़ने में हमारी मदद करें।",
+          "वन विभाग के कर्मियों को उनकी समर्पित सेवा हेतु सम्मानित करने और एनवायरनमेंट वॉरियर्स वेबसाइट के आधिकारिक शुभारंभ में शामिल हों — डॉ. राजेश्वर सिंह, विधायक, सरोजिनी नगर द्वारा आयोजित।",
+        featuredHost: "डॉ. राजेश्वर सिंह, विधायक, सरोजिनी नगर द्वारा आयोजित",
         registerNow: "अभी पंजीकरण करें",
         viewDetails: "विवरण देखें",
         comingSoon: "जल्द आ रहा है",
@@ -1141,6 +1190,31 @@ export const translations = {
         becomeVolunteer: "स्वयंसेवक बनें",
       },
     },
+    contact: {
+      hero: {
+        badge: "संपर्क करें",
+        heading: "संपर्क करें",
+        description: "कोई प्रश्न है, मानव-वन्यजीव संघर्ष की सूचना देनी है, या हमारे साथ सहयोग करना चाहते हैं? हमें आपसे सुनकर खुशी होगी।",
+      },
+      info: {
+        heading: "हमसे संपर्क करें",
+        addressLabel: "हमसे मिलें",
+        address: "लखनऊ, उत्तर प्रदेश, भारत",
+        phoneLabel: "हमें कॉल करें",
+        phone: "+91 82870 78724",
+        phoneNote: "वन्यजीव आपातकाल व सामान्य पूछताछ",
+        emailLabel: "हमें ईमेल करें",
+        email: "info@environmentwarriors.org",
+      },
+      form: {
+        heading: "हमें संदेश भेजें",
+        fullName: "पूरा नाम",
+        email: "ईमेल पता",
+        subject: "विषय",
+        message: "आपका संदेश",
+        submit: "संदेश भेजें",
+      },
+    },
     stories: {
       hero: {
         badge: "समुदाय की आवाज़ें",
@@ -1186,6 +1260,20 @@ export const translations = {
       },
       filters: { all: "सभी", india: "भारत", world: "विश्व" },
       items: [
+        {
+          regionKey: "india",
+          tag: "वन्यजीव",
+          title: "एनटीसीए की 2026 STRIDES रिपोर्ट में देशभर के टाइगर रिज़र्व का आकलन",
+          date: "जुलाई 2026",
+          blurb: "कोयंबटूर में हुई राष्ट्रीय बाघ संरक्षण प्राधिकरण (NTCA) की 29वीं बैठक में STRIDES 2026 रिपोर्ट जारी की गई, जिसमें तराई रिज़र्व सहित भारत के टाइगर रिज़र्व की पारिस्थितिकी, अवसंरचना और संरक्षण प्रबंधन का आकलन किया गया।",
+        },
+        {
+          regionKey: "india",
+          tag: "नीति",
+          title: "सुप्रीम कोर्ट ने लखनऊ के कुकरैल नाइट सफारी प्रोजेक्ट को मंज़ूरी दी",
+          date: "जुलाई 2026",
+          blurb: "सुप्रीम कोर्ट ने उत्तर प्रदेश के ₹1,510 करोड़ के कुकरैल नाइट सफारी और जूलॉजिकल पार्क को मंज़ूरी दी, जो भारत का पहला नाइट सफारी होगा — यह सेंट्रल एम्पावर्ड कमेटी और सेंट्रल ज़ू अथॉरिटी की शर्तों के अधीन है।",
+        },
         {
           regionKey: "india",
           tag: "वन्यजीव",
@@ -1455,6 +1543,12 @@ export const translations = {
           location: "प्राथमिक विद्यालय, हुसैन नगर, बांसुरी नगरी, पीलीभीत जिला",
           description:
             "एनवायरनमेंट वॉरियर्स ने पीलीभीत जिले के एक प्राथमिक विद्यालय में स्मार्ट क्लासरूम का उद्घाटन किया और छात्रों व स्टाफ को सम्मानित किया, इस अवसर पर गुब्बारों, उपहारों और एक छोटे समारोह के साथ।",
+        },
+        "jan-2025-curtain-raiser": {
+          title: "तराई के वन्यजीव व पारिस्थितिकी तंत्र के संरक्षण हेतु कर्टन रेज़र कार्यक्रम",
+          location: "उत्तर प्रदेश",
+          description:
+            "एनवायरनमेंट वॉरियर्स ने तराई के वन्यजीव और पारिस्थितिकी तंत्र के संरक्षण हेतु अपना कर्टन रेज़र कार्यक्रम आयोजित किया, जिसमें अधिकारियों और अतिथियों ने एक हरित, स्वस्थ भविष्य के लिए एकजुटता दिखाई और \"वाइल्डलाइफ़ @ तराई\" 2025 कैलेंडर का विमोचन किया।",
         },
       },
     },

@@ -45,8 +45,8 @@ const UpcomingEvents = () => {
         <div className="relative overflow-hidden rounded-3xl mb-10">
 
           <img
-            src="/featuredevents.png"
-            alt="Plantation Drive"
+            src="/events/launch-event/certificate-presentation.jpg"
+            alt={t.featuredTitle}
             className="w-full h-[500px] object-cover"
           />
 
@@ -67,7 +67,7 @@ const UpcomingEvents = () => {
 
                 <div className="flex items-center gap-2">
                   <FaCalendarAlt />
-                  <span>{t.comingSoon}</span>
+                  <span>{t.featuredDate}</span>
                 </div>
 
                 <div className="flex items-center gap-2">
@@ -81,26 +81,9 @@ const UpcomingEvents = () => {
                 {t.featuredDescription}
               </p>
 
-              <button
-                onClick={() => setModalOpen(true)}
-                className="
-                  mt-6
-                  bg-[#F5C542]
-                  text-black
-                  px-6
-                  py-3
-                  rounded-xl
-                  font-semibold
-                  flex
-                  items-center
-                  gap-2
-                  hover:bg-[#e7b531]
-                  transition
-                "
-              >
-                {t.registerNow}
-                <FaArrowRight />
-              </button>
+              <p className="mt-5 text-[#F5C542] font-semibold">
+                {t.featuredHost}
+              </p>
 
             </div>
           </div>
