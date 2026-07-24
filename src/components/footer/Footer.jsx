@@ -55,21 +55,27 @@ const Footer = () => {
             <div className="flex items-center gap-4 mt-6">
 
               <a
-                href="#"
+                href="https://facebook.com/environmentwarriors01"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#0F5132] transition"
               >
                 <FaFacebookF />
               </a>
 
               <a
-                href="#"
+                href="https://instagram.com/environmentwarriors01"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#0F5132] transition"
               >
                 <FaInstagram />
               </a>
 
               <a
-                href="#"
+                href="https://x.com/environmen34587"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#0F5132] transition"
               >
                 <FaXTwitter />
