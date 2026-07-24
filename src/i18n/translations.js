@@ -120,33 +120,6 @@ export const translations = {
           { value: "150+", title: "Projects Completed", description: "Successful conservation initiatives" },
         ],
       },
-      campaigns: {
-        eyebrow: "CURRENT CAMPAIGNS",
-        heading: "Join Us in Protecting Nature",
-        description:
-          "Be a part of our ongoing environmental initiatives and make a lasting impact on nature and wildlife.",
-        joinCampaign: "Join Campaign",
-        items: [
-          {
-            title: "Plantation Drive 2026",
-            date: "25 May 2026",
-            location: "Dudhwa National Park",
-            description: "Join us in planting thousands of trees and restoring green cover.",
-          },
-          {
-            title: "Save Wildlife Initiative",
-            date: "15 June 2026",
-            location: "Kishanpur Sanctuary",
-            description: "Help protect endangered wildlife species and their habitats.",
-          },
-          {
-            title: "Clean River Mission",
-            date: "30 June 2026",
-            location: "Sharda River Basin",
-            description: "Participate in cleaning and preserving river ecosystems.",
-          },
-        ],
-      },
       gallery: {
         eyebrow: "WILDLIFE GALLERY",
         heading: "Explore Nature's Beauty",
@@ -165,16 +138,16 @@ export const translations = {
         description: "Participate in our upcoming events and become a part of the movement to protect nature and wildlife.",
         featuredEvent: "FEATURED EVENT",
         featuredTitle: "Join Our Plantation Drive",
-        featuredDate: "25 May 2026",
-        featuredLocation: "Dudhwa National Park",
+        featuredLocation: "Terai Region of UP",
         featuredDescription:
           "Help us plant thousands of trees and contribute towards restoring forest ecosystems and combating climate change.",
         registerNow: "Register Now",
         viewDetails: "View Details",
+        comingSoon: "Coming Soon",
         items: [
-          { title: "Plantation Drive 2026", date: "25 May 2026", location: "Dudhwa National Park" },
-          { title: "Wildlife Awareness Walk", date: "15 June 2026", location: "Pilibhit Tiger Reserve" },
-          { title: "River Cleanup Mission", date: "30 June 2026", location: "Sharda River Basin" },
+          { title: "Awareness Programmes", location: "Pilibhit Tiger Reserve" },
+          { title: "River and Water Bodies Cleanup Mission", location: "Sharda River Basin" },
+          { title: "Save Wildlife Initiative", location: "Kishanpur Sanctuary" },
         ],
       },
     },
@@ -778,33 +751,6 @@ export const translations = {
           { value: "150+", title: "परियोजनाएं पूर्ण", description: "सफल संरक्षण पहलें" },
         ],
       },
-      campaigns: {
-        eyebrow: "वर्तमान अभियान",
-        heading: "प्रकृति की रक्षा में हमारे साथ जुड़ें",
-        description:
-          "हमारी चल रही पर्यावरणीय पहलों का हिस्सा बनें और प्रकृति व वन्यजीवों पर स्थायी प्रभाव डालें।",
-        joinCampaign: "अभियान में शामिल हों",
-        items: [
-          {
-            title: "वृक्षारोपण अभियान 2026",
-            date: "25 मई 2026",
-            location: "दुधवा राष्ट्रीय उद्यान",
-            description: "हजारों पेड़ लगाने और हरित आवरण बहाल करने में हमारे साथ जुड़ें।",
-          },
-          {
-            title: "वन्यजीव बचाओ पहल",
-            date: "15 जून 2026",
-            location: "किशनपुर अभयारण्य",
-            description: "लुप्तप्राय वन्यजीव प्रजातियों और उनके आवासों की रक्षा में मदद करें।",
-          },
-          {
-            title: "स्वच्छ नदी मिशन",
-            date: "30 जून 2026",
-            location: "शारदा नदी बेसिन",
-            description: "नदी पारिस्थितिकी तंत्र की सफाई और संरक्षण में भाग लें।",
-          },
-        ],
-      },
       gallery: {
         eyebrow: "वन्यजीव गैलरी",
         heading: "प्रकृति की सुंदरता का अन्वेषण करें",
@@ -823,16 +769,16 @@ export const translations = {
         description: "हमारे आगामी कार्यक्रमों में भाग लें और प्रकृति व वन्यजीवों की रक्षा के आंदोलन का हिस्सा बनें।",
         featuredEvent: "विशेष कार्यक्रम",
         featuredTitle: "हमारे वृक्षारोपण अभियान में शामिल हों",
-        featuredDate: "25 मई 2026",
-        featuredLocation: "दुधवा राष्ट्रीय उद्यान",
+        featuredLocation: "उत्तर प्रदेश का तराई क्षेत्र",
         featuredDescription:
           "हजारों पेड़ लगाने और वन पारिस्थितिकी तंत्र को पुनर्स्थापित करने तथा जलवायु परिवर्तन से लड़ने में हमारी मदद करें।",
         registerNow: "अभी पंजीकरण करें",
         viewDetails: "विवरण देखें",
+        comingSoon: "जल्द आ रहा है",
         items: [
-          { title: "वृक्षारोपण अभियान 2026", date: "25 मई 2026", location: "दुधवा राष्ट्रीय उद्यान" },
-          { title: "वन्यजीव जागरूकता वॉक", date: "15 जून 2026", location: "पीलीभीत टाइगर रिज़र्व" },
-          { title: "नदी सफाई मिशन", date: "30 जून 2026", location: "शारदा नदी बेसिन" },
+          { title: "जागरूकता कार्यक्रम", location: "पीलीभीत टाइगर रिज़र्व" },
+          { title: "नदी व जल निकाय सफाई मिशन", location: "शारदा नदी बेसिन" },
+          { title: "वन्यजीव बचाओ पहल", location: "किशनपुर अभयारण्य" },
         ],
       },
     },

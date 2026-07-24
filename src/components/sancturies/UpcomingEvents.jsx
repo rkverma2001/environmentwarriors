@@ -6,7 +6,11 @@ import {
 
 import { useT } from "../../i18n/useT";
 
-const images = ["/event1.png", "/event2.png", "/event3.png"];
+const images = [
+  "/event2.png",
+  "/event3.png",
+  "/campaign2.png",
+];
 
 const UpcomingEvents = () => {
   const t = useT().home.events;
@@ -59,7 +63,7 @@ const UpcomingEvents = () => {
 
                 <div className="flex items-center gap-2">
                   <FaCalendarAlt />
-                  <span>{t.featuredDate}</span>
+                  <span>{t.comingSoon}</span>
                 </div>
 
                 <div className="flex items-center gap-2">
@@ -129,7 +133,7 @@ const UpcomingEvents = () => {
 
                 <div className="flex items-center gap-2 mt-4 text-gray-600 text-sm">
                   <FaCalendarAlt />
-                  {event.date}
+                  {t.comingSoon}
                 </div>
 
                 <div className="flex items-center gap-2 mt-2 text-gray-600 text-sm">
