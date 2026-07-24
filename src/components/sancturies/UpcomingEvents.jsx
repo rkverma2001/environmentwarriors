@@ -1,7 +1,10 @@
+import { useState } from "react";
 import {
   FaCalendarAlt,
   FaMapMarkerAlt,
   FaArrowRight,
+  FaClock,
+  FaTimes,
 } from "react-icons/fa";
 
 import { useT } from "../../i18n/useT";
@@ -15,6 +18,7 @@ const images = [
 const UpcomingEvents = () => {
   const t = useT().home.events;
   const events = t.items.map((e, i) => ({ ...e, image: images[i] }));
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <section className="py-16 lg:py-20">
@@ -78,6 +82,7 @@ const UpcomingEvents = () => {
               </p>
 
               <button
+                onClick={() => setModalOpen(true)}
                 className="
                   mt-6
                   bg-[#F5C542]
@@ -142,6 +147,7 @@ const UpcomingEvents = () => {
                 </div>
 
                 <button
+                  onClick={() => setModalOpen(true)}
                   className="
                     mt-5
                     text-[#0F5132]
@@ -163,6 +169,46 @@ const UpcomingEvents = () => {
         </div>
 
       </div>
+
+      {/* Coming Soon Modal */}
+      {modalOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4"
+          onClick={() => setModalOpen(false)}
+        >
+          <div
+            className="bg-white rounded-3xl p-8 max-w-[420px] w-full text-center relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setModalOpen(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
+              aria-label="Close"
+            >
+              <FaTimes />
+            </button>
+
+            <div className="w-16 h-16 rounded-full bg-[#0F5132]/10 text-[#0F5132] flex items-center justify-center mx-auto text-2xl">
+              <FaClock />
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#0F5132] mt-5">
+              {t.comingSoon}
+            </h3>
+
+            <p className="text-gray-600 mt-3 leading-relaxed">
+              {t.modalMessage}
+            </p>
+
+            <button
+              onClick={() => setModalOpen(false)}
+              className="mt-6 bg-[#0F5132] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
+            >
+              {t.modalClose}
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

@@ -144,6 +144,8 @@ export const translations = {
         registerNow: "Register Now",
         viewDetails: "View Details",
         comingSoon: "Coming Soon",
+        modalMessage: "This event isn't open for registration yet. Check back soon for updates!",
+        modalClose: "Got It",
         items: [
           { title: "Awareness Programmes", location: "Pilibhit Tiger Reserve" },
           { title: "River and Water Bodies Cleanup Mission", location: "Sharda River Basin" },
@@ -775,6 +777,8 @@ export const translations = {
         registerNow: "अभी पंजीकरण करें",
         viewDetails: "विवरण देखें",
         comingSoon: "जल्द आ रहा है",
+        modalMessage: "यह कार्यक्रम अभी पंजीकरण के लिए खुला नहीं है। अपडेट के लिए जल्द ही वापस देखें!",
+        modalClose: "समझ गया",
         items: [
           { title: "जागरूकता कार्यक्रम", location: "पीलीभीत टाइगर रिज़र्व" },
           { title: "नदी व जल निकाय सफाई मिशन", location: "शारदा नदी बेसिन" },
