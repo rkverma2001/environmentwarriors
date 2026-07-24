@@ -47,12 +47,20 @@ const About = () => {
               </p>
             </div>
 
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 text-center">
               <img
                 src="/rajeshwar-singh-portrait.jpg"
                 alt="Dr. Rajeshwar Singh"
                 className="w-56 sm:w-72 lg:w-[340px] h-auto object-contain drop-shadow-2xl"
               />
+
+              <p className="text-red-500 font-extrabold text-xl uppercase tracking-wide mt-3">
+                {t.hero.photoName}
+              </p>
+
+              <p className="text-white/90 font-medium mt-1">
+                {t.hero.photoTitle}
+              </p>
             </div>
 
           </div>

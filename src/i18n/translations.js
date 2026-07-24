@@ -174,6 +174,35 @@ export const translations = {
           { title: "Save Wildlife Initiative", location: "Kishanpur Sanctuary" },
         ],
       },
+      netZero: {
+        eyebrow: "FEATURED INITIATIVE",
+        heading: "Net Zero Industry Mission",
+        subtitle: "Presented by Dr. Rajeshwar Singh, MLA, Sarojini Nagar, Lucknow",
+        description:
+          "A mission to help Sarojini Nagar's MSMEs cut emissions, energy costs and waste — while staying export-ready under global standards like the EU's Carbon Border Adjustment Mechanism (CBAM) and India's Panchamrit 2070 commitment.",
+        stats: [
+          { value: "30–50%", label: "Energy Cost Savings Possible" },
+          { value: "27,000+", label: "MSMEs ZED Certified Nationally" },
+          { value: "$771M", label: "India's Export Risk from EU CBAM" },
+          { value: "₹100Cr+", label: "Recoverable Annually in Sarojini Nagar" },
+        ],
+        learnMore: "Learn More",
+        modalTitle: "Net Zero Industry Mission",
+        modalIntro:
+          "Net Zero is not a cost — it's a profit strategy. Every rupee saved on energy, water and waste is a rupee added to the bottom line, while keeping export markets open.",
+        pathwayHeading: "The 4D Pathway",
+        pathway: [
+          { step: "Detect", description: "Energy audit, water mapping, waste quantification and carbon footprint calculation." },
+          { step: "Design", description: "Choose solutions — rooftop solar, LED & efficiency upgrades, water recycling, waste-to-value systems." },
+          { step: "Deploy", description: "Implement via government schemes (ZED/GIFT), green finance (SIDBI/IREDA) and pay-as-you-save models." },
+          { step: "Deliver", description: "Measure savings, earn carbon credits, get ZED certified and unlock export market access." },
+        ],
+        officeHeading: "My Office Is Open for You",
+        officeText:
+          "Any question on the Net Zero transition — come directly to the Sarojini Nagar Vidhansabha Office.",
+        tagline: "Net Zero = Profitability + Competitiveness + Future-Proof Business",
+        modalClose: "Close",
+      },
     },
     sanctuaryDetail: {
       notFound: "Sanctuary Not Found",
@@ -254,6 +283,8 @@ export const translations = {
         heading3: "Building A Sustainable Future.",
         description:
           "Together we are creating awareness, conserving biodiversity, protecting forests and inspiring communities to protect nature.",
+        photoName: "Dr. Rajeshwar Singh",
+        photoTitle: "MLA, Sarojini Nagar, Lucknow",
       },
       story: {
         eyebrow: "Our Story",
@@ -949,6 +980,8 @@ export const translations = {
         heading3: "एक स्थायी भविष्य का निर्माण।",
         description:
           "साथ मिलकर हम जागरूकता फैला रहे हैं, जैव विविधता का संरक्षण कर रहे हैं, वनों की रक्षा कर रहे हैं और समुदायों को प्रकृति की रक्षा हेतु प्रेरित कर रहे हैं।",
+        photoName: "डॉ. राजेश्वर सिंह",
+        photoTitle: "विधायक, सरोजिनी नगर, लखनऊ",
       },
       story: {
         eyebrow: "हमारी कहानी",
