@@ -82,9 +82,9 @@ export const translations = {
       },
       stats: [
         { value: "3.5M+", title: "Tonnes", description: "Plastic Waste Generated in India Every Year" },
-        { value: "80%", title: "Surface Water", description: "in India is Polluted" },
+        { value: "70%", title: "Surface Water", description: "in India is Polluted" },
         { value: "24 Lakh+", title: "Premature Deaths", description: "Due to Pollution Every Year" },
-        { value: "1.63°C", title: "Global Temperature", description: "Increase Above Pre-industrial Levels" },
+        { value: "1.44°C", title: "Global Temperature", description: "Increase Above Pre-industrial Levels" },
         { value: "3,656", title: "sq km Dense Forest Lost", description: "in Last 2 Years in India" },
       ],
       sanctuarySection: {
@@ -812,9 +812,9 @@ export const translations = {
       },
       stats: [
         { value: "3.5M+", title: "टन", description: "भारत में हर साल उत्पन्न होने वाला प्लास्टिक कचरा" },
-        { value: "80%", title: "सतही जल", description: "भारत में प्रदूषित है" },
+        { value: "70%", title: "सतही जल", description: "भारत में प्रदूषित है" },
         { value: "24 लाख+", title: "असामयिक मौतें", description: "हर साल प्रदूषण के कारण" },
-        { value: "1.63°C", title: "वैश्विक तापमान", description: "औद्योगिक-पूर्व स्तर से वृद्धि" },
+        { value: "1.44°C", title: "वैश्विक तापमान", description: "औद्योगिक-पूर्व स्तर से वृद्धि" },
         { value: "3,656", title: "वर्ग किमी घना वन नष्ट", description: "भारत में पिछले 2 वर्षों में" },
       ],
       sanctuarySection: {
