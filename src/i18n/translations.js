@@ -133,11 +133,11 @@ export const translations = {
         stats: [
           { value: "1000+", title: "Trees Protected", description: "Across forests and green zones" },
           { value: "500+", title: "Volunteers", description: "Working for environmental change" },
-          { value: "2+", title: "Schools Adopted", description: "Bringing digital classrooms to rural students", clickable: true },
+          { value: "1", title: "School Supported", description: "Bringing digital classrooms to rural students", clickable: true },
           { value: "20+", title: "Projects Completed", description: "Successful conservation initiatives" },
         ],
         schoolModal: {
-          title: "Schools We've Adopted",
+          title: "The School We Support",
           description: "A look inside the digital classrooms and campuses we've helped bring to life.",
           close: "Close",
         },
@@ -333,17 +333,17 @@ export const translations = {
         members: ["Rameshwar Singh", "Ambika Mishra", "Siddharth Harish", "Nikhil Sharma"],
       },
       school: {
-        heading: "Our Adopted Smart School",
+        heading: "Our Supported Smart School",
         description:
-          "Environment Warriors has adopted a local smart school as part of our community education work. Details on the school — its name, location, and what our support covers — are coming soon.",
+          "Environment Warriors supports a local smart school as part of our community education work. Details on the school — its name, location, and what our support covers — are coming soon.",
       },
       impact: {
         heading: "Our Impact",
         stats: [
-          { value: "10M+", label: "Trees Protected" },
-          { value: "500K+", label: "Volunteers" },
-          { value: "250+", label: "Species Protected" },
-          { value: "150+", label: "Projects Completed" },
+          { value: "1000+", label: "Trees Protected" },
+          { value: "500+", label: "Volunteers" },
+          { value: "1", label: "School Supported" },
+          { value: "20+", label: "Projects Completed" },
         ],
       },
       cta: {
@@ -911,11 +911,11 @@ export const translations = {
         stats: [
           { value: "1000+", title: "पेड़ संरक्षित", description: "वनों और हरित क्षेत्रों में" },
           { value: "500+", title: "स्वयंसेवक", description: "पर्यावरणीय बदलाव के लिए कार्यरत" },
-          { value: "2+", title: "गोद लिए गए स्कूल", description: "ग्रामीण छात्रों तक डिजिटल कक्षाएं पहुंचाना", clickable: true },
+          { value: "1", title: "समर्थित स्कूल", description: "ग्रामीण छात्रों तक डिजिटल कक्षाएं पहुंचाना", clickable: true },
           { value: "20+", title: "परियोजनाएं पूर्ण", description: "सफल संरक्षण पहलें" },
         ],
         schoolModal: {
-          title: "हमारे द्वारा गोद लिए गए स्कूल",
+          title: "हमारे द्वारा समर्थित स्कूल",
           description: "उन डिजिटल कक्षाओं और परिसरों की एक झलक जिन्हें बनाने में हमने मदद की है।",
           close: "बंद करें",
         },
@@ -1111,17 +1111,17 @@ export const translations = {
         members: ["रामेश्वर सिंह", "अंबिका मिश्रा", "सिद्धार्थ हरीश", "निखिल शर्मा"],
       },
       school: {
-        heading: "हमारा गोद लिया स्मार्ट स्कूल",
+        heading: "हमारा समर्थित स्मार्ट स्कूल",
         description:
-          "एनवायरनमेंट वॉरियर्स ने अपने सामुदायिक शिक्षा कार्य के हिस्से के रूप में एक स्थानीय स्मार्ट स्कूल को गोद लिया है। स्कूल का विवरण — इसका नाम, स्थान और हमारा सहयोग किन चीज़ों को कवर करता है — जल्द ही उपलब्ध होगा।",
+          "एनवायरनमेंट वॉरियर्स अपने सामुदायिक शिक्षा कार्य के हिस्से के रूप में एक स्थानीय स्मार्ट स्कूल को सहयोग देता है। स्कूल का विवरण — इसका नाम, स्थान और हमारा सहयोग किन चीज़ों को कवर करता है — जल्द ही उपलब्ध होगा।",
       },
       impact: {
         heading: "हमारा प्रभाव",
         stats: [
-          { value: "10M+", label: "पेड़ संरक्षित" },
-          { value: "500K+", label: "स्वयंसेवक" },
-          { value: "250+", label: "प्रजातियां संरक्षित" },
-          { value: "150+", label: "परियोजनाएं पूर्ण" },
+          { value: "1000+", label: "पेड़ संरक्षित" },
+          { value: "500+", label: "स्वयंसेवक" },
+          { value: "1", label: "समर्थित स्कूल" },
+          { value: "20+", label: "परियोजनाएं पूर्ण" },
         ],
       },
       cta: {

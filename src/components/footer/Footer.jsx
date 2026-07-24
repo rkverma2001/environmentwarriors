@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import {
   FaFacebookF,
   FaInstagram,
@@ -101,11 +103,10 @@ const Footer = () => {
 
             <ul className="space-y-3 text-white/70">
 
-              <li><a href="#" className="hover:text-white">{f.home}</a></li>
-              <li><a href="#" className="hover:text-white">{f.aboutUs}</a></li>
-              <li><a href="#" className="hover:text-white">{f.campaigns}</a></li>
-              <li><a href="#" className="hover:text-white">{f.events}</a></li>
-              <li><a href="#" className="hover:text-white">{f.contact}</a></li>
+              <li><Link to="/" className="hover:text-white">{f.home}</Link></li>
+              <li><Link to="/about" className="hover:text-white">{f.aboutUs}</Link></li>
+              <li><Link to="/activities" className="hover:text-white">{f.events}</Link></li>
+              <li><Link to="/contact" className="hover:text-white">{f.contact}</Link></li>
 
             </ul>
 
@@ -120,10 +121,10 @@ const Footer = () => {
 
             <ul className="space-y-3 text-white/70">
 
-              <li>{nav.sanctuaryNames.dudhwa}</li>
-              <li>{nav.sanctuaryNames.kishanpur}</li>
-              <li>{nav.sanctuaryNames.katarniaghat}</li>
-              <li>{nav.sanctuaryNames.pilibhit}</li>
+              <li><Link to="/sanctuaries/dudhwa" className="hover:text-white">{nav.sanctuaryNames.dudhwa}</Link></li>
+              <li><Link to="/sanctuaries/kishanpur" className="hover:text-white">{nav.sanctuaryNames.kishanpur}</Link></li>
+              <li><Link to="/sanctuaries/katarniaghat" className="hover:text-white">{nav.sanctuaryNames.katarniaghat}</Link></li>
+              <li><Link to="/sanctuaries/pilibhit" className="hover:text-white">{nav.sanctuaryNames.pilibhit}</Link></li>
 
             </ul>
 
@@ -228,23 +229,11 @@ const Footer = () => {
 
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-5">
 
-          <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+          <div className="flex items-center justify-center">
 
-            <p className="text-white/60 text-sm text-center md:text-left">
+            <p className="text-white/60 text-sm text-center">
               {f.copyright}
             </p>
-
-            <div className="flex gap-6 text-sm text-white/60">
-
-              <a href="#" className="hover:text-white">
-                {f.privacyPolicy}
-              </a>
-
-              <a href="#" className="hover:text-white">
-                {f.terms}
-              </a>
-
-            </div>
 
           </div>
 

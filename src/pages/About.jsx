@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import {
   FaLeaf,
   FaTree,
@@ -7,6 +10,8 @@ import {
   FaHandsHelping,
   FaUser,
   FaSchool,
+  FaTimes,
+  FaHourglassHalf,
 } from "react-icons/fa";
 
 import { useT } from "../i18n/useT";
@@ -15,7 +20,9 @@ const valueIcons = [<FaPaw />, <FaTree />, <FaGlobe />, <FaUsers />, <FaHandsHel
 
 const About = () => {
   const t = useT().about;
+  const donateModal = useT().nav.donateModal;
   const values = t.values.items.map((v, i) => ({ ...v, icon: valueIcons[i] }));
+  const [donateModalOpen, setDonateModalOpen] = useState(false);
 
   return (
     <div>
@@ -249,7 +256,7 @@ const About = () => {
       <section
         className="relative py-24 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/about-cta.jpg')",
+          backgroundImage: "url('/tigers/tiger-leaping.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-[#0F5132]/80"></div>
@@ -264,16 +271,62 @@ const About = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <button className="bg-[#F5C542] text-black px-6 py-3 rounded-xl font-semibold">
+            <Link
+              to="/volunteer"
+              className="bg-[#F5C542] text-black px-6 py-3 rounded-xl font-semibold"
+            >
               {t.cta.becomeVolunteer}
-            </button>
+            </Link>
 
-            <button className="border border-white text-white px-6 py-3 rounded-xl font-semibold">
+            <button
+              onClick={() => setDonateModalOpen(true)}
+              className="border border-white text-white px-6 py-3 rounded-xl font-semibold"
+            >
               {t.cta.donateNow}
             </button>
           </div>
         </div>
       </section>
+
+      {/* Donate Coming Soon Modal */}
+      {donateModalOpen && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/70 px-4"
+          onClick={() => setDonateModalOpen(false)}
+        >
+          <div
+            className="bg-white rounded-3xl p-8 max-w-[420px] w-full text-center relative shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setDonateModalOpen(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600"
+              aria-label={donateModal.close}
+            >
+              <FaTimes />
+            </button>
+
+            <div className="w-14 h-14 rounded-full bg-[#0F5132]/10 text-[#0F5132] flex items-center justify-center mx-auto text-xl">
+              <FaHourglassHalf />
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#0F5132] mt-5">
+              {donateModal.title}
+            </h3>
+
+            <p className="text-gray-600 mt-3 leading-relaxed">
+              {donateModal.message}
+            </p>
+
+            <button
+              onClick={() => setDonateModalOpen(false)}
+              className="mt-6 bg-[#0F5132] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
+            >
+              {donateModal.close}
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
