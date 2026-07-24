@@ -12,6 +12,7 @@ const Bottomnav = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [mobileDropdown, setMobileDropdown] = useState(false);
   const [mobileExploreDropdown, setMobileExploreDropdown] = useState(false);
+  const [mobileNewsDropdown, setMobileNewsDropdown] = useState(false);
 
   const t = useT().nav;
   const { toggleLanguage } = useLanguage();
@@ -116,12 +117,52 @@ const Bottomnav = () => {
 
             </li>
 
-            <Link
-              to="/events"
-              className="hover:text-[#0F5132] transition"
-            >
-              {t.newsEvents}
-            </Link>
+            {/* News & Events Dropdown */}
+            <li className="relative group list-none">
+
+              <div className="flex items-center gap-2 cursor-pointer hover:text-[#0F5132] transition">
+                {t.newsEvents}
+                <FaChevronDown className="text-xs" />
+              </div>
+
+              <div
+                className="
+                  absolute
+                  left-0
+                  top-full
+                  mt-4
+                  w-56
+                  bg-white
+                  rounded-xl
+                  shadow-xl
+                  border
+                  opacity-0
+                  invisible
+                  group-hover:opacity-100
+                  group-hover:visible
+                  transition-all
+                  duration-300
+                  z-50
+                "
+              >
+
+                <Link
+                  to="/activities"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  {t.eventsGallery}
+                </Link>
+
+                <Link
+                  to="/events"
+                  className="block px-5 py-3 hover:bg-gray-50"
+                >
+                  {t.news}
+                </Link>
+
+              </div>
+
+            </li>
 
             {/* Explore Dropdown */}
             <li className="relative group list-none">
@@ -178,13 +219,6 @@ const Bottomnav = () => {
                   className="block px-5 py-3 hover:bg-gray-50"
                 >
                   {t.tracker}
-                </Link>
-
-                <Link
-                  to="/activities"
-                  className="block px-5 py-3 hover:bg-gray-50"
-                >
-                  {t.activities}
                 </Link>
 
               </div>
@@ -357,12 +391,57 @@ const Bottomnav = () => {
 
             </div>
 
-            <Link
-              to="/events"
-              onClick={() => setMobileMenu(false)}
-            >
-              {t.newsEvents}
-            </Link>
+            {/* Mobile News & Events Dropdown */}
+            <div>
+
+              <button
+                onClick={() =>
+                  setMobileNewsDropdown(!mobileNewsDropdown)
+                }
+                className="
+                  flex
+                  items-center
+                  justify-between
+                  w-full
+                  font-medium
+                "
+              >
+                {t.newsEvents}
+
+                <FaChevronDown
+                  className={`transition ${
+                    mobileNewsDropdown
+                      ? "rotate-180"
+                      : ""
+                  }`}
+                />
+              </button>
+
+              {mobileNewsDropdown && (
+                <div className="ml-4 mt-3 flex flex-col gap-3">
+
+                  <Link
+                    to="/activities"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    {t.eventsGallery}
+                  </Link>
+
+                  <Link
+                    to="/events"
+                    onClick={() =>
+                      setMobileMenu(false)
+                    }
+                  >
+                    {t.news}
+                  </Link>
+
+                </div>
+              )}
+
+            </div>
 
             {/* Mobile Explore Dropdown */}
             <div>
@@ -427,15 +506,6 @@ const Bottomnav = () => {
                     }
                   >
                     {t.tracker}
-                  </Link>
-
-                  <Link
-                    to="/activities"
-                    onClick={() =>
-                      setMobileMenu(false)
-                    }
-                  >
-                    {t.activities}
                   </Link>
 
                 </div>
