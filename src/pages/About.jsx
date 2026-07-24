@@ -23,30 +23,38 @@ const About = () => {
     <div>
       {/* Hero Section */}
       <section
-        className="relative h-[450px] md:h-[550px] bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/dr-rajeshwar-singh.jpg')",
-        }}
+        className="relative overflow-hidden"
+        style={{ background: "linear-gradient(135deg,#0F5132,#0B2E1F)" }}
       >
-        <div className="absolute inset-0 bg-black/55"></div>
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-0">
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:min-h-[550px]">
 
-        <div className="relative z-10 h-full flex items-center">
-          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-            <span className="inline-block bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-full text-sm">
-              {t.hero.badge}
-            </span>
+            <div className="flex-1 lg:py-16">
+              <span className="inline-block bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-full text-sm">
+                {t.hero.badge}
+              </span>
 
-            <h1 className="text-white text-4xl md:text-6xl font-bold mt-6 leading-tight">
-              {t.hero.heading1}
-              <br />
-              {t.hero.heading2}
-              <br />
-              {t.hero.heading3}
-            </h1>
+              <h1 className="text-white text-4xl md:text-6xl font-bold mt-6 leading-tight">
+                {t.hero.heading1}
+                <br />
+                {t.hero.heading2}
+                <br />
+                {t.hero.heading3}
+              </h1>
 
-            <p className="text-white/90 mt-6 max-w-2xl text-lg">
-              {t.hero.description}
-            </p>
+              <p className="text-white/90 mt-6 max-w-2xl text-lg">
+                {t.hero.description}
+              </p>
+            </div>
+
+            <div className="flex-shrink-0">
+              <img
+                src="/rajeshwar-singh-portrait.jpg"
+                alt="Dr. Rajeshwar Singh"
+                className="w-56 sm:w-72 lg:w-[340px] h-auto object-contain drop-shadow-2xl"
+              />
+            </div>
+
           </div>
         </div>
       </section>
