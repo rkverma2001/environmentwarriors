@@ -38,6 +38,11 @@ export const translations = {
         katarniaghat: "Katarniaghat Wildlife Sanctuary",
         pilibhit: "Pilibhit Tiger Reserve",
       },
+      donateModal: {
+        title: "Coming Soon",
+        message: "Online donations aren't open yet. We're setting things up — check back soon to support our conservation work.",
+        close: "Close",
+      },
     },
     footer: {
       brandDescription:
@@ -727,6 +732,11 @@ export const translations = {
         kishanpur: "किशनपुर वन्यजीव अभयारण्य",
         katarniaghat: "कतर्नियाघाट वन्यजीव अभयारण्य",
         pilibhit: "पीलीभीत टाइगर रिज़र्व",
+      },
+      donateModal: {
+        title: "जल्द आ रहा है",
+        message: "ऑनलाइन दान अभी शुरू नहीं हुआ है। हम इसकी तैयारी कर रहे हैं — हमारे संरक्षण कार्य का समर्थन करने के लिए जल्द ही फिर से देखें।",
+        close: "बंद करें",
       },
     },
     footer: {
