@@ -757,22 +757,57 @@ export const translations = {
         heading: "Our Activities",
         description: "Real moments from our conservation and community outreach work.",
       },
-      inferredNote:
-        "Description inferred from event photos — no caption was provided. Let us know if any detail needs correction.",
       viewPhotos: "View Photos",
       hidePhotos: "Hide Photos",
+      photosComingSoon: "Photos coming soon",
       events: {
-        "dec-2025-school": {
-          title: "Smart Classroom Inauguration & Student Felicitation",
-          location: "Primary School, Hussain Nagar, Bansuri Nagari, Pilibhit district",
-          description:
-            "Environment Warriors visited a primary school in Pilibhit district to inaugurate a smart classroom and felicitate students and staff, with balloons, gifts and a small ceremony marking the occasion.",
-        },
         "jan-2025-curtain-raiser": {
-          title: "Curtain Raiser Event to Conserve and Protect Wildlife & Ecosystem of the Terai",
-          location: "Uttar Pradesh",
+          title: "Wildlife Conservation Curtain Raiser Event — Phase 1",
+          location: "Shri Guru Govind Singh Maharaj Rajkiya Mahavidyalaya, Palia Kalan, Lakhimpur Kheri",
           description:
-            "Environment Warriors held its curtain raiser event to conserve and protect the wildlife and ecosystem of the Terai, uniting officials and guests for a greener, healthier future, and unveiling the \"Wildlife @ Terai\" 2025 calendar.",
+            "Environment Warriors launched its Wildlife Conservation Curtain Raiser campaign in the presence of Finance & Parliamentary Affairs Minister Suresh Khanna, with hundreds taking a pledge for environmental protection. A digital library was inaugurated and tablets given to 5 meritorious students, 5 frontline staff were felicitated and 30 watchers given cycles, and 300+ students received eco-friendly bags and environmental books distributed via the Sarojini Nagar Tara Shakti Kendras.",
+        },
+        "feb-2025-katarniaghat": {
+          title: "Wildlife Conservation Curtain Raiser Event — Phase 2",
+          location: "Motipur Forest Guest House, Katarniaghat Wildlife Sanctuary, Bahraich",
+          description:
+            "A quiz competition was held among 81 students from 12 schools, with talented students felicitated. 30 watchers of the Katarniaghat forest division received cycles, and 5 outstanding forest workers were honoured. Field Director Dr. H. Raja Mohan joined the event and praised the initiative.",
+        },
+        "mar-2025-pilibhit": {
+          title: "Wildlife Conservation Curtain Raiser Event 3.0",
+          location: "Mustafabad Forest Rest House, Pilibhit",
+          description:
+            "Held in the presence of Forest & Environment Minister Dr. Arun Kumar, this phase featured a quiz and debate competition among students from 10 local schools, with prize money and laptops for winners. 30 watchers of the Pilibhit forest division received cycles and 5 outstanding forest workers were honoured. Two solar-powered water holes were inaugurated for wildlife, a plantation drive to plant 1,000 saplings was launched, and 10 sewing machines were given to a women's self-help group at the Tara Shakti sewing centre, alongside a Smart Class and the Ran Bahadur Singh Digital Education & Empowerment Centre at Primary School Chokhwapuri.",
+        },
+        "apr-2025-kishanpur": {
+          title: "Wildlife Conservation Curtain Raiser Event — Phase 4",
+          location: "Rangers Office, Katteya Kishanpur, Lakhimpur Kheri",
+          description:
+            "A quiz and painting competition was held among around 250 students from 17 local schools, with talented students awarded prize money. 30 watchers of the Dudhwa Tiger Reserve division received cycles and 5 outstanding forest workers were honoured. Plans were announced for sewing centres in 10 villages, water pumps in sanctuary areas, and digital libraries in schools. District Magistrate Durga Shakti Nagpal and Field Director H. Raja Mohan attended and shared their experience.",
+        },
+        "may-2025-pilibhit-photography": {
+          title: "Wildlife Conservation Curtain Raiser Event 5.0",
+          location: "Mustafabad Forest Rest House, Pilibhit",
+          description:
+            "A 2-day wildlife photography workshop for Pilibhit Tiger Reserve's forest guards was led by renowned wildlife photographer Saros Lodhi. A quiz competition on environmental topics was held for 180+ guides and drivers, with 17 top achievers awarded prizes. 30 watchers received cycles for easier commuting and 5 outstanding forest workers received special honours.",
+        },
+        "nov-2025-two-schools": {
+          title: "Smart Class Inauguration & School Support — Chokhwapuri & Hussain Nagar",
+          location: "Primary School Chokhwapuri & Primary School Hussain Nagar, Mustafabad, Pilibhit",
+          description:
+            "The previously-established smart class at Primary School Chokhwapuri, Mustafabad was inaugurated, with ₹1 lakh announced for the school's overall development. Primary School Hussain Nagar, Amaria received ₹25,000 in support and the announcement of a digital smart class. In support of women's empowerment, 14 sewing machines were also provided to the forest department.",
+        },
+        "dec-2025-school": {
+          title: "Smart Classroom Inauguration — Primary School Hussain Nagar",
+          location: "Primary School, Hussain Nagar, Amaria, Pilibhit district",
+          description:
+            "Environment Warriors fulfilled its commitment at Primary School Hussain Nagar by inaugurating the school's newly established smart classroom. Villagers present were encouraged to support environmental and wildlife conservation, and stationery was distributed to the students.",
+        },
+        "apr-2026-pilibhit-cycles": {
+          title: "Cycle & School Kit Distribution — Phase 8",
+          location: "Mustafabad Forest Guest House, Pilibhit Tiger Reserve",
+          description:
+            "Students and villagers were motivated for environmental and wildlife conservation at a cycle and school kit distribution programme. 25 watchers deployed for Tiger Reserve security received cycles, and 10 meritorious girl students who had passed Class 5 at Primary School Chokhwapuri were given cycles.",
         },
       },
     },
@@ -1535,22 +1570,57 @@ export const translations = {
         heading: "हमारी गतिविधियां",
         description: "हमारे संरक्षण और सामुदायिक आउटरीच कार्य के वास्तविक पल।",
       },
-      inferredNote:
-        "विवरण कार्यक्रम की तस्वीरों से अनुमानित है — कोई कैप्शन उपलब्ध नहीं था। यदि कोई विवरण सही करने की आवश्यकता हो तो हमें बताएं।",
       viewPhotos: "तस्वीरें देखें",
       hidePhotos: "तस्वीरें छिपाएं",
+      photosComingSoon: "तस्वीरें जल्द आ रही हैं",
       events: {
-        "dec-2025-school": {
-          title: "स्मार्ट क्लासरूम उद्घाटन व छात्र सम्मान समारोह",
-          location: "प्राथमिक विद्यालय, हुसैन नगर, बांसुरी नगरी, पीलीभीत जिला",
-          description:
-            "एनवायरनमेंट वॉरियर्स ने पीलीभीत जिले के एक प्राथमिक विद्यालय में स्मार्ट क्लासरूम का उद्घाटन किया और छात्रों व स्टाफ को सम्मानित किया, इस अवसर पर गुब्बारों, उपहारों और एक छोटे समारोह के साथ।",
-        },
         "jan-2025-curtain-raiser": {
-          title: "तराई के वन्यजीव व पारिस्थितिकी तंत्र के संरक्षण हेतु कर्टन रेज़र कार्यक्रम",
-          location: "उत्तर प्रदेश",
+          title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट — प्रथम चरण",
+          location: "श्री गुरु गोविन्द सिंह महाराज राजकीय महाविद्यालय, पलिया कलां, लखीमपुर खीरी",
           description:
-            "एनवायरनमेंट वॉरियर्स ने तराई के वन्यजीव और पारिस्थितिकी तंत्र के संरक्षण हेतु अपना कर्टन रेज़र कार्यक्रम आयोजित किया, जिसमें अधिकारियों और अतिथियों ने एक हरित, स्वस्थ भविष्य के लिए एकजुटता दिखाई और \"वाइल्डलाइफ़ @ तराई\" 2025 कैलेंडर का विमोचन किया।",
+            "वित्त एवं संसदीय कार्य मंत्री श्री सुरेश खन्ना जी की उपस्थिति में सैकड़ों लोगों ने पर्यावरण संरक्षण की शपथ लेकर एनवायरनमेंट वॉरियर्स अभियान की शुरुआत की। महाविद्यालय में डिजिटल लाइब्रेरी का लोकार्पण कर 5 मेधावी छात्र-छात्राओं को टैबलेट दिए गए, 5 उत्कृष्ट फ्रंटलाइन स्टाफ को पुरस्कृत तथा 30 वाचरों को साइकिल प्रदान की गई, और सरोजनीनगर के तारा शक्ति केंद्रों पर बने इको-फ्रेंडली बैग्स के साथ 300 से अधिक छात्र-छात्राओं को पर्यावरण संरक्षण संबंधी पुस्तकें वितरित की गईं।",
+        },
+        "feb-2025-katarniaghat": {
+          title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट — द्वितीय चरण",
+          location: "मोतीपुर फारेस्ट गेस्ट हाउस, कतर्नियाघाट वन्यजीव अभयारण्य, बहराइच",
+          description:
+            "12 विद्यालयों के 81 छात्र-छात्राओं के बीच क्विज़ प्रतियोगिता आयोजित कर प्रतिभावान छात्रों को पुरस्कृत किया गया। कतर्नियाघाट वन प्रभाग के 30 वाचरों को साइकिल तथा 5 उत्कृष्ट वन कर्मियों को सम्मानित किया गया। फील्ड डायरेक्टर डॉ. एच. राजा मोहन जी ने कार्यक्रम में सहभागिता कर इस पहल की सराहना की।",
+        },
+        "mar-2025-pilibhit": {
+          title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट 3.0",
+          location: "मुस्तफाबाद फारेस्ट रेस्ट हाउस, पीलीभीत",
+          description:
+            "मुख्य अतिथि वन एवं पर्यावरण मंत्री डॉ. अरुण कुमार जी की उपस्थिति में 10 स्थानीय स्कूलों के छात्र-छात्राओं के बीच क्विज़ व वाद-विवाद प्रतियोगिता आयोजित कर विजेताओं को पुरस्कार राशि व लैपटॉप दिए गए। पीलीभीत वन प्रभाग के 30 वाचरों को साइकिल तथा 5 उत्कृष्ट वन कर्मियों को सम्मानित किया गया। सौर ऊर्जा संचालित 2 वाटर होल्स का लोकार्पण किया गया, 1000 पौधे रोपने का अभियान शुरू किया गया, तथा तारा शक्ति सिलाई केंद्र पर स्वयं सहायता समूह की महिलाओं को 10 सिलाई मशीनें व प्राथमिक विद्यालय चोखापुरी में स्मार्ट क्लास व रण बहादुर सिंह डिजिटल शिक्षा एवं सशक्तिकरण केंद्र की स्थापना की गई।",
+        },
+        "apr-2025-kishanpur": {
+          title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट — चतुर्थ चरण",
+          location: "रेंजर्स कार्यालय, कट्टैया किशनपुर, लखीमपुर खीरी",
+          description:
+            "17 स्थानीय विद्यालयों के लगभग 250 विद्यार्थियों के बीच क्विज़ तथा पेंटिंग प्रतियोगिता आयोजित कर प्रतिभावान बच्चों को पुरस्कार राशि दी गई। दुधवा टाइगर रिज़र्व प्रभाग के 30 वाचरों को साइकिल तथा 5 उत्कृष्ट वन कर्मियों को सम्मानित किया गया। 10 गांवों में सिलाई केंद्र, सेंचुरी क्षेत्रों में वाटर पंप्स तथा स्कूलों में डिजिटल लाइब्रेरी स्थापित करने का संकल्प लिया गया। जिलाधिकारी दुर्गाशक्ति नागपाल और फील्ड डायरेक्टर एच. राजा मोहन जी कार्यक्रम में उपस्थित रहे।",
+        },
+        "may-2025-pilibhit-photography": {
+          title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट 5.0",
+          location: "मुस्तफाबाद फारेस्ट रेस्ट हाउस, पीलीभीत",
+          description:
+            "सुप्रसिद्ध वन्यजीव फोटोग्राफर सरोस लोधी जी के नेतृत्व में पीलीभीत टाइगर रिज़र्व के वन रक्षकों के लिए 2 दिवसीय वाइल्डलाइफ फोटोग्राफी वर्कशॉप आयोजित की गई। 180 से अधिक गाइड्स व ड्राइवर्स के लिए पर्यावरणीय क्विज़ प्रतियोगिता आयोजित कर 17 टॉप अचीवर्स को पुरस्कृत किया गया। 30 वाचरों को साइकिलें तथा 5 उत्कृष्ट वन कर्मियों को विशेष सम्मान प्रदान किया गया।",
+        },
+        "nov-2025-two-schools": {
+          title: "स्मार्ट क्लास उद्घाटन व विद्यालय सहयोग — चोखापुरी व हुसैन नगर",
+          location: "प्राथमिक विद्यालय चोखापुरी व प्राथमिक विद्यालय हुसैन नगर, मुस्तफाबाद, पीलीभीत",
+          description:
+            "पीलीभीत के मुस्तफाबाद स्थित प्राथमिक विद्यालय चोखापुरी में पूर्व स्थापित स्मार्ट क्लास का उद्घाटन कर विद्यालय के समग्र विकास हेतु ₹1 लाख की धनराशि देने की घोषणा की गई। अमरिया स्थित प्राथमिक विद्यालय हुसैन नगर को ₹25,000 की सहायता राशि प्रदान की गई तथा वहां डिजिटल स्मार्ट क्लास की स्थापना की घोषणा की गई। महिला सशक्तिकरण को ध्यान में रखते हुए वन विभाग को 14 सिलाई मशीनें भी प्रदान की गईं।",
+        },
+        "dec-2025-school": {
+          title: "स्मार्ट क्लासरूम उद्घाटन — प्राथमिक विद्यालय हुसैन नगर",
+          location: "प्राथमिक विद्यालय, हुसैन नगर, अमरिया, पीलीभीत जिला",
+          description:
+            "प्राथमिक विद्यालय हुसैन नगर में किए गए वादे को पूरा करते हुए विद्यालय में स्थापित स्मार्ट क्लास रूम का लोकार्पण किया गया। कार्यक्रम में उपस्थित ग्रामीणों को पर्यावरण तथा वन्य जीव संरक्षण के लिए प्रेरित किया गया, साथ ही बच्चों को स्टेशनरी वितरित की गई।",
+        },
+        "apr-2026-pilibhit-cycles": {
+          title: "साइकिल एवं स्कूल किट वितरण — आठवां चरण",
+          location: "मुस्तफाबाद फारेस्ट गेस्ट हाउस, पीलीभीत टाइगर रिज़र्व",
+          description:
+            "साइकिल एवं स्कूल किट वितरण कार्यक्रम का आयोजन कर उपस्थित छात्रों व ग्रामीणों को पर्यावरण तथा वन्य जीव संरक्षण के लिए प्रेरित किया गया। टाइगर रिज़र्व की सुरक्षा में तैनात 25 वाचर्स को साइकिलें प्रदान की गईं। साथ ही प्राथमिक विद्यालय चोखापुरी की कक्षा 5 उत्तीर्ण कर चुकी 10 मेधावी छात्राओं को साइकिलें वितरित की गईं।",
         },
       },
     },
