@@ -25,7 +25,7 @@ const About = () => {
       <section
         className="relative h-[450px] md:h-[550px] bg-cover bg-center"
         style={{
-          backgroundImage: "url('/about-hero.jpg')",
+          backgroundImage: "url('/dr-rajeshwar-singh.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/55"></div>
