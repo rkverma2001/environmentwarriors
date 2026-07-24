@@ -88,6 +88,15 @@ const UpcomingEvents = () => {
             </div>
           </div>
 
+          {/* Official Poster Inset */}
+          <div className="hidden md:block absolute bottom-5 right-5 w-[220px] bg-white p-1.5 rounded-xl shadow-lg">
+            <img
+              src="/events/launch-event/official-poster.jpg"
+              alt={t.featuredPosterAlt}
+              className="w-full h-auto object-contain rounded-lg"
+            />
+          </div>
+
         </div>
 
         {/* Event Cards */}

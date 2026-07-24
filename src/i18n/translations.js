@@ -165,6 +165,7 @@ export const translations = {
         featuredDescription:
           "Join us as we felicitate forest department workers for their dedicated service and officially launch the Environment Warriors website, hosted by Dr. Rajeshwar Singh, MLA, Sarojini Nagar.",
         featuredHost: "Hosted by Dr. Rajeshwar Singh, MLA, Sarojini Nagar",
+        featuredPosterAlt: "Official event poster",
         registerNow: "Register Now",
         viewDetails: "View Details",
         comingSoon: "Coming Soon",
@@ -942,6 +943,7 @@ export const translations = {
         featuredDescription:
           "वन विभाग के कर्मियों को उनकी समर्पित सेवा हेतु सम्मानित करने और एनवायरनमेंट वॉरियर्स वेबसाइट के आधिकारिक शुभारंभ में शामिल हों — डॉ. राजेश्वर सिंह, विधायक, सरोजिनी नगर द्वारा आयोजित।",
         featuredHost: "डॉ. राजेश्वर सिंह, विधायक, सरोजिनी नगर द्वारा आयोजित",
+        featuredPosterAlt: "आधिकारिक कार्यक्रम पोस्टर",
         registerNow: "अभी पंजीकरण करें",
         viewDetails: "विवरण देखें",
         comingSoon: "जल्द आ रहा है",
