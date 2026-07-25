@@ -19,25 +19,25 @@ const SanctuariesOverview = () => {
           <div className="grid grid-cols-2 gap-3">
 
             <img
-              src="/overview1.png"
+              src="/wildlife-gallery/tiger-forest-walk.jpg"
               alt=""
               className="w-full h-[180px] md:h-[220px] object-cover rounded-2xl"
             />
 
             <img
-              src="/overview2.png"
+              src="/wildlife-gallery/crested-serpent-eagle.jpg"
               alt=""
               className="w-full h-[180px] md:h-[220px] object-cover rounded-2xl"
             />
 
             <img
-              src="/overview3.png"
+              src="/wildlife-gallery/sloth-bear.jpg"
               alt=""
               className="w-full h-[180px] md:h-[220px] object-cover rounded-2xl"
             />
 
             <img
-              src="/overview4.png"
+              src="/wildlife-gallery/peacocks-forest-path.jpg"
               alt=""
               className="w-full h-[180px] md:h-[220px] object-cover rounded-2xl"
             />
