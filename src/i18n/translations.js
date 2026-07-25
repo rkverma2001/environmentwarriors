@@ -788,9 +788,9 @@ export const translations = {
         },
         "may-2025-pilibhit-photography": {
           title: "Wildlife Conservation Curtain Raiser Event 5.0",
-          location: "Mustafabad Forest Rest House, Pilibhit",
+          location: "Forest Rest House, Mustafabad, Pilibhit Tiger Reserve",
           description:
-            "A 2-day wildlife photography workshop for Pilibhit Tiger Reserve's forest guards was led by renowned wildlife photographer Saros Lodhi. A quiz competition on environmental topics was held for 180+ guides and drivers, with 17 top achievers awarded prizes. 30 watchers received cycles for easier commuting and 5 outstanding forest workers received special honours.",
+            "A wildlife photography workshop, held 24-25 May 2025 for safari drivers and guides, was led by renowned Nikon India Creator and wildlife photographer Sarosh Lodhi. A quiz competition on environmental topics was held for 180+ guides and drivers, with 17 top achievers awarded prizes. 30 watchers received cycles for easier commuting and 5 outstanding forest workers received special honours.",
         },
         "nov-2025-two-schools": {
           title: "Smart Class Inauguration & School Support — Chokhwapuri & Hussain Nagar",
@@ -1602,9 +1602,9 @@ export const translations = {
         },
         "may-2025-pilibhit-photography": {
           title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट 5.0",
-          location: "मुस्तफाबाद फारेस्ट रेस्ट हाउस, पीलीभीत",
+          location: "फारेस्ट रेस्ट हाउस, मुस्तफाबाद, पीलीभीत टाइगर रिज़र्व",
           description:
-            "सुप्रसिद्ध वन्यजीव फोटोग्राफर सरोस लोधी जी के नेतृत्व में पीलीभीत टाइगर रिज़र्व के वन रक्षकों के लिए 2 दिवसीय वाइल्डलाइफ फोटोग्राफी वर्कशॉप आयोजित की गई। 180 से अधिक गाइड्स व ड्राइवर्स के लिए पर्यावरणीय क्विज़ प्रतियोगिता आयोजित कर 17 टॉप अचीवर्स को पुरस्कृत किया गया। 30 वाचरों को साइकिलें तथा 5 उत्कृष्ट वन कर्मियों को विशेष सम्मान प्रदान किया गया।",
+            "सफारी ड्राइवरों व गाइड्स के लिए 24-25 मई 2025 को आयोजित वाइल्डलाइफ फोटोग्राफी वर्कशॉप का नेतृत्व सुप्रसिद्ध निकॉन इंडिया क्रिएटर व वन्यजीव फोटोग्राफर सरोश लोधी जी ने किया। 180 से अधिक गाइड्स व ड्राइवर्स के लिए पर्यावरणीय क्विज़ प्रतियोगिता आयोजित कर 17 टॉप अचीवर्स को पुरस्कृत किया गया। 30 वाचरों को साइकिलें तथा 5 उत्कृष्ट वन कर्मियों को विशेष सम्मान प्रदान किया गया।",
         },
         "nov-2025-two-schools": {
           title: "स्मार्ट क्लास उद्घाटन व विद्यालय सहयोग — चोखापुरी व हुसैन नगर",
