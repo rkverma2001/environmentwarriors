@@ -8,7 +8,7 @@ const IMAGES = {
   dudhwa: "/wildlife-gallery/tiger-waterhole-rest.jpg",
   kishanpur: "/kishanpur.png",
   katarniaghat: "/katarniaghat.png",
-  pilibhit: "/pilibhit.png",
+  pilibhit: "/wildlife-gallery/tiger-golden-tunnel.jpg",
 };
 
 const SanctuarySection = () => {

@@ -9,7 +9,7 @@ const SanctuariesHero = () => {
     <section
       className="relative h-[300px] sm:h-[350px] md:h-[420px] lg:h-[500px] overflow-hidden"
       style={{
-        backgroundImage: "url('/sanctuaryhero.png')",
+        backgroundImage: "url('/wildlife-gallery/tiger-alert-portrait.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -66,10 +66,6 @@ const SanctuariesHero = () => {
 
               <button className="bg-[#F5C542] hover:bg-[#e3b83d] text-black px-6 py-3 rounded-xl font-semibold transition-all">
                 {t.exploreSanctuaries}
-              </button>
-
-              <button className="border border-white text-white hover:bg-white hover:text-black px-6 py-3 rounded-xl font-semibold transition-all">
-                {t.learnMore}
               </button>
 
             </div>

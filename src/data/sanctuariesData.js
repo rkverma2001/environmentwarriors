@@ -239,7 +239,7 @@ const sanctuariesData = {
 
   pilibhit: {
     slug: "pilibhit",
-    heroImage: "/pilibhit.png",
+    heroImage: "/wildlife-gallery/tiger-golden-tunnel.jpg",
     aboutImage: "/pilibhit.png",
     wildlife: [],
     gallery: [],
