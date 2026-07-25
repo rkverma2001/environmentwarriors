@@ -396,7 +396,7 @@ export const translations = {
         fullName: "Full Name",
         email: "Email Address",
         phone: "Phone Number",
-        aadhar: "Aadhar Number (Optional, 12 digits)",
+        aadhar: "Aadhar Number (12 digits)",
         aadharTitle: "Enter your 12-digit Aadhar number",
         address: "Address",
         social: "Social Media Handle (e.g. @yourhandle or profile link)",
