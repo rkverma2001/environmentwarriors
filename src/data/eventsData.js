@@ -13,12 +13,6 @@ const eventsData = [
       "/events/feb-2025-katarniaghat/certificate-presentation.jpg",
       "/events/feb-2025-katarniaghat/ceremony-audience.jpg",
       "/events/feb-2025-katarniaghat/cycle-distribution.jpg",
-      "/schools/chokhwapuri-school-exterior.jpg",
-      "/schools/chokhwapuri-classroom.jpg",
-      "/schools/1.jpeg",
-      "/schools/2.jpeg",
-      "/schools/3.jpeg",
-      "/schools/4.jpeg",
     ],
   },
   {
@@ -42,6 +36,10 @@ const eventsData = [
     images: [
       "/schools/chokhwapuri-school-exterior.jpg",
       "/schools/chokhwapuri-classroom.jpg",
+      "/schools/1.jpeg",
+      "/schools/2.jpeg",
+      "/schools/3.jpeg",
+      "/schools/4.jpeg",
     ],
   },
   {
