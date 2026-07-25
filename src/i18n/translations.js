@@ -160,7 +160,6 @@ export const translations = {
           { title: "Sloth Bear on the Shore" },
           { title: "Peacocks at Dawn" },
         ],
-        photoCredit: "Photos © Nikhil Sharma",
       },
       events: {
         eyebrow: "UPCOMING EVENTS",
@@ -236,8 +235,6 @@ export const translations = {
       entryLabel: "Entry",
       morningEvening: "Morning & Evening",
       govtRules: "As per Govt Rules",
-      safariZones: "Safari Zones",
-      noSafariZones: "No safari zones available.",
       conservationHighlights: "Conservation Highlights",
       conservationItems: [
         "Rhino Reintroduction",
@@ -247,10 +244,6 @@ export const translations = {
         "Wetland Protection",
         "Forest Restoration",
       ],
-      ctaTitle: "Explore The Wilderness",
-      ctaSubtitlePrefix: "Experience",
-      ctaSubtitleSuffix: "like never before.",
-      planVisit: "Plan Your Visit",
     },
     sanctuariesPage: {
       hero: {
@@ -403,7 +396,7 @@ export const translations = {
         fullName: "Full Name",
         email: "Email Address",
         phone: "Phone Number",
-        aadhar: "Aadhar Number (12 digits)",
+        aadhar: "Aadhar Number (Optional, 12 digits)",
         aadharTitle: "Enter your 12-digit Aadhar number",
         address: "Address",
         social: "Social Media Handle (e.g. @yourhandle or profile link)",
@@ -981,7 +974,6 @@ export const translations = {
           { title: "किनारे पर स्लॉथ बियर" },
           { title: "भोर में मोर" },
         ],
-        photoCredit: "तस्वीरें © निखिल शर्मा",
       },
       events: {
         eyebrow: "आगामी कार्यक्रम",
@@ -1057,8 +1049,6 @@ export const translations = {
       entryLabel: "प्रवेश",
       morningEvening: "सुबह और शाम",
       govtRules: "सरकारी नियमों के अनुसार",
-      safariZones: "सफारी क्षेत्र",
-      noSafariZones: "कोई सफारी क्षेत्र उपलब्ध नहीं है।",
       conservationHighlights: "संरक्षण मुख्य बिंदु",
       conservationItems: [
         "गैंडा पुनर्स्थापन",
@@ -1068,10 +1058,6 @@ export const translations = {
         "आर्द्रभूमि सुरक्षा",
         "वन पुनर्स्थापन",
       ],
-      ctaTitle: "जंगल का अन्वेषण करें",
-      ctaSubtitlePrefix: "अनुभव करें",
-      ctaSubtitleSuffix: "पहले जैसा कभी नहीं।",
-      planVisit: "अपनी यात्रा की योजना बनाएं",
     },
     sanctuariesPage: {
       hero: {
@@ -1224,7 +1210,7 @@ export const translations = {
         fullName: "पूरा नाम",
         email: "ईमेल पता",
         phone: "फ़ोन नंबर",
-        aadhar: "आधार नंबर (12 अंक)",
+        aadhar: "आधार नंबर (वैकल्पिक, 12 अंक)",
         aadharTitle: "अपना 12 अंकों का आधार नंबर दर्ज करें",
         address: "पता",
         social: "सोशल मीडिया हैंडल (जैसे @yourhandle या प्रोफ़ाइल लिंक)",

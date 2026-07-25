@@ -5,7 +5,7 @@ import { useT } from "../../i18n/useT";
 
 const SLUGS = ["dudhwa", "kishanpur", "katarniaghat", "pilibhit"];
 const IMAGES = {
-  dudhwa: "/dudhwanationalpark.png",
+  dudhwa: "/wildlife-gallery/tiger-waterhole-rest.jpg",
   kishanpur: "/kishanpur.png",
   katarniaghat: "/katarniaghat.png",
   pilibhit: "/pilibhit.png",
