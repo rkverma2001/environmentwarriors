@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaCalendarAlt, FaMapMarkerAlt, FaInfoCircle, FaImages } from "react-icons/fa";
+import { FaCalendarAlt, FaMapMarkerAlt, FaImages, FaCamera } from "react-icons/fa";
 
 import eventsData from "../data/eventsData";
 import { useT } from "../i18n/useT";
@@ -43,17 +43,25 @@ const Activities = () => {
           {eventsData.map((event) => {
             const copy = t.events[event.id];
             const isOpen = openGallery === event.id;
+            const hasPhotos = event.images.length > 0;
 
             return (
               <div
                 key={event.id}
                 className="bg-[#f8faf8] rounded-3xl border overflow-hidden"
               >
-                <img
-                  src={event.images[0]}
-                  alt={copy.title}
-                  className="w-full h-[320px] object-cover"
-                />
+                {hasPhotos ? (
+                  <img
+                    src={event.images[0]}
+                    alt={copy.title}
+                    className="w-full h-[320px] object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-[160px] flex flex-col items-center justify-center gap-2 bg-[#0F5132]/5 text-[#0F5132]/50">
+                    <FaCamera className="text-3xl" />
+                    <span className="text-sm font-medium">{t.photosComingSoon}</span>
+                  </div>
+                )}
 
                 <div className="p-8">
                   <div className="flex items-center gap-2 text-sm text-[#0F5132] font-semibold">
@@ -74,18 +82,15 @@ const Activities = () => {
                     {copy.description}
                   </p>
 
-                  <div className="mt-4 flex gap-2 bg-[#0F5132]/5 rounded-xl p-3 text-xs text-gray-500 leading-relaxed">
-                    <FaInfoCircle className="text-[#0F5132] flex-shrink-0 mt-0.5" />
-                    <p>{t.inferredNote}</p>
-                  </div>
-
-                  <button
-                    onClick={() => setOpenGallery(isOpen ? null : event.id)}
-                    className="mt-6 flex items-center gap-2 text-sm font-semibold text-[#0F5132] hover:underline"
-                  >
-                    <FaImages />
-                    {isOpen ? t.hidePhotos : t.viewPhotos} ({event.images.length})
-                  </button>
+                  {hasPhotos && (
+                    <button
+                      onClick={() => setOpenGallery(isOpen ? null : event.id)}
+                      className="mt-6 flex items-center gap-2 text-sm font-semibold text-[#0F5132] hover:underline"
+                    >
+                      <FaImages />
+                      {isOpen ? t.hidePhotos : t.viewPhotos} ({event.images.length})
+                    </button>
+                  )}
 
                   {isOpen && (
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-5">

@@ -82,9 +82,9 @@ export const translations = {
       },
       stats: [
         { value: "3.5M+", title: "Tonnes", description: "Plastic Waste Generated in India Every Year" },
-        { value: "80%", title: "Surface Water", description: "in India is Polluted" },
+        { value: "70%", title: "Surface Water", description: "in India is Polluted" },
         { value: "24 Lakh+", title: "Premature Deaths", description: "Due to Pollution Every Year" },
-        { value: "1.63°C", title: "Global Temperature", description: "Increase Above Pre-industrial Levels" },
+        { value: "1.44°C", title: "Global Temperature", description: "Increase Above Pre-industrial Levels" },
         { value: "3,656", title: "sq km Dense Forest Lost", description: "in Last 2 Years in India" },
       ],
       sanctuarySection: {
@@ -133,11 +133,11 @@ export const translations = {
         stats: [
           { value: "1000+", title: "Trees Protected", description: "Across forests and green zones" },
           { value: "500+", title: "Volunteers", description: "Working for environmental change" },
-          { value: "2+", title: "Schools Adopted", description: "Bringing digital classrooms to rural students", clickable: true },
+          { value: "1", title: "School Supported", description: "Bringing digital classrooms to rural students", clickable: true },
           { value: "20+", title: "Projects Completed", description: "Successful conservation initiatives" },
         ],
         schoolModal: {
-          title: "Schools We've Adopted",
+          title: "The School We Support",
           description: "A look inside the digital classrooms and campuses we've helped bring to life.",
           close: "Close",
         },
@@ -158,11 +158,14 @@ export const translations = {
         eyebrow: "UPCOMING EVENTS",
         heading: "Join Our Conservation Activities",
         description: "Participate in our upcoming events and become a part of the movement to protect nature and wildlife.",
-        featuredEvent: "FEATURED EVENT",
-        featuredTitle: "Join Our Plantation Drive",
-        featuredLocation: "Terai Region of UP",
+        featuredEvent: "LAUNCH EVENT",
+        featuredTitle: "Wildlife Conservation Event & Website Launch",
+        featuredDate: "26 July 2026",
+        featuredLocation: "Forest Office, Katarniaghat Wildlife Division",
         featuredDescription:
-          "Help us plant thousands of trees and contribute towards restoring forest ecosystems and combating climate change.",
+          "Join us as we felicitate forest department workers for their dedicated service and officially launch the Environment Warriors website, hosted by Dr. Rajeshwar Singh, MLA, Sarojini Nagar.",
+        featuredHost: "Hosted by Dr. Rajeshwar Singh, MLA, Sarojini Nagar",
+        featuredPosterAlt: "Official event poster",
         registerNow: "Register Now",
         viewDetails: "View Details",
         comingSoon: "Coming Soon",
@@ -256,8 +259,11 @@ export const translations = {
       overview: {
         eyebrow: "OUR SANCTUARIES",
         heading: "Preserving Wildlife & Natural Ecosystems",
-        description:
-          "Our sanctuaries are home to diverse wildlife, endangered species, dense forests, wetlands, rivers and rich biodiversity. Through conservation efforts, we protect these natural treasures for future generations.",
+        description: [
+          "With its 16,620 square kilometres of forest, Uttar Pradesh is home to a variety of breathtakingly gorgeous forest sceneries, wildlife, vegetation, and fauna. Uttar Pradesh has several ecotourism spots, but the most prominent are the tiger reserves, wildlife sanctuaries, and wetlands.",
+          "The Uttar Pradesh Forest Department, through its dedication to conservation and sustainable management, has been instrumental in preserving this invaluable natural heritage. All wildlife organizations, conservationists, and influencers who have played a vital role in conserving Uttar Pradesh's wildlife, especially tigers, deserve recognition for their efforts. By promoting ecotourism aggressively, the Forest Department and Department of Tourism have given the tourism industry another metric.",
+          "Approximately 6.98% of Uttar Pradesh's total land area is made up of forests. The ecological and economic framework of the state is significantly supported by this forest cover. The state government is making sustained efforts toward the establishment of green belts, development of ecotourism, and success of plantations to increase the forests and tree cover in the state. Through the efforts of the Department of Forest, new projects were started for strengthening ecotourism in the state, resulting in promoting ecotourism. Visitors avail themselves of improved tourism facilities such as accommodation, field infrastructure such as watch towers and view sheds, cycle tracks, walk paths, nature trails, etc.",
+        ],
         protectedAreas: "Protected Areas",
         wildlifeSpecies: "Wildlife Species",
         sqKmProtected: "Sq Km Protected",
@@ -291,11 +297,10 @@ export const translations = {
       story: {
         eyebrow: "Our Story",
         heading: "Creating Environment Warriors",
-        p1: "Environment Warriors was founded with a simple mission: empowering people to protect nature and secure the future.",
-        p2: "Through environmental awareness campaigns, wildlife conservation, tree plantation drives and community engagement, we work towards creating a greener and healthier world.",
-        placeholderLabel: "Placeholder notice:",
-        placeholderText:
-          "we couldn't find a public founding history for this specific organization to cite here. Share the real year founded, founding story and milestones and we'll replace this with your actual history.",
+        p1: "Creating Environment Warriors is an inspiring initiative born from the belief that each individual has the power to make a difference in the fight for wildlife conservation. Our mission is to support and collaborate with forest departments, working together to ensure a greener, more sustainable future for generations to come.",
+        p2Before: "This endeavor is strengthened by the incredible efforts of ",
+        p2Highlight: "Shree Pitambara Baglamukhi Sidh Peeth Uttarakhand Trust",
+        p2After: ", Ambalika Welfare Foundation, Lucknow, and Ambrish Sharma Wildlife Welfare Trust, New Delhi and few others like minded friends & well wishers, all united in their commitment to preserve nature's wonders. Together, we are dedicated to safeguarding tigers, wildlife, and ecosystems, creating lasting positive change in the fight for conservation.",
         learnMore: "Learn More",
       },
       visionMission: {
@@ -328,17 +333,17 @@ export const translations = {
         members: ["Rameshwar Singh", "Ambika Mishra", "Siddharth Harish", "Nikhil Sharma"],
       },
       school: {
-        heading: "Our Adopted Smart School",
+        heading: "Our Supported Smart School",
         description:
-          "Environment Warriors has adopted a local smart school as part of our community education work. Details on the school — its name, location, and what our support covers — are coming soon.",
+          "Environment Warriors supports a local smart school as part of our community education work. Details on the school — its name, location, and what our support covers — are coming soon.",
       },
       impact: {
         heading: "Our Impact",
         stats: [
-          { value: "10M+", label: "Trees Protected" },
-          { value: "500K+", label: "Volunteers" },
-          { value: "250+", label: "Species Protected" },
-          { value: "150+", label: "Projects Completed" },
+          { value: "1000+", label: "Trees Protected" },
+          { value: "500+", label: "Volunteers" },
+          { value: "1", label: "School Supported" },
+          { value: "20+", label: "Projects Completed" },
         ],
       },
       cta: {
@@ -409,6 +414,31 @@ export const translations = {
         becomeVolunteer: "Become A Volunteer",
       },
     },
+    contact: {
+      hero: {
+        badge: "Get In Touch",
+        heading: "Contact Us",
+        description: "Have a question, want to report a human-wildlife conflict, or wish to collaborate with us? We'd love to hear from you.",
+      },
+      info: {
+        heading: "Reach Out To Us",
+        addressLabel: "Visit Us",
+        address: "Lucknow, Uttar Pradesh, India",
+        phoneLabel: "Call Us",
+        phone: "+91 82870 78724",
+        phoneNote: "Wildlife emergency & general enquiries",
+        emailLabel: "Email Us",
+        email: "info@environmentwarriors.org",
+      },
+      form: {
+        heading: "Send Us A Message",
+        fullName: "Full Name",
+        email: "Email Address",
+        subject: "Subject",
+        message: "Your Message",
+        submit: "Send Message",
+      },
+    },
     stories: {
       hero: {
         badge: "Community Voices",
@@ -454,6 +484,20 @@ export const translations = {
       },
       filters: { all: "All", india: "India", world: "World" },
       items: [
+        {
+          regionKey: "india",
+          tag: "Wildlife",
+          title: "NTCA's 2026 STRIDES Report Assesses Tiger Reserves Nationwide",
+          date: "Jul 2026",
+          blurb: "The 29th National Tiger Conservation Authority meeting in Coimbatore released the STRIDES 2026 report, assessing ecology, infrastructure and conservation management across India's tiger reserves, including the Terai reserves.",
+        },
+        {
+          regionKey: "india",
+          tag: "Policy",
+          title: "Supreme Court Clears Kukrail Night Safari Project in Lucknow",
+          date: "Jul 2026",
+          blurb: "The Supreme Court approved Uttar Pradesh's ₹1,510-crore Kukrail Night Safari and Zoological Park, set to be India's first night safari, subject to conditions laid down by the Central Empowered Committee and Central Zoo Authority.",
+        },
         {
           regionKey: "india",
           tag: "Wildlife",
@@ -713,16 +757,57 @@ export const translations = {
         heading: "Our Activities",
         description: "Real moments from our conservation and community outreach work.",
       },
-      inferredNote:
-        "Description inferred from event photos — no caption was provided. Let us know if any detail needs correction.",
       viewPhotos: "View Photos",
       hidePhotos: "Hide Photos",
+      photosComingSoon: "Photos coming soon",
       events: {
-        "dec-2025-school": {
-          title: "Smart Classroom Inauguration & Student Felicitation",
-          location: "Primary School, Hussain Nagar, Bansuri Nagari, Pilibhit district",
+        "jan-2025-curtain-raiser": {
+          title: "Wildlife Conservation Curtain Raiser Event — Phase 1",
+          location: "Shri Guru Govind Singh Maharaj Rajkiya Mahavidyalaya, Palia Kalan, Lakhimpur Kheri",
           description:
-            "Environment Warriors visited a primary school in Pilibhit district to inaugurate a smart classroom and felicitate students and staff, with balloons, gifts and a small ceremony marking the occasion.",
+            "Environment Warriors launched its Wildlife Conservation Curtain Raiser campaign in the presence of Finance & Parliamentary Affairs Minister Suresh Khanna, with hundreds taking a pledge for environmental protection. A digital library was inaugurated and tablets given to 5 meritorious students, 5 frontline staff were felicitated and 30 watchers given cycles, and 300+ students received eco-friendly bags and environmental books distributed via the Sarojini Nagar Tara Shakti Kendras.",
+        },
+        "feb-2025-katarniaghat": {
+          title: "Wildlife Conservation Curtain Raiser Event — Phase 2",
+          location: "Motipur Forest Guest House, Katarniaghat Wildlife Sanctuary, Bahraich",
+          description:
+            "A quiz competition was held among 81 students from 12 schools, with talented students felicitated. 30 watchers of the Katarniaghat forest division received cycles, and 5 outstanding forest workers were honoured. Field Director Dr. H. Raja Mohan joined the event and praised the initiative.",
+        },
+        "mar-2025-pilibhit": {
+          title: "Wildlife Conservation Curtain Raiser Event 3.0",
+          location: "Mustafabad Forest Rest House, Pilibhit",
+          description:
+            "Held in the presence of Forest & Environment Minister Dr. Arun Kumar, this phase featured a quiz and debate competition among students from 10 local schools, with prize money and laptops for winners. 30 watchers of the Pilibhit forest division received cycles and 5 outstanding forest workers were honoured. Two solar-powered water holes were inaugurated for wildlife, a plantation drive to plant 1,000 saplings was launched, and 10 sewing machines were given to a women's self-help group at the Tara Shakti sewing centre, alongside a Smart Class and the Ran Bahadur Singh Digital Education & Empowerment Centre at Primary School Chokhwapuri.",
+        },
+        "apr-2025-kishanpur": {
+          title: "Wildlife Conservation Curtain Raiser Event — Phase 4",
+          location: "Rangers Office, Katteya Kishanpur, Lakhimpur Kheri",
+          description:
+            "A quiz and painting competition was held among around 250 students from 17 local schools, with talented students awarded prize money. 30 watchers of the Dudhwa Tiger Reserve division received cycles and 5 outstanding forest workers were honoured. Plans were announced for sewing centres in 10 villages, water pumps in sanctuary areas, and digital libraries in schools. District Magistrate Durga Shakti Nagpal and Field Director H. Raja Mohan attended and shared their experience.",
+        },
+        "may-2025-pilibhit-photography": {
+          title: "Wildlife Conservation Curtain Raiser Event 5.0",
+          location: "Mustafabad Forest Rest House, Pilibhit",
+          description:
+            "A 2-day wildlife photography workshop for Pilibhit Tiger Reserve's forest guards was led by renowned wildlife photographer Saros Lodhi. A quiz competition on environmental topics was held for 180+ guides and drivers, with 17 top achievers awarded prizes. 30 watchers received cycles for easier commuting and 5 outstanding forest workers received special honours.",
+        },
+        "nov-2025-two-schools": {
+          title: "Smart Class Inauguration & School Support — Chokhwapuri & Hussain Nagar",
+          location: "Primary School Chokhwapuri & Primary School Hussain Nagar, Mustafabad, Pilibhit",
+          description:
+            "The previously-established smart class at Primary School Chokhwapuri, Mustafabad was inaugurated, with ₹1 lakh announced for the school's overall development. Primary School Hussain Nagar, Amaria received ₹25,000 in support and the announcement of a digital smart class. In support of women's empowerment, 14 sewing machines were also provided to the forest department.",
+        },
+        "dec-2025-school": {
+          title: "Smart Classroom Inauguration — Primary School Hussain Nagar",
+          location: "Primary School, Hussain Nagar, Amaria, Pilibhit district",
+          description:
+            "Environment Warriors fulfilled its commitment at Primary School Hussain Nagar by inaugurating the school's newly established smart classroom. Villagers present were encouraged to support environmental and wildlife conservation, and stationery was distributed to the students.",
+        },
+        "apr-2026-pilibhit-cycles": {
+          title: "Cycle & School Kit Distribution — Phase 8",
+          location: "Mustafabad Forest Guest House, Pilibhit Tiger Reserve",
+          description:
+            "Students and villagers were motivated for environmental and wildlife conservation at a cycle and school kit distribution programme. 25 watchers deployed for Tiger Reserve security received cycles, and 10 meritorious girl students who had passed Class 5 at Primary School Chokhwapuri were given cycles.",
         },
       },
     },
@@ -810,9 +895,9 @@ export const translations = {
       },
       stats: [
         { value: "3.5M+", title: "टन", description: "भारत में हर साल उत्पन्न होने वाला प्लास्टिक कचरा" },
-        { value: "80%", title: "सतही जल", description: "भारत में प्रदूषित है" },
+        { value: "70%", title: "सतही जल", description: "भारत में प्रदूषित है" },
         { value: "24 लाख+", title: "असामयिक मौतें", description: "हर साल प्रदूषण के कारण" },
-        { value: "1.63°C", title: "वैश्विक तापमान", description: "औद्योगिक-पूर्व स्तर से वृद्धि" },
+        { value: "1.44°C", title: "वैश्विक तापमान", description: "औद्योगिक-पूर्व स्तर से वृद्धि" },
         { value: "3,656", title: "वर्ग किमी घना वन नष्ट", description: "भारत में पिछले 2 वर्षों में" },
       ],
       sanctuarySection: {
@@ -861,11 +946,11 @@ export const translations = {
         stats: [
           { value: "1000+", title: "पेड़ संरक्षित", description: "वनों और हरित क्षेत्रों में" },
           { value: "500+", title: "स्वयंसेवक", description: "पर्यावरणीय बदलाव के लिए कार्यरत" },
-          { value: "2+", title: "गोद लिए गए स्कूल", description: "ग्रामीण छात्रों तक डिजिटल कक्षाएं पहुंचाना", clickable: true },
+          { value: "1", title: "समर्थित स्कूल", description: "ग्रामीण छात्रों तक डिजिटल कक्षाएं पहुंचाना", clickable: true },
           { value: "20+", title: "परियोजनाएं पूर्ण", description: "सफल संरक्षण पहलें" },
         ],
         schoolModal: {
-          title: "हमारे द्वारा गोद लिए गए स्कूल",
+          title: "हमारे द्वारा समर्थित स्कूल",
           description: "उन डिजिटल कक्षाओं और परिसरों की एक झलक जिन्हें बनाने में हमने मदद की है।",
           close: "बंद करें",
         },
@@ -886,11 +971,14 @@ export const translations = {
         eyebrow: "आगामी कार्यक्रम",
         heading: "हमारी संरक्षण गतिविधियों में शामिल हों",
         description: "हमारे आगामी कार्यक्रमों में भाग लें और प्रकृति व वन्यजीवों की रक्षा के आंदोलन का हिस्सा बनें।",
-        featuredEvent: "विशेष कार्यक्रम",
-        featuredTitle: "हमारे वृक्षारोपण अभियान में शामिल हों",
-        featuredLocation: "उत्तर प्रदेश का तराई क्षेत्र",
+        featuredEvent: "लॉन्च कार्यक्रम",
+        featuredTitle: "वन्यजीव संरक्षण कार्यक्रम व वेबसाइट शुभारंभ",
+        featuredDate: "26 जुलाई 2026",
+        featuredLocation: "फारेस्ट ऑफिस, कतर्नियाघाट वन्यजीव प्रभाग",
         featuredDescription:
-          "हजारों पेड़ लगाने और वन पारिस्थितिकी तंत्र को पुनर्स्थापित करने तथा जलवायु परिवर्तन से लड़ने में हमारी मदद करें।",
+          "वन विभाग के कर्मियों को उनकी समर्पित सेवा हेतु सम्मानित करने और एनवायरनमेंट वॉरियर्स वेबसाइट के आधिकारिक शुभारंभ में शामिल हों — डॉ. राजेश्वर सिंह, विधायक, सरोजिनी नगर द्वारा आयोजित।",
+        featuredHost: "डॉ. राजेश्वर सिंह, विधायक, सरोजिनी नगर द्वारा आयोजित",
+        featuredPosterAlt: "आधिकारिक कार्यक्रम पोस्टर",
         registerNow: "अभी पंजीकरण करें",
         viewDetails: "विवरण देखें",
         comingSoon: "जल्द आ रहा है",
@@ -984,8 +1072,11 @@ export const translations = {
       overview: {
         eyebrow: "हमारे अभयारण्य",
         heading: "वन्यजीवों और प्राकृतिक पारिस्थितिकी तंत्रों का संरक्षण",
-        description:
-          "हमारे अभयारण्य विविध वन्यजीवों, लुप्तप्राय प्रजातियों, घने जंगलों, आर्द्रभूमियों, नदियों और समृद्ध जैव विविधता का घर हैं। संरक्षण प्रयासों के माध्यम से, हम आने वाली पीढ़ियों के लिए इन प्राकृतिक खजानों की रक्षा करते हैं।",
+        description: [
+          "16,620 वर्ग किलोमीटर वन क्षेत्र के साथ, उत्तर प्रदेश विभिन्न प्रकार के बेहद खूबसूरत वन दृश्यों, वन्यजीवों, वनस्पति और जीव-जंतुओं का घर है। उत्तर प्रदेश में कई इकोटूरिज्म स्थल हैं, लेकिन सबसे प्रमुख टाइगर रिज़र्व, वन्यजीव अभयारण्य और आर्द्रभूमियां हैं।",
+          "उत्तर प्रदेश वन विभाग ने संरक्षण और सतत प्रबंधन के प्रति अपने समर्पण के माध्यम से इस अमूल्य प्राकृतिक विरासत को संरक्षित करने में महत्वपूर्ण भूमिका निभाई है। सभी वन्यजीव संगठन, संरक्षणवादी और प्रभावशाली व्यक्ति जिन्होंने उत्तर प्रदेश के वन्यजीवों, विशेष रूप से बाघों के संरक्षण में महत्वपूर्ण भूमिका निभाई है, वे अपने प्रयासों के लिए सराहना के पात्र हैं। इकोटूरिज्म को आक्रामक रूप से बढ़ावा देकर, वन विभाग और पर्यटन विभाग ने पर्यटन उद्योग को एक और आयाम दिया है।",
+          "उत्तर प्रदेश के कुल भूमि क्षेत्र का लगभग 6.98% वनों से आच्छादित है। राज्य का पारिस्थितिक और आर्थिक ढांचा इस वन आवरण से महत्वपूर्ण रूप से समर्थित है। राज्य सरकार ग्रीन बेल्ट की स्थापना, इकोटूरिज्म के विकास और वृक्षारोपण की सफलता की दिशा में निरंतर प्रयास कर रही है ताकि राज्य में वनों और वृक्षों के आवरण को बढ़ाया जा सके। वन विभाग के प्रयासों से, राज्य में इकोटूरिज्म को मजबूत करने के लिए नई परियोजनाएं शुरू की गईं, जिसके परिणामस्वरूप इकोटूरिज्म को बढ़ावा मिला। पर्यटक बेहतर पर्यटन सुविधाओं जैसे आवास, वॉच टावर और व्यू शेड जैसे फील्ड इंफ्रास्ट्रक्चर, साइकिल ट्रैक, वॉक पाथ, नेचर ट्रेल आदि का लाभ उठाते हैं।",
+        ],
         protectedAreas: "संरक्षित क्षेत्र",
         wildlifeSpecies: "वन्यजीव प्रजातियां",
         sqKmProtected: "वर्ग किमी संरक्षित",
@@ -1019,11 +1110,10 @@ export const translations = {
       story: {
         eyebrow: "हमारी कहानी",
         heading: "एनवायरनमेंट वॉरियर्स का निर्माण",
-        p1: "एनवायरनमेंट वॉरियर्स की स्थापना एक सरल मिशन के साथ की गई थी: लोगों को प्रकृति की रक्षा करने और भविष्य को सुरक्षित करने हेतु सशक्त बनाना।",
-        p2: "पर्यावरण जागरूकता अभियानों, वन्यजीव संरक्षण, वृक्षारोपण अभियानों और सामुदायिक सहभागिता के माध्यम से, हम एक हरित और स्वस्थ विश्व बनाने की दिशा में कार्य करते हैं।",
-        placeholderLabel: "प्लेसहोल्डर सूचना:",
-        placeholderText:
-          "हमें इस विशिष्ट संगठन के लिए यहां उद्धृत करने हेतु कोई सार्वजनिक स्थापना इतिहास नहीं मिला। वास्तविक स्थापना वर्ष, स्थापना की कहानी और मील के पत्थर साझा करें और हम इसे आपके वास्तविक इतिहास से बदल देंगे।",
+        p1: "एनवायरनमेंट वॉरियर्स का निर्माण एक प्रेरणादायक पहल है, जो इस विश्वास से जन्मी है कि हर व्यक्ति में वन्यजीव संरक्षण की लड़ाई में बदलाव लाने की शक्ति है। हमारा मिशन वन विभागों का समर्थन और सहयोग करना है, ताकि आने वाली पीढ़ियों के लिए एक हरित, अधिक स्थायी भविष्य सुनिश्चित किया जा सके।",
+        p2Before: "यह प्रयास ",
+        p2Highlight: "श्री पीताम्बरा बगलामुखी सिद्ध पीठ उत्तराखंड ट्रस्ट",
+        p2After: ", अंबालिका वेलफेयर फाउंडेशन, लखनऊ, और अंब्रीश शर्मा वाइल्डलाइफ वेलफेयर ट्रस्ट, नई दिल्ली तथा अन्य समान विचारधारा वाले मित्रों और शुभचिंतकों के अविश्वसनीय प्रयासों से सशक्त हुआ है, जो सभी प्रकृति के आश्चर्यों को संरक्षित करने की प्रतिबद्धता में एकजुट हैं। साथ मिलकर, हम बाघों, वन्यजीवों और पारिस्थितिकी तंत्रों की रक्षा के लिए समर्पित हैं, और संरक्षण की लड़ाई में स्थायी सकारात्मक बदलाव ला रहे हैं।",
         learnMore: "और जानें",
       },
       visionMission: {
@@ -1056,17 +1146,17 @@ export const translations = {
         members: ["रामेश्वर सिंह", "अंबिका मिश्रा", "सिद्धार्थ हरीश", "निखिल शर्मा"],
       },
       school: {
-        heading: "हमारा गोद लिया स्मार्ट स्कूल",
+        heading: "हमारा समर्थित स्मार्ट स्कूल",
         description:
-          "एनवायरनमेंट वॉरियर्स ने अपने सामुदायिक शिक्षा कार्य के हिस्से के रूप में एक स्थानीय स्मार्ट स्कूल को गोद लिया है। स्कूल का विवरण — इसका नाम, स्थान और हमारा सहयोग किन चीज़ों को कवर करता है — जल्द ही उपलब्ध होगा।",
+          "एनवायरनमेंट वॉरियर्स अपने सामुदायिक शिक्षा कार्य के हिस्से के रूप में एक स्थानीय स्मार्ट स्कूल को सहयोग देता है। स्कूल का विवरण — इसका नाम, स्थान और हमारा सहयोग किन चीज़ों को कवर करता है — जल्द ही उपलब्ध होगा।",
       },
       impact: {
         heading: "हमारा प्रभाव",
         stats: [
-          { value: "10M+", label: "पेड़ संरक्षित" },
-          { value: "500K+", label: "स्वयंसेवक" },
-          { value: "250+", label: "प्रजातियां संरक्षित" },
-          { value: "150+", label: "परियोजनाएं पूर्ण" },
+          { value: "1000+", label: "पेड़ संरक्षित" },
+          { value: "500+", label: "स्वयंसेवक" },
+          { value: "1", label: "समर्थित स्कूल" },
+          { value: "20+", label: "परियोजनाएं पूर्ण" },
         ],
       },
       cta: {
@@ -1137,6 +1227,31 @@ export const translations = {
         becomeVolunteer: "स्वयंसेवक बनें",
       },
     },
+    contact: {
+      hero: {
+        badge: "संपर्क करें",
+        heading: "संपर्क करें",
+        description: "कोई प्रश्न है, मानव-वन्यजीव संघर्ष की सूचना देनी है, या हमारे साथ सहयोग करना चाहते हैं? हमें आपसे सुनकर खुशी होगी।",
+      },
+      info: {
+        heading: "हमसे संपर्क करें",
+        addressLabel: "हमसे मिलें",
+        address: "लखनऊ, उत्तर प्रदेश, भारत",
+        phoneLabel: "हमें कॉल करें",
+        phone: "+91 82870 78724",
+        phoneNote: "वन्यजीव आपातकाल व सामान्य पूछताछ",
+        emailLabel: "हमें ईमेल करें",
+        email: "info@environmentwarriors.org",
+      },
+      form: {
+        heading: "हमें संदेश भेजें",
+        fullName: "पूरा नाम",
+        email: "ईमेल पता",
+        subject: "विषय",
+        message: "आपका संदेश",
+        submit: "संदेश भेजें",
+      },
+    },
     stories: {
       hero: {
         badge: "समुदाय की आवाज़ें",
@@ -1182,6 +1297,20 @@ export const translations = {
       },
       filters: { all: "सभी", india: "भारत", world: "विश्व" },
       items: [
+        {
+          regionKey: "india",
+          tag: "वन्यजीव",
+          title: "एनटीसीए की 2026 STRIDES रिपोर्ट में देशभर के टाइगर रिज़र्व का आकलन",
+          date: "जुलाई 2026",
+          blurb: "कोयंबटूर में हुई राष्ट्रीय बाघ संरक्षण प्राधिकरण (NTCA) की 29वीं बैठक में STRIDES 2026 रिपोर्ट जारी की गई, जिसमें तराई रिज़र्व सहित भारत के टाइगर रिज़र्व की पारिस्थितिकी, अवसंरचना और संरक्षण प्रबंधन का आकलन किया गया।",
+        },
+        {
+          regionKey: "india",
+          tag: "नीति",
+          title: "सुप्रीम कोर्ट ने लखनऊ के कुकरैल नाइट सफारी प्रोजेक्ट को मंज़ूरी दी",
+          date: "जुलाई 2026",
+          blurb: "सुप्रीम कोर्ट ने उत्तर प्रदेश के ₹1,510 करोड़ के कुकरैल नाइट सफारी और जूलॉजिकल पार्क को मंज़ूरी दी, जो भारत का पहला नाइट सफारी होगा — यह सेंट्रल एम्पावर्ड कमेटी और सेंट्रल ज़ू अथॉरिटी की शर्तों के अधीन है।",
+        },
         {
           regionKey: "india",
           tag: "वन्यजीव",
@@ -1441,16 +1570,57 @@ export const translations = {
         heading: "हमारी गतिविधियां",
         description: "हमारे संरक्षण और सामुदायिक आउटरीच कार्य के वास्तविक पल।",
       },
-      inferredNote:
-        "विवरण कार्यक्रम की तस्वीरों से अनुमानित है — कोई कैप्शन उपलब्ध नहीं था। यदि कोई विवरण सही करने की आवश्यकता हो तो हमें बताएं।",
       viewPhotos: "तस्वीरें देखें",
       hidePhotos: "तस्वीरें छिपाएं",
+      photosComingSoon: "तस्वीरें जल्द आ रही हैं",
       events: {
-        "dec-2025-school": {
-          title: "स्मार्ट क्लासरूम उद्घाटन व छात्र सम्मान समारोह",
-          location: "प्राथमिक विद्यालय, हुसैन नगर, बांसुरी नगरी, पीलीभीत जिला",
+        "jan-2025-curtain-raiser": {
+          title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट — प्रथम चरण",
+          location: "श्री गुरु गोविन्द सिंह महाराज राजकीय महाविद्यालय, पलिया कलां, लखीमपुर खीरी",
           description:
-            "एनवायरनमेंट वॉरियर्स ने पीलीभीत जिले के एक प्राथमिक विद्यालय में स्मार्ट क्लासरूम का उद्घाटन किया और छात्रों व स्टाफ को सम्मानित किया, इस अवसर पर गुब्बारों, उपहारों और एक छोटे समारोह के साथ।",
+            "वित्त एवं संसदीय कार्य मंत्री श्री सुरेश खन्ना जी की उपस्थिति में सैकड़ों लोगों ने पर्यावरण संरक्षण की शपथ लेकर एनवायरनमेंट वॉरियर्स अभियान की शुरुआत की। महाविद्यालय में डिजिटल लाइब्रेरी का लोकार्पण कर 5 मेधावी छात्र-छात्राओं को टैबलेट दिए गए, 5 उत्कृष्ट फ्रंटलाइन स्टाफ को पुरस्कृत तथा 30 वाचरों को साइकिल प्रदान की गई, और सरोजनीनगर के तारा शक्ति केंद्रों पर बने इको-फ्रेंडली बैग्स के साथ 300 से अधिक छात्र-छात्राओं को पर्यावरण संरक्षण संबंधी पुस्तकें वितरित की गईं।",
+        },
+        "feb-2025-katarniaghat": {
+          title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट — द्वितीय चरण",
+          location: "मोतीपुर फारेस्ट गेस्ट हाउस, कतर्नियाघाट वन्यजीव अभयारण्य, बहराइच",
+          description:
+            "12 विद्यालयों के 81 छात्र-छात्राओं के बीच क्विज़ प्रतियोगिता आयोजित कर प्रतिभावान छात्रों को पुरस्कृत किया गया। कतर्नियाघाट वन प्रभाग के 30 वाचरों को साइकिल तथा 5 उत्कृष्ट वन कर्मियों को सम्मानित किया गया। फील्ड डायरेक्टर डॉ. एच. राजा मोहन जी ने कार्यक्रम में सहभागिता कर इस पहल की सराहना की।",
+        },
+        "mar-2025-pilibhit": {
+          title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट 3.0",
+          location: "मुस्तफाबाद फारेस्ट रेस्ट हाउस, पीलीभीत",
+          description:
+            "मुख्य अतिथि वन एवं पर्यावरण मंत्री डॉ. अरुण कुमार जी की उपस्थिति में 10 स्थानीय स्कूलों के छात्र-छात्राओं के बीच क्विज़ व वाद-विवाद प्रतियोगिता आयोजित कर विजेताओं को पुरस्कार राशि व लैपटॉप दिए गए। पीलीभीत वन प्रभाग के 30 वाचरों को साइकिल तथा 5 उत्कृष्ट वन कर्मियों को सम्मानित किया गया। सौर ऊर्जा संचालित 2 वाटर होल्स का लोकार्पण किया गया, 1000 पौधे रोपने का अभियान शुरू किया गया, तथा तारा शक्ति सिलाई केंद्र पर स्वयं सहायता समूह की महिलाओं को 10 सिलाई मशीनें व प्राथमिक विद्यालय चोखापुरी में स्मार्ट क्लास व रण बहादुर सिंह डिजिटल शिक्षा एवं सशक्तिकरण केंद्र की स्थापना की गई।",
+        },
+        "apr-2025-kishanpur": {
+          title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट — चतुर्थ चरण",
+          location: "रेंजर्स कार्यालय, कट्टैया किशनपुर, लखीमपुर खीरी",
+          description:
+            "17 स्थानीय विद्यालयों के लगभग 250 विद्यार्थियों के बीच क्विज़ तथा पेंटिंग प्रतियोगिता आयोजित कर प्रतिभावान बच्चों को पुरस्कार राशि दी गई। दुधवा टाइगर रिज़र्व प्रभाग के 30 वाचरों को साइकिल तथा 5 उत्कृष्ट वन कर्मियों को सम्मानित किया गया। 10 गांवों में सिलाई केंद्र, सेंचुरी क्षेत्रों में वाटर पंप्स तथा स्कूलों में डिजिटल लाइब्रेरी स्थापित करने का संकल्प लिया गया। जिलाधिकारी दुर्गाशक्ति नागपाल और फील्ड डायरेक्टर एच. राजा मोहन जी कार्यक्रम में उपस्थित रहे।",
+        },
+        "may-2025-pilibhit-photography": {
+          title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट 5.0",
+          location: "मुस्तफाबाद फारेस्ट रेस्ट हाउस, पीलीभीत",
+          description:
+            "सुप्रसिद्ध वन्यजीव फोटोग्राफर सरोस लोधी जी के नेतृत्व में पीलीभीत टाइगर रिज़र्व के वन रक्षकों के लिए 2 दिवसीय वाइल्डलाइफ फोटोग्राफी वर्कशॉप आयोजित की गई। 180 से अधिक गाइड्स व ड्राइवर्स के लिए पर्यावरणीय क्विज़ प्रतियोगिता आयोजित कर 17 टॉप अचीवर्स को पुरस्कृत किया गया। 30 वाचरों को साइकिलें तथा 5 उत्कृष्ट वन कर्मियों को विशेष सम्मान प्रदान किया गया।",
+        },
+        "nov-2025-two-schools": {
+          title: "स्मार्ट क्लास उद्घाटन व विद्यालय सहयोग — चोखापुरी व हुसैन नगर",
+          location: "प्राथमिक विद्यालय चोखापुरी व प्राथमिक विद्यालय हुसैन नगर, मुस्तफाबाद, पीलीभीत",
+          description:
+            "पीलीभीत के मुस्तफाबाद स्थित प्राथमिक विद्यालय चोखापुरी में पूर्व स्थापित स्मार्ट क्लास का उद्घाटन कर विद्यालय के समग्र विकास हेतु ₹1 लाख की धनराशि देने की घोषणा की गई। अमरिया स्थित प्राथमिक विद्यालय हुसैन नगर को ₹25,000 की सहायता राशि प्रदान की गई तथा वहां डिजिटल स्मार्ट क्लास की स्थापना की घोषणा की गई। महिला सशक्तिकरण को ध्यान में रखते हुए वन विभाग को 14 सिलाई मशीनें भी प्रदान की गईं।",
+        },
+        "dec-2025-school": {
+          title: "स्मार्ट क्लासरूम उद्घाटन — प्राथमिक विद्यालय हुसैन नगर",
+          location: "प्राथमिक विद्यालय, हुसैन नगर, अमरिया, पीलीभीत जिला",
+          description:
+            "प्राथमिक विद्यालय हुसैन नगर में किए गए वादे को पूरा करते हुए विद्यालय में स्थापित स्मार्ट क्लास रूम का लोकार्पण किया गया। कार्यक्रम में उपस्थित ग्रामीणों को पर्यावरण तथा वन्य जीव संरक्षण के लिए प्रेरित किया गया, साथ ही बच्चों को स्टेशनरी वितरित की गई।",
+        },
+        "apr-2026-pilibhit-cycles": {
+          title: "साइकिल एवं स्कूल किट वितरण — आठवां चरण",
+          location: "मुस्तफाबाद फारेस्ट गेस्ट हाउस, पीलीभीत टाइगर रिज़र्व",
+          description:
+            "साइकिल एवं स्कूल किट वितरण कार्यक्रम का आयोजन कर उपस्थित छात्रों व ग्रामीणों को पर्यावरण तथा वन्य जीव संरक्षण के लिए प्रेरित किया गया। टाइगर रिज़र्व की सुरक्षा में तैनात 25 वाचर्स को साइकिलें प्रदान की गईं। साथ ही प्राथमिक विद्यालय चोखापुरी की कक्षा 5 उत्तीर्ण कर चुकी 10 मेधावी छात्राओं को साइकिलें वितरित की गईं।",
         },
       },
     },

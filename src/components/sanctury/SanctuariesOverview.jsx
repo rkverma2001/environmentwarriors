@@ -55,9 +55,11 @@ const SanctuariesOverview = () => {
               {t.heading}
             </h2>
 
-            <p className="mt-5 text-gray-600 leading-relaxed">
-              {t.description}
-            </p>
+            <div className="mt-5 space-y-4 text-gray-600 leading-relaxed">
+              {t.description.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
 
             {/* Stats */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">

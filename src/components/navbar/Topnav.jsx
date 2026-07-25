@@ -106,14 +106,18 @@ const Topnav = () => {
             {/* Social Icons */}
             <div className="flex items-center gap-4">
               <a
-                href="#"
+                href="https://instagram.com/environmentwarriors01"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-[#00d26a] transition duration-300"
               >
                 <FaInstagram className="text-sm md:text-base" />
               </a>
 
               <a
-                href="#"
+                href="https://x.com/environmen34587"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hover:text-[#00d26a] transition duration-300"
               >
                 <FaXTwitter className="text-sm md:text-base" />

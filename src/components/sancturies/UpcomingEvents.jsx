@@ -45,8 +45,8 @@ const UpcomingEvents = () => {
         <div className="relative overflow-hidden rounded-3xl mb-10">
 
           <img
-            src="/featuredevents.png"
-            alt="Plantation Drive"
+            src="/tigers/tiger-waterhole.jpg"
+            alt={t.featuredTitle}
             className="w-full h-[500px] object-cover"
           />
 
@@ -67,7 +67,7 @@ const UpcomingEvents = () => {
 
                 <div className="flex items-center gap-2">
                   <FaCalendarAlt />
-                  <span>{t.comingSoon}</span>
+                  <span>{t.featuredDate}</span>
                 </div>
 
                 <div className="flex items-center gap-2">
@@ -81,28 +81,20 @@ const UpcomingEvents = () => {
                 {t.featuredDescription}
               </p>
 
-              <button
-                onClick={() => setModalOpen(true)}
-                className="
-                  mt-6
-                  bg-[#F5C542]
-                  text-black
-                  px-6
-                  py-3
-                  rounded-xl
-                  font-semibold
-                  flex
-                  items-center
-                  gap-2
-                  hover:bg-[#e7b531]
-                  transition
-                "
-              >
-                {t.registerNow}
-                <FaArrowRight />
-              </button>
+              <p className="mt-5 text-[#F5C542] font-semibold">
+                {t.featuredHost}
+              </p>
 
             </div>
+          </div>
+
+          {/* Official Poster Inset */}
+          <div className="hidden md:block absolute bottom-5 right-5 w-[220px] bg-white p-1.5 rounded-xl shadow-lg">
+            <img
+              src="/events/launch-event/official-poster.jpg"
+              alt={t.featuredPosterAlt}
+              className="w-full h-auto object-contain rounded-lg"
+            />
           </div>
 
         </div>
