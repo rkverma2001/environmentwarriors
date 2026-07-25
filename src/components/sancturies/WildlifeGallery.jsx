@@ -7,6 +7,13 @@ const images = [
   "/tigers/tiger-waterhole.jpg",
   "/tigers/tiger-nose-to-nose.jpg",
   "/tigers/tiger-crossing-road.jpg",
+  "/wildlife-gallery/tiger-alert-portrait.jpg",
+  "/wildlife-gallery/tiger-forest-walk.jpg",
+  "/wildlife-gallery/tiger-waterhole-rest.jpg",
+  "/wildlife-gallery/tiger-forest-road.jpg",
+  "/wildlife-gallery/crested-serpent-eagle.jpg",
+  "/wildlife-gallery/sloth-bear.jpg",
+  "/wildlife-gallery/peacocks-forest-path.jpg",
 ];
 
 const WildlifeGallery = () => {
@@ -106,6 +113,10 @@ const WildlifeGallery = () => {
           ))}
 
         </div>
+
+        <p className="text-center text-gray-400 text-sm mt-6">
+          {t.photoCredit}
+        </p>
 
       </div>
     </section>
