@@ -242,7 +242,7 @@ const sanctuariesData = {
     heroImage: "/wildlife-gallery/tiger-golden-tunnel.jpg",
     aboutImage: "/pilibhit.png",
     wildlife: [],
-    gallery: [],
+    gallery: ['/pilibhit/1.jpeg', '/pilibhit/2.jpeg', '/pilibhit/3.jpeg', '/pilibhit/4.jpeg', '/pilibhit/5.jpeg', '/pilibhit/6.jpeg', '/pilibhit/7.jpeg', '/pilibhit/8.jpeg'],
     en: {
       name: "Pilibhit Tiger Reserve",
       subtitle: "The Land of Tigers and Forests",
