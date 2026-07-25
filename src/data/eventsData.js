@@ -24,6 +24,10 @@ const eventsData = [
     images: [
       "/schools/chokhwapuri-school-exterior.jpg",
       "/schools/chokhwapuri-classroom.jpg",
+      "/schools/1.jpeg",
+      "/schools/2.jpeg",
+      "/schools/3.jpeg",
+      "/schools/4.jpeg",
     ],
   },
   {
