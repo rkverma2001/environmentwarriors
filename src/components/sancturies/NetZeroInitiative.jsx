@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaBolt, FaCertificate, FaGlobe, FaIndustry, FaTimes, FaArrowRight, FaStar } from "react-icons/fa";
+import { FaBolt, FaCertificate, FaGlobe, FaIndustry, FaTimes, FaArrowRight, FaFilePdf } from "react-icons/fa";
 
 import { useT } from "../../i18n/useT";
 
@@ -11,6 +11,7 @@ const NetZeroInitiative = () => {
   const t = useT().home.netZero;
   const stats = t.stats.map((s, i) => ({ ...s, icon: icons[i] }));
   const [modalOpen, setModalOpen] = useState(false);
+  const [activePhoto, setActivePhoto] = useState(null);
 
   return (
     <section className="py-16 lg:py-24 bg-[#f8faf8]">
@@ -35,29 +36,41 @@ const NetZeroInitiative = () => {
               {t.description}
             </p>
 
-            <div className="inline-flex items-center gap-2 mt-5 bg-[#F5C542]/15 text-[#8a6d00] px-4 py-2 rounded-full text-sm font-semibold">
-              <FaStar className="text-[#F5C542]" />
-              {t.brandAmbassador}
-            </div>
-
             <div className="grid grid-cols-2 gap-3 mt-8">
               {galleryPhotos.map((photo) => (
-                <img
+                <button
                   key={photo}
-                  src={photo}
-                  alt={t.galleryCaption}
-                  className="w-full h-[140px] sm:h-[180px] object-cover rounded-2xl shadow-md"
-                />
+                  onClick={() => setActivePhoto(photo)}
+                  className="cursor-pointer"
+                >
+                  <img
+                    src={photo}
+                    alt={t.galleryCaption}
+                    className="w-full h-[140px] sm:h-[180px] object-cover rounded-2xl shadow-md hover:opacity-90 transition"
+                  />
+                </button>
               ))}
             </div>
 
-            <button
-              onClick={() => setModalOpen(true)}
-              className="mt-8 inline-flex items-center gap-2 bg-[#0F5132] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
-            >
-              {t.learnMore}
-              <FaArrowRight />
-            </button>
+            <div className="flex flex-wrap gap-3 mt-8">
+              <button
+                onClick={() => setModalOpen(true)}
+                className="inline-flex items-center gap-2 bg-[#0F5132] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
+              >
+                {t.learnMore}
+                <FaArrowRight />
+              </button>
+
+              <a
+                href="/net-zero/net-zero-industry-brochure.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-[#0F5132] text-[#0F5132] px-6 py-3 rounded-xl font-semibold hover:bg-[#0F5132]/5 transition"
+              >
+                <FaFilePdf />
+                {t.viewBrochure}
+              </a>
+            </div>
           </div>
 
           <div className="grid grid-cols-2 gap-6">
@@ -145,6 +158,29 @@ const NetZeroInitiative = () => {
               {t.modalClose}
             </button>
           </div>
+        </div>
+      )}
+
+      {/* Photo Lightbox */}
+      {activePhoto && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 px-4"
+          onClick={() => setActivePhoto(null)}
+        >
+          <button
+            onClick={() => setActivePhoto(null)}
+            className="absolute top-6 right-6 text-white/80 hover:text-white text-2xl"
+            aria-label={t.modalClose}
+          >
+            <FaTimes />
+          </button>
+
+          <img
+            src={activePhoto}
+            alt={t.galleryCaption}
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-full max-h-[85vh] object-contain rounded-xl"
+          />
         </div>
       )}
     </section>

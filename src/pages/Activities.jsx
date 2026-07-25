@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaCalendarAlt, FaMapMarkerAlt, FaImages, FaCamera } from "react-icons/fa";
+import { FaCalendarAlt, FaMapMarkerAlt, FaImages, FaCamera, FaTimes } from "react-icons/fa";
 
 import eventsData from "../data/eventsData";
 import { useT } from "../i18n/useT";
@@ -14,6 +14,7 @@ const Activities = () => {
   const t = useT().activities;
   const { language } = useLanguage();
   const [openGallery, setOpenGallery] = useState(null);
+  const [activePhoto, setActivePhoto] = useState(null);
 
   return (
     <div>
@@ -51,11 +52,16 @@ const Activities = () => {
                 className="bg-[#f8faf8] rounded-3xl border overflow-hidden"
               >
                 {hasPhotos ? (
-                  <img
-                    src={event.images[0]}
-                    alt={copy.title}
-                    className="w-full h-[320px] object-cover"
-                  />
+                  <button
+                    onClick={() => setActivePhoto({ src: event.images[0], alt: copy.title })}
+                    className="block w-full cursor-pointer"
+                  >
+                    <img
+                      src={event.images[0]}
+                      alt={copy.title}
+                      className="w-full h-[320px] object-cover hover:opacity-90 transition"
+                    />
+                  </button>
                 ) : (
                   <div className="w-full h-[160px] flex flex-col items-center justify-center gap-2 bg-[#0F5132]/5 text-[#0F5132]/50">
                     <FaCamera className="text-3xl" />
@@ -95,12 +101,17 @@ const Activities = () => {
                   {isOpen && (
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-5">
                       {event.images.map((img, index) => (
-                        <img
+                        <button
                           key={img}
-                          src={img}
-                          alt={`${copy.title} ${index + 1}`}
-                          className="w-full h-[160px] object-cover rounded-xl"
-                        />
+                          onClick={() => setActivePhoto({ src: img, alt: `${copy.title} ${index + 1}` })}
+                          className="cursor-pointer"
+                        >
+                          <img
+                            src={img}
+                            alt={`${copy.title} ${index + 1}`}
+                            className="w-full h-[160px] object-cover rounded-xl hover:opacity-90 transition"
+                          />
+                        </button>
                       ))}
                     </div>
                   )}
@@ -110,6 +121,29 @@ const Activities = () => {
           })}
         </div>
       </section>
+
+      {/* Photo Lightbox */}
+      {activePhoto && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 px-4"
+          onClick={() => setActivePhoto(null)}
+        >
+          <button
+            onClick={() => setActivePhoto(null)}
+            className="absolute top-6 right-6 text-white/80 hover:text-white text-2xl"
+            aria-label="Close"
+          >
+            <FaTimes />
+          </button>
+
+          <img
+            src={activePhoto.src}
+            alt={activePhoto.alt}
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-full max-h-[85vh] object-contain rounded-xl"
+          />
+        </div>
+      )}
     </div>
   );
 };

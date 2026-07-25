@@ -196,9 +196,9 @@ export const translations = {
           { value: "$771M", label: "India's Export Risk from EU CBAM" },
           { value: "₹100Cr+", label: "Recoverable Annually in Sarojini Nagar" },
         ],
-        brandAmbassador: "Brand Ambassador: Sanjay Dutt",
-        galleryCaption: "Sanjay Dutt joins Dr. Rajeshwar Singh at the Sarojini Nagar mission rally",
+        galleryCaption: "Sarojini Nagar mission rally",
         learnMore: "Learn More",
+        viewBrochure: "View Brochure",
         modalTitle: "Net Zero Industry Mission",
         modalIntro:
           "Net Zero is not a cost — it's a profit strategy. Every rupee saved on energy, water and waste is a rupee added to the bottom line, while keeping export markets open.",
@@ -1010,9 +1010,9 @@ export const translations = {
           { value: "$771M", label: "EU CBAM से भारत का निर्यात जोखिम" },
           { value: "₹100Cr+", label: "सरोजिनी नगर में वार्षिक वसूली योग्य राशि" },
         ],
-        brandAmbassador: "ब्रांड एंबेसडर: संजय दत्त",
-        galleryCaption: "संजय दत्त, सरोजिनी नगर मिशन रैली में डॉ. राजेश्वर सिंह के साथ",
+        galleryCaption: "सरोजिनी नगर मिशन रैली",
         learnMore: "और जानें",
+        viewBrochure: "ब्रोशर देखें",
         modalTitle: "नेट ज़ीरो इंडस्ट्री मिशन",
         modalIntro:
           "नेट ज़ीरो कोई लागत नहीं है — यह एक लाभ रणनीति है। ऊर्जा, पानी और अपव्यय पर बचाया गया हर रुपया मुनाफे में जुड़ता है, साथ ही निर्यात बाज़ार भी खुले रहते हैं।",
