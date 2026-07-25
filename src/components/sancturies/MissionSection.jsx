@@ -2,7 +2,6 @@ import {
   FaTree,
   FaPaw,
   FaUsers,
-  FaArrowRight,
 } from "react-icons/fa";
 
 import { useT } from "../../i18n/useT";
@@ -51,7 +50,7 @@ const MissionSection = () => {
               "
             >
               <h4 className="text-[#0F5132] font-bold text-2xl">
-                10M+
+                1000+
               </h4>
 
               <p className="text-sm text-gray-600">
@@ -170,30 +169,6 @@ const MissionSection = () => {
               </div>
 
             </div>
-
-            {/* Button */}
-            <button
-              className="
-                mt-10
-                w-fit
-                bg-[#0F5132]
-                hover:bg-[#0a3d26]
-                text-white
-                px-7
-                py-3
-                rounded-xl
-                font-medium
-                flex
-                items-center
-                gap-2
-                transition-all
-                duration-300
-                hover:gap-3
-              "
-            >
-              {t.learnMore}
-              <FaArrowRight />
-            </button>
 
           </div>
 

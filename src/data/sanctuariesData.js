@@ -1,7 +1,7 @@
 const sanctuariesData = {
   dudhwa: {
     slug: "dudhwa",
-    heroImage: "/dudhwanationalparkhero1.png",
+    heroImage: "/wildlife-gallery/tiger-waterhole-rest.jpg",
     aboutImage: "/dudhwaabout.png",
     wildlife: [
       { image: "/dudhwatiger.png", name: { en: "Bengal Tiger", hi: "बंगाल टाइगर" } },

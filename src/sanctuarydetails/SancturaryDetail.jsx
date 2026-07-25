@@ -11,9 +11,7 @@ import WildlifeSection from "./WildlifeSection";
 import GallerySection from "./GallerySection";
 import SanctuaryStats from "./SanctuaryStats";
 import VisitorInfo from "./VisitorInfo";
-import SafariZones from "./SafariZones";
 import ConservationSection from "./ConservationSection";
-import CTASection from "./CTASection";
 
 const SanctuaryDetail = () => {
   const { slug } = useParams();
@@ -55,9 +53,7 @@ const SanctuaryDetail = () => {
         <GallerySection gallery={sanctuary.gallery} />
       )}
   <VisitorInfo data={data} />
-  <SafariZones ranges={sanctuary.ranges} />
   <ConservationSection />
-  <CTASection data={data} />
 
     </>
   );

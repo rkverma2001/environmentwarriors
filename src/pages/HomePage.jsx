@@ -18,9 +18,9 @@ const HomePage = () => {
       <SanctuarySection />
       <MissionSection/>
       <ImpactStatistics/>
+      <NetZeroInitiative/>
       <WildlifeGallery/>
       <UpcomingEvents/>
-      <NetZeroInitiative/>
     </div>
   )
 }
