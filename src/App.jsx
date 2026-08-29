@@ -14,6 +14,7 @@ import Games from "./pages/Games";
 import Tracker from "./pages/Tracker";
 import Activities from "./pages/Activities";
 import Contact from "./pages/Contact";
+import BreakingNewsPopup from "./components/BreakingNewsPopup";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <BrowserRouter>
 
         <Navbar/>
+        <BreakingNewsPopup />
 
         <Routes>
 
