@@ -407,8 +407,6 @@ export const translations = {
         fullName: "Full Name",
         email: "Email Address",
         phone: "Phone Number",
-        aadhar: "Aadhar Number (Optional, 12 digits)",
-        aadharTitle: "Enter your 12-digit Aadhar number",
         address: "Address",
         social: "Social Media Handle (e.g. @yourhandle or profile link)",
         selectInterest: "Select Interest",
@@ -417,7 +415,7 @@ export const translations = {
         interestCommunity: "Community Awareness",
         why: "Why do you want to volunteer?",
         privacyNote:
-          "Your Aadhar number is used only to verify identity for on-ground volunteering and is never shared publicly.",
+          "Your details are used only to coordinate on-ground volunteering and are never shared publicly.",
         submit: "Submit Application",
       },
       cta: {
@@ -1232,8 +1230,6 @@ export const translations = {
         fullName: "पूरा नाम",
         email: "ईमेल पता",
         phone: "फ़ोन नंबर",
-        aadhar: "आधार नंबर (वैकल्पिक, 12 अंक)",
-        aadharTitle: "अपना 12 अंकों का आधार नंबर दर्ज करें",
         address: "पता",
         social: "सोशल मीडिया हैंडल (जैसे @yourhandle या प्रोफ़ाइल लिंक)",
         selectInterest: "रुचि चुनें",
@@ -1242,7 +1238,7 @@ export const translations = {
         interestCommunity: "सामुदायिक जागरूकता",
         why: "आप स्वयंसेवा क्यों करना चाहते हैं?",
         privacyNote:
-          "आपके आधार नंबर का उपयोग केवल जमीनी स्तर पर स्वयंसेवा हेतु पहचान सत्यापित करने के लिए किया जाता है और इसे कभी सार्वजनिक रूप से साझा नहीं किया जाता।",
+          "आपका विवरण केवल जमीनी स्तर पर स्वयंसेवा के समन्वय हेतु उपयोग किया जाता है और इसे कभी सार्वजनिक रूप से साझा नहीं किया जाता।",
         submit: "आवेदन जमा करें",
       },
       cta: {

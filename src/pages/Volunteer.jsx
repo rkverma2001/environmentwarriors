@@ -202,16 +202,6 @@ const Volunteer = () => {
                 className="w-full border rounded-xl px-4 py-3"
               />
 
-              <input
-                type="text"
-                placeholder={t.form.aadhar}
-                maxLength={12}
-                pattern="[0-9]{12}"
-                inputMode="numeric"
-                title={t.form.aadharTitle}
-                className="w-full border rounded-xl px-4 py-3"
-              />
-
               <textarea
                 rows="3"
                 placeholder={t.form.address}
