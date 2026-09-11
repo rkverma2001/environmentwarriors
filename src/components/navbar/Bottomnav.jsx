@@ -48,7 +48,7 @@ const Bottomnav = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden lg:flex items-center gap-6 xl:gap-8 text-[15px] font-medium">
+          <ul className="hidden xl:flex items-center gap-4 xl:gap-6 text-[15px] font-medium whitespace-nowrap">
 
             <Link
               to="/"
@@ -250,7 +250,7 @@ const Bottomnav = () => {
           </ul>
 
           {/* Desktop Buttons */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden xl:flex items-center gap-3">
 
             <button
               onClick={toggleLanguage}
@@ -295,7 +295,7 @@ const Bottomnav = () => {
 
           {/* Mobile Toggle */}
           <button
-            className="lg:hidden text-[#0F5132]"
+            className="xl:hidden text-[#0F5132]"
             onClick={() => setMobileMenu(!mobileMenu)}
           >
             {mobileMenu ? (
@@ -311,7 +311,7 @@ const Bottomnav = () => {
 
       {/* Mobile Menu */}
       {mobileMenu && (
-        <div className="lg:hidden bg-white border-t shadow-lg">
+        <div className="xl:hidden bg-white border-t shadow-lg">
 
           <div className="px-5 py-5 flex flex-col gap-4">
 

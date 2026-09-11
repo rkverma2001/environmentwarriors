@@ -90,11 +90,9 @@ const WildlifePuzzle = () => {
       )}
 
       <div
-        className="grid gap-1 mx-auto bg-[#0F5132] rounded-2xl overflow-hidden p-1"
+        className="grid gap-1 mx-auto bg-[#0F5132] rounded-2xl overflow-hidden p-1 w-full max-w-[360px] aspect-square"
         style={{
           gridTemplateColumns: `repeat(${SIZE}, 1fr)`,
-          width: 360,
-          height: 360,
         }}
       >
         {board.map((tile, index) => {
