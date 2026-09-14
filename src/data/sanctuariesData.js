@@ -227,6 +227,8 @@ const sanctuariesData = {
         },
       },
       {
+        image: "/wildlife/gharial.jpg",
+        credit: "Charles J. Sharp / Wikimedia Commons (CC BY-SA 4.0)",
         name: { en: "Gharial", hi: "घड़ियाल" },
         description: {
           en: "The critically endangered gharial is found in the Sharda river's waters alongside mugger crocodiles.",
@@ -234,6 +236,8 @@ const sanctuariesData = {
         },
       },
       {
+        image: "/wildlife/mugger-crocodile.jpg",
+        credit: "Charles J. Sharp / Wikimedia Commons (CC BY-SA 4.0)",
         name: { en: "Mugger Crocodile", hi: "मगर मगरमच्छ" },
         description: {
           en: "Mugger crocodiles bask along Kishanpur's wetlands and riverbanks, sharing habitat with otters and gharials.",
@@ -241,6 +245,8 @@ const sanctuariesData = {
         },
       },
       {
+        image: "/wildlife/sarus-crane.jpg",
+        credit: "Charles J. Sharp / Wikimedia Commons (CC BY-SA 4.0)",
         name: { en: "Sarus Crane", hi: "सारस क्रेन" },
         description: {
           en: "Jhadi Tal is an important site for resident and migratory birds, including the Sarus crane and painted stork.",
@@ -389,6 +395,8 @@ const sanctuariesData = {
     aboutImage: "/katarniaghat.png",
     wildlife: [
       {
+        image: "/wildlife/gharial.jpg",
+        credit: "Charles J. Sharp / Wikimedia Commons (CC BY-SA 4.0)",
         name: { en: "Gharial", hi: "घड़ियाल" },
         description: {
           en: "The Girwa river's sandbanks provide critical nesting habitat for the critically endangered gharial, one of Katarniaghat's flagship species.",
@@ -396,6 +404,8 @@ const sanctuariesData = {
         },
       },
       {
+        image: "/wildlife/gangetic-dolphin.jpg",
+        credit: "Mrkukilgogoi / Wikimedia Commons (CC BY-SA 4.0)",
         name: { en: "Gangetic Dolphin", hi: "गंगा डॉल्फिन" },
         description: {
           en: "Katarniaghat is one of the few places in India where the Gangetic river dolphin still survives, sharing the Girwa river with gharials and mugger crocodiles.",
@@ -427,6 +437,8 @@ const sanctuariesData = {
         },
       },
       {
+        image: "/wildlife/mugger-crocodile.jpg",
+        credit: "Charles J. Sharp / Wikimedia Commons (CC BY-SA 4.0)",
         name: { en: "Mugger Crocodile", hi: "मगर मगरमच्छ" },
         description: {
           en: "Marsh mugger crocodiles share the Girwa river with gharials and the Gangetic dolphin, making it one of India's rare multi-species river habitats.",
@@ -615,6 +627,8 @@ const sanctuariesData = {
         },
       },
       {
+        image: "/wildlife/smooth-coated-otter.jpg",
+        credit: "Lip Kee / Wikimedia Commons (CC BY-SA 2.0)",
         name: { en: "Otter", hi: "ऊदबिलाव" },
         description: {
           en: "Otters inhabit Pilibhit's rivers and the Sharda Sagar Reservoir, part of the reserve's rich aquatic wildlife.",

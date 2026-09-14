@@ -251,6 +251,7 @@ export const translations = {
       govtRules: "As per Govt Rules",
       conservationHighlights: "Conservation Highlights",
       tapForDetails: "Tap for details",
+      photoCredit: "Photo:",
     },
     sanctuariesPage: {
       hero: {
@@ -1095,6 +1096,7 @@ export const translations = {
       govtRules: "सरकारी नियमों के अनुसार",
       conservationHighlights: "संरक्षण मुख्य बिंदु",
       tapForDetails: "विवरण के लिए टैप करें",
+      photoCredit: "फोटो:",
     },
     sanctuariesPage: {
       hero: {

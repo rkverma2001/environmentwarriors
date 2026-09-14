@@ -35,6 +35,7 @@ const SanctuaryDetail = () => {
 
   const wildlife = sanctuary.wildlife.map((w) => ({
     image: w.image,
+    credit: w.credit,
     name: w.name[language],
     description: w.description[language],
   }));

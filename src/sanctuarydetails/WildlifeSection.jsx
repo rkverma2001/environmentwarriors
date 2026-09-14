@@ -105,6 +105,12 @@ const WildlifeSection = ({ wildlife }) => {
             <p className="text-gray-600 mt-4 leading-relaxed">
               {activeAnimal.description}
             </p>
+
+            {activeAnimal.credit && (
+              <p className="text-gray-400 text-xs mt-4">
+                {t.photoCredit} {activeAnimal.credit}
+              </p>
+            )}
           </div>
         </div>
       )}
