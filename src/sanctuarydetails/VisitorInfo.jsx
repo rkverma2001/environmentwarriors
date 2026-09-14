@@ -3,6 +3,7 @@ import {
   FaMapMarkerAlt,
   FaTicketAlt,
   FaCalendarAlt,
+  FaDoorOpen,
 } from "react-icons/fa";
 
 import { useT } from "../i18n/useT";
@@ -22,7 +23,7 @@ const VisitorInfo = ({ data }) => {
       value: data.bestTime,
     },
     {
-      icon: FaClock,
+      icon: FaDoorOpen,
       title: t.visitorTimingLabel,
       value: data.visitorTiming,
     },
