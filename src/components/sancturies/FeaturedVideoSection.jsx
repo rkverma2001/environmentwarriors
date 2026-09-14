@@ -27,7 +27,7 @@ const FeaturedVideoSection = () => {
           <video
             controls
             preload="none"
-            poster="/events/sep-2026-pilibhit-bagh-mitra/collage-4.jpg"
+            poster="/events/sep-2026-pilibhit-bagh-mitra/event-banner.jpg"
             className="w-full aspect-video bg-black"
           >
             <source src="/videos/pilibhit-tiger-reserve.mp4" type="video/mp4" />
