@@ -495,7 +495,23 @@ export const translations = {
         description: "Topical wildlife, forest and climate news from the Terai and beyond.",
       },
       filters: { all: "All", india: "India", world: "World" },
+      inMedia: {
+        heading: "In The Media",
+        description: "Recent press coverage of our work in the Terai.",
+        clippings: [
+          { publication: "The Times of India", headline: "Bagh Mitras, forest staff felicitated at PTR" },
+          { publication: "Hindustan Times", headline: "MLA announces life, medical insurance for Bagh Mitras" },
+          { publication: "Hindi Press", headline: "टाइगर रिजर्व में 140 बाघ मित्र सम्मानित" },
+        ],
+      },
       items: [
+        {
+          regionKey: "india",
+          tag: "Wildlife",
+          title: "140 Bagh Mitras Felicitated at Pilibhit Tiger Reserve — 10th Conservation Event",
+          date: "Sep 2026",
+          blurb: "Environment Warriors honoured 140 Bagh Mitras, forest personnel, guides and drivers at Mustafabad, Pilibhit Tiger Reserve. Dr. Rajeshwar Singh announced ₹5 lakh life insurance and ₹2 lakh medical insurance coverage for Bagh Mitras, plus cash awards for outstanding conservation work. Covered by Times of India, Hindustan Times and local Hindi press.",
+        },
         {
           regionKey: "india",
           tag: "Wildlife",
@@ -772,6 +788,7 @@ export const translations = {
       viewPhotos: "View Photos",
       hidePhotos: "Hide Photos",
       photosComingSoon: "Photos coming soon",
+      eventVideo: "Event Video",
       events: {
         "jan-2025-curtain-raiser": {
           title: "Wildlife Conservation Curtain Raiser Event — Phase 1",
@@ -820,6 +837,12 @@ export const translations = {
           location: "Mustafabad Forest Guest House, Pilibhit Tiger Reserve",
           description:
             "Students and villagers were motivated for environmental and wildlife conservation at a cycle and school kit distribution programme. 25 watchers deployed for Tiger Reserve security received cycles, and 10 meritorious girl students who had passed Class 5 at Primary School Chokhwapuri were given cycles.",
+        },
+        "sep-2026-pilibhit-bagh-mitra": {
+          title: "10th Wildlife Conservation Event — 140 Bagh Mitras Felicitated",
+          location: "Mustafabad, Pilibhit Tiger Reserve",
+          description:
+            "Environment Warriors, in association with Shri Maa Pitambara Baglamukhi Siddh Peeth Uttarakhand Trust, honoured 140 Bagh Mitras along with forest personnel, guides and drivers for their contribution to wildlife conservation at Pilibhit Tiger Reserve. The forest department received 50 raincoats and 10 medical and first-aid kits, watchers were given bicycles, and Dr. Rajeshwar Singh announced life insurance coverage of ₹5 lakh and medical insurance coverage of ₹2 lakh for Bagh Mitras, along with cash awards of ₹25,000 each for five Bagh Mitras demonstrating exceptional conservation work. A special insurance camp will be organised during Wildlife Week in October.",
         },
       },
     },
@@ -1320,7 +1343,23 @@ export const translations = {
         description: "तराई और उससे परे से वन्यजीव, वन और जलवायु संबंधी ताज़ा समाचार।",
       },
       filters: { all: "सभी", india: "भारत", world: "विश्व" },
+      inMedia: {
+        heading: "मीडिया में",
+        description: "तराई में हमारे कार्य की हालिया प्रेस कवरेज।",
+        clippings: [
+          { publication: "द टाइम्स ऑफ इंडिया", headline: "Bagh Mitras, forest staff felicitated at PTR" },
+          { publication: "हिंदुस्तान टाइम्स", headline: "MLA announces life, medical insurance for Bagh Mitras" },
+          { publication: "हिंदी प्रेस", headline: "टाइगर रिजर्व में 140 बाघ मित्र सम्मानित" },
+        ],
+      },
       items: [
+        {
+          regionKey: "india",
+          tag: "वन्यजीव",
+          title: "पीलीभीत टाइगर रिज़र्व में 140 बाघ मित्र सम्मानित — 10वां संरक्षण कार्यक्रम",
+          date: "सितंबर 2026",
+          blurb: "एनवायरनमेंट वॉरियर्स ने मुस्तफाबाद, पीलीभीत टाइगर रिज़र्व में 140 बाघ मित्रों, वनकर्मियों, गाइड्स और ड्राइवर्स को सम्मानित किया। डॉ. राजेश्वर सिंह ने बाघ मित्रों के लिए ₹5 लाख का जीवन बीमा व ₹2 लाख का चिकित्सा बीमा तथा उत्कृष्ट संरक्षण कार्य के लिए नकद पुरस्कार की घोषणा की। टाइम्स ऑफ इंडिया, हिंदुस्तान टाइम्स तथा स्थानीय हिंदी प्रेस द्वारा कवर किया गया।",
+        },
         {
           regionKey: "india",
           tag: "वन्यजीव",
@@ -1597,6 +1636,7 @@ export const translations = {
       viewPhotos: "तस्वीरें देखें",
       hidePhotos: "तस्वीरें छिपाएं",
       photosComingSoon: "तस्वीरें जल्द आ रही हैं",
+      eventVideo: "कार्यक्रम वीडियो",
       events: {
         "jan-2025-curtain-raiser": {
           title: "वाइल्डलाइफ कंज़र्वेशन कर्टन रेज़र इवेंट — प्रथम चरण",
@@ -1645,6 +1685,12 @@ export const translations = {
           location: "मुस्तफाबाद फारेस्ट गेस्ट हाउस, पीलीभीत टाइगर रिज़र्व",
           description:
             "साइकिल एवं स्कूल किट वितरण कार्यक्रम का आयोजन कर उपस्थित छात्रों व ग्रामीणों को पर्यावरण तथा वन्य जीव संरक्षण के लिए प्रेरित किया गया। टाइगर रिज़र्व की सुरक्षा में तैनात 25 वाचर्स को साइकिलें प्रदान की गईं। साथ ही प्राथमिक विद्यालय चोखापुरी की कक्षा 5 उत्तीर्ण कर चुकी 10 मेधावी छात्राओं को साइकिलें वितरित की गईं।",
+        },
+        "sep-2026-pilibhit-bagh-mitra": {
+          title: "10वां वन्यजीव संरक्षण कार्यक्रम — 140 बाघ मित्र सम्मानित",
+          location: "मुस्तफाबाद, पीलीभीत टाइगर रिज़र्व",
+          description:
+            "एनवायरनमेंट वॉरियर्स ने श्री मां पीताम्बरा बगलामुखी सिद्ध पीठ उत्तराखंड ट्रस्ट के सहयोग से पीलीभीत टाइगर रिज़र्व में वन्यजीव संरक्षण में योगदान हेतु 140 बाघ मित्रों, वनकर्मियों, गाइड्स और ड्राइवर्स को सम्मानित किया। वन विभाग को 50 रेनकोट तथा 10 मेडिकल व फर्स्ट-एड किट प्रदान किए गए, वाचरों को साइकिलें दी गईं, तथा डॉ. राजेश्वर सिंह ने बाघ मित्रों के लिए ₹5 लाख का जीवन बीमा व ₹2 लाख का चिकित्सा बीमा तथा उत्कृष्ट संरक्षण कार्य करने वाले पांच बाघ मित्रों के लिए ₹25,000 प्रत्येक के नकद पुरस्कार की घोषणा की। अक्टूबर में वाइल्डलाइफ वीक के दौरान एक विशेष बीमा शिविर भी आयोजित किया जाएगा।",
         },
       },
     },

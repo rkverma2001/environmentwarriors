@@ -61,6 +61,19 @@ const eventsData = [
     date: "2026-04-04",
     images: [],
   },
+  {
+    id: "sep-2026-pilibhit-bagh-mitra",
+    date: "2026-09-11",
+    images: [
+      "/events/sep-2026-pilibhit-bagh-mitra/collage-1.jpg",
+      "/events/sep-2026-pilibhit-bagh-mitra/collage-2.jpg",
+      "/events/sep-2026-pilibhit-bagh-mitra/collage-3.jpg",
+      "/events/sep-2026-pilibhit-bagh-mitra/collage-4.jpg",
+      "/events/sep-2026-pilibhit-bagh-mitra/collage-5.jpg",
+      "/events/sep-2026-pilibhit-bagh-mitra/philatelic-cover-exchange.jpg",
+    ],
+    video: "/events/sep-2026-pilibhit-bagh-mitra/event-video.mp4",
+  },
 ];
 
 export default eventsData;
