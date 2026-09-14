@@ -14,9 +14,9 @@ import Footer from '../components/footer/Footer'
 const HomePage = () => {
   return (
     <div>
+      <FeaturedVideoSection/>
       <HeroSection/>
       <StatsSection/>
-      <FeaturedVideoSection/>
       <SanctuarySection />
       <MissionSection/>
       <ImpactStatistics/>
