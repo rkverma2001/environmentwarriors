@@ -4,12 +4,54 @@ const sanctuariesData = {
     heroImage: "/wildlife-gallery/tiger-waterhole-rest.jpg",
     aboutImage: "/dudhwaabout.png",
     wildlife: [
-      { image: "/dudhwatiger.png", name: { en: "Bengal Tiger", hi: "बंगाल टाइगर" } },
-      { image: "/dudhwarhino.png", name: { en: "One-Horned Rhino", hi: "एक सींग वाला गैंडा" } },
-      { image: "/dudhwaelephant.png", name: { en: "Elephant", hi: "हाथी" } },
-      { image: "/dudhwadeer.png", name: { en: "Swamp Deer", hi: "दलदली हिरण" } },
-      { image: "/dudhwaleopard.png", name: { en: "Leopard", hi: "तेंदुआ" } },
-      { image: "/dudhwafishingcat.png", name: { en: "Fishing Cat", hi: "मत्स्य बिलाव" } },
+      {
+        image: "/dudhwatiger.png",
+        name: { en: "Bengal Tiger", hi: "बंगाल टाइगर" },
+        description: {
+          en: "Dudhwa's Sal forests and grasslands support a healthy population of Bengal tigers, monitored through periodic NTCA tiger census surveys across the park's ten ranges.",
+          hi: "दुधवा के साल वन और घास के मैदान बंगाल टाइगर की एक स्वस्थ आबादी को सहारा देते हैं, जिनकी निगरानी पार्क की दस रेंजों में समय-समय पर होने वाले NTCA बाघ जनगणना सर्वेक्षणों के माध्यम से की जाती है।",
+        },
+      },
+      {
+        image: "/dudhwarhino.png",
+        name: { en: "One-Horned Rhino", hi: "एक सींग वाला गैंडा" },
+        description: {
+          en: "Reintroduced after local extinction, Indian one-horned rhinos live in a fenced enclosure in the Suheli floodplains as part of Dudhwa's rhino reintroduction programme.",
+          hi: "स्थानीय विलुप्ति के बाद फिर से बसाया गया, भारतीय एक सींग वाला गैंडा दुधवा के गैंडा पुनर्स्थापन कार्यक्रम के तहत सुहेली बाढ़ के मैदानों में एक बाड़ेदार क्षेत्र में रहता है।",
+        },
+      },
+      {
+        image: "/dudhwaelephant.png",
+        name: { en: "Elephant", hi: "हाथी" },
+        description: {
+          en: "Asian elephant herds move through Dudhwa's Sal forests and grasslands, part of the wider Terai elephant population sharing habitat with tigers and rhinos.",
+          hi: "एशियाई हाथी झुंड दुधवा के साल वनों और घास के मैदानों से होकर गुजरते हैं, जो व्यापक तराई हाथी आबादी का हिस्सा हैं और बाघों व गैंडों के साथ आवास साझा करते हैं।",
+        },
+      },
+      {
+        image: "/dudhwadeer.png",
+        name: { en: "Swamp Deer", hi: "दलदली हिरण" },
+        description: {
+          en: "Also called barasingha, Uttar Pradesh's state animal, protected under Schedule I of the Wildlife Protection Act — Dudhwa is where India's swamp deer recovery programme began.",
+          hi: "बारहसिंगा भी कहा जाने वाला यह उत्तर प्रदेश का राज्य पशु है, जो वन्यजीव संरक्षण अधिनियम की अनुसूची 1 के तहत संरक्षित है — दुधवा वह स्थान है जहां भारत का दलदली हिरण पुनर्प्राप्ति कार्यक्रम शुरू हुआ।",
+        },
+      },
+      {
+        image: "/dudhwaleopard.png",
+        name: { en: "Leopard", hi: "तेंदुआ" },
+        description: {
+          en: "Leopards share Dudhwa's forest habitat with tigers, preying on smaller ungulates in the park's Sal woodlands and grassland edges.",
+          hi: "तेंदुआ दुधवा के वन आवास को बाघों के साथ साझा करता है, और पार्क के साल वनों व घास के मैदानों के किनारों पर छोटे शाकाहारी जीवों का शिकार करता है।",
+        },
+      },
+      {
+        image: "/dudhwafishingcat.png",
+        name: { en: "Fishing Cat", hi: "मत्स्य बिलाव" },
+        description: {
+          en: "A wetland specialist adapted to hunting fish, this elusive small cat inhabits Dudhwa's swamps and riverine floodplains.",
+          hi: "मछली का शिकार करने में माहिर यह मायावी छोटी बिल्ली दुधवा के दलदलों और नदी किनारे के बाढ़ के मैदानों में रहती है।",
+        },
+      },
     ],
     gallery: [
       "/dudhwa/gallery1.png",
@@ -159,7 +201,53 @@ const sanctuariesData = {
     slug: "kishanpur",
     heroImage: "/kishanpur.png",
     aboutImage: "/kishanpur.png",
-    wildlife: [],
+    wildlife: [
+      {
+        image: "/dudhwatiger.png",
+        name: { en: "Bengal Tiger", hi: "बंगाल टाइगर" },
+        description: {
+          en: "Known as \"Tiger Territory,\" Kishanpur's forest ranges are monitored for tiger movement along the Dudhwa–Kishanpur corridor.",
+          hi: "\"टाइगर टेरिटरी\" के नाम से प्रसिद्ध, किशनपुर की वन रेंजों में दुधवा-किशनपुर गलियारे के साथ बाघों की आवाजाही पर नज़र रखी जाती है।",
+        },
+      },
+      {
+        image: "/dudhwadeer.png",
+        name: { en: "Swamp Deer", hi: "दलदली हिरण" },
+        description: {
+          en: "Jhadi Tal shelters the reserve's largest barasingha herds, gathering hundreds strong — among India's biggest concentrations of swamp deer at a single site.",
+          hi: "झाड़ी ताल रिज़र्व के सबसे बड़े बारहसिंगा झुंडों को आश्रय देता है, जो सैकड़ों की संख्या में एकत्र होते हैं — भारत में किसी एक स्थान पर दलदली हिरणों की सबसे बड़ी सघनताओं में से एक।",
+        },
+      },
+      {
+        image: "/dudhwaleopard.png",
+        name: { en: "Leopard", hi: "तेंदुआ" },
+        description: {
+          en: "Leopards inhabit Kishanpur's riparian and moist-deciduous forest along the Sharda river.",
+          hi: "तेंदुआ किशनपुर के शारदा नदी किनारे के तटीय व नम-पर्णपाती वन में रहता है।",
+        },
+      },
+      {
+        name: { en: "Gharial", hi: "घड़ियाल" },
+        description: {
+          en: "The critically endangered gharial is found in the Sharda river's waters alongside mugger crocodiles.",
+          hi: "गंभीर रूप से लुप्तप्राय घड़ियाल शारदा नदी के जल में मगर मगरमच्छों के साथ पाया जाता है।",
+        },
+      },
+      {
+        name: { en: "Mugger Crocodile", hi: "मगर मगरमच्छ" },
+        description: {
+          en: "Mugger crocodiles bask along Kishanpur's wetlands and riverbanks, sharing habitat with otters and gharials.",
+          hi: "मगर मगरमच्छ किशनपुर की आर्द्रभूमियों और नदी किनारों पर धूप सेंकते हैं, और ऊदबिलाव व घड़ियालों के साथ आवास साझा करते हैं।",
+        },
+      },
+      {
+        name: { en: "Sarus Crane", hi: "सारस क्रेन" },
+        description: {
+          en: "Jhadi Tal is an important site for resident and migratory birds, including the Sarus crane and painted stork.",
+          hi: "झाड़ी ताल स्थानीय और प्रवासी पक्षियों, जिनमें सारस क्रेन और पेंटेड स्टॉर्क शामिल हैं, के लिए एक महत्वपूर्ण स्थल है।",
+        },
+      },
+    ],
     gallery: [],
     en: {
       name: "Kishanpur Wildlife Sanctuary",
@@ -299,7 +387,53 @@ const sanctuariesData = {
     slug: "katarniaghat",
     heroImage: "/katarniaghat.png",
     aboutImage: "/katarniaghat.png",
-    wildlife: [],
+    wildlife: [
+      {
+        name: { en: "Gharial", hi: "घड़ियाल" },
+        description: {
+          en: "The Girwa river's sandbanks provide critical nesting habitat for the critically endangered gharial, one of Katarniaghat's flagship species.",
+          hi: "गिरवा नदी के रेतीले किनारे गंभीर रूप से लुप्तप्राय घड़ियाल के लिए महत्वपूर्ण प्रजनन आवास प्रदान करते हैं, जो कतर्नियाघाट की प्रमुख प्रजातियों में से एक है।",
+        },
+      },
+      {
+        name: { en: "Gangetic Dolphin", hi: "गंगा डॉल्फिन" },
+        description: {
+          en: "Katarniaghat is one of the few places in India where the Gangetic river dolphin still survives, sharing the Girwa river with gharials and mugger crocodiles.",
+          hi: "कतर्नियाघाट भारत के उन कुछ स्थानों में से एक है जहां गंगा डॉल्फिन अभी भी जीवित है, जो गिरवा नदी को घड़ियालों और मगर मगरमच्छों के साथ साझा करती है।",
+        },
+      },
+      {
+        image: "/dudhwatiger.png",
+        name: { en: "Bengal Tiger", hi: "बंगाल टाइगर" },
+        description: {
+          en: "Tigers move through Katarniaghat's riverine Terai forest, which also forms a corridor linking Dudhwa Tiger Reserve to Nepal's Bardia National Park.",
+          hi: "बाघ कतर्नियाघाट के तटीय तराई वन से होकर गुजरते हैं, जो दुधवा टाइगर रिज़र्व को नेपाल के बर्दिया राष्ट्रीय उद्यान से जोड़ने वाला एक गलियारा भी बनाता है।",
+        },
+      },
+      {
+        image: "/dudhwaleopard.png",
+        name: { en: "Leopard", hi: "तेंदुआ" },
+        description: {
+          en: "Leopards inhabit Katarniaghat's Sal and mixed riverine forest alongside tigers and swamp deer.",
+          hi: "तेंदुआ कतर्नियाघाट के साल और मिश्रित तटीय वन में बाघों और दलदली हिरणों के साथ रहता है।",
+        },
+      },
+      {
+        image: "/dudhwadeer.png",
+        name: { en: "Swamp Deer", hi: "दलदली हिरण" },
+        description: {
+          en: "Swamp deer graze the floodplain grasslands along the Girwa river within the sanctuary.",
+          hi: "दलदली हिरण अभयारण्य के भीतर गिरवा नदी के किनारे बाढ़-मैदान घास के मैदानों में चरते हैं।",
+        },
+      },
+      {
+        name: { en: "Mugger Crocodile", hi: "मगर मगरमच्छ" },
+        description: {
+          en: "Marsh mugger crocodiles share the Girwa river with gharials and the Gangetic dolphin, making it one of India's rare multi-species river habitats.",
+          hi: "मार्श मगर मगरमच्छ गिरवा नदी को घड़ियालों और गंगा डॉल्फिन के साथ साझा करते हैं, जिससे यह भारत के दुर्लभ बहु-प्रजाति नदी आवासों में से एक बन जाती है।",
+        },
+      },
+    ],
     gallery: [],
     en: {
       name: "Katarniaghat Wildlife Sanctuary",
@@ -439,7 +573,55 @@ const sanctuariesData = {
     slug: "pilibhit",
     heroImage: "/wildlife-gallery/tiger-golden-tunnel.jpg",
     aboutImage: "/pilibhit.png",
-    wildlife: [],
+    wildlife: [
+      {
+        image: "/dudhwatiger.png",
+        name: { en: "Bengal Tiger", hi: "बंगाल टाइगर" },
+        description: {
+          en: "Pilibhit has among the highest tiger densities of any Indian reserve, part of the closely-watched Terai Arc Landscape tiger recovery story.",
+          hi: "पीलीभीत में किसी भी भारतीय रिज़र्व की तुलना में सर्वाधिक बाघ घनत्व है, जो बारीकी से देखी जाने वाली तराई आर्क लैंडस्केप बाघ पुनर्प्राप्ति कहानी का हिस्सा है।",
+        },
+      },
+      {
+        image: "/dudhwaleopard.png",
+        name: { en: "Leopard", hi: "तेंदुआ" },
+        description: {
+          en: "Leopards share Pilibhit's Sal forest and elephant grassland habitat with tigers and swamp deer.",
+          hi: "तेंदुआ पीलीभीत के साल वन और हाथी घास के मैदान आवास को बाघों व दलदली हिरणों के साथ साझा करता है।",
+        },
+      },
+      {
+        image: "/dudhwadeer.png",
+        name: { en: "Swamp Deer", hi: "दलदली हिरण" },
+        description: {
+          en: "Swamp deer and hog deer graze Pilibhit's tall elephant grasslands and riverine belts.",
+          hi: "दलदली हिरण और हॉग डियर पीलीभीत की ऊंची हाथी घास के मैदानों और तटीय पट्टियों में चरते हैं।",
+        },
+      },
+      {
+        image: "/dudhwaelephant.png",
+        name: { en: "Asian Elephant", hi: "एशियाई हाथी" },
+        description: {
+          en: "Elephant herds move along the Lagga Bagga Wildlife Corridor, which links Pilibhit to Nepal's Shuklaphanta National Park.",
+          hi: "हाथी झुंड लग्गा बग्गा वन्यजीव गलियारे के साथ आवाजाही करते हैं, जो पीलीभीत को नेपाल के शुक्लाफांटा राष्ट्रीय उद्यान से जोड़ता है।",
+        },
+      },
+      {
+        image: "/dudhwafishingcat.png",
+        name: { en: "Fishing Cat", hi: "मत्स्य बिलाव" },
+        description: {
+          en: "This wetland-adapted small cat hunts along Pilibhit's riverine belts near the Sharda and Chuka rivers.",
+          hi: "यह आर्द्रभूमि के अनुकूल छोटी बिल्ली पीलीभीत की शारदा और चूका नदियों के निकट तटीय पट्टियों में शिकार करती है।",
+        },
+      },
+      {
+        name: { en: "Otter", hi: "ऊदबिलाव" },
+        description: {
+          en: "Otters inhabit Pilibhit's rivers and the Sharda Sagar Reservoir, part of the reserve's rich aquatic wildlife.",
+          hi: "ऊदबिलाव पीलीभीत की नदियों और शारदा सागर जलाशय में रहते हैं, जो रिज़र्व के समृद्ध जलीय वन्यजीवों का हिस्सा है।",
+        },
+      },
+    ],
     gallery: ['/pilibhit/1.jpeg', '/pilibhit/2.jpeg', '/pilibhit/3.jpeg', '/pilibhit/4.jpeg', '/pilibhit/5.jpeg', '/pilibhit/6.jpeg', '/pilibhit/7.jpeg', '/pilibhit/8.jpeg'],
     en: {
       name: "Pilibhit Tiger Reserve",
