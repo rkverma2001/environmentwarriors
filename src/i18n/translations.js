@@ -195,6 +195,12 @@ export const translations = {
           { title: "Save Wildlife Initiative", location: "Kishanpur Sanctuary" },
         ],
       },
+      featuredVideo: {
+        eyebrow: "FEATURED VIDEO",
+        heading: "Wildlife Conservation Event Highlights",
+        description: "Highlights from our Wildlife Conservation Event at Pilibhit Tiger Reserve, honouring Bagh Mitras and frontline forest staff.",
+        caption: "Wildlife Conservation Event, Pilibhit Tiger Reserve",
+      },
       netZero: {
         eyebrow: "FEATURED INITIATIVE",
         heading: "Net Zero Industry Mission",
@@ -1042,6 +1048,12 @@ export const translations = {
           { title: "नदी व जल निकाय सफाई मिशन", location: "शारदा नदी बेसिन" },
           { title: "वन्यजीव बचाओ पहल", location: "किशनपुर अभयारण्य" },
         ],
+      },
+      featuredVideo: {
+        eyebrow: "विशेष वीडियो",
+        heading: "वन्यजीव संरक्षण कार्यक्रम की झलकियां",
+        description: "पीलीभीत टाइगर रिज़र्व में हमारे वन्यजीव संरक्षण कार्यक्रम की झलकियां, जिसमें बाघ मित्रों और अग्रिम वनकर्मियों को सम्मानित किया गया।",
+        caption: "वन्यजीव संरक्षण कार्यक्रम, पीलीभीत टाइगर रिज़र्व",
       },
       netZero: {
         eyebrow: "विशेष पहल",
