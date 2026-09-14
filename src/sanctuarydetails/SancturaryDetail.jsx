@@ -53,7 +53,7 @@ const SanctuaryDetail = () => {
         <GallerySection gallery={sanctuary.gallery} />
       )}
   <VisitorInfo data={data} />
-  <ConservationSection />
+  <ConservationSection data={data} />
 
     </>
   );

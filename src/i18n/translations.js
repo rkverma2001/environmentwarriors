@@ -250,14 +250,7 @@ export const translations = {
       morningEvening: "Morning & Evening",
       govtRules: "As per Govt Rules",
       conservationHighlights: "Conservation Highlights",
-      conservationItems: [
-        "Rhino Reintroduction",
-        "Tiger Monitoring",
-        "Swamp Deer Conservation",
-        "Anti-Poaching Patrols",
-        "Wetland Protection",
-        "Forest Restoration",
-      ],
+      tapForDetails: "Tap for details",
     },
     sanctuariesPage: {
       hero: {
@@ -1101,14 +1094,7 @@ export const translations = {
       morningEvening: "सुबह और शाम",
       govtRules: "सरकारी नियमों के अनुसार",
       conservationHighlights: "संरक्षण मुख्य बिंदु",
-      conservationItems: [
-        "गैंडा पुनर्स्थापन",
-        "बाघ निगरानी",
-        "दलदली हिरण संरक्षण",
-        "शिकार-विरोधी गश्त",
-        "आर्द्रभूमि सुरक्षा",
-        "वन पुनर्स्थापन",
-      ],
+      tapForDetails: "विवरण के लिए टैप करें",
     },
     sanctuariesPage: {
       hero: {
