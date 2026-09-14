@@ -35,7 +35,9 @@ const SanctuaryDetail = () => {
 
   const wildlife = sanctuary.wildlife.map((w) => ({
     image: w.image,
+    credit: w.credit,
     name: w.name[language],
+    description: w.description[language],
   }));
 
   return (
@@ -53,7 +55,7 @@ const SanctuaryDetail = () => {
         <GallerySection gallery={sanctuary.gallery} />
       )}
   <VisitorInfo data={data} />
-  <ConservationSection />
+  <ConservationSection data={data} />
 
     </>
   );

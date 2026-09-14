@@ -3,6 +3,7 @@ import {
   FaMapMarkerAlt,
   FaTicketAlt,
   FaCalendarAlt,
+  FaDoorOpen,
 } from "react-icons/fa";
 
 import { useT } from "../i18n/useT";
@@ -20,6 +21,11 @@ const VisitorInfo = ({ data }) => {
       icon: FaCalendarAlt,
       title: t.bestTimeLabel,
       value: data.bestTime,
+    },
+    {
+      icon: FaDoorOpen,
+      title: t.visitorTimingLabel,
+      value: data.visitorTiming,
     },
     {
       icon: FaClock,
@@ -42,7 +48,7 @@ const VisitorInfo = ({ data }) => {
           {t.visitorInformation}
         </h2>
 
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
 
           {info.map((item, index) => {
             const Icon = item.icon;
