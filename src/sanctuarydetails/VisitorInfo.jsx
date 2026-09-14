@@ -23,6 +23,11 @@ const VisitorInfo = ({ data }) => {
     },
     {
       icon: FaClock,
+      title: t.visitorTimingLabel,
+      value: data.visitorTiming,
+    },
+    {
+      icon: FaClock,
       title: t.safariLabel,
       value: t.morningEvening,
     },
@@ -42,7 +47,7 @@ const VisitorInfo = ({ data }) => {
           {t.visitorInformation}
         </h2>
 
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
 
           {info.map((item, index) => {
             const Icon = item.icon;

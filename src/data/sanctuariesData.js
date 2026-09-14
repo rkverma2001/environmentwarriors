@@ -26,6 +26,7 @@ const sanctuariesData = {
       established: "1977",
       state: "Uttar Pradesh",
       bestTime: "Nov - Jun",
+      visitorTiming: "1 Nov - 30 Jun",
       location: "Lakhimpur Kheri district, Uttar Pradesh — on the Indo-Nepal border",
       ecosystem:
         "Terai belt: moist-deciduous Sal forest, open grasslands (locally \"phanta\"), swamps and wetlands fed by the Neora, Sarda and Mohana rivers.",
@@ -60,6 +61,7 @@ const sanctuariesData = {
       established: "1977",
       state: "उत्तर प्रदेश",
       bestTime: "नवंबर - जून",
+      visitorTiming: "1 नवंबर - 30 जून",
       location: "लखीमपुर खीरी जिला, उत्तर प्रदेश — भारत-नेपाल सीमा पर",
       ecosystem:
         "तराई बेल्ट: नम-पर्णपाती साल वन, खुले घास के मैदान (स्थानीय रूप से \"फांटा\"), दलदल और नेओरा, सरदा व मोहाना नदियों से पोषित आर्द्रभूमि।",
@@ -102,6 +104,7 @@ const sanctuariesData = {
       established: "1972",
       state: "Uttar Pradesh",
       bestTime: "Nov - Mar",
+      visitorTiming: "1 Nov - 30 Jun",
       location: "Lakhimpur Kheri district, Uttar Pradesh — ~30 km from Dudhwa, near Mailani",
       ecosystem:
         "Dense riparian and moist-deciduous forest along the Sharda river, dotted with wetlands (\"tals\") — quieter and less-visited than the main Dudhwa range.",
@@ -135,6 +138,7 @@ const sanctuariesData = {
       established: "1972",
       state: "उत्तर प्रदेश",
       bestTime: "नवंबर - मार्च",
+      visitorTiming: "1 नवंबर - 30 जून",
       location: "लखीमपुर खीरी जिला, उत्तर प्रदेश — दुधवा से लगभग 30 किमी, मैलानी के पास",
       ecosystem:
         "शारदा नदी के किनारे घना तटीय और नम-पर्णपाती वन, जिसमें आर्द्रभूमि (\"ताल\") बिखरी हुई हैं — मुख्य दुधवा क्षेत्र की तुलना में शांत और कम आबाद।",
@@ -176,6 +180,7 @@ const sanctuariesData = {
       established: "1976",
       state: "Uttar Pradesh",
       bestTime: "Nov - Apr",
+      visitorTiming: "1 Nov - 30 Jun",
       location: "Bahraich district, Uttar Pradesh — on the banks of the Girwa river",
       ecosystem:
         "Riverine Terai forest along the Girwa (a spring-fed channel of the Ghaghara), with sandbanks, river islands and floodplain grassland.",
@@ -209,6 +214,7 @@ const sanctuariesData = {
       established: "1976",
       state: "उत्तर प्रदेश",
       bestTime: "नवंबर - अप्रैल",
+      visitorTiming: "1 नवंबर - 30 जून",
       location: "बहराइच जिला, उत्तर प्रदेश — गिरवा नदी के किनारे",
       ecosystem:
         "गिरवा (घाघरा की एक झरने से पोषित शाखा) के किनारे तटीय तराई वन, जिसमें रेत के किनारे, नदी द्वीप और बाढ़-मैदान घास के मैदान हैं।",
@@ -250,6 +256,7 @@ const sanctuariesData = {
       established: "2014",
       state: "Uttar Pradesh",
       bestTime: "Nov - Jun",
+      visitorTiming: "1 Nov - 30 Jun",
       location: "Pilibhit district, Uttar Pradesh — Sharda-Terai belt bordering Nepal",
       ecosystem:
         "Terai moist forest and tall elephant grass, with sugarcane-fringed corridors linking Dudhwa's forests to Nepal's Terai.",
@@ -283,6 +290,7 @@ const sanctuariesData = {
       established: "2014",
       state: "उत्तर प्रदेश",
       bestTime: "नवंबर - जून",
+      visitorTiming: "1 नवंबर - 30 जून",
       location: "पीलीभीत जिला, उत्तर प्रदेश — नेपाल की सीमा से लगा शारदा-तराई बेल्ट",
       ecosystem:
         "तराई नम वन और ऊंची हाथी घास, गन्ने से घिरे गलियारे जो दुधवा के वनों को नेपाल की तराई से जोड़ते हैं।",
