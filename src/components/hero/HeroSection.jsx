@@ -1,5 +1,4 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 import {
@@ -7,47 +6,64 @@ import {
   FaPaw,
   FaUsers,
   FaArrowRight,
+  FaVolumeMute,
+  FaVolumeUp,
 } from "react-icons/fa";
-
-import "swiper/css";
-import "swiper/css/effect-fade";
 
 import { useT } from "../../i18n/useT";
 
-const images = [
-  "/tigers/tiger-nose-to-nose.jpg",
-  "/tigers/tiger-crossing-road.jpg",
-  "/tigers/tiger-leaping.jpg",
-  "/tigers/tiger-mother-cub.jpg",
-];
-
 const HeroSection = () => {
   const t = useT().home.hero;
+  const videoRef = useRef(null);
+  const [muted, setMuted] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    // Try playing with sound first; browsers that block unmuted
+    // autoplay will reject the promise, so fall back to muted.
+    video.muted = false;
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        video.muted = true;
+        setMuted(true);
+        video.play().catch(() => {});
+      });
+    }
+  }, []);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !videoRef.current.muted;
+      setMuted(videoRef.current.muted);
+    }
+  };
 
   return (
     <section className="relative h-[450px] sm:h-[520px] lg:h-[580px] overflow-hidden">
 
-  {/* Background Slider */}
-  <Swiper
-    modules={[Autoplay, EffectFade]}
-    effect="fade"
-    autoplay={{
-      delay: 5000,
-      disableOnInteraction: false,
-    }}
-    loop={true}
-    className="absolute inset-0 w-full h-full z-0"
+  {/* Background Video */}
+  <video
+    ref={videoRef}
+    loop
+    playsInline
+    preload="metadata"
+    poster="/events/sep-2026-pilibhit-bagh-mitra/event-banner.jpg"
+    className="absolute inset-0 w-full h-full object-cover z-0"
   >
-    {images.map((img, index) => (
-      <SwiperSlide key={index}>
-        <img
-          src={img}
-          alt={`hero-${index}`}
-          className="w-full h-full object-cover"
-        />
-      </SwiperSlide>
-    ))}
-  </Swiper>
+    <source src="/videos/pilibhit-tiger-reserve.mp4" type="video/mp4" />
+  </video>
+
+  {/* Mute/Unmute Toggle */}
+  <button
+    onClick={toggleMute}
+    aria-label={muted ? t.unmute : t.mute}
+    className="absolute bottom-5 right-5 z-40 w-11 h-11 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur-sm text-white flex items-center justify-center transition"
+  >
+    {muted ? <FaVolumeMute /> : <FaVolumeUp />}
+  </button>
 
   {/* Dark Overlay */}
   <div className="absolute inset-0 bg-black/25 z-10"></div>

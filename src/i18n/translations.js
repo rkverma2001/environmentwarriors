@@ -90,6 +90,8 @@ export const translations = {
         spreadAwarenessDesc: "Inspiring the next generation",
         exploreSanctuaries: "EXPLORE SANCTUARIES",
         becomeVolunteer: "BECOME A VOLUNTEER",
+        mute: "Mute video",
+        unmute: "Unmute video",
       },
       stats: [
         { value: "3.5M+", title: "Tonnes", description: "Plastic Waste Generated in India Every Year" },
@@ -194,12 +196,6 @@ export const translations = {
           { title: "River and Water Bodies Cleanup Mission", location: "Sharda River Basin" },
           { title: "Save Wildlife Initiative", location: "Kishanpur Sanctuary" },
         ],
-      },
-      featuredVideo: {
-        eyebrow: "FEATURED VIDEO",
-        heading: "Wildlife Conservation Event Highlights",
-        description: "Highlights from our Wildlife Conservation Event at Pilibhit Tiger Reserve, honouring Bagh Mitras and frontline forest staff.",
-        caption: "Wildlife Conservation Event, Pilibhit Tiger Reserve",
       },
       netZero: {
         eyebrow: "FEATURED INITIATIVE",
@@ -944,6 +940,8 @@ export const translations = {
         spreadAwarenessDesc: "अगली पीढ़ी को प्रेरित करें",
         exploreSanctuaries: "अभयारण्य देखें",
         becomeVolunteer: "स्वयंसेवक बनें",
+        mute: "वीडियो म्यूट करें",
+        unmute: "वीडियो अनम्यूट करें",
       },
       stats: [
         { value: "3.5M+", title: "टन", description: "भारत में हर साल उत्पन्न होने वाला प्लास्टिक कचरा" },
@@ -1048,12 +1046,6 @@ export const translations = {
           { title: "नदी व जल निकाय सफाई मिशन", location: "शारदा नदी बेसिन" },
           { title: "वन्यजीव बचाओ पहल", location: "किशनपुर अभयारण्य" },
         ],
-      },
-      featuredVideo: {
-        eyebrow: "विशेष वीडियो",
-        heading: "वन्यजीव संरक्षण कार्यक्रम की झलकियां",
-        description: "पीलीभीत टाइगर रिज़र्व में हमारे वन्यजीव संरक्षण कार्यक्रम की झलकियां, जिसमें बाघ मित्रों और अग्रिम वनकर्मियों को सम्मानित किया गया।",
-        caption: "वन्यजीव संरक्षण कार्यक्रम, पीलीभीत टाइगर रिज़र्व",
       },
       netZero: {
         eyebrow: "विशेष पहल",

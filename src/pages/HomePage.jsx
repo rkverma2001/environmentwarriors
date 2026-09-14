@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import HeroSection from '../components/hero/HeroSection'
 import StatsSection from '../components/stats/StatsSection'
-import FeaturedVideoSection from '../components/sancturies/FeaturedVideoSection'
 import SanctuarySection from '../components/sancturies/SanctuarySection'
 import MissionSection from '../components/sancturies/MissionSection'
 import ImpactStatistics from '../components/sancturies/ImpactStatistics'
@@ -14,7 +13,6 @@ import Footer from '../components/footer/Footer'
 const HomePage = () => {
   return (
     <div>
-      <FeaturedVideoSection/>
       <HeroSection/>
       <StatsSection/>
       <SanctuarySection />
