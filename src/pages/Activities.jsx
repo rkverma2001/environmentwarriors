@@ -115,6 +115,20 @@ const Activities = () => {
                       ))}
                     </div>
                   )}
+
+                  {event.video && (
+                    <div className="mt-6">
+                      <p className="text-sm font-semibold text-[#0F5132] mb-2">{t.eventVideo}</p>
+                      <video
+                        controls
+                        preload="none"
+                        poster={event.images[0]}
+                        className="w-full rounded-xl"
+                      >
+                        <source src={event.video} type="video/mp4" />
+                      </video>
+                    </div>
+                  )}
                 </div>
               </div>
             );

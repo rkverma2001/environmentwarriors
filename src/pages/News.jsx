@@ -1,11 +1,18 @@
 import { useState } from "react";
-import { FaCalendarAlt, FaTag } from "react-icons/fa";
+import { FaCalendarAlt, FaTag, FaTimes } from "react-icons/fa";
 
 import { useT } from "../i18n/useT";
+
+const clippingImages = [
+  "/news/clippings/toi-bagh-mitras-felicitated.jpg",
+  "/news/clippings/ht-insurance-announcement.jpg",
+  "/news/clippings/hindi-140-baghmitra-summanit.jpg",
+];
 
 const News = () => {
   const t = useT().news;
   const [filter, setFilter] = useState("all");
+  const [activeClipping, setActiveClipping] = useState(null);
 
   const items =
     filter === "all"
@@ -31,6 +38,45 @@ const News = () => {
           <p className="text-white/90 mt-4 max-w-xl text-lg">
             {t.hero.description}
           </p>
+        </div>
+      </section>
+
+      {/* In The Media */}
+      <section className="py-16 bg-[#f8faf8]">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+
+          <h2 className="text-2xl md:text-3xl font-bold text-[#0F5132]">
+            {t.inMedia.heading}
+          </h2>
+
+          <p className="text-gray-600 mt-2">
+            {t.inMedia.description}
+          </p>
+
+          <div className="grid sm:grid-cols-3 gap-6 mt-8">
+            {t.inMedia.clippings.map((clip, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveClipping({ src: clippingImages[index], alt: clip.headline })}
+                className="bg-white rounded-2xl border overflow-hidden text-left hover:shadow-lg transition cursor-pointer"
+              >
+                <img
+                  src={clippingImages[index]}
+                  alt={clip.headline}
+                  className="w-full h-[220px] object-cover object-top"
+                />
+                <div className="p-4">
+                  <p className="text-xs font-semibold text-[#0F5132] uppercase tracking-wide">
+                    {clip.publication}
+                  </p>
+                  <p className="text-gray-700 text-sm mt-1 leading-snug">
+                    {clip.headline}
+                  </p>
+                </div>
+              </button>
+            ))}
+          </div>
+
         </div>
       </section>
 
@@ -89,6 +135,29 @@ const News = () => {
 
         </div>
       </section>
+
+      {/* Clipping Lightbox */}
+      {activeClipping && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 px-4"
+          onClick={() => setActiveClipping(null)}
+        >
+          <button
+            onClick={() => setActiveClipping(null)}
+            className="absolute top-6 right-6 text-white/80 hover:text-white text-2xl"
+            aria-label="Close"
+          >
+            <FaTimes />
+          </button>
+
+          <img
+            src={activeClipping.src}
+            alt={activeClipping.alt}
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-full max-h-[85vh] object-contain rounded-xl"
+          />
+        </div>
+      )}
     </div>
   );
 };
