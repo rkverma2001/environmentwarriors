@@ -30,7 +30,7 @@ const CampaignBanner = () => {
   if (!visible) return null;
 
   return (
-    <div className="bg-[#0F5132] text-white relative z-[60]">
+    <div className="bg-[#D7263D] text-white relative z-[60] motion-safe:animate-pulse">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-center gap-3 text-center">
 
         <FaVideo className="text-[#F5C542] flex-shrink-0 hidden sm:block" />
