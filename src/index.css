@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes campaign-flash {
   0%, 100% {
     background-color: #E8B923;
