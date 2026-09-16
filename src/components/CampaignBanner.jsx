@@ -30,18 +30,18 @@ const CampaignBanner = () => {
   if (!visible) return null;
 
   return (
-    <div className="bg-[#D7263D] text-white relative z-[60] motion-safe:animate-pulse">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-center gap-3 text-center">
+    <div className="campaign-banner-flash text-white relative z-[60] shadow-md">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center">
 
         <FaVideo className="text-[#F5C542] flex-shrink-0 hidden sm:block" />
 
-        <p className="text-xs sm:text-sm font-medium leading-snug">
+        <p className="text-sm sm:text-base font-semibold leading-snug">
           {t.text}
         </p>
 
         <Link
           to="/campaign"
-          className="text-[#F5C542] font-semibold underline underline-offset-2 hover:text-white transition text-xs sm:text-sm whitespace-nowrap"
+          className="bg-[#F5C542] text-[#0B2E1F] font-bold px-3 py-1 rounded-full hover:bg-white transition text-xs sm:text-sm whitespace-nowrap"
         >
           {t.cta}
         </Link>
@@ -49,7 +49,7 @@ const CampaignBanner = () => {
         <button
           onClick={dismiss}
           aria-label={t.close}
-          className="absolute right-3 sm:right-6 text-white/70 hover:text-white transition"
+          className="absolute right-3 sm:right-6 text-white/80 hover:text-white transition"
         >
           <FaTimes size={14} />
         </button>
