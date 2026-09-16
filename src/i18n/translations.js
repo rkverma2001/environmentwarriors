@@ -11,6 +11,69 @@ export const translations = {
       viewBooklet: "View Booklet (PDF)",
       close: "Close",
     },
+    campaignAlert: {
+      badge: "🎥 New Campaign",
+      headline: "Best Uncut Videos of Terai — Win Up to ₹50,000!",
+      summary:
+        "Capture the wild, unfiltered beauty of the Terai in a single uncut video and stand a chance to win cash prizes — 1st prize ₹50,000, 2nd ₹25,000, 3rd ₹15,000, plus 10 consolation prizes of ₹5,000 each. Submissions close 10 October 2026.",
+      cta: "View Contest Details",
+      close: "Close",
+    },
+    campaign: {
+      hero: {
+        badge: "🎥 New Campaign",
+        heading: "Best Uncut Videos of Terai",
+        description:
+          "Grab your camera and capture the wild, untouched beauty of the Terai region — its tigers, rivers, forests and rare wildlife — in a single unedited shot. Win cash prizes worth up to ₹50,000!",
+        deadline: "Submissions close 10 October 2026",
+      },
+      about: {
+        heading: "About the Contest",
+        description:
+          "\"Best Uncut Videos of Terai\" celebrates the raw, unfiltered wilderness of the Terai landscape — home to Dudhwa, Kishanpur, Katarniaghat and Pilibhit. We're looking for genuine, single-take footage of wildlife, forests, rivers and rural life across the region — no edits, no cuts, no added music. Just real Terai, as it happens.",
+      },
+      prizes: {
+        heading: "Prizes",
+        first: { label: "1st Prize", amount: "₹50,000" },
+        second: { label: "2nd Prize", amount: "₹25,000" },
+        third: { label: "3rd Prize", amount: "₹15,000" },
+        consolation: { label: "10 Consolation Prizes", amount: "₹5,000 each" },
+      },
+      rules: {
+        heading: "Contest Guidelines",
+        items: [
+          "The video must be a single, uncut, unedited clip — no jump cuts, filters, or added music/text overlays.",
+          "Footage must be shot within the Terai region (Dudhwa, Kishanpur, Katarniaghat, Pilibhit or surrounding areas).",
+          "Video length: between 30 seconds and 5 minutes.",
+          "Entrants must own full rights to the footage and consent to Environment Warriors using it for conservation awareness and promotion, with credit to the filmmaker.",
+          "One entry per participant. Multiple submissions from the same person will be disqualified.",
+          "Entries must be submitted by 10 October 2026.",
+        ],
+      },
+      participate: {
+        heading: "How to Participate",
+        steps: [
+          "Record your uncut video of the Terai's wildlife, forests or rivers.",
+          "Upload it to Google Drive and set sharing to \"Anyone with the link can view.\"",
+          "Share the Drive link with us using the form below, or via email/WhatsApp.",
+        ],
+      },
+      form: {
+        heading: "Submit Your Entry",
+        fullName: "Full Name",
+        email: "Email Address",
+        phone: "Phone Number",
+        driveLink: "Google Drive Video Link",
+        location: "Where was this filmed? (e.g. Dudhwa National Park)",
+        submit: "Submit Entry",
+        note: "Clicking submit opens your email app with your entry details pre-filled — just hit send.",
+      },
+      contact: {
+        heading: "Need Help?",
+        description: "Reach out to us directly for any questions about the contest.",
+        whatsapp: "WhatsApp Us",
+      },
+    },
     topnav: {
       tagline: "🌿 Protect Nature. Protect Wildlife. Protect Future.",
       helpline: {
@@ -40,6 +103,7 @@ export const translations = {
       tracker: "Species Tracker",
       aboutUs: "About Us",
       volunteer: "Volunteer",
+      campaign: "Video Contest",
       contact: "Contact",
       donateNow: "Donate Now",
       language: "हिन्दी",
@@ -856,6 +920,69 @@ export const translations = {
       viewBooklet: "बुकलेट देखें (PDF)",
       close: "बंद करें",
     },
+    campaignAlert: {
+      badge: "🎥 नया अभियान",
+      headline: "तराई के सर्वश्रेष्ठ अनकट वीडियो — ₹50,000 तक जीतें!",
+      summary:
+        "तराई की जंगली, अनफ़िल्टर्ड सुंदरता को एक अनकट वीडियो में कैद करें और नकद पुरस्कार जीतने का मौका पाएं — प्रथम पुरस्कार ₹50,000, द्वितीय ₹25,000, तृतीय ₹15,000, साथ ही 10 सांत्वना पुरस्कार ₹5,000 प्रत्येक। प्रविष्टियां जमा करने की अंतिम तिथि 10 अक्टूबर 2026।",
+      cta: "प्रतियोगिता विवरण देखें",
+      close: "बंद करें",
+    },
+    campaign: {
+      hero: {
+        badge: "🎥 नया अभियान",
+        heading: "तराई के सर्वश्रेष्ठ अनकट वीडियो",
+        description:
+          "अपना कैमरा उठाइए और तराई क्षेत्र की जंगली, अनछुई सुंदरता — इसके बाघ, नदियां, वन और दुर्लभ वन्यजीव — को एक ही बिना-संपादित शॉट में कैद कीजिए। ₹50,000 तक के नकद पुरस्कार जीतने का मौका!",
+        deadline: "प्रविष्टियां जमा करने की अंतिम तिथि: 10 अक्टूबर 2026",
+      },
+      about: {
+        heading: "प्रतियोगिता के बारे में",
+        description:
+          "\"तराई के सर्वश्रेष्ठ अनकट वीडियो\" तराई परिदृश्य की कच्ची, अनफ़िल्टर्ड वाइल्डरनेस का उत्सव है — जो दुधवा, किशनपुर, कतर्नियाघाट और पीलीभीत का घर है। हम क्षेत्र भर के वन्यजीवों, वनों, नदियों और ग्रामीण जीवन की वास्तविक, एकल-शॉट फुटेज की तलाश में हैं — कोई संपादन नहीं, कोई कट नहीं, कोई जोड़ा हुआ संगीत नहीं। बस असली तराई, जैसी वह है।",
+      },
+      prizes: {
+        heading: "पुरस्कार",
+        first: { label: "प्रथम पुरस्कार", amount: "₹50,000" },
+        second: { label: "द्वितीय पुरस्कार", amount: "₹25,000" },
+        third: { label: "तृतीय पुरस्कार", amount: "₹15,000" },
+        consolation: { label: "10 सांत्वना पुरस्कार", amount: "₹5,000 प्रत्येक" },
+      },
+      rules: {
+        heading: "प्रतियोगिता दिशानिर्देश",
+        items: [
+          "वीडियो एक ही, बिना कटा हुआ, बिना संपादित क्लिप होना चाहिए — कोई जंप कट, फ़िल्टर, या जोड़े गए संगीत/टेक्स्ट ओवरले नहीं।",
+          "फुटेज तराई क्षेत्र (दुधवा, किशनपुर, कतर्नियाघाट, पीलीभीत या आसपास के क्षेत्रों) में शूट की गई होनी चाहिए।",
+          "वीडियो की लंबाई: 30 सेकंड से 5 मिनट के बीच।",
+          "प्रतिभागियों को फुटेज के पूर्ण अधिकार का स्वामी होना चाहिए और एनवायरनमेंट वॉरियर्स द्वारा इसे संरक्षण जागरूकता और प्रचार हेतु उपयोग किए जाने की सहमति देनी होगी, जिसमें फिल्मकार को श्रेय दिया जाएगा।",
+          "प्रति प्रतिभागी एक प्रविष्टि। एक ही व्यक्ति की कई प्रविष्टियां अयोग्य घोषित कर दी जाएंगी।",
+          "प्रविष्टियां 10 अक्टूबर 2026 तक जमा करनी होंगी।",
+        ],
+      },
+      participate: {
+        heading: "भाग कैसे लें",
+        steps: [
+          "तराई के वन्यजीवों, वनों या नदियों का अपना अनकट वीडियो रिकॉर्ड करें।",
+          "इसे गूगल ड्राइव पर अपलोड करें और शेयरिंग को \"लिंक वाला कोई भी व्यक्ति देख सकता है\" पर सेट करें।",
+          "ड्राइव लिंक हमें नीचे दिए गए फॉर्म के माध्यम से, या ईमेल/व्हाट्सएप के ज़रिए साझा करें।",
+        ],
+      },
+      form: {
+        heading: "अपनी प्रविष्टि जमा करें",
+        fullName: "पूरा नाम",
+        email: "ईमेल पता",
+        phone: "फ़ोन नंबर",
+        driveLink: "गूगल ड्राइव वीडियो लिंक",
+        location: "यह कहां फिल्माया गया था? (जैसे दुधवा राष्ट्रीय उद्यान)",
+        submit: "प्रविष्टि जमा करें",
+        note: "सबमिट पर क्लिक करने से आपका ईमेल ऐप आपकी प्रविष्टि के विवरण के साथ पहले से भरा हुआ खुलेगा — बस भेजें दबाएं।",
+      },
+      contact: {
+        heading: "सहायता चाहिए?",
+        description: "प्रतियोगिता से संबंधित किसी भी प्रश्न के लिए सीधे हमसे संपर्क करें।",
+        whatsapp: "हमें व्हाट्सएप करें",
+      },
+    },
     topnav: {
       tagline: "🌿 प्रकृति की रक्षा करें। वन्यजीवों की रक्षा करें। भविष्य की रक्षा करें।",
       helpline: {
@@ -885,6 +1012,7 @@ export const translations = {
       tracker: "प्रजाति ट्रैकर",
       aboutUs: "हमारे बारे में",
       volunteer: "स्वयंसेवक",
+      campaign: "वीडियो प्रतियोगिता",
       contact: "संपर्क करें",
       donateNow: "दान करें",
       language: "English",

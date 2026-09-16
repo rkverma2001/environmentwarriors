@@ -241,6 +241,13 @@ const Bottomnav = () => {
             </Link>
 
             <Link
+              to="/campaign"
+              className="hover:text-[#0F5132] transition"
+            >
+              {t.campaign}
+            </Link>
+
+            <Link
               to="/contact"
               className="hover:text-[#0F5132] transition"
             >
@@ -527,6 +534,13 @@ const Bottomnav = () => {
               onClick={() => setMobileMenu(false)}
             >
               {t.volunteer}
+            </Link>
+
+            <Link
+              to="/campaign"
+              onClick={() => setMobileMenu(false)}
+            >
+              {t.campaign}
             </Link>
 
             <Link
