@@ -1,5 +1,10 @@
 export const translations = {
   en: {
+    campaignBanner: {
+      text: "🎥 Best Uncut Videos of Terai — win up to ₹50,000! Submissions close 10 October 2026.",
+      cta: "View Details",
+      close: "Dismiss",
+    },
     campaignAlert: {
       badge: "🎥 New Campaign",
       headline: "Best Uncut Videos of Terai — Win Up to ₹50,000!",
@@ -897,6 +902,11 @@ export const translations = {
     },
   },
   hi: {
+    campaignBanner: {
+      text: "🎥 तराई के सर्वश्रेष्ठ अनकट वीडियो — ₹50,000 तक जीतें! प्रविष्टियां जमा करने की अंतिम तिथि 10 अक्टूबर 2026।",
+      cta: "विवरण देखें",
+      close: "बंद करें",
+    },
     campaignAlert: {
       badge: "🎥 नया अभियान",
       headline: "तराई के सर्वश्रेष्ठ अनकट वीडियो — ₹50,000 तक जीतें!",

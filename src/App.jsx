@@ -15,6 +15,7 @@ import Tracker from "./pages/Tracker";
 import Activities from "./pages/Activities";
 import Contact from "./pages/Contact";
 import Campaign from "./pages/Campaign";
+import CampaignBanner from "./components/CampaignBanner";
 import CampaignAlertPopup from "./components/CampaignAlertPopup";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
     <LanguageProvider>
       <BrowserRouter>
 
+        <CampaignBanner />
         <Navbar/>
         <CampaignAlertPopup />
 
