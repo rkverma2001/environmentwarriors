@@ -1,16 +1,5 @@
 export const translations = {
   en: {
-    breakingNews: {
-      badge: "Important Update",
-      headline: "Nepal Himalayan Disaster: ₹11 Lakh Relief Announced for Affected Indian Families",
-      summary:
-        "Following the Rasuwa–Nuwakot Himalayan disaster in Nepal (27 August 2026), Dr. Rajeshwar Singh has announced ₹11 lakh in initial relief for families of Indian citizens killed or missing, a help desk for families of all nationalities, and a proposed India–Nepal Himalayan Disaster Resilience Partnership.",
-      readPressRelease: "Read Full Press Release (PDF)",
-      bookletLabel: "Also available: Environment Warriors Booklet 2026",
-      bookletDesc: "A visual journey through our wildlife conservation events across the Terai region.",
-      viewBooklet: "View Booklet (PDF)",
-      close: "Close",
-    },
     campaignAlert: {
       badge: "🎥 New Campaign",
       headline: "Best Uncut Videos of Terai — Win Up to ₹50,000!",
@@ -103,7 +92,6 @@ export const translations = {
       tracker: "Species Tracker",
       aboutUs: "About Us",
       volunteer: "Volunteer",
-      campaign: "Video Contest",
       contact: "Contact",
       donateNow: "Donate Now",
       language: "हिन्दी",
@@ -909,17 +897,6 @@ export const translations = {
     },
   },
   hi: {
-    breakingNews: {
-      badge: "महत्वपूर्ण सूचना",
-      headline: "नेपाल हिमालयी आपदा: भारतीय पीड़ित परिवारों हेतु ₹11 लाख की सहायता घोषित",
-      summary:
-        "नेपाल के रसुवा–नुवाकोट क्षेत्र में हिमालयी आपदा (27 अगस्त 2026) के बाद डॉ. राजेश्वर सिंह ने भारतीय पीड़ितों के परिवारों हेतु ₹11 लाख की प्रारंभिक सहायता राशि, सभी राष्ट्रीयताओं के लिए सहायता डेस्क तथा भारत–नेपाल हिमालयी आपदा लचीलापन साझेदारी के प्रस्ताव की घोषणा की।",
-      readPressRelease: "पूरी प्रेस विज्ञप्ति पढ़ें (PDF)",
-      bookletLabel: "यह भी उपलब्ध है: एनवायरनमेंट वॉरियर्स बुकलेट 2026",
-      bookletDesc: "तराई क्षेत्र में हमारे वन्यजीव संरक्षण कार्यक्रमों की एक सचित्र झलक।",
-      viewBooklet: "बुकलेट देखें (PDF)",
-      close: "बंद करें",
-    },
     campaignAlert: {
       badge: "🎥 नया अभियान",
       headline: "तराई के सर्वश्रेष्ठ अनकट वीडियो — ₹50,000 तक जीतें!",
@@ -1012,7 +989,6 @@ export const translations = {
       tracker: "प्रजाति ट्रैकर",
       aboutUs: "हमारे बारे में",
       volunteer: "स्वयंसेवक",
-      campaign: "वीडियो प्रतियोगिता",
       contact: "संपर्क करें",
       donateNow: "दान करें",
       language: "English",

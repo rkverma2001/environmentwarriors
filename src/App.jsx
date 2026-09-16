@@ -15,7 +15,6 @@ import Tracker from "./pages/Tracker";
 import Activities from "./pages/Activities";
 import Contact from "./pages/Contact";
 import Campaign from "./pages/Campaign";
-import BreakingNewsPopup from "./components/BreakingNewsPopup";
 import CampaignAlertPopup from "./components/CampaignAlertPopup";
 
 const App = () => {
@@ -24,7 +23,6 @@ const App = () => {
       <BrowserRouter>
 
         <Navbar/>
-        <BreakingNewsPopup />
         <CampaignAlertPopup />
 
         <Routes>
