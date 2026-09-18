@@ -30,7 +30,7 @@ const CampaignBanner = () => {
   if (!visible) return null;
 
   return (
-    <div className="campaign-banner-flash text-[#0B2E1F] relative z-[60] shadow-md">
+    <div className="campaign-banner-flash text-[#0B2E1F] relative z-[210] shadow-md">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center">
 
         <FaVideo className="text-[#0B2E1F] flex-shrink-0 hidden sm:block" />
