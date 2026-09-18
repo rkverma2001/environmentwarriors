@@ -9,12 +9,16 @@ import {
   FaWhatsapp,
   FaPhoneAlt,
   FaGavel,
+  FaDownload,
 } from "react-icons/fa";
 
 import { useT } from "../i18n/useT";
+import { useLanguage } from "../context/useLanguage";
 
 const Campaign = () => {
   const t = useT().campaign;
+  const { language } = useLanguage();
+  const flyerSrc = language === "hi" ? "/campaign/flyer-hi.jpg" : "/campaign/flyer-en.jpg";
 
   const [form, setForm] = useState({
     fullName: "",
@@ -118,6 +122,36 @@ const Campaign = () => {
           <p className="text-gray-600 mt-5 leading-relaxed text-lg">
             {t.about.description}
           </p>
+
+        </div>
+      </section>
+
+      {/* Flyer */}
+      <section className="py-16 bg-[#f8faf8]">
+        <div className="max-w-[500px] mx-auto px-4 text-center">
+
+          <h2 className="text-3xl font-bold text-[#0F5132] mb-3">
+            {t.flyer.heading}
+          </h2>
+
+          <p className="text-gray-600 mb-8">
+            {t.flyer.description}
+          </p>
+
+          <img
+            src={flyerSrc}
+            alt={t.flyer.heading}
+            className="w-full rounded-2xl shadow-xl border"
+          />
+
+          <a
+            href={flyerSrc}
+            download
+            className="mt-6 inline-flex items-center gap-2 bg-[#0F5132] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
+          >
+            <FaDownload />
+            {t.flyer.download}
+          </a>
 
         </div>
       </section>

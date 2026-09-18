@@ -31,6 +31,11 @@ export const translations = {
         description:
           "\"Best Uncut Videos & Reels of Terai\" — presented by Environment Warriors in collaboration with Nalla's Ark — celebrates the raw, unfiltered wilderness of the Terai landscape, home to Dudhwa, Kishanpur, Katarniaghat and Pilibhit. We're looking for genuine, single-take video or reel footage across six categories — no edits, no cuts, no added music. Just real Terai, as it happens.",
       },
+      flyer: {
+        heading: "Contest Flyer",
+        description: "Download and share this flyer with your friends and family on WhatsApp!",
+        download: "Download Flyer",
+      },
       categories: {
         heading: "Categories",
         items: ["Wildlife", "Forests", "Rivers & Wetlands", "Landscapes", "People & Conservation", "Birds & Biodiversity"],
@@ -947,6 +952,11 @@ export const translations = {
         heading: "प्रतियोगिता के बारे में",
         description:
           "\"तराई के सर्वश्रेष्ठ अनकट वीडियो और रील\" — एनवायरनमेंट वॉरियर्स द्वारा Nalla's Ark के सहयोग से प्रस्तुत — तराई परिदृश्य की कच्ची, अनफ़िल्टर्ड वाइल्डरनेस का उत्सव है, जो दुधवा, किशनपुर, कतर्नियाघाट और पीलीभीत का घर है। हम छह श्रेणियों में वास्तविक, एकल-शॉट वीडियो या रील फुटेज की तलाश में हैं — कोई संपादन नहीं, कोई कट नहीं, कोई जोड़ा हुआ संगीत नहीं। बस असली तराई, जैसी वह है।",
+      },
+      flyer: {
+        heading: "प्रतियोगिता फ्लायर",
+        description: "इस फ्लायर को डाउनलोड करें और अपने दोस्तों व परिवार के साथ व्हाट्सएप पर साझा करें!",
+        download: "फ्लायर डाउनलोड करें",
       },
       categories: {
         heading: "श्रेणियां",
