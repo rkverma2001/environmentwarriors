@@ -15,23 +15,14 @@ import { useT } from "../../i18n/useT";
 const HeroSection = () => {
   const t = useT().home.hero;
   const videoRef = useRef(null);
-  const [muted, setMuted] = useState(false);
+  const [muted, setMuted] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
 
-    // Try playing with sound first; browsers that block unmuted
-    // autoplay will reject the promise, so fall back to muted.
-    video.muted = false;
-    const playPromise = video.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        video.muted = true;
-        setMuted(true);
-        video.play().catch(() => {});
-      });
-    }
+    video.muted = true;
+    video.play().catch(() => {});
   }, []);
 
   const toggleMute = () => {
@@ -47,6 +38,8 @@ const HeroSection = () => {
   {/* Background Video */}
   <video
     ref={videoRef}
+    autoPlay
+    muted
     loop
     playsInline
     preload="metadata"

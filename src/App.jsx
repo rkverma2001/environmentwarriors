@@ -14,15 +14,18 @@ import Games from "./pages/Games";
 import Tracker from "./pages/Tracker";
 import Activities from "./pages/Activities";
 import Contact from "./pages/Contact";
-import BreakingNewsPopup from "./components/BreakingNewsPopup";
+import Campaign from "./pages/Campaign";
+import CampaignBanner from "./components/CampaignBanner";
+import CampaignAlertPopup from "./components/CampaignAlertPopup";
 
 const App = () => {
   return (
     <LanguageProvider>
       <BrowserRouter>
 
+        <CampaignBanner />
         <Navbar/>
-        <BreakingNewsPopup />
+        <CampaignAlertPopup />
 
         <Routes>
 
@@ -47,6 +50,7 @@ const App = () => {
   <Route path="/events" element={<News />} />
   <Route path="/activities" element={<Activities />} />
   <Route path="/volunteer" element={<Volunteer/>} />
+  <Route path="/campaign" element={<Campaign />} />
   <Route path="/contact" element={<Contact />} />
 
         </Routes>

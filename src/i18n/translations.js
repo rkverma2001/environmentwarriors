@@ -1,15 +1,86 @@
 export const translations = {
   en: {
-    breakingNews: {
-      badge: "Important Update",
-      headline: "Nepal Himalayan Disaster: ₹11 Lakh Relief Announced for Affected Indian Families",
+    campaignBanner: {
+      text: "🎥 Best Uncut Videos & Reels of Terai — win up to ₹50,000! In collaboration with Nalla's Ark. Submissions close 31 October 2026.",
+      cta: "View Details",
+      close: "Dismiss",
+    },
+    campaignAlert: {
+      badge: "🎥 New Campaign",
+      headline: "Best Uncut Videos & Reels of Terai — Win Up to ₹50,000!",
       summary:
-        "Following the Rasuwa–Nuwakot Himalayan disaster in Nepal (27 August 2026), Dr. Rajeshwar Singh has announced ₹11 lakh in initial relief for families of Indian citizens killed or missing, a help desk for families of all nationalities, and a proposed India–Nepal Himalayan Disaster Resilience Partnership.",
-      readPressRelease: "Read Full Press Release (PDF)",
-      bookletLabel: "Also available: Environment Warriors Booklet 2026",
-      bookletDesc: "A visual journey through our wildlife conservation events across the Terai region.",
-      viewBooklet: "View Booklet (PDF)",
+        "In collaboration with Nalla's Ark, capture the wild, unfiltered beauty of the Terai in a single uncut video or reel and stand a chance to win cash prizes worth ₹1,50,000 — 1st prize ₹50,000, 2nd ₹30,000, 3rd ₹20,000, plus 10 consolation prizes of ₹5,000 each. Submissions close 31 October 2026.",
+      cta: "View Contest Details",
       close: "Close",
+    },
+    campaign: {
+      collab: {
+        label: "In Collaboration With",
+        name: "Nalla's Ark",
+        tagline: "Conservation through Creativity",
+      },
+      hero: {
+        badge: "🎥 Video & Reel Contest",
+        heading: "Best Uncut Videos & Reels of Terai",
+        description:
+          "In collaboration with Nalla's Ark, capture the wild, unfiltered beauty of the Terai region — its tigers, rivers, forests and rare wildlife — in a single uncut video or reel. Win cash prizes worth ₹1,50,000!",
+        deadline: "Submissions close 31 October 2026",
+      },
+      about: {
+        heading: "About the Contest",
+        description:
+          "\"Best Uncut Videos & Reels of Terai\" — presented by Environment Warriors in collaboration with Nalla's Ark — celebrates the raw, unfiltered wilderness of the Terai landscape, home to Dudhwa, Kishanpur, Katarniaghat and Pilibhit. We're looking for genuine, single-take video or reel footage across six categories — no edits, no cuts, no added music. Just real Terai, as it happens.",
+      },
+      categories: {
+        heading: "Categories",
+        items: ["Wildlife", "Forests", "Rivers & Wetlands", "Landscapes", "People & Conservation", "Birds & Biodiversity"],
+      },
+      prizes: {
+        heading: "Prizes Worth ₹1,50,000",
+        first: { label: "1st Prize", amount: "₹50,000" },
+        second: { label: "2nd Prize", amount: "₹30,000" },
+        third: { label: "3rd Prize", amount: "₹20,000" },
+        consolation: { label: "10 Consolation Prizes", amount: "₹5,000 each" },
+      },
+      rules: {
+        heading: "Contest Guidelines",
+        items: [
+          "The video or reel must be a single, uncut, unedited clip — no jump cuts, filters, or added music/text overlays. Any length is allowed.",
+          "Footage must be shot within the Terai region (Dudhwa, Kishanpur, Katarniaghat, Pilibhit or surrounding areas).",
+          "Entries must fall into one of six categories: Wildlife, Forests, Rivers & Wetlands, Landscapes, People & Conservation, or Birds & Biodiversity.",
+          "Entrants must own full rights to the footage and consent to Environment Warriors and Nalla's Ark using it for conservation awareness and promotion, with credit to the filmmaker.",
+          "Each participant can submit a maximum of 3 videos or reels.",
+          "Entries must be submitted by 31 October 2026.",
+        ],
+      },
+      participate: {
+        heading: "How to Participate",
+        steps: [
+          "Record an uncut video or reel showcasing the Terai's wildlife, forests, rivers, wetlands, landscapes, or people and conservation efforts. Any length is allowed.",
+          "Upload it to Google Drive and set sharing to \"Anyone with the link can view.\"",
+          "Share the Drive link with us using the form below, or via email/WhatsApp, along with your name, contact number, location and a short description of the video.",
+        ],
+      },
+      jury: {
+        heading: "Our Jury",
+        names: "Subbiah Nallamuthu and Ambika Mishra",
+        description: "Renowned conservationists, filmmakers and wildlife experts will select the winners.",
+      },
+      form: {
+        heading: "Submit Your Entry",
+        fullName: "Full Name",
+        email: "Email Address",
+        phone: "Phone Number",
+        driveLink: "Google Drive Video Link",
+        location: "Where was this filmed? (e.g. Dudhwa National Park)",
+        submit: "Submit Entry",
+        note: "Clicking submit opens your email app with your entry details pre-filled — just hit send.",
+      },
+      contact: {
+        heading: "Need Help?",
+        description: "Reach out to us directly for any questions about the contest.",
+        whatsapp: "WhatsApp Us",
+      },
     },
     topnav: {
       tagline: "🌿 Protect Nature. Protect Wildlife. Protect Future.",
@@ -845,16 +916,87 @@ export const translations = {
     },
   },
   hi: {
-    breakingNews: {
-      badge: "महत्वपूर्ण सूचना",
-      headline: "नेपाल हिमालयी आपदा: भारतीय पीड़ित परिवारों हेतु ₹11 लाख की सहायता घोषित",
-      summary:
-        "नेपाल के रसुवा–नुवाकोट क्षेत्र में हिमालयी आपदा (27 अगस्त 2026) के बाद डॉ. राजेश्वर सिंह ने भारतीय पीड़ितों के परिवारों हेतु ₹11 लाख की प्रारंभिक सहायता राशि, सभी राष्ट्रीयताओं के लिए सहायता डेस्क तथा भारत–नेपाल हिमालयी आपदा लचीलापन साझेदारी के प्रस्ताव की घोषणा की।",
-      readPressRelease: "पूरी प्रेस विज्ञप्ति पढ़ें (PDF)",
-      bookletLabel: "यह भी उपलब्ध है: एनवायरनमेंट वॉरियर्स बुकलेट 2026",
-      bookletDesc: "तराई क्षेत्र में हमारे वन्यजीव संरक्षण कार्यक्रमों की एक सचित्र झलक।",
-      viewBooklet: "बुकलेट देखें (PDF)",
+    campaignBanner: {
+      text: "🎥 तराई के सर्वश्रेष्ठ अनकट वीडियो और रील — ₹50,000 तक जीतें! Nalla's Ark के सहयोग से। प्रविष्टियां जमा करने की अंतिम तिथि 31 अक्टूबर 2026।",
+      cta: "विवरण देखें",
       close: "बंद करें",
+    },
+    campaignAlert: {
+      badge: "🎥 नया अभियान",
+      headline: "तराई के सर्वश्रेष्ठ अनकट वीडियो और रील — ₹50,000 तक जीतें!",
+      summary:
+        "Nalla's Ark के सहयोग से, तराई की जंगली, अनफ़िल्टर्ड सुंदरता को एक अनकट वीडियो या रील में कैद करें और ₹1,50,000 तक के नकद पुरस्कार जीतने का मौका पाएं — प्रथम पुरस्कार ₹50,000, द्वितीय ₹30,000, तृतीय ₹20,000, साथ ही 10 सांत्वना पुरस्कार ₹5,000 प्रत्येक। प्रविष्टियां जमा करने की अंतिम तिथि 31 अक्टूबर 2026।",
+      cta: "प्रतियोगिता विवरण देखें",
+      close: "बंद करें",
+    },
+    campaign: {
+      collab: {
+        label: "सहयोग से",
+        name: "Nalla's Ark",
+        tagline: "Conservation through Creativity",
+      },
+      hero: {
+        badge: "🎥 वीडियो और रील प्रतियोगिता",
+        heading: "तराई के सर्वश्रेष्ठ अनकट वीडियो और रील",
+        description:
+          "Nalla's Ark के सहयोग से, तराई क्षेत्र की जंगली, अनछुई सुंदरता — इसके बाघ, नदियां, वन और दुर्लभ वन्यजीव — को एक अनकट वीडियो या रील में कैद कीजिए। ₹1,50,000 तक के नकद पुरस्कार जीतने का मौका!",
+        deadline: "प्रविष्टियां जमा करने की अंतिम तिथि: 31 अक्टूबर 2026",
+      },
+      about: {
+        heading: "प्रतियोगिता के बारे में",
+        description:
+          "\"तराई के सर्वश्रेष्ठ अनकट वीडियो और रील\" — एनवायरनमेंट वॉरियर्स द्वारा Nalla's Ark के सहयोग से प्रस्तुत — तराई परिदृश्य की कच्ची, अनफ़िल्टर्ड वाइल्डरनेस का उत्सव है, जो दुधवा, किशनपुर, कतर्नियाघाट और पीलीभीत का घर है। हम छह श्रेणियों में वास्तविक, एकल-शॉट वीडियो या रील फुटेज की तलाश में हैं — कोई संपादन नहीं, कोई कट नहीं, कोई जोड़ा हुआ संगीत नहीं। बस असली तराई, जैसी वह है।",
+      },
+      categories: {
+        heading: "श्रेणियां",
+        items: ["वन्यजीव", "वन", "नदियां और आर्द्रभूमि", "परिदृश्य", "लोग और संरक्षण", "पक्षी और जैव विविधता"],
+      },
+      prizes: {
+        heading: "₹1,50,000 के पुरस्कार",
+        first: { label: "प्रथम पुरस्कार", amount: "₹50,000" },
+        second: { label: "द्वितीय पुरस्कार", amount: "₹30,000" },
+        third: { label: "तृतीय पुरस्कार", amount: "₹20,000" },
+        consolation: { label: "10 सांत्वना पुरस्कार", amount: "₹5,000 प्रत्येक" },
+      },
+      rules: {
+        heading: "प्रतियोगिता दिशानिर्देश",
+        items: [
+          "वीडियो या रील एक ही, बिना कटा हुआ, बिना संपादित क्लिप होना चाहिए — कोई जंप कट, फ़िल्टर, या जोड़े गए संगीत/टेक्स्ट ओवरले नहीं। कोई भी लंबाई मान्य है।",
+          "फुटेज तराई क्षेत्र (दुधवा, किशनपुर, कतर्नियाघाट, पीलीभीत या आसपास के क्षेत्रों) में शूट की गई होनी चाहिए।",
+          "प्रविष्टियां छह श्रेणियों में से एक में होनी चाहिए: वन्यजीव, वन, नदियां और आर्द्रभूमि, परिदृश्य, लोग और संरक्षण, या पक्षी और जैव विविधता।",
+          "प्रतिभागियों को फुटेज के पूर्ण अधिकार का स्वामी होना चाहिए और एनवायरनमेंट वॉरियर्स व Nalla's Ark द्वारा इसे संरक्षण जागरूकता और प्रचार हेतु उपयोग किए जाने की सहमति देनी होगी, जिसमें फिल्मकार को श्रेय दिया जाएगा।",
+          "प्रत्येक प्रतिभागी अधिकतम 3 वीडियो या रील जमा कर सकता है।",
+          "प्रविष्टियां 31 अक्टूबर 2026 तक जमा करनी होंगी।",
+        ],
+      },
+      participate: {
+        heading: "भाग कैसे लें",
+        steps: [
+          "तराई के वन्यजीवों, वनों, नदियों, आर्द्रभूमियों, परिदृश्यों, या लोगों और संरक्षण प्रयासों को दर्शाने वाला एक अनकट वीडियो या रील रिकॉर्ड करें। कोई भी लंबाई मान्य है।",
+          "इसे गूगल ड्राइव पर अपलोड करें और शेयरिंग को \"लिंक वाला कोई भी व्यक्ति देख सकता है\" पर सेट करें।",
+          "ड्राइव लिंक हमें नीचे दिए गए फॉर्म के माध्यम से, या ईमेल/व्हाट्सएप के ज़रिए, अपने नाम, संपर्क नंबर, स्थान और वीडियो के संक्षिप्त विवरण के साथ साझा करें।",
+        ],
+      },
+      jury: {
+        heading: "हमारी जूरी",
+        names: "सुब्बैया नल्लामुथु और अंबिका मिश्रा",
+        description: "प्रसिद्ध संरक्षणवादी, फिल्म निर्माता और वन्यजीव विशेषज्ञ विजेताओं का चयन करेंगे।",
+      },
+      form: {
+        heading: "अपनी प्रविष्टि जमा करें",
+        fullName: "पूरा नाम",
+        email: "ईमेल पता",
+        phone: "फ़ोन नंबर",
+        driveLink: "गूगल ड्राइव वीडियो लिंक",
+        location: "यह कहां फिल्माया गया था? (जैसे दुधवा राष्ट्रीय उद्यान)",
+        submit: "प्रविष्टि जमा करें",
+        note: "सबमिट पर क्लिक करने से आपका ईमेल ऐप आपकी प्रविष्टि के विवरण के साथ पहले से भरा हुआ खुलेगा — बस भेजें दबाएं।",
+      },
+      contact: {
+        heading: "सहायता चाहिए?",
+        description: "प्रतियोगिता से संबंधित किसी भी प्रश्न के लिए सीधे हमसे संपर्क करें।",
+        whatsapp: "हमें व्हाट्सएप करें",
+      },
     },
     topnav: {
       tagline: "🌿 प्रकृति की रक्षा करें। वन्यजीवों की रक्षा करें। भविष्य की रक्षा करें।",

@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { FaTimes, FaFilePdf, FaBullhorn } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { FaTimes, FaVideo, FaArrowRight } from "react-icons/fa";
 
 import { useT } from "../i18n/useT";
 
-const SESSION_KEY = "ew-breaking-news-seen";
+const SESSION_KEY = "ew-campaign-alert-seen";
 
 const getInitialOpen = () => {
   try {
@@ -13,8 +14,8 @@ const getInitialOpen = () => {
   }
 };
 
-const BreakingNewsPopup = () => {
-  const t = useT().breakingNews;
+const CampaignAlertPopup = () => {
+  const t = useT().campaignAlert;
   const [open, setOpen] = useState(getInitialOpen);
 
   const close = () => {
@@ -46,7 +47,7 @@ const BreakingNewsPopup = () => {
         </button>
 
         <div className="bg-[#0F5132] rounded-t-3xl px-6 py-4 flex items-center gap-2">
-          <FaBullhorn className="text-[#F5C542]" />
+          <FaVideo className="text-[#F5C542]" />
           <span className="text-[#F5C542] font-bold uppercase tracking-wide text-sm">
             {t.badge}
           </span>
@@ -61,34 +62,18 @@ const BreakingNewsPopup = () => {
             {t.summary}
           </p>
 
-          <a
-            href="/news/press-release-nepal-disaster-relief.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/campaign"
+            onClick={close}
             className="mt-6 inline-flex items-center gap-2 bg-[#0F5132] text-white px-5 py-3 rounded-xl font-semibold hover:bg-[#0c4028] transition"
           >
-            <FaFilePdf />
-            {t.readPressRelease}
-          </a>
-
-          <div className="mt-6 pt-6 border-t border-gray-100">
-            <p className="font-semibold text-[#0F5132]">{t.bookletLabel}</p>
-            <p className="text-gray-600 text-sm mt-1 leading-relaxed">{t.bookletDesc}</p>
-
-            <a
-              href="/news/ev-booklet-2026.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 border border-[#0F5132] text-[#0F5132] px-5 py-3 rounded-xl font-semibold hover:bg-[#0F5132]/5 transition"
-            >
-              <FaFilePdf />
-              {t.viewBooklet}
-            </a>
-          </div>
+            {t.cta}
+            <FaArrowRight />
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default BreakingNewsPopup;
+export default CampaignAlertPopup;

@@ -201,7 +201,7 @@ const Volunteer = () => {
       </section>
 
       {/* Registration Form */}
-      <section className="py-20 bg-[#f8faf8]">
+      <section id="volunteer-form" className="py-20 bg-[#f8faf8]">
         <div className="max-w-[800px] mx-auto px-4">
           <div className="bg-white rounded-3xl shadow-lg p-8">
             <h2 className="text-3xl font-bold text-[#0F5132] text-center">
@@ -334,10 +334,13 @@ const Volunteer = () => {
 
           <p className="text-white/90 mt-5">{t.cta.description}</p>
 
-          <button
+          <a
+            href="#volunteer-form"
             className="
               mt-8
               bg-[#F5C542]
+              hover:bg-[#e4b437]
+              transition
               px-6
               py-3
               rounded-xl
@@ -349,7 +352,8 @@ const Volunteer = () => {
           >
             {t.cta.becomeVolunteer}
             <FaArrowRight />
-          </button>
+          </a>
+
         </div>
       </section>
     </div>

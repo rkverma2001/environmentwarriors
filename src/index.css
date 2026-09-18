@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes campaign-flash {
+  0%, 100% {
+    background-color: #E8B923;
+  }
+  50% {
+    background-color: #F7CE4C;
+  }
+}
+
+.campaign-banner-flash {
+  animation: campaign-flash 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .campaign-banner-flash {
+    animation: none;
+    background-color: #F5C542;
+  }
+}
