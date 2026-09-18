@@ -8,6 +8,7 @@ import {
   FaEnvelope,
   FaWhatsapp,
   FaPhoneAlt,
+  FaGavel,
 } from "react-icons/fa";
 
 import { useT } from "../i18n/useT";
@@ -30,7 +31,7 @@ const Campaign = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const subject = "Best Uncut Videos of Terai — Contest Entry";
+    const subject = "Best Uncut Videos & Reels of Terai — Contest Entry";
     const body = [
       `Full Name: ${form.fullName}`,
       `Email: ${form.email}`,
@@ -56,12 +57,31 @@ const Campaign = () => {
 
       {/* Hero */}
       <section
-        className="relative h-[450px] md:h-[550px] bg-cover bg-center"
+        className="relative h-[500px] md:h-[600px] bg-cover bg-center"
         style={{ backgroundImage: "url('/tigers/tiger-crossing-road.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/55"></div>
 
-        <div className="relative z-10 h-full flex items-center">
+        <div className="relative z-10 h-full flex flex-col">
+
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full pt-6 flex items-center gap-3">
+            <span className="text-white/70 text-xs sm:text-sm font-semibold uppercase tracking-wide">
+              {t.collab.label}
+            </span>
+            <img
+              src="/partners/nallas-ark-logo.png"
+              alt={t.collab.name}
+              className="h-8 w-8 rounded object-cover"
+            />
+            <span className="text-white font-bold text-sm sm:text-base">
+              {t.collab.name}
+            </span>
+            <span className="text-white/60 text-xs hidden sm:inline">
+              — {t.collab.tagline}
+            </span>
+          </div>
+
+          <div className="flex-1 flex items-center">
           <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
 
             <span className="bg-white/10 text-white px-4 py-2 rounded-full text-sm">
@@ -81,6 +101,7 @@ const Campaign = () => {
             </span>
 
           </div>
+          </div>
         </div>
       </section>
 
@@ -95,6 +116,28 @@ const Campaign = () => {
           <p className="text-gray-600 mt-5 leading-relaxed text-lg">
             {t.about.description}
           </p>
+
+        </div>
+      </section>
+
+      {/* Categories */}
+      <section className="py-16 bg-[#f8faf8]">
+        <div className="max-w-[900px] mx-auto px-4">
+
+          <h2 className="text-center text-3xl font-bold text-[#0F5132] mb-8">
+            {t.categories.heading}
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {t.categories.items.map((cat) => (
+              <div
+                key={cat}
+                className="bg-white border rounded-xl px-4 py-3 text-center font-semibold text-[#0F5132] shadow-sm"
+              >
+                {cat}
+              </div>
+            ))}
+          </div>
 
         </div>
       </section>
@@ -193,6 +236,26 @@ const Campaign = () => {
             ))}
 
           </div>
+
+        </div>
+      </section>
+
+      {/* Jury */}
+      <section className="py-14 bg-[#0B2E1F]">
+        <div className="max-w-[700px] mx-auto px-4 text-center">
+
+          <div className="flex items-center justify-center gap-2 text-[#F5C542] font-bold uppercase tracking-wide text-sm">
+            <FaGavel />
+            {t.jury.heading}
+          </div>
+
+          <p className="text-white text-xl md:text-2xl font-bold mt-2">
+            {t.jury.names}
+          </p>
+
+          <p className="text-white/70 mt-2">
+            {t.jury.description}
+          </p>
 
         </div>
       </section>
@@ -314,6 +377,10 @@ const Campaign = () => {
             </a>
 
           </div>
+
+          <p className="text-white/60 text-sm mt-8 tracking-wide">
+            #TeraiUnfiltered &nbsp; #EnvironmentWarriors &nbsp; #NallasArk
+          </p>
 
         </div>
       </section>

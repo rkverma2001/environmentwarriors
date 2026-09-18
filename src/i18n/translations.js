@@ -1,56 +1,70 @@
 export const translations = {
   en: {
     campaignBanner: {
-      text: "🎥 Best Uncut Videos of Terai — win up to ₹50,000! Submissions close 10 October 2026.",
+      text: "🎥 Best Uncut Videos & Reels of Terai — win up to ₹50,000! In collaboration with Nalla's Ark. Submissions close 31 October 2026.",
       cta: "View Details",
       close: "Dismiss",
     },
     campaignAlert: {
       badge: "🎥 New Campaign",
-      headline: "Best Uncut Videos of Terai — Win Up to ₹50,000!",
+      headline: "Best Uncut Videos & Reels of Terai — Win Up to ₹50,000!",
       summary:
-        "Capture the wild, unfiltered beauty of the Terai in a single uncut video and stand a chance to win cash prizes — 1st prize ₹50,000, 2nd ₹25,000, 3rd ₹15,000, plus 10 consolation prizes of ₹5,000 each. Submissions close 10 October 2026.",
+        "In collaboration with Nalla's Ark, capture the wild, unfiltered beauty of the Terai in a single uncut video or reel and stand a chance to win cash prizes worth ₹1,50,000 — 1st prize ₹50,000, 2nd ₹30,000, 3rd ₹20,000, plus 10 consolation prizes of ₹5,000 each. Submissions close 31 October 2026.",
       cta: "View Contest Details",
       close: "Close",
     },
     campaign: {
+      collab: {
+        label: "In Collaboration With",
+        name: "Nalla's Ark",
+        tagline: "Conservation through Creativity",
+      },
       hero: {
-        badge: "🎥 New Campaign",
-        heading: "Best Uncut Videos of Terai",
+        badge: "🎥 Video & Reel Contest",
+        heading: "Best Uncut Videos & Reels of Terai",
         description:
-          "Grab your camera and capture the wild, untouched beauty of the Terai region — its tigers, rivers, forests and rare wildlife — in a single unedited shot. Win cash prizes worth up to ₹50,000!",
-        deadline: "Submissions close 10 October 2026",
+          "In collaboration with Nalla's Ark, capture the wild, unfiltered beauty of the Terai region — its tigers, rivers, forests and rare wildlife — in a single uncut video or reel. Win cash prizes worth ₹1,50,000!",
+        deadline: "Submissions close 31 October 2026",
       },
       about: {
         heading: "About the Contest",
         description:
-          "\"Best Uncut Videos of Terai\" celebrates the raw, unfiltered wilderness of the Terai landscape — home to Dudhwa, Kishanpur, Katarniaghat and Pilibhit. We're looking for genuine, single-take footage of wildlife, forests, rivers and rural life across the region — no edits, no cuts, no added music. Just real Terai, as it happens.",
+          "\"Best Uncut Videos & Reels of Terai\" — presented by Environment Warriors in collaboration with Nalla's Ark — celebrates the raw, unfiltered wilderness of the Terai landscape, home to Dudhwa, Kishanpur, Katarniaghat and Pilibhit. We're looking for genuine, single-take video or reel footage across six categories — no edits, no cuts, no added music. Just real Terai, as it happens.",
+      },
+      categories: {
+        heading: "Categories",
+        items: ["Wildlife", "Forests", "Rivers & Wetlands", "Landscapes", "People & Conservation", "Birds & Biodiversity"],
       },
       prizes: {
-        heading: "Prizes",
+        heading: "Prizes Worth ₹1,50,000",
         first: { label: "1st Prize", amount: "₹50,000" },
-        second: { label: "2nd Prize", amount: "₹25,000" },
-        third: { label: "3rd Prize", amount: "₹15,000" },
+        second: { label: "2nd Prize", amount: "₹30,000" },
+        third: { label: "3rd Prize", amount: "₹20,000" },
         consolation: { label: "10 Consolation Prizes", amount: "₹5,000 each" },
       },
       rules: {
         heading: "Contest Guidelines",
         items: [
-          "The video must be a single, uncut, unedited clip — no jump cuts, filters, or added music/text overlays.",
+          "The video or reel must be a single, uncut, unedited clip — no jump cuts, filters, or added music/text overlays. Any length is allowed.",
           "Footage must be shot within the Terai region (Dudhwa, Kishanpur, Katarniaghat, Pilibhit or surrounding areas).",
-          "Video length: between 30 seconds and 5 minutes.",
-          "Entrants must own full rights to the footage and consent to Environment Warriors using it for conservation awareness and promotion, with credit to the filmmaker.",
-          "One entry per participant. Multiple submissions from the same person will be disqualified.",
-          "Entries must be submitted by 10 October 2026.",
+          "Entries must fall into one of six categories: Wildlife, Forests, Rivers & Wetlands, Landscapes, People & Conservation, or Birds & Biodiversity.",
+          "Entrants must own full rights to the footage and consent to Environment Warriors and Nalla's Ark using it for conservation awareness and promotion, with credit to the filmmaker.",
+          "Each participant can submit a maximum of 3 videos or reels.",
+          "Entries must be submitted by 31 October 2026.",
         ],
       },
       participate: {
         heading: "How to Participate",
         steps: [
-          "Record your uncut video of the Terai's wildlife, forests or rivers.",
+          "Record an uncut video or reel showcasing the Terai's wildlife, forests, rivers, wetlands, landscapes, or people and conservation efforts. Any length is allowed.",
           "Upload it to Google Drive and set sharing to \"Anyone with the link can view.\"",
-          "Share the Drive link with us using the form below, or via email/WhatsApp.",
+          "Share the Drive link with us using the form below, or via email/WhatsApp, along with your name, contact number, location and a short description of the video.",
         ],
+      },
+      jury: {
+        heading: "Our Jury",
+        names: "Subbiah Nallamuthu and Ambika Mishra",
+        description: "Renowned conservationists, filmmakers and wildlife experts will select the winners.",
       },
       form: {
         heading: "Submit Your Entry",
@@ -903,56 +917,70 @@ export const translations = {
   },
   hi: {
     campaignBanner: {
-      text: "🎥 तराई के सर्वश्रेष्ठ अनकट वीडियो — ₹50,000 तक जीतें! प्रविष्टियां जमा करने की अंतिम तिथि 10 अक्टूबर 2026।",
+      text: "🎥 तराई के सर्वश्रेष्ठ अनकट वीडियो और रील — ₹50,000 तक जीतें! Nalla's Ark के सहयोग से। प्रविष्टियां जमा करने की अंतिम तिथि 31 अक्टूबर 2026।",
       cta: "विवरण देखें",
       close: "बंद करें",
     },
     campaignAlert: {
       badge: "🎥 नया अभियान",
-      headline: "तराई के सर्वश्रेष्ठ अनकट वीडियो — ₹50,000 तक जीतें!",
+      headline: "तराई के सर्वश्रेष्ठ अनकट वीडियो और रील — ₹50,000 तक जीतें!",
       summary:
-        "तराई की जंगली, अनफ़िल्टर्ड सुंदरता को एक अनकट वीडियो में कैद करें और नकद पुरस्कार जीतने का मौका पाएं — प्रथम पुरस्कार ₹50,000, द्वितीय ₹25,000, तृतीय ₹15,000, साथ ही 10 सांत्वना पुरस्कार ₹5,000 प्रत्येक। प्रविष्टियां जमा करने की अंतिम तिथि 10 अक्टूबर 2026।",
+        "Nalla's Ark के सहयोग से, तराई की जंगली, अनफ़िल्टर्ड सुंदरता को एक अनकट वीडियो या रील में कैद करें और ₹1,50,000 तक के नकद पुरस्कार जीतने का मौका पाएं — प्रथम पुरस्कार ₹50,000, द्वितीय ₹30,000, तृतीय ₹20,000, साथ ही 10 सांत्वना पुरस्कार ₹5,000 प्रत्येक। प्रविष्टियां जमा करने की अंतिम तिथि 31 अक्टूबर 2026।",
       cta: "प्रतियोगिता विवरण देखें",
       close: "बंद करें",
     },
     campaign: {
+      collab: {
+        label: "सहयोग से",
+        name: "Nalla's Ark",
+        tagline: "Conservation through Creativity",
+      },
       hero: {
-        badge: "🎥 नया अभियान",
-        heading: "तराई के सर्वश्रेष्ठ अनकट वीडियो",
+        badge: "🎥 वीडियो और रील प्रतियोगिता",
+        heading: "तराई के सर्वश्रेष्ठ अनकट वीडियो और रील",
         description:
-          "अपना कैमरा उठाइए और तराई क्षेत्र की जंगली, अनछुई सुंदरता — इसके बाघ, नदियां, वन और दुर्लभ वन्यजीव — को एक ही बिना-संपादित शॉट में कैद कीजिए। ₹50,000 तक के नकद पुरस्कार जीतने का मौका!",
-        deadline: "प्रविष्टियां जमा करने की अंतिम तिथि: 10 अक्टूबर 2026",
+          "Nalla's Ark के सहयोग से, तराई क्षेत्र की जंगली, अनछुई सुंदरता — इसके बाघ, नदियां, वन और दुर्लभ वन्यजीव — को एक अनकट वीडियो या रील में कैद कीजिए। ₹1,50,000 तक के नकद पुरस्कार जीतने का मौका!",
+        deadline: "प्रविष्टियां जमा करने की अंतिम तिथि: 31 अक्टूबर 2026",
       },
       about: {
         heading: "प्रतियोगिता के बारे में",
         description:
-          "\"तराई के सर्वश्रेष्ठ अनकट वीडियो\" तराई परिदृश्य की कच्ची, अनफ़िल्टर्ड वाइल्डरनेस का उत्सव है — जो दुधवा, किशनपुर, कतर्नियाघाट और पीलीभीत का घर है। हम क्षेत्र भर के वन्यजीवों, वनों, नदियों और ग्रामीण जीवन की वास्तविक, एकल-शॉट फुटेज की तलाश में हैं — कोई संपादन नहीं, कोई कट नहीं, कोई जोड़ा हुआ संगीत नहीं। बस असली तराई, जैसी वह है।",
+          "\"तराई के सर्वश्रेष्ठ अनकट वीडियो और रील\" — एनवायरनमेंट वॉरियर्स द्वारा Nalla's Ark के सहयोग से प्रस्तुत — तराई परिदृश्य की कच्ची, अनफ़िल्टर्ड वाइल्डरनेस का उत्सव है, जो दुधवा, किशनपुर, कतर्नियाघाट और पीलीभीत का घर है। हम छह श्रेणियों में वास्तविक, एकल-शॉट वीडियो या रील फुटेज की तलाश में हैं — कोई संपादन नहीं, कोई कट नहीं, कोई जोड़ा हुआ संगीत नहीं। बस असली तराई, जैसी वह है।",
+      },
+      categories: {
+        heading: "श्रेणियां",
+        items: ["वन्यजीव", "वन", "नदियां और आर्द्रभूमि", "परिदृश्य", "लोग और संरक्षण", "पक्षी और जैव विविधता"],
       },
       prizes: {
-        heading: "पुरस्कार",
+        heading: "₹1,50,000 के पुरस्कार",
         first: { label: "प्रथम पुरस्कार", amount: "₹50,000" },
-        second: { label: "द्वितीय पुरस्कार", amount: "₹25,000" },
-        third: { label: "तृतीय पुरस्कार", amount: "₹15,000" },
+        second: { label: "द्वितीय पुरस्कार", amount: "₹30,000" },
+        third: { label: "तृतीय पुरस्कार", amount: "₹20,000" },
         consolation: { label: "10 सांत्वना पुरस्कार", amount: "₹5,000 प्रत्येक" },
       },
       rules: {
         heading: "प्रतियोगिता दिशानिर्देश",
         items: [
-          "वीडियो एक ही, बिना कटा हुआ, बिना संपादित क्लिप होना चाहिए — कोई जंप कट, फ़िल्टर, या जोड़े गए संगीत/टेक्स्ट ओवरले नहीं।",
+          "वीडियो या रील एक ही, बिना कटा हुआ, बिना संपादित क्लिप होना चाहिए — कोई जंप कट, फ़िल्टर, या जोड़े गए संगीत/टेक्स्ट ओवरले नहीं। कोई भी लंबाई मान्य है।",
           "फुटेज तराई क्षेत्र (दुधवा, किशनपुर, कतर्नियाघाट, पीलीभीत या आसपास के क्षेत्रों) में शूट की गई होनी चाहिए।",
-          "वीडियो की लंबाई: 30 सेकंड से 5 मिनट के बीच।",
-          "प्रतिभागियों को फुटेज के पूर्ण अधिकार का स्वामी होना चाहिए और एनवायरनमेंट वॉरियर्स द्वारा इसे संरक्षण जागरूकता और प्रचार हेतु उपयोग किए जाने की सहमति देनी होगी, जिसमें फिल्मकार को श्रेय दिया जाएगा।",
-          "प्रति प्रतिभागी एक प्रविष्टि। एक ही व्यक्ति की कई प्रविष्टियां अयोग्य घोषित कर दी जाएंगी।",
-          "प्रविष्टियां 10 अक्टूबर 2026 तक जमा करनी होंगी।",
+          "प्रविष्टियां छह श्रेणियों में से एक में होनी चाहिए: वन्यजीव, वन, नदियां और आर्द्रभूमि, परिदृश्य, लोग और संरक्षण, या पक्षी और जैव विविधता।",
+          "प्रतिभागियों को फुटेज के पूर्ण अधिकार का स्वामी होना चाहिए और एनवायरनमेंट वॉरियर्स व Nalla's Ark द्वारा इसे संरक्षण जागरूकता और प्रचार हेतु उपयोग किए जाने की सहमति देनी होगी, जिसमें फिल्मकार को श्रेय दिया जाएगा।",
+          "प्रत्येक प्रतिभागी अधिकतम 3 वीडियो या रील जमा कर सकता है।",
+          "प्रविष्टियां 31 अक्टूबर 2026 तक जमा करनी होंगी।",
         ],
       },
       participate: {
         heading: "भाग कैसे लें",
         steps: [
-          "तराई के वन्यजीवों, वनों या नदियों का अपना अनकट वीडियो रिकॉर्ड करें।",
+          "तराई के वन्यजीवों, वनों, नदियों, आर्द्रभूमियों, परिदृश्यों, या लोगों और संरक्षण प्रयासों को दर्शाने वाला एक अनकट वीडियो या रील रिकॉर्ड करें। कोई भी लंबाई मान्य है।",
           "इसे गूगल ड्राइव पर अपलोड करें और शेयरिंग को \"लिंक वाला कोई भी व्यक्ति देख सकता है\" पर सेट करें।",
-          "ड्राइव लिंक हमें नीचे दिए गए फॉर्म के माध्यम से, या ईमेल/व्हाट्सएप के ज़रिए साझा करें।",
+          "ड्राइव लिंक हमें नीचे दिए गए फॉर्म के माध्यम से, या ईमेल/व्हाट्सएप के ज़रिए, अपने नाम, संपर्क नंबर, स्थान और वीडियो के संक्षिप्त विवरण के साथ साझा करें।",
         ],
+      },
+      jury: {
+        heading: "हमारी जूरी",
+        names: "सुब्बैया नल्लामुथु और अंबिका मिश्रा",
+        description: "प्रसिद्ध संरक्षणवादी, फिल्म निर्माता और वन्यजीव विशेषज्ञ विजेताओं का चयन करेंगे।",
       },
       form: {
         heading: "अपनी प्रविष्टि जमा करें",
