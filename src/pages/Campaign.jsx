@@ -22,6 +22,7 @@ const Campaign = () => {
     phone: "",
     driveLink: "",
     location: "",
+    agreeVolunteer: true,
   });
 
   const handleChange = (field) => (e) => {
@@ -38,6 +39,7 @@ const Campaign = () => {
       `Phone: ${form.phone}`,
       `Filmed at: ${form.location}`,
       `Google Drive Link: ${form.driveLink}`,
+      `Willing to volunteer: ${form.agreeVolunteer ? "Yes" : "No"}`,
     ].join("\n");
 
     window.location.href = `mailto:info@environmentwarriors.org?subject=${encodeURIComponent(
@@ -317,6 +319,18 @@ const Campaign = () => {
                 onChange={handleChange("driveLink")}
                 className="w-full border rounded-xl px-4 py-3"
               />
+
+              <label className="flex items-start gap-3 text-sm text-gray-700 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={form.agreeVolunteer}
+                  onChange={(e) =>
+                    setForm((f) => ({ ...f, agreeVolunteer: e.target.checked }))
+                  }
+                  className="mt-1 w-4 h-4 accent-[#0F5132] flex-shrink-0"
+                />
+                {t.form.agreeVolunteer}
+              </label>
 
               <button
                 type="submit"
